@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-06-09T00:51:02.035682",
+  "crawler": "Browser-Based Guland Crawler v3.0",
+  "summary": {
+    "total_attempted": 5,
+    "total_successful": 0,
+    "total_failed": 5,
+    "success_rate": 0.0,
+    "tile_servers": 0,
+    "total_layers": 0
+  },
+  "tile_servers": [],
+  "successful_locations": []
+}

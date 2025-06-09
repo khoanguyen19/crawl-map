@@ -1,0 +1,34 @@
+{
+  "start_time": "2025-06-09T00:34:46.363810",
+  "end_time": "2025-06-09T00:34:46.911923",
+  "total_duration_minutes": 0.009135266666666668,
+  "config_used": {
+    "geocoding": {
+      "enabled": true,
+      "force_refresh": false,
+      "sample_tiles": true
+    },
+    "tiles": {
+      "enabled": true,
+      "zoom_range": [
+        10,
+        14
+      ],
+      "selected_locations": null,
+      "selected_layers": null,
+      "max_workers": 4,
+      "rate_limit_delay": 0.1
+    },
+    "output": {
+      "compress_tiles": false,
+      "generate_reports": true,
+      "cleanup_temp": true
+    },
+    "logging": {
+      "verbose": true,
+      "save_logs": true
+    }
+  },
+  "phases_completed": [],
+  "total_backup_size_gb": 0.0
+}

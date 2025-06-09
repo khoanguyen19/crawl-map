@@ -1,0 +1,10 @@
+{
+  "url": "https://guland.vn/map",
+  "context": "map_interface",
+  "source_analysis": {
+    "url": "https://guland.vn/map",
+    "error": "'str' object has no attribute 'keys'"
+  },
+  "performance_logs": [],
+  "timestamp": "2025-06-08T23:23:42.338580"
+}

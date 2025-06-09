@@ -1,0 +1,24 @@
+{
+  "analysis_settings": {
+    "headless": false,
+    "timeout": 30,
+    "capture_duration": 20,
+    "max_provinces": 3,
+    "screenshot_quality": "high"
+  },
+  "target_urls": {
+    "base": "https://guland.vn",
+    "map": "https://guland.vn/map",
+    "provinces": [
+      "ha-noi",
+      "ho-chi-minh",
+      "da-nang"
+    ]
+  },
+  "browser_settings": {
+    "window_size": "1920,1080",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "disable_images": false,
+    "enable_javascript": true
+  }
+}

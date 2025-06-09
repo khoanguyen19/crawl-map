@@ -1,0 +1,15 @@
+
+# BROWSER-BASED GULAND CRAWLER REPORT
+Generated: 2025-06-09T00:51:02.035682
+
+## 📊 SUMMARY
+• Total Attempted: 5
+• Total Successful: 0
+• Total Failed: 5
+• Success Rate: 0.0%
+• Tile Servers: 0
+• Total Layers: 0
+
+## ✅ SUCCESSFUL LOCATIONS
+
+## 🗺️ TILE SERVERS DISCOVERED
