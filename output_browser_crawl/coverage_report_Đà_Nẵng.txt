@@ -1,0 +1,23 @@
+# FULL COVERAGE ANALYSIS: Đà Nẵng
+Generated: 2025-06-10T00:30:38.895523
+
+## 📊 COVERAGE SUMMARY
+• Total tiles captured: 444
+• Zoom levels covered: 9
+• Unique tile patterns: 2
+• Tile servers: 2
+
+## 🔍 ZOOM LEVEL BREAKDOWN
+• Zoom 10: 45/1 tiles (4500.0% coverage)
+• Zoom 11: 45/1 tiles (4500.0% coverage)
+• Zoom 12: 45/1 tiles (4500.0% coverage)
+• Zoom 13: 45/2 tiles (2250.0% coverage)
+• Zoom 14: 45/2 tiles (2250.0% coverage)
+• Zoom 15: 45/6 tiles (750.0% coverage)
+• Zoom 16: 40/15 tiles (266.7% coverage)
+• Zoom 17: 54/45 tiles (120.0% coverage)
+• Zoom 18: 80/144 tiles (55.6% coverage)
+
+## 🎯 TILE PATTERNS
+• https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png
+• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/da-nang/{z}/{x}/{y}.png

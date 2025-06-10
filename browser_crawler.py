@@ -246,14 +246,16 @@ class BrowserGulandCrawler:
         return tile_urls, tile_patterns
     
     def systematic_zoom_coverage(self, location_name, lat, lng, duration_per_zoom=30):
-        """Systematically cover all zoom levels 10-18"""
+        """Systematically cover all zoom levels 10-18 - FIXED VERSION"""
         logger.info(f"🎯 Starting systematic zoom coverage for {location_name}")
         
         zoom_levels = list(range(10, 19))  # 10 to 18
         all_captured_tiles = []
         
-        for zoom in zoom_levels:
-            logger.info(f"🔍 Processing zoom level {zoom}/{len(zoom_levels)-1}")
+        for zoom_index, zoom in enumerate(zoom_levels):
+            logger.info(f"🔍 Processing zoom level {zoom} ({zoom_index+1}/{len(zoom_levels)})")
+            
+            zoom_start_time = time.time()
             
             try:
                 # Clear network logs for this zoom level
@@ -268,17 +270,26 @@ class BrowserGulandCrawler:
                 # Wait for tiles to load at this zoom
                 time.sleep(3)
                 
+                # FIXED: Reduced duration per zoom to prevent infinite loop
+                actual_duration = min(duration_per_zoom, 25)  # Max 25 seconds per zoom
+                
                 # Perform comprehensive map coverage at this zoom
-                tiles_at_zoom = self.comprehensive_map_coverage(zoom, duration_per_zoom)
+                tiles_at_zoom = self.comprehensive_map_coverage(zoom, actual_duration)
                 
                 if tiles_at_zoom:
                     all_captured_tiles.extend(tiles_at_zoom)
-                    logger.info(f"✅ Zoom {zoom}: Found {len(tiles_at_zoom)} unique tiles")
+                    logger.info(f"✅ Zoom {zoom}: Found {len(tiles_at_zoom)} tiles")
                 else:
                     logger.warning(f"⚠️ Zoom {zoom}: No tiles found")
                 
-                # Brief pause between zoom levels
+                # FIXED: Brief pause between zoom levels
                 time.sleep(2)
+                
+                # FIXED: Add safety timeout check
+                zoom_elapsed = time.time() - zoom_start_time
+                if zoom_elapsed > 60:  # Max 1 minute per zoom level
+                    logger.warning(f"⚠️ Zoom {zoom} timeout after {zoom_elapsed:.1f}s")
+                    break
                 
             except Exception as e:
                 logger.error(f"❌ Error at zoom {zoom}: {e}")
@@ -287,6 +298,79 @@ class BrowserGulandCrawler:
         logger.info(f"🎉 Systematic coverage complete: {len(all_captured_tiles)} total tiles")
         return all_captured_tiles
 
+    def generate_final_report(self):
+        """Generate final comprehensive report"""
+        logger.info("📊 Generating final comprehensive report...")
+        
+        report = {
+            'timestamp': datetime.now().isoformat(),
+            'crawler': 'Full Coverage Guland Crawler v5.0',
+            'method': 'Systematic zoom coverage 10-18 + Map interaction',
+            'summary': {
+                'total_attempted': len(self.test_locations),
+                'total_successful': self.discovered_data['success_count'],
+                'total_failed': self.discovered_data['failure_count'],
+                'success_rate': (self.discovered_data['success_count'] / len(self.test_locations) * 100) if len(self.test_locations) > 0 else 0,
+                'unique_tile_patterns': len(self.discovered_data['tile_patterns']),
+                'tile_servers': len(self.discovered_data['tile_servers'])
+            },
+            'tile_patterns': list(self.discovered_data['tile_patterns']),
+            'tile_servers': list(self.discovered_data['tile_servers']),
+            'successful_locations': self.discovered_data['all_locations']
+        }
+        
+        # Save comprehensive report
+        with open('output_browser_crawl/full_coverage_final_report.json', 'w', encoding='utf-8') as f:
+            json.dump(report, f, indent=2, ensure_ascii=False)
+        
+        # Generate text summary
+        text_report = f"""
+    # FULL COVERAGE GULAND CRAWLER FINAL REPORT
+    Generated: {report['timestamp']}
+    Method: Systematic zoom coverage 10-18 + Map interaction
+
+    ## 📊 SUMMARY
+    • Total Attempted: {report['summary']['total_attempted']}
+    • Total Successful: {report['summary']['total_successful']}
+    • Success Rate: {report['summary']['success_rate']:.1f}%
+    • Unique Tile Patterns: {report['summary']['unique_tile_patterns']}
+    • Tile Servers: {report['summary']['tile_servers']}
+
+    ## 🎯 TILE PATTERNS DISCOVERED
+    """
+        
+        for pattern in report['tile_patterns']:
+            text_report += f"• {pattern}\n"
+        
+        text_report += f"\n## 🗺️ TILE SERVERS\n"
+        for server in report['tile_servers']:
+            text_report += f"• {server}\n"
+        
+        # Add location details
+        text_report += f"\n## 📍 LOCATION DETAILS\n"
+        for location in report['successful_locations']:
+            text_report += f"### {location['location_name']}\n"
+            text_report += f"• Total tiles: {location['total_tiles']}\n"
+            text_report += f"• Zoom levels: {len(location['zoom_levels'])}\n"
+            text_report += f"• Patterns: {len(location['tile_patterns'])}\n\n"
+        
+        with open('output_browser_crawl/full_coverage_final_report.txt', 'w', encoding='utf-8') as f:
+            f.write(text_report)
+        
+        logger.info("✅ Final report generated")
+        
+        # Print summary to console
+        print(f"\n🎉 FULL COVERAGE CRAWL COMPLETED!")
+        print("=" * 50)
+        print(f"📊 Results:")
+        print(f"  • Locations attempted: {report['summary']['total_attempted']}")
+        print(f"  • Locations successful: {report['summary']['total_successful']}")
+        print(f"  • Success rate: {report['summary']['success_rate']:.1f}%")
+        print(f"  • Unique tile patterns: {report['summary']['unique_tile_patterns']}")
+        print(f"  • Tile servers: {report['summary']['tile_servers']}")
+        
+        return report
+    
     def set_map_zoom(self, target_zoom):
         """Set map to specific zoom level via JavaScript"""
         logger.info(f"🎯 Setting map zoom to {target_zoom}")
@@ -374,102 +458,122 @@ class BrowserGulandCrawler:
 
     def comprehensive_map_coverage(self, zoom_level, duration_seconds):
         """Comprehensive map coverage using grid pattern"""
-        logger.info(f"🗺️ Starting comprehensive coverage at zoom {zoom_level}")
+        logger.info(f"🗺️ Starting comprehensive coverage at zoom {zoom_level} for {duration_seconds}s")
         
         try:
-            map_container = self.driver.find_element(By.CSS_SELECTOR, 
-                '#map, .map-container, [class*="map"], canvas, .leaflet-container')
+            # Find map container with better error handling
+            map_container = None
+            selectors_to_try = [
+                '#map', '.map-container', '[class*="map"]', 
+                'canvas', '.leaflet-container', '.leaflet-map-pane'
+            ]
+            
+            for selector in selectors_to_try:
+                try:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if elements and elements[0].is_displayed():
+                        map_container = elements[0]
+                        logger.info(f"🎯 Found map container: {selector}")
+                        break
+                except:
+                    continue
+            
+            if not map_container:
+                logger.error("❌ No valid map container found")
+                return []
+            
+            # Scroll map into view
+            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", map_container)
+            time.sleep(1)
             
             map_size = map_container.size
-            map_rect = map_container.rect
+            logger.info(f"📏 Map size: {map_size['width']}x{map_size['height']}")
             
-            # Grid-based coverage
-            grid_size = 4  # 4x4 grid for thorough coverage
-            step_x = max(50, map_size['width'] // grid_size)
-            step_y = max(50, map_size['height'] // grid_size)
+            # Validate map size
+            if map_size['width'] < 200 or map_size['height'] < 200:
+                logger.warning(f"⚠️ Map too small for coverage: {map_size}")
+                return []
             
             actions = ActionChains(self.driver)
-            coverage_points = []
             
-            # Generate grid points
-            margin = 50
-            for i in range(grid_size):
-                for j in range(grid_size):
-                    x = margin + i * step_x
-                    y = margin + j * step_y
-                    
-                    # Ensure within bounds
-                    if x < map_size['width'] - margin and y < map_size['height'] - margin:
-                        coverage_points.append((x, y))
-            
-            logger.info(f"📍 Generated {len(coverage_points)} coverage points")
+            # FIXED: Simpler coverage pattern to avoid out of bounds
+            coverage_actions = [
+                'center_pan_up', 'center_pan_down', 'center_pan_left', 'center_pan_right',
+                'zoom_in_center', 'zoom_out_center', 'small_drag_center'
+            ]
             
             start_time = time.time()
-            point_index = 0
+            action_count = 0
+            max_actions = 20  # FIXED: Limit total actions to prevent infinite loop
             
-            while time.time() - start_time < duration_seconds and point_index < len(coverage_points):
-                x, y = coverage_points[point_index]
+            while (time.time() - start_time < duration_seconds and 
+                action_count < max_actions):
                 
-                logger.info(f"📍 Coverage point {point_index+1}/{len(coverage_points)}: ({x}, {y})")
+                action_count += 1
+                action_type = coverage_actions[(action_count - 1) % len(coverage_actions)]
+                
+                logger.info(f"📍 Coverage action {action_count}/{max_actions}: {action_type}")
                 
                 try:
-                    # Move to point and perform actions
-                    actions.move_to_element_with_offset(map_container, x, y).perform()
-                    time.sleep(0.5)
+                    if action_type == 'center_pan_up':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.5)
+                        actions.click_and_hold().move_by_offset(0, -50).release().perform()
+                        
+                    elif action_type == 'center_pan_down':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.5)
+                        actions.click_and_hold().move_by_offset(0, 50).release().perform()
+                        
+                    elif action_type == 'center_pan_left':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.5)
+                        actions.click_and_hold().move_by_offset(-50, 0).release().perform()
+                        
+                    elif action_type == 'center_pan_right':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.5)
+                        actions.click_and_hold().move_by_offset(50, 0).release().perform()
+                        
+                    elif action_type == 'zoom_in_center':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.2)
+                        self.driver.execute_script("""
+                            arguments[0].dispatchEvent(new WheelEvent('wheel', {
+                                deltaY: -100,
+                                bubbles: true,
+                                cancelable: true
+                            }));
+                        """, map_container)
+                        
+                    elif action_type == 'zoom_out_center':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.2)
+                        self.driver.execute_script("""
+                            arguments[0].dispatchEvent(new WheelEvent('wheel', {
+                                deltaY: 100,
+                                bubbles: true,
+                                cancelable: true
+                            }));
+                        """, map_container)
+                        
+                    elif action_type == 'small_drag_center':
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.5)
+                        # Small random drag from center
+                        offset_x = random.randint(-30, 30)
+                        offset_y = random.randint(-30, 30)
+                        actions.click_and_hold().move_by_offset(offset_x, offset_y).release().perform()
                     
-                    # Pan from this point to trigger tile loading
-                    pan_distance = min(100, step_x//2, step_y//2)
+                    # Wait between actions
+                    time.sleep(random.uniform(2, 4))
                     
-                    # Pan in multiple directions to ensure full coverage
-                    directions = [
-                        (pan_distance, 0),    # Right
-                        (0, pan_distance),    # Down
-                        (-pan_distance, 0),   # Left
-                        (0, -pan_distance),   # Up
-                    ]
-                    
-                    for dx, dy in directions:
-                        try:
-                            actions.click_and_hold()\
-                                .move_by_offset(dx, dy)\
-                                .release()\
-                                .perform()
-                            time.sleep(1)
-                            
-                            # Return to original position
-                            actions.click_and_hold()\
-                                .move_by_offset(-dx, -dy)\
-                                .release()\
-                                .perform()
-                            time.sleep(1)
-                            
-                        except Exception as pan_error:
-                            logger.warning(f"⚠️ Pan error at point {point_index}: {pan_error}")
-                            continue
-                    
-                    # Zoom interaction at this point
-                    self.driver.execute_script("""
-                        arguments[0].dispatchEvent(new WheelEvent('wheel', {
-                            deltaY: -50,
-                            bubbles: true,
-                            cancelable: true
-                        }));
-                    """, map_container)
-                    time.sleep(0.5)
-                    
-                    self.driver.execute_script("""
-                        arguments[0].dispatchEvent(new WheelEvent('wheel', {
-                            deltaY: 50,
-                            bubbles: true,
-                            cancelable: true
-                        }));
-                    """, map_container)
-                    time.sleep(1)
-                    
-                except Exception as point_error:
-                    logger.warning(f"⚠️ Error at coverage point {point_index}: {point_error}")
-                
-                point_index += 1
+                except Exception as action_error:
+                    logger.warning(f"⚠️ Action {action_type} failed: {action_error}")
+                    # Continue to next action
+                    continue
+            
+            logger.info(f"✅ Completed {action_count} coverage actions")
             
             # Get tiles captured during this coverage
             requests = self.get_network_requests()
@@ -478,7 +582,7 @@ class BrowserGulandCrawler:
             # Filter tiles for current zoom level
             zoom_tiles = [tile for tile in tile_urls if tile['zoom'] == zoom_level]
             
-            logger.info(f"✅ Coverage complete for zoom {zoom_level}: {len(zoom_tiles)} tiles")
+            logger.info(f"🎯 Coverage result for zoom {zoom_level}: {len(zoom_tiles)} tiles")
             return zoom_tiles
             
         except Exception as e:
@@ -581,6 +685,59 @@ class BrowserGulandCrawler:
             'total_tiles': total_tiles
         }
 
+    def get_safe_coordinates(self, map_container):
+        """Get safe coordinates within map bounds"""
+        try:
+            map_size = map_container.size
+            map_rect = map_container.rect
+            
+            # Ensure map is visible and has reasonable size
+            if map_size['width'] < 100 or map_size['height'] < 100:
+                logger.warning(f"⚠️ Map too small: {map_size['width']}x{map_size['height']}")
+                return None, None
+            
+            # Calculate safe area with margins
+            margin = 80
+            safe_x = margin + (map_size['width'] - 2 * margin) // 2
+            safe_y = margin + (map_size['height'] - 2 * margin) // 2
+            
+            # Validate coordinates are within bounds
+            if safe_x < margin or safe_x > map_size['width'] - margin:
+                safe_x = map_size['width'] // 2
+            if safe_y < margin or safe_y > map_size['height'] - margin:
+                safe_y = map_size['height'] // 2
+                
+            logger.info(f"📍 Safe coordinates: ({safe_x}, {safe_y}) within {map_size['width']}x{map_size['height']}")
+            return safe_x, safe_y
+            
+        except Exception as e:
+            logger.error(f"❌ Error getting safe coordinates: {e}")
+            return None, None
+
+    def safe_move_to_element_with_offset(self, actions, element, x, y):
+        """Safely move to element with offset validation"""
+        try:
+            element_size = element.size
+            
+            # Validate offsets are within element bounds
+            if x < 0 or x > element_size['width'] or y < 0 or y > element_size['height']:
+                logger.warning(f"⚠️ Invalid offset ({x}, {y}) for element size {element_size}")
+                # Use center of element as fallback
+                x = element_size['width'] // 2
+                y = element_size['height'] // 2
+            
+            actions.move_to_element_with_offset(element, x, y).perform()
+            return True
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Safe move failed: {e}")
+            # Fallback to center of element
+            try:
+                actions.move_to_element(element).perform()
+                return True
+            except:
+                return False
+    
     def crawl_location_with_full_coverage(self, location_name, lat, lng, path):
         """Crawl location with full tile coverage for zoom 10-18"""
         logger.info(f"🎯 FULL COVERAGE CRAWL: {location_name}")
@@ -1118,11 +1275,14 @@ class BrowserGulandCrawler:
         return f"{parsed.scheme}://{parsed.netloc}"
     
     def run_browser_crawl(self):
-        """Run complete browser-based crawl with full coverage"""
+        """Run complete browser-based crawl with full coverage - TIMEOUT PROTECTED"""
         logger.info("🚀 STARTING FULL COVERAGE CRAWL (ZOOM 10-18)")
         logger.info("=" * 70)
         logger.info("🎯 Systematic coverage of all zoom levels 10-18")
         logger.info("=" * 70)
+        
+        crawl_start_time = time.time()
+        max_crawl_time = 3600  # 1 hour total limit
         
         try:
             if not self.setup_driver():
@@ -1133,10 +1293,21 @@ class BrowserGulandCrawler:
             time.sleep(random.uniform(3, 6))
             
             for i, (location_name, lat, lng, path) in enumerate(self.test_locations, 1):
+                # Check global timeout
+                if time.time() - crawl_start_time > max_crawl_time:
+                    logger.warning(f"⏰ Global timeout reached, stopping crawl")
+                    break
+                    
                 logger.info(f"\n🌍 PROCESSING {i}/{len(self.test_locations)}: {location_name}")
                 logger.info("=" * 60)
                 
+                location_start_time = time.time()
+                max_location_time = 600  # 10 minutes per location
+                
                 location_info = self.crawl_location_with_full_coverage(location_name, lat, lng, path)
+                
+                location_elapsed = time.time() - location_start_time
+                logger.info(f"⏱️ {location_name} processed in {location_elapsed:.1f}s")
                 
                 if location_info:
                     self.discovered_data['all_locations'].append(location_info)
@@ -1150,9 +1321,15 @@ class BrowserGulandCrawler:
                 else:
                     logger.warning(f"⚠️ Failed to process {location_name}")
                 
-                # Longer delay between cities for full coverage
+                # Delay between cities
                 if i < len(self.test_locations):
-                    delay = random.uniform(30, 60)
+                    # Check if we have time for next location
+                    remaining_time = max_crawl_time - (time.time() - crawl_start_time)
+                    if remaining_time < 300:  # Less than 5 minutes remaining
+                        logger.warning(f"⏰ Not enough time for next location, stopping")
+                        break
+                        
+                    delay = min(30, remaining_time // 10)  # Adaptive delay
                     logger.info(f"⏳ Waiting {delay:.1f}s before next location...")
                     time.sleep(delay)
             
@@ -1168,6 +1345,9 @@ class BrowserGulandCrawler:
             if self.driver:
                 self.driver.quit()
                 logger.info("🔚 Browser closed")
+            
+            total_elapsed = time.time() - crawl_start_time
+            logger.info(f"⏱️ Total crawl time: {total_elapsed:.1f}s")
     
     def generate_interaction_report(self):
         """Generate report for interaction-based crawling"""
