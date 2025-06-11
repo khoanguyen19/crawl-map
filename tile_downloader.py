@@ -1,554 +1,469 @@
 #!/usr/bin/env python3
 """
-Systematic Tile Downloader for Guland
-Download map tiles based on geocoding data discovered
+Tile Downloader for Guland Maps
+Handles downloading and organizing map tiles
 
-Usage: python tile_downloader.py
+Author: AI Assistant
+Version: 1.0
 """
 
-import requests
-import json
 import os
-import time
-import math
+import requests
+from urllib.parse import urlparse, parse_qs
+import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 from pathlib import Path
 import logging
 from datetime import datetime
-import sqlite3
-import hashlib
-from urllib.parse import urlparse
-import threading
 
-# Setup logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('tile_downloader.log'),
-        logging.StreamHandler()
-    ]
-)
 logger = logging.getLogger(__name__)
 
 class GulandTileDownloader:
-    def __init__(self, data_file='output_geocoding/all_locations_data.json'):
-        self.data_file = data_file
-        self.locations_data = self.load_locations_data()
+    def __init__(self, base_download_dir='downloaded_tiles', max_workers=5, timeout=30):
+        self.base_download_dir = base_download_dir
+        self.max_workers = max_workers
+        self.download_timeout = timeout
         
         # Download statistics
-        self.stats = {
-            'total_downloaded': 0,
+        self.download_stats = {
+            'total_attempted': 0,
+            'total_successful': 0,
             'total_failed': 0,
-            'total_skipped': 0,
-            'start_time': None,
-            'servers_used': set(),
-            'bytes_downloaded': 0
+            'total_bytes': 0
         }
         
-        # Thread-safe session
-        self.session_lock = threading.Lock()
+        # Thread lock for download stats
+        self.download_lock = threading.Lock()
         
-        # Create output structure
-        self.setup_output_directories()
+        # Create base directory
+        os.makedirs(self.base_download_dir, exist_ok=True)
         
-        # Setup database for tracking
-        self.setup_database()
-        
-        # Setup request session
-        self.setup_session()
+        logger.info(f"📥 Tile Downloader initialized: {self.base_download_dir}")
+        logger.info(f"🧵 Max workers: {self.max_workers}, Timeout: {self.download_timeout}s")
     
-    def load_locations_data(self):
-        """Load geocoding data từ previous crawl"""
-        try:
-            with open(self.data_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            locations = data.get('all_locations', [])
-            logger.info(f"✅ Loaded data for {len(locations)} locations")
-            return locations
-            
-        except Exception as e:
-            logger.error(f"❌ Could not load data file {self.data_file}: {e}")
-            return []
-    
-    def setup_output_directories(self):
-        """Create organized directory structure"""
-        self.base_dir = Path('guland_tiles_download')
-        self.base_dir.mkdir(exist_ok=True)
+    def get_tile_type_from_url(self, url):
+        """Enhanced tile type detection for Guland specific map types"""
+        url_lower = url.lower()
         
-        # Create directories for each layer type
-        self.layer_dirs = {
-            'quy_hoach_2030': self.base_dir / 'quy_hoach_2030',
-            'quy_hoach_2025': self.base_dir / 'quy_hoach_2025', 
-            'quy_hoach_phan_khu': self.base_dir / 'quy_hoach_phan_khu',
-            'quy_hoach_xay_dung': self.base_dir / 'quy_hoach_xay_dung',
-            'land_use': self.base_dir / 'land_use',
-            'other': self.base_dir / 'other'
-        }
+        # Guland specific map types based on URL patterns
+        if 'qh-2030' in url_lower or '/qh/' in url_lower:
+            return 'quy_hoach_2030'
+        elif 'qh-2025' in url_lower:
+            return 'ke_hoach_2025'
+        elif 'qhc' in url_lower or 'phan-khu' in url_lower:
+            return 'quy_hoach_phan_khu'
+        elif 'hien-trang' in url_lower or 'current' in url_lower:
+            return 'hien_trang'
         
-        for layer_dir in self.layer_dirs.values():
-            layer_dir.mkdir(exist_ok=True)
-        
-        # Metadata directory
-        self.metadata_dir = self.base_dir / 'metadata'
-        self.metadata_dir.mkdir(exist_ok=True)
-        
-        logger.info(f"📁 Output directory: {self.base_dir}")
-    
-    def setup_database(self):
-        """Setup SQLite database để track downloads"""
-        self.db_path = self.base_dir / 'download_tracking.db'
-        
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute('''
-                CREATE TABLE IF NOT EXISTS tiles (
-                    id INTEGER PRIMARY KEY,
-                    location TEXT,
-                    layer_name TEXT,
-                    layer_type TEXT,
-                    zoom INTEGER,
-                    x INTEGER,
-                    y INTEGER,
-                    url TEXT,
-                    file_path TEXT,
-                    file_size INTEGER,
-                    download_status TEXT,
-                    download_time TIMESTAMP,
-                    hash TEXT,
-                    UNIQUE(location, layer_name, zoom, x, y)
-                )
-            ''')
-            
-            conn.execute('''
-                CREATE INDEX IF NOT EXISTS idx_location_layer 
-                ON tiles(location, layer_name)
-            ''')
-            
-            conn.execute('''
-                CREATE INDEX IF NOT EXISTS idx_download_status 
-                ON tiles(download_status)
-            ''')
-        
-        logger.info("✅ Database setup completed")
-    
-    def setup_session(self):
-        """Setup requests session với proper headers"""
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
-            'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate',
-            'Connection': 'keep-alive',
-            'Referer': 'https://guland.vn/'
-        })
-    
-    def calculate_vietnam_tile_bounds(self, zoom_level):
-        """Calculate tile bounds cho toàn bộ Việt Nam"""
-        # Vietnam bounding box
-        vietnam_bounds = {
-            'north': 23.393395,   # Northernmost point
-            'south': 8.560168,    # Southernmost point  
-            'west': 102.144778,   # Westernmost point
-            'east': 109.464638    # Easternmost point
-        }
-        
-        def deg2num(lat_deg, lon_deg, zoom):
-            lat_rad = math.radians(lat_deg)
-            n = 2.0 ** zoom
-            x = int((lon_deg + 180.0) / 360.0 * n)
-            y = int((1.0 - math.asinh(math.tan(lat_rad)) / math.pi) / 2.0 * n)
-            return (x, y)
-        
-        min_x, max_y = deg2num(vietnam_bounds['north'], vietnam_bounds['west'], zoom_level)
-        max_x, min_y = deg2num(vietnam_bounds['south'], vietnam_bounds['east'], zoom_level)
-        
-        return {
-            'min_x': min_x,
-            'max_x': max_x,
-            'min_y': min_y,
-            'max_y': max_y,
-            'total_tiles': (max_x - min_x + 1) * (max_y - min_y + 1)
-        }
-    
-    def get_layer_directory(self, layer_type, layer_name):
-        """Get appropriate directory cho layer"""
-        layer_name_lower = layer_name.lower()
-        
-        if '2030' in layer_name_lower or 'qh_2030' in layer_type:
-            return self.layer_dirs['quy_hoach_2030']
-        elif '2025' in layer_name_lower or 'kh_2025' in layer_type:
-            return self.layer_dirs['quy_hoach_2025']
-        elif 'phan_khu' in layer_name_lower or 'qhpk' in layer_type:
-            return self.layer_dirs['quy_hoach_phan_khu']
-        elif 'xay_dung' in layer_name_lower or 'qhxd' in layer_type:
-            return self.layer_dirs['quy_hoach_xay_dung']
-        elif 'land' in layer_type or 'dat' in layer_name_lower:
-            return self.layer_dirs['land_use']
+        # Generic detection patterns
+        elif 'satellite' in url_lower or 'sat' in url_lower:
+            return 'satellite'
+        elif 'terrain' in url_lower or 'topo' in url_lower:
+            return 'terrain'
+        elif 'street' in url_lower or 'road' in url_lower:
+            return 'street'
+        elif 'hybrid' in url_lower:
+            return 'hybrid'
+        elif 'planning' in url_lower or 'quy-hoach' in url_lower:
+            return 'planning_generic'
+        elif 'administrative' in url_lower or 'admin' in url_lower:
+            return 'administrative'
         else:
-            return self.layer_dirs['other']
-    
-    def download_single_tile(self, location_name, layer_name, layer_info, zoom, x, y):
-        """Download một tile và save vào database"""
-        
-        # Generate tile URL
-        url_template = layer_info['url']
-        tile_url = url_template.replace('{z}', str(zoom)).replace('{x}', str(x)).replace('{y}', str(y))
-        
-        # Determine file path
-        layer_type = layer_info.get('type', 'unknown')
-        layer_dir = self.get_layer_directory(layer_type, layer_name)
-        
-        location_clean = location_name.replace(' ', '_').replace('-', '_')
-        layer_clean = layer_name.replace(' ', '_').replace('-', '_')
-        
-        tile_filename = f"{location_clean}_{layer_clean}_{zoom}_{x}_{y}.png"
-        tile_path = layer_dir / tile_filename
-        
-        # Check if already downloaded
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute(
-                'SELECT download_status FROM tiles WHERE location=? AND layer_name=? AND zoom=? AND x=? AND y=?',
-                (location_name, layer_name, zoom, x, y)
-            )
-            result = cursor.fetchone()
+            # Try to detect from server domain
+            parsed = urlparse(url)
+            domain = parsed.netloc.lower()
             
-            if result and result[0] == 'success':
-                self.stats['total_skipped'] += 1
-                return 'skipped'
-        
-        try:
-            # Download tile
-            with self.session_lock:
-                response = self.session.get(tile_url, timeout=15)
-            
-            if response.status_code == 200:
-                # Save tile
-                with open(tile_path, 'wb') as f:
-                    f.write(response.content)
-                
-                # Calculate hash
-                file_hash = hashlib.md5(response.content).hexdigest()
-                file_size = len(response.content)
-                
-                # Record in database
-                with sqlite3.connect(self.db_path) as conn:
-                    conn.execute('''
-                        INSERT OR REPLACE INTO tiles 
-                        (location, layer_name, layer_type, zoom, x, y, url, file_path, file_size, download_status, download_time, hash)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    ''', (location_name, layer_name, layer_type, zoom, x, y, tile_url, 
-                          str(tile_path), file_size, 'success', datetime.now().isoformat(), file_hash))
-                
-                # Update stats
-                self.stats['total_downloaded'] += 1
-                self.stats['bytes_downloaded'] += file_size
-                
-                # Track server
-                server = urlparse(tile_url).netloc
-                self.stats['servers_used'].add(server)
-                
-                return 'success'
-                
+            if 'google' in domain:
+                return 'google_maps'
+            elif 'openstreetmap' in domain or 'osm' in domain:
+                return 'openstreetmap'
+            elif 'bing' in domain:
+                return 'bing_maps'
+            elif 'guland' in domain:
+                return 'guland_generic'
             else:
-                # Record failure
-                with sqlite3.connect(self.db_path) as conn:
-                    conn.execute('''
-                        INSERT OR REPLACE INTO tiles 
-                        (location, layer_name, layer_type, zoom, x, y, url, download_status, download_time)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    ''', (location_name, layer_name, layer_type, zoom, x, y, tile_url, 
-                          f'failed_{response.status_code}', datetime.now().isoformat()))
+                return 'unknown'
+    
+    def create_enhanced_directory_structure(self, location_name, tile_info):
+        """Create enhanced directory structure for Vietnamese map types"""
+        # Clean location name for filesystem
+        clean_location = self.clean_filename(location_name)
+        
+        # Extract zoom level info if location_name contains zoom info
+        zoom_info = ""
+        if "_zoom_" in location_name:
+            parts = location_name.split("_zoom_")
+            clean_location = self.clean_filename(parts[0])
+            zoom_info = f"_Z{parts[1]}"
+        
+        # Get tile type
+        tile_type = self.get_tile_type_from_url(tile_info['url'])
+        
+        # Create directory structure with zoom info
+        type_mapping = {
+            'quy_hoach_2030': f'01_Quy_Hoach_2030{zoom_info}',
+            'ke_hoach_2025': f'02_Ke_Hoach_2025{zoom_info}',
+            'quy_hoach_phan_khu': f'03_Quy_Hoach_Phan_Khu{zoom_info}',
+            'hien_trang': f'04_Hien_Trang{zoom_info}',
+            # ... other mappings
+        }
+        
+        folder_name = type_mapping.get(tile_type, f'99_Unknown_{tile_type}{zoom_info}')
+        
+        # Create directory structure: downloaded_tiles/location/map_type_zoom/zoom/
+        base_path = os.path.join(self.base_download_dir, clean_location, folder_name)
+        os.makedirs(base_path, exist_ok=True)
+        
+        return base_path, tile_type
+    
+    def clean_filename(self, filename):
+        """Clean filename for filesystem compatibility"""
+        # Remove/replace invalid characters
+        invalid_chars = '<>:"/\\|?*'
+        for char in invalid_chars:
+            filename = filename.replace(char, '_')
+        
+        # Remove extra spaces and Vietnamese diacritics issues
+        filename = filename.replace(' ', '_').replace('__', '_')
+        return filename.strip('_')
+    
+    def generate_enhanced_tile_filename(self, tile_info, tile_type):
+        """Generate enhanced filename with metadata"""
+        zoom = tile_info['zoom']
+        x = tile_info['x']
+        y = tile_info['y']
+        format_ext = tile_info['format']
+        
+        # Add tile type prefix for better organization
+        type_prefix = {
+            'quy_hoach_2030': 'QH2030',
+            'ke_hoach_2025': 'KH2025',
+            'quy_hoach_phan_khu': 'QHPK',
+            'hien_trang': 'HT'
+        }.get(tile_type, 'TILE')
+        
+        # Standard naming: TYPE_z_x_y.ext
+        return f"{type_prefix}_{zoom}_{x}_{y}.{format_ext}"
+    
+    def validate_image_file(self, filepath):
+        """Validate that downloaded file is a valid image"""
+        try:
+            # Check file size
+            if os.path.getsize(filepath) < 100:  # Too small to be valid image
+                return False
+            
+            # Check file headers
+            with open(filepath, 'rb') as f:
+                header = f.read(16)
                 
-                self.stats['total_failed'] += 1
-                return f'failed_{response.status_code}'
-                
+                # PNG signature
+                if header.startswith(b'\x89PNG\r\n\x1a\n'):
+                    return True
+                # JPEG signature
+                elif header.startswith(b'\xff\xd8\xff'):
+                    return True
+                # WebP signature
+                elif b'WEBP' in header:
+                    return True
+                # TIFF signature
+                elif header.startswith(b'II*\x00') or header.startswith(b'MM\x00*'):
+                    return True
+            
+            return False
+            
         except Exception as e:
-            # Record error
-            with sqlite3.connect(self.db_path) as conn:
-                conn.execute('''
-                    INSERT OR REPLACE INTO tiles 
-                    (location, layer_name, layer_type, zoom, x, y, url, download_status, download_time)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (location_name, layer_name, layer_type, zoom, x, y, tile_url, 
-                      f'error_{str(e)[:50]}', datetime.now().isoformat()))
-            
-            self.stats['total_failed'] += 1
-            return f'error_{str(e)}'
+            logger.warning(f"⚠️ Error validating image file {filepath}: {e}")
+            return False
     
-    def download_layer_tiles(self, location_name, layer_name, layer_info, zoom_range=(10, 16), max_workers=4):
-        """Download tất cả tiles cho một layer"""
-        logger.info(f"🔽 Downloading {layer_name} for {location_name} (zoom {zoom_range[0]}-{zoom_range[1]})")
+    def download_single_tile(self, tile_info, location_name):
+        """Download a single tile with enhanced error handling"""
+        try:
+            url = tile_info['url']
+            
+            # Create enhanced directory structure
+            base_path, tile_type = self.create_enhanced_directory_structure(location_name, tile_info)
+            zoom_path = os.path.join(base_path, str(tile_info['zoom']))
+            os.makedirs(zoom_path, exist_ok=True)
+            
+            # Generate filename with additional metadata
+            filename = self.generate_enhanced_tile_filename(tile_info, tile_type)
+            filepath = os.path.join(zoom_path, filename)
+            
+            # Skip if file already exists and is valid
+            if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
+                logger.info(f"⏭️ Tile already exists: {filename}")
+                return {
+                    'success': True,
+                    'filepath': filepath,
+                    'size': os.path.getsize(filepath),
+                    'tile_type': tile_type,
+                    'skipped': True
+                }
+            
+            # Enhanced headers for Guland tiles
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+                'Accept-Language': 'vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'DNT': '1',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'image',
+                'Sec-Fetch-Mode': 'no-cors',
+                'Sec-Fetch-Site': 'cross-site',
+                'Referer': 'https://guland.vn/',
+                'Origin': 'https://guland.vn'
+            }
+            
+            # Add specific headers for different CDNs
+            if 'digitaloceanspaces.com' in url:
+                headers['Cache-Control'] = 'no-cache'
+            elif 'cmctelecom.vn' in url:
+                headers['X-Requested-With'] = 'XMLHttpRequest'
+            
+            response = requests.get(url, headers=headers, timeout=self.download_timeout, stream=True)
+            response.raise_for_status()
+            
+            # Enhanced content validation
+            content_type = response.headers.get('content-type', '').lower()
+            if not any(img_type in content_type for img_type in ['image/', 'application/octet-stream']):
+                logger.warning(f"⚠️ Non-image response for {filename}: {content_type}")
+                return {'success': False, 'error': f'Non-image content: {content_type}', 'tile_type': tile_type}
+            
+            # Write file with progress tracking
+            total_size = 0
+            with open(filepath, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    if chunk:
+                        f.write(chunk)
+                        total_size += len(chunk)
+            
+            # Validate downloaded file
+            if total_size == 0:
+                os.remove(filepath)
+                return {'success': False, 'error': 'Empty file downloaded', 'tile_type': tile_type}
+            
+            # Additional validation for image files
+            if not self.validate_image_file(filepath):
+                os.remove(filepath)
+                return {'success': False, 'error': 'Invalid image file', 'tile_type': tile_type}
+            
+            logger.info(f"✅ Downloaded: {filename} ({self.format_bytes(total_size)}) - {tile_type}")
+            
+            return {
+                'success': True,
+                'filepath': filepath,
+                'size': total_size,
+                'tile_type': tile_type,
+                'url': url,
+                'skipped': False
+            }
+            
+        except requests.exceptions.RequestException as e:
+            logger.error(f"❌ Download failed for {tile_info.get('url', 'unknown')}: {e}")
+            return {'success': False, 'error': str(e), 'tile_type': tile_type}
+        except Exception as e:
+            logger.error(f"❌ Unexpected error downloading tile: {e}")
+            return {'success': False, 'error': str(e), 'tile_type': tile_type}
+    
+    def download_tiles_batch(self, tile_urls, location_name):
+        """Download tiles in parallel batches"""
+        if not tile_urls:
+            return []
         
-        total_tasks = 0
-        successful_tasks = 0
+        logger.info(f"📥 Starting download of {len(tile_urls)} tiles for {location_name}")
+        logger.info(f"🧵 Using {self.max_workers} parallel workers")
         
-        for zoom in range(zoom_range[0], zoom_range[1] + 1):
-            # Calculate tile bounds for this zoom level
-            bounds = self.calculate_vietnam_tile_bounds(zoom)
+        download_results = []
+        successful_downloads = 0
+        failed_downloads = 0
+        total_bytes = 0
+        
+        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            # Submit all download tasks
+            future_to_tile = {
+                executor.submit(self.download_single_tile, tile_info, location_name): tile_info 
+                for tile_info in tile_urls
+            }
             
-            # Create download tasks
-            tasks = []
-            for x in range(bounds['min_x'], bounds['max_x'] + 1):
-                for y in range(bounds['min_y'], bounds['max_y'] + 1):
-                    tasks.append((location_name, layer_name, layer_info, zoom, x, y))
-            
-            logger.info(f"  Zoom {zoom}: {len(tasks)} tiles to download")
-            total_tasks += len(tasks)
-            
-            # Download tiles với thread pool
-            with ThreadPoolExecutor(max_workers=max_workers) as executor:
-                futures = [executor.submit(self.download_single_tile, *task) for task in tasks]
+            # Process completed downloads
+            for future in as_completed(future_to_tile):
+                tile_info = future_to_tile[future]
                 
-                completed = 0
-                for future in as_completed(futures):
+                try:
                     result = future.result()
-                    completed += 1
+                    download_results.append(result)
                     
-                    if result == 'success':
-                        successful_tasks += 1
-                    
-                    # Progress update
-                    if completed % 100 == 0:
-                        logger.info(f"    Progress: {completed}/{len(tasks)} tiles ({completed/len(tasks)*100:.1f}%)")
-                    
-                    # Rate limiting
-                    time.sleep(0.1)
+                    if result['success']:
+                        successful_downloads += 1
+                        total_bytes += result['size']
+                        
+                        if not result.get('skipped', False):
+                            logger.info(f"✅ {successful_downloads}/{len(tile_urls)}: {tile_info['zoom']}/{tile_info['x']}/{tile_info['y']}")
+                    else:
+                        failed_downloads += 1
+                        logger.warning(f"❌ Failed: {tile_info['zoom']}/{tile_info['x']}/{tile_info['y']} - {result.get('error', 'Unknown error')}")
+                        
+                except Exception as e:
+                    failed_downloads += 1
+                    logger.error(f"❌ Download task failed: {e}")
+                    download_results.append({'success': False, 'error': str(e)})
         
-        logger.info(f"✅ Completed {layer_name}: {successful_tasks}/{total_tasks} successful")
-        return successful_tasks, total_tasks
+        # Update global stats
+        with self.download_lock:
+            self.download_stats['total_attempted'] += len(tile_urls)
+            self.download_stats['total_successful'] += successful_downloads
+            self.download_stats['total_failed'] += failed_downloads
+            self.download_stats['total_bytes'] += total_bytes
+        
+        # Log summary
+        logger.info(f"📊 Download Summary for {location_name}:")
+        logger.info(f"  ✅ Successful: {successful_downloads}")
+        logger.info(f"  ❌ Failed: {failed_downloads}")
+        logger.info(f"  📁 Total size: {self.format_bytes(total_bytes)}")
+        
+        # Group by tile type for reporting
+        tile_types = {}
+        for result in download_results:
+            if result['success'] and 'tile_type' in result:
+                tile_type = result['tile_type']
+                if tile_type not in tile_types:
+                    tile_types[tile_type] = {'count': 0, 'size': 0}
+                tile_types[tile_type]['count'] += 1
+                tile_types[tile_type]['size'] += result['size']
+        
+        logger.info("📂 Downloaded by tile type:")
+        for tile_type, stats in tile_types.items():
+            logger.info(f"  • {tile_type}: {stats['count']} tiles ({self.format_bytes(stats['size'])})")
+        
+        return download_results
     
-    def download_location_data(self, location_data, zoom_range=(10, 16), selected_layers=None):
-        """Download tất cả data cho một location"""
-        location_name = location_data['location_name']
-        layers = location_data['layers']
-        
-        logger.info(f"📍 Processing location: {location_name} ({len(layers)} layers)")
-        
-        location_stats = {
-            'location': location_name,
-            'total_layers': len(layers),
-            'processed_layers': 0,
-            'successful_downloads': 0,
-            'total_attempts': 0
-        }
-        
-        for layer_name, layer_info in layers.items():
-            if selected_layers and layer_name not in selected_layers:
-                continue
-            
-            try:
-                successful, total = self.download_layer_tiles(
-                    location_name, layer_name, layer_info, zoom_range
-                )
-                
-                location_stats['processed_layers'] += 1
-                location_stats['successful_downloads'] += successful
-                location_stats['total_attempts'] += total
-                
-            except Exception as e:
-                logger.error(f"❌ Error processing layer {layer_name}: {e}")
-        
-        return location_stats
+    def format_bytes(self, bytes_count):
+        """Format bytes to human readable format"""
+        for unit in ['B', 'KB', 'MB', 'GB']:
+            if bytes_count < 1024.0:
+                return f"{bytes_count:.1f} {unit}"
+            bytes_count /= 1024.0
+        return f"{bytes_count:.1f} TB"
     
-    def generate_download_report(self):
-        """Generate báo cáo download"""
-        logger.info("📊 Generating download report...")
-        
-        # Get statistics from database
-        with sqlite3.connect(self.db_path) as conn:
-            # Overall stats
-            cursor = conn.execute('SELECT download_status, COUNT(*) FROM tiles GROUP BY download_status')
-            status_counts = dict(cursor.fetchall())
-            
-            # Size statistics
-            cursor = conn.execute('SELECT SUM(file_size) FROM tiles WHERE download_status = "success"')
-            total_size = cursor.fetchone()[0] or 0
-            
-            # Layer statistics
-            cursor = conn.execute('SELECT layer_type, COUNT(*) FROM tiles GROUP BY layer_type')
-            layer_counts = dict(cursor.fetchall())
-            
-            # Location statistics
-            cursor = conn.execute('SELECT location, COUNT(*) FROM tiles GROUP BY location')
-            location_counts = dict(cursor.fetchall())
-        
-        # Calculate time elapsed
-        time_elapsed = time.time() - self.stats['start_time'] if self.stats['start_time'] else 0
-        
-        report = {
-            'timestamp': datetime.now().isoformat(),
-            'download_statistics': {
-                'total_downloaded': status_counts.get('success', 0),
-                'total_failed': sum(count for status, count in status_counts.items() 
-                                  if status != 'success' and status != 'skipped'),
-                'total_skipped': status_counts.get('skipped', 0),
-                'total_size_bytes': total_size,
-                'total_size_mb': round(total_size / (1024 * 1024), 2),
-                'time_elapsed_seconds': round(time_elapsed, 2),
-                'download_rate_tiles_per_minute': round((status_counts.get('success', 0) / (time_elapsed / 60)), 2) if time_elapsed > 0 else 0
-            },
-            'layer_statistics': layer_counts,
-            'location_statistics': location_counts,
-            'servers_used': list(self.stats['servers_used']),
-            'status_breakdown': status_counts
-        }
-        
-        # Save report
-        with open(self.base_dir / 'download_report.json', 'w', encoding='utf-8') as f:
-            json.dump(report, f, indent=2, ensure_ascii=False)
-        
-        # Generate text report
-        self.generate_text_report(report)
-        
-        return report
-    
-    def generate_text_report(self, report):
-        """Generate human-readable report"""
-        stats = report['download_statistics']
-        
-        text = f"""
-# GULAND TILE DOWNLOAD REPORT
-Generated: {report['timestamp']}
-
-## 📊 DOWNLOAD STATISTICS
-✅ Successfully Downloaded: {stats['total_downloaded']:,} tiles
-❌ Failed Downloads: {stats['total_failed']:,} tiles  
-⏭️ Skipped (already exists): {stats['total_skipped']:,} tiles
-💾 Total Size: {stats['total_size_mb']:,.2f} MB
-⏱️ Time Elapsed: {stats['time_elapsed_seconds']:,.1f} seconds
-🚀 Download Rate: {stats['download_rate_tiles_per_minute']:,.1f} tiles/minute
-
-## 🗺️ LAYER BREAKDOWN
-"""
-        
-        for layer_type, count in report['layer_statistics'].items():
-            text += f"• {layer_type}: {count:,} tiles\n"
-        
-        text += "\n## 📍 TOP LOCATIONS BY TILES\n"
-        sorted_locations = sorted(report['location_statistics'].items(), 
-                                key=lambda x: x[1], reverse=True)
-        
-        for location, count in sorted_locations[:10]:
-            text += f"• {location}: {count:,} tiles\n"
-        
-        text += f"\n## 🌐 TILE SERVERS USED\n"
-        for server in report['servers_used']:
-            text += f"• {server}\n"
-        
-        text += f"\n## 📁 OUTPUT STRUCTURE\n"
-        text += f"• guland_tiles_download/quy_hoach_2030/ - Planning 2030 tiles\n"
-        text += f"• guland_tiles_download/quy_hoach_2025/ - Planning 2025 tiles\n"
-        text += f"• guland_tiles_download/quy_hoach_phan_khu/ - Zoning tiles\n"
-        text += f"• guland_tiles_download/quy_hoach_xay_dung/ - Construction planning tiles\n"
-        text += f"• guland_tiles_download/land_use/ - Land use tiles\n"
-        text += f"• guland_tiles_download/metadata/ - Download metadata\n"
-        
-        with open(self.base_dir / 'download_report.txt', 'w', encoding='utf-8') as f:
-            f.write(text)
-    
-    def run_systematic_download(self, selected_locations=None, zoom_range=(10, 16), 
-                              selected_layers=None, max_concurrent_locations=2):
-        """Run systematic download cho tất cả locations"""
-        logger.info("🚀 STARTING SYSTEMATIC TILE DOWNLOAD")
-        logger.info("=" * 70)
-        
-        self.stats['start_time'] = time.time()
-        
-        if not self.locations_data:
-            logger.error("❌ No location data loaded!")
+    def generate_download_report(self, location_name, download_results):
+        """Generate enhanced download report with Vietnamese map types"""
+        if not download_results:
             return
         
-        # Filter locations if specified
-        if selected_locations:
-            locations_to_process = [loc for loc in self.locations_data 
-                                  if loc['location_name'] in selected_locations]
-        else:
-            locations_to_process = self.locations_data
+        successful = [r for r in download_results if r['success']]
+        failed = [r for r in download_results if not r['success']]
         
-        logger.info(f"📍 Processing {len(locations_to_process)} locations")
-        logger.info(f"🎯 Zoom range: {zoom_range[0]}-{zoom_range[1]}")
+        # Group by tile type
+        tile_type_stats = {}
+        for result in successful:
+            if 'tile_type' in result:
+                tile_type = result['tile_type']
+                if tile_type not in tile_type_stats:
+                    tile_type_stats[tile_type] = {
+                        'count': 0,
+                        'size': 0,
+                        'zoom_levels': set()
+                    }
+                tile_type_stats[tile_type]['count'] += 1
+                tile_type_stats[tile_type]['size'] += result['size']
+                
+                # Extract zoom from filepath if available
+                if 'filepath' in result:
+                    try:
+                        zoom = result['filepath'].split('/')[-2]  # zoom folder
+                        tile_type_stats[tile_type]['zoom_levels'].add(zoom)
+                    except:
+                        pass
         
-        all_location_stats = []
+        # Generate detailed report
+        report_lines = []
+        report_lines.append(f"# CHI TIẾT TẢI XUỐNG BÌNH ĐỒ: {location_name}")
+        report_lines.append(f"Được tạo: {datetime.now().isoformat()}")
+        report_lines.append("")
         
-        # Process locations
-        for i, location_data in enumerate(locations_to_process, 1):
-            logger.info(f"\n📍 Location {i}/{len(locations_to_process)}: {location_data['location_name']}")
+        report_lines.append("## 📊 TỔNG QUAN")
+        report_lines.append(f"• Tổng số tile thử tải: {len(download_results)}")
+        report_lines.append(f"• Tải thành công: {len(successful)}")
+        report_lines.append(f"• Tải thất bại: {len(failed)}")
+        report_lines.append(f"• Tỷ lệ thành công: {(len(successful)/len(download_results)*100):.1f}%")
+        
+        if successful:
+            total_size = sum(r['size'] for r in successful)
+            report_lines.append(f"• Tổng dung lượng: {self.format_bytes(total_size)}")
+        
+        report_lines.append("")
+        
+        # Detailed breakdown by map type
+        if tile_type_stats:
+            report_lines.append("## 🗺️ CHI TIẾT THEO LOẠI BẢN ĐỒ")
             
-            try:
-                location_stats = self.download_location_data(
-                    location_data, zoom_range, selected_layers
-                )
-                all_location_stats.append(location_stats)
+            # Sort by tile type for better presentation
+            type_names = {
+                'quy_hoach_2030': 'Quy Hoạch 2030',
+                'ke_hoach_2025': 'Kế Hoạch 2025',
+                'quy_hoach_phan_khu': 'Quy Hoạch Phân Khu',
+                'hien_trang': 'Hiện Trạng',
+                'satellite': 'Bản đồ vệ tinh',
+                'terrain': 'Bản đồ địa hình',
+                'street': 'Bản đồ đường phố'
+            }
+            
+            for tile_type, stats in sorted(tile_type_stats.items()):
+                readable_name = type_names.get(tile_type, tile_type.replace('_', ' ').title())
+                zoom_levels = sorted(list(stats['zoom_levels']))
                 
-                # Print progress
-                logger.info(f"✅ Completed {location_data['location_name']}: "
-                          f"{location_stats['successful_downloads']}/{location_stats['total_attempts']} tiles")
-                
-            except Exception as e:
-                logger.error(f"❌ Failed to process {location_data['location_name']}: {e}")
+                report_lines.append(f"### {readable_name}")
+                report_lines.append(f"• Số tile: {stats['count']}")
+                report_lines.append(f"• Dung lượng: {self.format_bytes(stats['size'])}")
+                report_lines.append(f"• Mức zoom: {', '.join(zoom_levels)}")
+                report_lines.append("")
         
-        # Generate final report
-        logger.info("\n📊 Generating final report...")
-        report = self.generate_download_report()
+        # Error analysis
+        if failed:
+            report_lines.append("## ❌ PHÂN TÍCH LỖI")
+            error_counts = {}
+            for result in failed:
+                error = result.get('error', 'Lỗi không xác định')
+                tile_type = result.get('tile_type', 'unknown')
+                error_key = f"{tile_type}: {error}"
+                error_counts[error_key] = error_counts.get(error_key, 0) + 1
+            
+            for error, count in sorted(error_counts.items()):
+                report_lines.append(f"• {error}: {count} tile(s)")
         
-        # Print summary
-        print(f"\n🎉 SYSTEMATIC DOWNLOAD COMPLETED!")
-        print("=" * 70)
-        print(f"📊 Final Statistics:")
-        print(f"  • Total Downloaded: {report['download_statistics']['total_downloaded']:,} tiles")
-        print(f"  • Total Size: {report['download_statistics']['total_size_mb']:,.2f} MB")
-        print(f"  • Time Elapsed: {report['download_statistics']['time_elapsed_seconds']:,.1f} seconds")
-        print(f"  • Download Rate: {report['download_statistics']['download_rate_tiles_per_minute']:,.1f} tiles/min")
+        # Directory structure info
+        report_lines.append("")
+        report_lines.append("## 📁 CẤU TRÚC THƯ MỤC")
+        report_lines.append("```")
+        report_lines.append(f"downloaded_tiles/")
+        report_lines.append(f"└── {self.clean_filename(location_name)}/")
         
-        print(f"\n📁 Check '{self.base_dir}' for:")
-        print("  • Downloaded tiles organized by layer type")
-        print("  • download_report.txt (summary)")
-        print("  • download_tracking.db (detailed tracking)")
+        for tile_type in sorted(tile_type_stats.keys()):
+            type_folder = {
+                'quy_hoach_2030': '01_Quy_Hoach_2030',
+                'ke_hoach_2025': '02_Ke_Hoach_2025',
+                'quy_hoach_phan_khu': '03_Quy_Hoach_Phan_Khu'
+            }.get(tile_type, f'99_{tile_type}')
+            
+            report_lines.append(f"    ├── {type_folder}/")
+            
+            # Show zoom levels for this type
+            stats = tile_type_stats[tile_type]
+            for zoom in sorted(stats['zoom_levels']):
+                report_lines.append(f"    │   └── {zoom}/")
         
-        return report
-
-def main():
-    """Main function"""
-    print("🔽 GULAND SYSTEMATIC TILE DOWNLOADER")
-    print("Downloads map tiles based on geocoding discovery")
-    print("=" * 70)
-    
-    # Check if geocoding data exists
-    if not os.path.exists('output_geocoding/all_locations_data.json'):
-        print("❌ Geocoding data not found!")
-        print("Please run the geocoding crawler first:")
-        print("python geocoding_crawler.py")
-        return
-    
-    downloader = GulandTileDownloader()
-    
-    if not downloader.locations_data:
-        print("❌ No location data loaded!")
-        return
-    
-    print(f"✅ Loaded data for {len(downloader.locations_data)} locations")
-    
-    # Configuration
-    zoom_range = (10, 14)  # Start conservative  
-    selected_locations = None  # Download all locations
-    # selected_locations = ["Đà Nẵng", "Hà Nội"]  # Or specify specific locations
-    
-    try:
-        report = downloader.run_systematic_download(
-            selected_locations=selected_locations,
-            zoom_range=zoom_range
-        )
+        report_lines.append("```")
         
-        print("\n✅ Download completed successfully!")
-        print("💡 You now have systematic backup of Guland map data!")
+        # Save report
+        clean_location = self.clean_filename(location_name)
+        report_path = os.path.join(self.base_download_dir, clean_location, 'chi_tiet_tai_xuong.txt')
+        os.makedirs(os.path.dirname(report_path), exist_ok=True)
         
-    except KeyboardInterrupt:
-        print("\n⏹️ Download interrupted by user")
-        print("💡 Progress has been saved. You can resume later.")
-    except Exception as e:
-        print(f"\n❌ Download failed: {e}")
-
-if __name__ == "__main__":
-    main()
+        with open(report_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(report_lines))
+        
+        logger.info(f"📋 Báo cáo chi tiết đã lưu: {report_path}")
+        return report_path

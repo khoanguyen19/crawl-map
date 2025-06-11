@@ -21,6 +21,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from tile_downloader import GulandTileDownloader
 
 # Setup logging
 logging.basicConfig(
@@ -34,7 +35,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class BrowserGulandCrawler:
-    def __init__(self, headless=False):
+    def __init__(self, headless=False, enable_download=True, download_workers=5):
         self.driver = None
         self.headless = headless
         self.discovered_data = {
@@ -44,6 +45,19 @@ class BrowserGulandCrawler:
             'success_count': 0,
             'failure_count': 0
         }
+        
+        # Initialize tile downloader
+        self.enable_download = enable_download
+        if self.enable_download:
+            self.tile_downloader = GulandTileDownloader(
+                base_download_dir='downloaded_tiles',
+                max_workers=download_workers,
+                timeout=30
+            )
+            logger.info(f"📥 Tile download enabled with {download_workers} workers")
+        else:
+            self.tile_downloader = None
+            logger.info("⏭️ Tile download disabled")
         
         # Create output directories
         os.makedirs('output_browser_crawl', exist_ok=True)
@@ -246,7 +260,7 @@ class BrowserGulandCrawler:
         return tile_urls, tile_patterns
     
     def systematic_zoom_coverage(self, location_name, lat, lng, duration_per_zoom=30):
-        """Systematically cover all zoom levels 10-18 - FIXED VERSION"""
+        """Systematically cover all zoom levels 10-18 with IMMEDIATE DOWNLOAD"""
         logger.info(f"🎯 Starting systematic zoom coverage for {location_name}")
         
         zoom_levels = list(range(10, 19))  # 10 to 18
@@ -255,41 +269,41 @@ class BrowserGulandCrawler:
         for zoom_index, zoom in enumerate(zoom_levels):
             logger.info(f"🔍 Processing zoom level {zoom} ({zoom_index+1}/{len(zoom_levels)})")
             
-            zoom_start_time = time.time()
-            
             try:
                 # Clear network logs for this zoom level
                 self.driver.get_log('performance')
                 
-                # Set specific zoom level via JavaScript
+                # Set specific zoom level
                 zoom_success = self.set_map_zoom(zoom)
                 if not zoom_success:
-                    logger.warning(f"⚠️ Could not set zoom {zoom}, using interaction")
                     self.simulate_zoom_interaction(zoom)
                 
                 # Wait for tiles to load at this zoom
                 time.sleep(3)
                 
-                # FIXED: Reduced duration per zoom to prevent infinite loop
-                actual_duration = min(duration_per_zoom, 25)  # Max 25 seconds per zoom
-                
-                # Perform comprehensive map coverage at this zoom
+                # Perform coverage at this zoom
+                actual_duration = min(duration_per_zoom, 25)
                 tiles_at_zoom = self.comprehensive_map_coverage(zoom, actual_duration)
                 
                 if tiles_at_zoom:
                     all_captured_tiles.extend(tiles_at_zoom)
                     logger.info(f"✅ Zoom {zoom}: Found {len(tiles_at_zoom)} tiles")
+                    
+                    # ===== NEW: DOWNLOAD TILES IMMEDIATELY =====
+                    if self.enable_download and self.tile_downloader:
+                        logger.info(f"📥 Downloading {len(tiles_at_zoom)} tiles from zoom {zoom}...")
+                        download_results = self.tile_downloader.download_tiles_batch(
+                            tiles_at_zoom, 
+                            f"{location_name}_zoom_{zoom}"
+                        )
+                        
+                        successful = len([r for r in download_results if r['success']])
+                        logger.info(f"✅ Downloaded {successful}/{len(tiles_at_zoom)} tiles from zoom {zoom}")
+                    
                 else:
                     logger.warning(f"⚠️ Zoom {zoom}: No tiles found")
                 
-                # FIXED: Brief pause between zoom levels
                 time.sleep(2)
-                
-                # FIXED: Add safety timeout check
-                zoom_elapsed = time.time() - zoom_start_time
-                if zoom_elapsed > 60:  # Max 1 minute per zoom level
-                    logger.warning(f"⚠️ Zoom {zoom} timeout after {zoom_elapsed:.1f}s")
-                    break
                 
             except Exception as e:
                 logger.error(f"❌ Error at zoom {zoom}: {e}")
@@ -299,13 +313,18 @@ class BrowserGulandCrawler:
         return all_captured_tiles
 
     def generate_final_report(self):
-        """Generate final comprehensive report"""
+        """Generate final comprehensive report WITH DOWNLOAD STATS"""
         logger.info("📊 Generating final comprehensive report...")
+        
+        # Get download stats from tile downloader
+        download_stats = self.tile_downloader.download_stats if self.tile_downloader else {
+            'total_attempted': 0, 'total_successful': 0, 'total_failed': 0, 'total_bytes': 0
+        }
         
         report = {
             'timestamp': datetime.now().isoformat(),
-            'crawler': 'Full Coverage Guland Crawler v5.0',
-            'method': 'Systematic zoom coverage 10-18 + Map interaction',
+            'crawler': 'Full Coverage Guland Crawler v6.0 (With Download)',
+            'method': 'Systematic zoom coverage 10-18 + Map interaction + Tile download',
             'summary': {
                 'total_attempted': len(self.test_locations),
                 'total_successful': self.discovered_data['success_count'],
@@ -314,6 +333,7 @@ class BrowserGulandCrawler:
                 'unique_tile_patterns': len(self.discovered_data['tile_patterns']),
                 'tile_servers': len(self.discovered_data['tile_servers'])
             },
+            'download_summary': download_stats,
             'tile_patterns': list(self.discovered_data['tile_patterns']),
             'tile_servers': list(self.discovered_data['tile_servers']),
             'successful_locations': self.discovered_data['all_locations']
@@ -325,19 +345,26 @@ class BrowserGulandCrawler:
         
         # Generate text summary
         text_report = f"""
-    # FULL COVERAGE GULAND CRAWLER FINAL REPORT
-    Generated: {report['timestamp']}
-    Method: Systematic zoom coverage 10-18 + Map interaction
+# FULL COVERAGE GULAND CRAWLER FINAL REPORT (WITH DOWNLOADS)
+Generated: {report['timestamp']}
+Method: Systematic zoom coverage 10-18 + Map interaction + Tile download
 
-    ## 📊 SUMMARY
-    • Total Attempted: {report['summary']['total_attempted']}
-    • Total Successful: {report['summary']['total_successful']}
-    • Success Rate: {report['summary']['success_rate']:.1f}%
-    • Unique Tile Patterns: {report['summary']['unique_tile_patterns']}
-    • Tile Servers: {report['summary']['tile_servers']}
+## 📊 CRAWL SUMMARY
+• Total Attempted: {report['summary']['total_attempted']}
+• Total Successful: {report['summary']['total_successful']}
+• Success Rate: {report['summary']['success_rate']:.1f}%
+• Unique Tile Patterns: {report['summary']['unique_tile_patterns']}
+• Tile Servers: {report['summary']['tile_servers']}
 
-    ## 🎯 TILE PATTERNS DISCOVERED
-    """
+## 📥 DOWNLOAD SUMMARY
+• Total tiles attempted: {report['download_summary']['total_attempted']}
+• Successful downloads: {report['download_summary']['total_successful']}
+• Failed downloads: {report['download_summary']['total_failed']}
+• Download success rate: {(report['download_summary']['total_successful']/report['download_summary']['total_attempted']*100) if report['download_summary']['total_attempted'] > 0 else 0:.1f}%
+• Total downloaded: {self.tile_downloader.format_bytes(report['download_summary']['total_bytes']) if self.tile_downloader else '0 B'}
+
+## 🎯 TILE PATTERNS DISCOVERED
+"""
         
         for pattern in report['tile_patterns']:
             text_report += f"• {pattern}\n"
@@ -346,13 +373,17 @@ class BrowserGulandCrawler:
         for server in report['tile_servers']:
             text_report += f"• {server}\n"
         
-        # Add location details
+        # Add location details with download stats
         text_report += f"\n## 📍 LOCATION DETAILS\n"
         for location in report['successful_locations']:
             text_report += f"### {location['location_name']}\n"
-            text_report += f"• Total tiles: {location['total_tiles']}\n"
-            text_report += f"• Zoom levels: {len(location['zoom_levels'])}\n"
-            text_report += f"• Patterns: {len(location['tile_patterns'])}\n\n"
+            text_report += f"• Tiles found: {location['tile_count']}\n"
+            text_report += f"• Patterns: {len(location['tile_patterns'])}\n"
+            if location.get('download_stats'):
+                ds = location['download_stats']
+                formatted_size = self.tile_downloader.format_bytes(ds['total_size']) if self.tile_downloader else f"{ds['total_size']} bytes"
+                text_report += f"• Downloads: {ds['successful']}/{ds['attempted']} ({formatted_size})\n"
+            text_report += "\n"
         
         with open('output_browser_crawl/full_coverage_final_report.txt', 'w', encoding='utf-8') as f:
             f.write(text_report)
@@ -360,14 +391,24 @@ class BrowserGulandCrawler:
         logger.info("✅ Final report generated")
         
         # Print summary to console
-        print(f"\n🎉 FULL COVERAGE CRAWL COMPLETED!")
-        print("=" * 50)
-        print(f"📊 Results:")
+        print(f"\n🎉 FULL COVERAGE CRAWL WITH DOWNLOADS COMPLETED!")
+        print("=" * 60)
+        print(f"📊 Crawl Results:")
         print(f"  • Locations attempted: {report['summary']['total_attempted']}")
         print(f"  • Locations successful: {report['summary']['total_successful']}")
         print(f"  • Success rate: {report['summary']['success_rate']:.1f}%")
         print(f"  • Unique tile patterns: {report['summary']['unique_tile_patterns']}")
         print(f"  • Tile servers: {report['summary']['tile_servers']}")
+        
+        print(f"\n📥 Download Results:")
+        print(f"  • Tiles attempted: {report['download_summary']['total_attempted']}")
+        print(f"  • Tiles downloaded: {report['download_summary']['total_successful']}")
+        print(f"  • Download success rate: {(report['download_summary']['total_successful']/report['download_summary']['total_attempted']*100) if report['download_summary']['total_attempted'] > 0 else 0:.1f}%")
+        formatted_size = self.tile_downloader.format_bytes(report['download_summary']['total_bytes']) if self.tile_downloader else '0 B'
+        print(f"  • Total size: {formatted_size}")
+        
+        if self.tile_downloader:
+            print(f"\n📁 Downloaded tiles are stored in: {self.tile_downloader.base_download_dir}/")
         
         return report
     
@@ -739,8 +780,8 @@ class BrowserGulandCrawler:
                 return False
     
     def crawl_location_with_full_coverage(self, location_name, lat, lng, path):
-        """Crawl location with full tile coverage for zoom 10-18"""
-        logger.info(f"🎯 FULL COVERAGE CRAWL: {location_name}")
+        """Crawl location with full tile coverage for zoom 10-18 - IMMEDIATE DOWNLOAD VERSION"""
+        logger.info(f"🎯 FULL COVERAGE CRAWL WITH IMMEDIATE DOWNLOAD: {location_name}")
         logger.info("=" * 60)
         
         try:
@@ -751,12 +792,11 @@ class BrowserGulandCrawler:
             # Take initial screenshot
             screenshot_path = f"output_browser_crawl/screenshots/{location_name.replace(' ', '_')}_initial.png"
             self.driver.save_screenshot(screenshot_path)
-            logger.info(f"📸 Initial screenshot: {screenshot_path}")
             
             # Detect city boundaries
             bounds = self.detect_city_boundaries(location_name)
             
-            # Start comprehensive coverage
+            # Initialize tracking data
             all_tiles_data = {
                 'location_name': location_name,
                 'coordinates': {'lat': lat, 'lng': lng},
@@ -766,26 +806,26 @@ class BrowserGulandCrawler:
                 'total_tiles': 0,
                 'tile_patterns': set(),
                 'tile_servers': set(),
-                'coverage_analysis': {},
+                'download_summary': {
+                    'total_attempted': 0,
+                    'total_successful': 0,
+                    'total_failed': 0,
+                    'total_bytes': 0
+                },
                 'timestamp': datetime.now().isoformat()
             }
             
-            # Systematic zoom coverage 10-18
+            # Systematic zoom coverage with immediate download
             zoom_levels = list(range(10, 19))
             
             for zoom in zoom_levels:
-                logger.info(f"\n🔍 ZOOM LEVEL {zoom} COVERAGE")
-                logger.info("-" * 40)
-                
-                # Calculate expected tile coverage
-                if bounds:
-                    coverage_info = self.calculate_tile_coverage_needed(bounds, zoom)
-                    all_tiles_data['coverage_analysis'][zoom] = coverage_info
+                logger.info(f"\n🔍 ZOOM LEVEL {zoom} COVERAGE WITH IMMEDIATE DOWNLOAD")
+                logger.info("-" * 50)
                 
                 # Clear network logs
                 self.driver.get_log('performance')
                 
-                # Perform systematic coverage at this zoom
+                # Perform coverage at this zoom
                 tiles_at_zoom = self.systematic_zoom_coverage(location_name, lat, lng, duration_per_zoom=45)
                 
                 if tiles_at_zoom:
@@ -799,7 +839,7 @@ class BrowserGulandCrawler:
                             zoom_servers.add(self.extract_server_from_url(tile['url']))
                     
                     all_tiles_data['zoom_levels'][zoom] = {
-                        'tiles': tiles_at_zoom,
+                        'tiles': [t for t in tiles_at_zoom if t['zoom'] == zoom],
                         'tile_count': len([t for t in tiles_at_zoom if t['zoom'] == zoom]),
                         'patterns': list(zoom_patterns),
                         'servers': list(zoom_servers)
@@ -809,7 +849,7 @@ class BrowserGulandCrawler:
                     all_tiles_data['tile_servers'].update(zoom_servers)
                     all_tiles_data['total_tiles'] += len([t for t in tiles_at_zoom if t['zoom'] == zoom])
                     
-                    logger.info(f"✅ Zoom {zoom}: {len([t for t in tiles_at_zoom if t['zoom'] == zoom])} tiles, {len(zoom_patterns)} patterns")
+                    logger.info(f"✅ Zoom {zoom}: {len([t for t in tiles_at_zoom if t['zoom'] == zoom])} tiles processed")
                 else:
                     logger.warning(f"⚠️ Zoom {zoom}: No tiles captured")
             
@@ -817,19 +857,16 @@ class BrowserGulandCrawler:
             all_tiles_data['tile_patterns'] = list(all_tiles_data['tile_patterns'])
             all_tiles_data['tile_servers'] = list(all_tiles_data['tile_servers'])
             
+            # Get final download stats from tile downloader
+            if self.tile_downloader:
+                all_tiles_data['download_summary'] = self.tile_downloader.download_stats.copy()
+            
             # Save comprehensive results
             results_path = f"output_browser_crawl/full_coverage_{location_name.replace(' ', '_')}.json"
             with open(results_path, 'w', encoding='utf-8') as f:
                 json.dump(all_tiles_data, f, indent=2, ensure_ascii=False)
             
             logger.info(f"💾 Full coverage results saved: {results_path}")
-            
-            # Generate coverage report
-            self.generate_coverage_report(all_tiles_data)
-            
-            # Final screenshot
-            final_screenshot = f"output_browser_crawl/screenshots/{location_name.replace(' ', '_')}_final.png"
-            self.driver.save_screenshot(final_screenshot)
             
             if all_tiles_data['total_tiles'] > 0:
                 self.discovered_data['success_count'] += 1
@@ -1178,7 +1215,7 @@ class BrowserGulandCrawler:
             logger.error(f"❌ Error triggering tile loading: {e}")
     
     def crawl_location_with_interaction(self, location_name, lat, lng, path):
-        """Crawl location by simulating user interaction"""
+        """Crawl location by simulating user interaction WITH TILE DOWNLOAD"""
         logger.info(f"📍 Crawling {location_name} via user interaction...")
         
         try:
@@ -1212,6 +1249,15 @@ class BrowserGulandCrawler:
             logger.info(f"🎯 Found {len(tile_urls)} tile requests")
             logger.info(f"🎯 Found {len(tile_patterns)} unique tile patterns")
             
+            # ====== NEW: DOWNLOAD TILES ======
+            download_results = []
+            if tile_urls and self.enable_download and self.tile_downloader:
+                logger.info(f"📥 Starting tile download for {location_name}...")
+                download_results = self.tile_downloader.download_tiles_batch(tile_urls, location_name)
+                
+                # Generate download report
+                self.tile_downloader.generate_download_report(location_name, download_results)
+            
             # Take final screenshot
             final_screenshot = f"output_browser_crawl/screenshots/{location_name.replace(' ', '_')}_final.png"
             self.driver.save_screenshot(final_screenshot)
@@ -1227,7 +1273,12 @@ class BrowserGulandCrawler:
                         'tile_requests': len(tile_urls),
                         'tile_patterns': list(tile_patterns),
                         'all_requests': all_requests,
-                        'tile_urls': tile_urls
+                        'tile_urls': tile_urls,
+                        'download_summary': {
+                            'total_attempted': len(download_results),
+                            'successful': len([r for r in download_results if r['success']]),
+                            'failed': len([r for r in download_results if not r['success']])
+                        } if download_results else None
                     }, f, indent=2, ensure_ascii=False)
                 
                 logger.info(f"💾 Network log saved: {network_log_path}")
@@ -1241,7 +1292,13 @@ class BrowserGulandCrawler:
                     'tile_count': len(tile_urls),
                     'tile_servers': list(set([self.extract_server_from_url(url['url']) for url in tile_urls])),
                     'zoom_levels': list(set([url['zoom'] for url in tile_urls])),
-                    'timestamp': datetime.now().isoformat()
+                    'timestamp': datetime.now().isoformat(),
+                    'download_stats': {
+                        'attempted': len(download_results),
+                        'successful': len([r for r in download_results if r['success']]),
+                        'failed': len([r for r in download_results if not r['success']]),
+                        'total_size': sum(r.get('size', 0) for r in download_results if r['success'])
+                    } if download_results else None
                 }
                 
                 # Update discovered data
@@ -1267,7 +1324,7 @@ class BrowserGulandCrawler:
             logger.error(f"❌ Error crawling {location_name}: {e}")
             self.discovered_data['failure_count'] += 1
             return None
-    
+
     def extract_server_from_url(self, url):
         """Extract server base URL from tile URL"""
         from urllib.parse import urlparse
@@ -1429,27 +1486,47 @@ Method: Map interaction simulation + Network request capture
             return False
 
 def main():
-    """Main function"""
-    print("🎮 USER INTERACTION-BASED GULAND CRAWLER")
-    print("Simulates real user interactions to capture tile URLs")
+    """Main function with download options"""
+    print("🎮 GULAND CRAWLER WITH TILE DOWNLOAD")
+    print("Crawls tile URLs and downloads them automatically")
     print("=" * 60)
     
-    # Ask user preference
+    # Ask user preferences
     headless_input = input("Run in headless mode? (y/N): ").lower().strip()
     headless = headless_input in ['y', 'yes']
     
-    if headless:
-        print("⚠️ Note: Running in headless mode. Use non-headless for better debugging.")
+    download_input = input("Download tiles automatically? (Y/n): ").lower().strip()
+    download_tiles = download_input not in ['n', 'no']
     
-    crawler = BrowserGulandCrawler(headless=headless)
+    workers = 5
+    if download_tiles:
+        workers_input = input("Number of download workers (1-10, default 5): ").strip()
+        try:
+            workers = int(workers_input) if workers_input else 5
+            workers = max(1, min(10, workers))
+        except:
+            workers = 5
+    
+    crawler = BrowserGulandCrawler(
+        headless=headless, 
+        enable_download=download_tiles,
+        download_workers=workers
+    )
+    
+    if download_tiles:
+        print(f"📥 Download enabled with {workers} parallel workers")
+    else:
+        print("⏭️ Download disabled - only URLs will be collected")
     
     try:
         results = crawler.run_browser_crawl()
         
         if results and results['summary']['total_successful'] > 0:
             print("\n✅ SUCCESS! Found tile patterns and servers")
+            if download_tiles:
+                print(f"📥 Downloaded {results['download_summary']['total_successful']} tiles")
+                print(f"📁 Check 'downloaded_tiles/' for downloaded tiles")
             print("📁 Check 'output_browser_crawl/' for detailed results")
-            print("🚀 Ready to scale up or generate tile maps!")
         else:
             print("\n⚠️ No successful results")
             print("💡 Try running in non-headless mode for debugging")
