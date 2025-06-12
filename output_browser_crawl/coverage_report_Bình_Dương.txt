@@ -1,0 +1,23 @@
+# FULL COVERAGE ANALYSIS: Bình Dương
+Generated: 2025-06-12T00:57:12.435004
+
+## 📊 COVERAGE SUMMARY
+• Total tiles captured: 489
+• Zoom levels covered: 9
+• Unique tile patterns: 2
+• Tile servers: 2
+
+## 🔍 ZOOM LEVEL BREAKDOWN
+• Zoom 10: 45/1 tiles (4500.0% coverage)
+• Zoom 11: 45/1 tiles (4500.0% coverage)
+• Zoom 12: 44/1 tiles (4400.0% coverage)
+• Zoom 13: 45/2 tiles (2250.0% coverage)
+• Zoom 14: 45/4 tiles (1125.0% coverage)
+• Zoom 15: 45/6 tiles (750.0% coverage)
+• Zoom 16: 45/15 tiles (300.0% coverage)
+• Zoom 17: 85/40 tiles (212.5% coverage)
+• Zoom 18: 90/144 tiles (62.5% coverage)
+
+## 🎯 TILE PATTERNS
+• https://s3-han02.fptcloud.com/guland6/land/binh-duong/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png

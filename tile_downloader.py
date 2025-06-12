@@ -90,28 +90,35 @@ class GulandTileDownloader:
         # Clean location name for filesystem
         clean_location = self.clean_filename(location_name)
         
-        # Extract zoom level info if location_name contains zoom info
-        zoom_info = ""
-        if "_zoom_" in location_name:
-            parts = location_name.split("_zoom_")
-            clean_location = self.clean_filename(parts[0])
-            zoom_info = f"_Z{parts[1]}"
+        # Remove zoom info from location name if present
+        if "_zoom_" in clean_location:
+            clean_location = clean_location.split("_zoom_")[0]
         
         # Get tile type
         tile_type = self.get_tile_type_from_url(tile_info['url'])
         
-        # Create directory structure with zoom info
+        # Create directory structure mapping
         type_mapping = {
-            'quy_hoach_2030': f'01_Quy_Hoach_2030{zoom_info}',
-            'ke_hoach_2025': f'02_Ke_Hoach_2025{zoom_info}',
-            'quy_hoach_phan_khu': f'03_Quy_Hoach_Phan_Khu{zoom_info}',
-            'hien_trang': f'04_Hien_Trang{zoom_info}',
-            # ... other mappings
+            'quy_hoach_2030': '01_Quy_Hoach_2030',
+            'ke_hoach_2025': '02_Ke_Hoach_2025', 
+            'quy_hoach_phan_khu': '03_Quy_Hoach_Phan_Khu',
+            'hien_trang': '04_Hien_Trang',
+            'satellite': '05_Satellite',
+            'terrain': '06_Terrain',
+            'street': '07_Street',
+            'hybrid': '08_Hybrid',
+            'planning_generic': '09_Planning_Generic',
+            'administrative': '10_Administrative',
+            'google_maps': '11_Google_Maps',
+            'openstreetmap': '12_OpenStreetMap',
+            'bing_maps': '13_Bing_Maps',
+            'guland_generic': '14_Guland_Generic',
+            'unknown': '99_Unknown'
         }
         
-        folder_name = type_mapping.get(tile_type, f'99_Unknown_{tile_type}{zoom_info}')
+        folder_name = type_mapping.get(tile_type, f'99_Unknown_{tile_type}')
         
-        # Create directory structure: downloaded_tiles/location/map_type_zoom/zoom/
+        # Create directory structure: downloaded_tiles/location/map_type/
         base_path = os.path.join(self.base_download_dir, clean_location, folder_name)
         os.makedirs(base_path, exist_ok=True)
         
@@ -192,15 +199,20 @@ class GulandTileDownloader:
             
             # Skip if file already exists and is valid
             if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
-                logger.info(f"⏭️ Tile already exists: {filename}")
-                return {
-                    'success': True,
-                    'filepath': filepath,
-                    'size': os.path.getsize(filepath),
-                    'tile_type': tile_type,
-                    'skipped': True
-                }
-            
+                if self.validate_image_file(filepath):
+                    logger.info(f"⏭️ Tile already exists: {filename}")
+                    return {
+                        'success': True,
+                        'filepath': filepath,
+                        'size': os.path.getsize(filepath),
+                        'tile_type': tile_type,
+                        'skipped': True
+                    }
+                else:
+                    # Invalid file, remove and re-download
+                    os.remove(filepath)
+                    logger.warning(f"🗑️ Removed invalid existing file: {filename}")
+        
             # Enhanced headers for Guland tiles
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -353,6 +365,11 @@ class GulandTileDownloader:
         if not download_results:
             return
         
+        # Clean location name for consistent folder structure
+        clean_location = self.clean_filename(location_name)
+        if "_zoom_" in clean_location:
+            clean_location = clean_location.split("_zoom_")[0]
+        
         successful = [r for r in download_results if r['success']]
         failed = [r for r in download_results if not r['success']]
         
@@ -377,7 +394,7 @@ class GulandTileDownloader:
                         tile_type_stats[tile_type]['zoom_levels'].add(zoom)
                     except:
                         pass
-        
+    
         # Generate detailed report
         report_lines = []
         report_lines.append(f"# CHI TIẾT TẢI XUỐNG BÌNH ĐỒ: {location_name}")
@@ -408,7 +425,15 @@ class GulandTileDownloader:
                 'hien_trang': 'Hiện Trạng',
                 'satellite': 'Bản đồ vệ tinh',
                 'terrain': 'Bản đồ địa hình',
-                'street': 'Bản đồ đường phố'
+                'street': 'Bản đồ đường phố',
+                'hybrid': 'Bản đồ lai',
+                'planning_generic': 'Quy hoạch chung',
+                'administrative': 'Bản đồ hành chính',
+                'google_maps': 'Google Maps',
+                'openstreetmap': 'OpenStreetMap',
+                'bing_maps': 'Bing Maps',
+                'guland_generic': 'Guland Generic',
+                'unknown': 'Không xác định'
             }
             
             for tile_type, stats in sorted(tile_type_stats.items()):
@@ -439,26 +464,46 @@ class GulandTileDownloader:
         report_lines.append("## 📁 CẤU TRÚC THƯ MỤC")
         report_lines.append("```")
         report_lines.append(f"downloaded_tiles/")
-        report_lines.append(f"└── {self.clean_filename(location_name)}/")
+        report_lines.append(f"└── {clean_location}/")
+        
+        # Create mapping for folder display
+        type_folder_mapping = {
+            'quy_hoach_2030': '01_Quy_Hoach_2030',
+            'ke_hoach_2025': '02_Ke_Hoach_2025',
+            'quy_hoach_phan_khu': '03_Quy_Hoach_Phan_Khu',
+            'hien_trang': '04_Hien_Trang',
+            'satellite': '05_Satellite',
+            'terrain': '06_Terrain',
+            'street': '07_Street',
+            'hybrid': '08_Hybrid',
+            'planning_generic': '09_Planning_Generic',
+            'administrative': '10_Administrative',
+            'google_maps': '11_Google_Maps',
+            'openstreetmap': '12_OpenStreetMap',
+            'bing_maps': '13_Bing_Maps',
+            'guland_generic': '14_Guland_Generic',
+            'unknown': '99_Unknown'
+        }
         
         for tile_type in sorted(tile_type_stats.keys()):
-            type_folder = {
-                'quy_hoach_2030': '01_Quy_Hoach_2030',
-                'ke_hoach_2025': '02_Ke_Hoach_2025',
-                'quy_hoach_phan_khu': '03_Quy_Hoach_Phan_Khu'
-            }.get(tile_type, f'99_{tile_type}')
+            type_folder = type_folder_mapping.get(tile_type, f'99_{tile_type}')
             
             report_lines.append(f"    ├── {type_folder}/")
             
             # Show zoom levels for this type
             stats = tile_type_stats[tile_type]
-            for zoom in sorted(stats['zoom_levels']):
-                report_lines.append(f"    │   └── {zoom}/")
+            zoom_levels = sorted(stats['zoom_levels'])
+            
+            for i, zoom in enumerate(zoom_levels):
+                if i == len(zoom_levels) - 1:
+                    report_lines.append(f"    │   └── {zoom}/")
+                else:
+                    report_lines.append(f"    │   ├── {zoom}/")
         
+        report_lines.append("    └── chi_tiet_tai_xuong.txt")
         report_lines.append("```")
         
         # Save report
-        clean_location = self.clean_filename(location_name)
         report_path = os.path.join(self.base_download_dir, clean_location, 'chi_tiet_tai_xuong.txt')
         os.makedirs(os.path.dirname(report_path), exist_ok=True)
         

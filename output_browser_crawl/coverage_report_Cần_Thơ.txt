@@ -1,0 +1,23 @@
+# FULL COVERAGE ANALYSIS: Cần Thơ
+Generated: 2025-06-12T00:50:46.758160
+
+## 📊 COVERAGE SUMMARY
+• Total tiles captured: 420
+• Zoom levels covered: 9
+• Unique tile patterns: 2
+• Tile servers: 2
+
+## 🔍 ZOOM LEVEL BREAKDOWN
+• Zoom 10: 45/1 tiles (4500.0% coverage)
+• Zoom 11: 45/1 tiles (4500.0% coverage)
+• Zoom 12: 40/1 tiles (4000.0% coverage)
+• Zoom 13: 45/1 tiles (4500.0% coverage)
+• Zoom 14: 45/2 tiles (2250.0% coverage)
+• Zoom 15: 40/6 tiles (666.7% coverage)
+• Zoom 16: 40/15 tiles (266.7% coverage)
+• Zoom 17: 40/45 tiles (88.9% coverage)
+• Zoom 18: 80/144 tiles (55.6% coverage)
+
+## 🎯 TILE PATTERNS
+• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/can-tho/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png

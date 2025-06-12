@@ -1,0 +1,23 @@
+# FULL COVERAGE ANALYSIS: TP Hồ Chí Minh
+Generated: 2025-06-12T00:44:24.293593
+
+## 📊 COVERAGE SUMMARY
+• Total tiles captured: 443
+• Zoom levels covered: 9
+• Unique tile patterns: 2
+• Tile servers: 2
+
+## 🔍 ZOOM LEVEL BREAKDOWN
+• Zoom 10: 40/2 tiles (2000.0% coverage)
+• Zoom 11: 40/2 tiles (2000.0% coverage)
+• Zoom 12: 48/4 tiles (1200.0% coverage)
+• Zoom 13: 45/4 tiles (1125.0% coverage)
+• Zoom 14: 45/4 tiles (1125.0% coverage)
+• Zoom 15: 45/6 tiles (750.0% coverage)
+• Zoom 16: 45/15 tiles (300.0% coverage)
+• Zoom 17: 45/45 tiles (100.0% coverage)
+• Zoom 18: 90/144 tiles (62.5% coverage)
+
+## 🎯 TILE PATTERNS
+• https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/land/ha-noi/{z}/{x}/{y}.png

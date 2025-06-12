@@ -1,78 +1,24 @@
+#!/usr/bin/env python3
+"""
+Map Interaction Module for Guland Crawler
+Handles all map-related interactions and manipulations
+
+Author: AI Assistant
+Version: 1.0
+"""
 import time
 import random
-import threading
-import math
-from datetime import datetime
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import logging
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 
 logger = logging.getLogger(__name__)
 
 class MapInteractionHandler:
     def __init__(self, driver):
         self.driver = driver
-        self.interaction_stats = {
-            'total_interactions': 0,
-            'successful_interactions': 0,
-            'failed_interactions': 0
-        }
-        self.interaction_lock = threading.Lock()
     
-    def systematic_zoom_coverage(self, location_name, lat, lng, duration_per_zoom=30):
-        """Systematically cover all zoom levels 10-18"""
-        logger.info(f"🎯 Starting systematic zoom coverage for {location_name}")
-        
-        zoom_levels = list(range(10, 19))  # 10 to 18
-        all_captured_tiles = []
-        
-        for zoom_index, zoom in enumerate(zoom_levels):
-            logger.info(f"🔍 Processing zoom level {zoom} ({zoom_index+1}/{len(zoom_levels)})")
-            
-            zoom_start_time = time.time()
-            
-            try:
-                # Clear network logs for this zoom level
-                self.driver.get_log('performance')
-                
-                # Set specific zoom level via JavaScript
-                zoom_success = self.set_map_zoom(zoom)
-                if not zoom_success:
-                    logger.warning(f"⚠️ Could not set zoom {zoom}, using interaction")
-                    self.simulate_zoom_interaction(zoom)
-                
-                # Wait for tiles to load at this zoom
-                time.sleep(3)
-                
-                # Reduced duration per zoom to prevent infinite loop
-                actual_duration = min(duration_per_zoom, 25)  # Max 25 seconds per zoom
-                
-                # Perform comprehensive map coverage at this zoom
-                tiles_at_zoom = self.comprehensive_map_coverage(zoom, actual_duration)
-                
-                if tiles_at_zoom:
-                    all_captured_tiles.extend(tiles_at_zoom)
-                    logger.info(f"✅ Zoom {zoom}: Found {len(tiles_at_zoom)} tiles")
-                else:
-                    logger.warning(f"⚠️ Zoom {zoom}: No tiles found")
-                
-                # Brief pause between zoom levels
-                time.sleep(2)
-                
-                # Add safety timeout check
-                zoom_elapsed = time.time() - zoom_start_time
-                if zoom_elapsed > 60:  # Max 1 minute per zoom level
-                    logger.warning(f"⚠️ Zoom {zoom} timeout after {zoom_elapsed:.1f}s")
-                    break
-                
-            except Exception as e:
-                logger.error(f"❌ Error at zoom {zoom}: {e}")
-                continue
-        
-        logger.info(f"🎉 Systematic coverage complete: {len(all_captured_tiles)} total tiles")
-        return all_captured_tiles
-
     def set_map_zoom(self, target_zoom):
         """Set map to specific zoom level via JavaScript"""
         logger.info(f"🎯 Setting map zoom to {target_zoom}")
@@ -198,7 +144,7 @@ class MapInteractionHandler:
             
             actions = ActionChains(self.driver)
             
-            # Simpler coverage pattern to avoid out of bounds
+            # FIXED: Simpler coverage pattern to avoid out of bounds
             coverage_actions = [
                 'center_pan_up', 'center_pan_down', 'center_pan_left', 'center_pan_right',
                 'zoom_in_center', 'zoom_out_center', 'small_drag_center'
@@ -206,7 +152,7 @@ class MapInteractionHandler:
             
             start_time = time.time()
             action_count = 0
-            max_actions = 20  # Limit total actions to prevent infinite loop
+            max_actions = 20  # FIXED: Limit total actions to prevent infinite loop
             
             while (time.time() - start_time < duration_seconds and 
                 action_count < max_actions):
@@ -270,24 +216,166 @@ class MapInteractionHandler:
                     # Wait between actions
                     time.sleep(random.uniform(2, 4))
                     
-                    with self.interaction_lock:
-                        self.interaction_stats['successful_interactions'] += 1
-                        
                 except Exception as action_error:
                     logger.warning(f"⚠️ Action {action_type} failed: {action_error}")
-                    with self.interaction_lock:
-                        self.interaction_stats['failed_interactions'] += 1
+                    # Continue to next action
                     continue
             
             logger.info(f"✅ Completed {action_count} coverage actions")
-            
-            # This should be handled by the calling class
-            # For now, return empty list as this class doesn't have access to network capture
-            return []
+            return action_count
             
         except Exception as e:
             logger.error(f"❌ Error in comprehensive coverage: {e}")
-            return []
+            return 0
+
+    def detect_city_boundaries(self, location_name):
+        """Detect city boundaries for complete coverage"""
+        logger.info(f"🌍 Detecting boundaries for {location_name}")
+        
+        try:
+            # Get current map bounds via JavaScript
+            js_script = """
+            function getCityBounds() {
+                var mapInstances = [
+                    window.map,
+                    window.mapInstance, 
+                    window.leafletMap,
+                    document.querySelector('.leaflet-container')?._leaflet_map
+                ];
+                
+                for (var i = 0; i < mapInstances.length; i++) {
+                    var mapInstance = mapInstances[i];
+                    if (mapInstance && mapInstance.getBounds) {
+                        var bounds = mapInstance.getBounds();
+                        return {
+                            northeast: {
+                                lat: bounds.getNorthEast().lat,
+                                lng: bounds.getNorthEast().lng
+                            },
+                            southwest: {
+                                lat: bounds.getSouthWest().lat,
+                                lng: bounds.getSouthWest().lng
+                            },
+                            center: {
+                                lat: mapInstance.getCenter().lat,
+                                lng: mapInstance.getCenter().lng
+                            },
+                            zoom: mapInstance.getZoom()
+                        };
+                    }
+                }
+                return null;
+            }
+            
+            return getCityBounds();
+            """
+            
+            bounds = self.driver.execute_script(js_script)
+            
+            if bounds:
+                logger.info(f"🌍 City bounds detected:")
+                logger.info(f"  NE: {bounds['northeast']}")
+                logger.info(f"  SW: {bounds['southwest']}")
+                logger.info(f"  Center: {bounds['center']}")
+                logger.info(f"  Current zoom: {bounds['zoom']}")
+                return bounds
+            else:
+                logger.warning("⚠️ Could not detect city bounds")
+                return None
+                
+        except Exception as e:
+            logger.error(f"❌ Error detecting boundaries: {e}")
+            return None
+
+    def calculate_tile_coverage_needed(self, bounds, zoom_level):
+        """Calculate how many tiles needed for full coverage"""
+        if not bounds:
+            return None
+        
+        import math
+        
+        def deg2num(lat_deg, lon_deg, zoom):
+            lat_rad = math.radians(lat_deg)
+            n = 2.0 ** zoom
+            xtile = int((lon_deg + 180.0) / 360.0 * n)
+            ytile = int((1.0 - math.asinh(math.tan(lat_rad)) / math.pi) / 2.0 * n)
+            return (xtile, ytile)
+        
+        # Calculate tile coordinates for corners
+        ne_tile = deg2num(bounds['northeast']['lat'], bounds['northeast']['lng'], zoom_level)
+        sw_tile = deg2num(bounds['southwest']['lat'], bounds['southwest']['lng'], zoom_level)
+        
+        # Calculate coverage area
+        tile_count_x = abs(ne_tile[0] - sw_tile[0]) + 1
+        tile_count_y = abs(ne_tile[1] - sw_tile[1]) + 1
+        total_tiles = tile_count_x * tile_count_y
+        
+        logger.info(f"📊 Zoom {zoom_level} coverage calculation:")
+        logger.info(f"  X tiles: {tile_count_x} (from {sw_tile[0]} to {ne_tile[0]})")
+        logger.info(f"  Y tiles: {tile_count_y} (from {ne_tile[1]} to {sw_tile[1]})")
+        logger.info(f"  Total tiles needed: {total_tiles}")
+        
+        return {
+            'zoom': zoom_level,
+            'x_range': (sw_tile[0], ne_tile[0]),
+            'y_range': (ne_tile[1], sw_tile[1]),
+            'x_count': tile_count_x,
+            'y_count': tile_count_y,
+            'total_tiles': total_tiles
+        }
+
+    def get_safe_coordinates(self, map_container):
+        """Get safe coordinates within map bounds"""
+        try:
+            map_size = map_container.size
+            map_rect = map_container.rect
+            
+            # Ensure map is visible and has reasonable size
+            if map_size['width'] < 100 or map_size['height'] < 100:
+                logger.warning(f"⚠️ Map too small: {map_size['width']}x{map_size['height']}")
+                return None, None
+            
+            # Calculate safe area with margins
+            margin = 80
+            safe_x = margin + (map_size['width'] - 2 * margin) // 2
+            safe_y = margin + (map_size['height'] - 2 * margin) // 2
+            
+            # Validate coordinates are within bounds
+            if safe_x < margin or safe_x > map_size['width'] - margin:
+                safe_x = map_size['width'] // 2
+            if safe_y < margin or safe_y > map_size['height'] - margin:
+                safe_y = map_size['height'] // 2
+                
+            logger.info(f"📍 Safe coordinates: ({safe_x}, {safe_y}) within {map_size['width']}x{map_size['height']}")
+            return safe_x, safe_y
+            
+        except Exception as e:
+            logger.error(f"❌ Error getting safe coordinates: {e}")
+            return None, None
+
+    def safe_move_to_element_with_offset(self, actions, element, x, y):
+        """Safely move to element with offset validation"""
+        try:
+            element_size = element.size
+            
+            # Validate offsets are within element bounds
+            if x < 0 or x > element_size['width'] or y < 0 or y > element_size['height']:
+                logger.warning(f"⚠️ Invalid offset ({x}, {y}) for element size {element_size}")
+                # Use center of element as fallback
+                x = element_size['width'] // 2
+                y = element_size['height'] // 2
+            
+            actions.move_to_element_with_offset(element, x, y).perform()
+            return True
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Safe move failed: {e}")
+            # Fallback to center of element
+            try:
+                actions.move_to_element(element).perform()
+                return True
+            except:
+                return False
 
     def simulate_map_interaction(self, location_name, duration_seconds=45):
         """Simulate realistic map interaction to trigger tile loading"""
@@ -307,7 +395,31 @@ class MapInteractionHandler:
             logger.info(f"📐 Viewport size: {viewport_width}x{viewport_height}")
             
             # Find map container
-            map_container = self._find_map_container()
+            map_container = None
+            possible_selectors = [
+                '#map',
+                '.map-container',
+                '[class*="map"]',
+                '[id*="map"]',
+                'canvas',
+                '.leaflet-container',
+                '.leaflet-map-pane'
+            ]
+            
+            for selector in possible_selectors:
+                try:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if elements:
+                        map_container = elements[0]
+                        logger.info(f"🎯 Found map container: {selector}")
+                        
+                        # Scroll element into view
+                        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", map_container)
+                        time.sleep(1)
+                        break
+                except:
+                    continue
+            
             if not map_container:
                 logger.warning("⚠️ Could not find map container, using body")
                 map_container = self.driver.find_element(By.TAG_NAME, "body")
@@ -340,15 +452,112 @@ class MapInteractionHandler:
                 ])
                 
                 try:
-                    success = self._perform_interaction(interaction_type, map_container, actions, 
-                                                     margin, safe_width, safe_height)
-                    
-                    with self.interaction_lock:
-                        self.interaction_stats['total_interactions'] += 1
-                        if success:
-                            self.interaction_stats['successful_interactions'] += 1
-                        else:
-                            self.interaction_stats['failed_interactions'] += 1
+                    if interaction_type == 'scroll_zoom_in':
+                        logger.info("🔍 Scroll zoom in")
+                        # Move to center of map
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.2)
+                        self.driver.execute_script("""
+                            arguments[0].dispatchEvent(new WheelEvent('wheel', {
+                                deltaY: -100,
+                                bubbles: true,
+                                cancelable: true
+                            }));
+                        """, map_container)
+                        
+                    elif interaction_type == 'scroll_zoom_out':
+                        logger.info("🔍 Scroll zoom out")
+                        actions.move_to_element(map_container).perform()
+                        time.sleep(0.2)
+                        self.driver.execute_script("""
+                            arguments[0].dispatchEvent(new WheelEvent('wheel', {
+                                deltaY: 100,
+                                bubbles: true,
+                                cancelable: true
+                            }));
+                        """, map_container)
+                        
+                    elif interaction_type == 'pan_drag':
+                        logger.info("↔️ Pan drag")
+                        # Safe coordinates within map bounds
+                        start_x = random.randint(margin, margin + safe_width // 2)
+                        start_y = random.randint(margin, margin + safe_height // 2)
+                        
+                        # Limited offset to stay in bounds
+                        max_offset = min(safe_width, safe_height) // 4
+                        offset_x = random.randint(-max_offset, max_offset)
+                        offset_y = random.randint(-max_offset, max_offset)
+                        
+                        logger.info(f"   Drag from offset ({start_x}, {start_y}) by ({offset_x}, {offset_y})")
+                        
+                        actions.move_to_element_with_offset(map_container, start_x, start_y)\
+                            .click_and_hold()\
+                            .move_by_offset(offset_x, offset_y)\
+                            .release()\
+                            .perform()
+                        
+                    elif interaction_type == 'double_click':
+                        logger.info("👆 Double click zoom")
+                        # Safe click position
+                        click_x = random.randint(margin, margin + safe_width // 2)
+                        click_y = random.randint(margin, margin + safe_height // 2)
+                        
+                        logger.info(f"   Double click at offset ({click_x}, {click_y})")
+                        
+                        actions.move_to_element_with_offset(map_container, click_x, click_y)\
+                            .double_click()\
+                            .perform()
+                        
+                    elif interaction_type == 'click_zoom':
+                        logger.info("👆 Click and zoom")
+                        actions.move_to_element(map_container).click().perform()
+                        time.sleep(0.5)
+                        
+                        # Use JavaScript to simulate zoom
+                        self.driver.execute_script("""
+                            // Try common map zoom methods
+                            if (window.map && window.map.zoomIn) {
+                                window.map.zoomIn();
+                            } else if (window.mapInstance && window.mapInstance.zoomIn) {
+                                window.mapInstance.zoomIn();
+                            }
+                        """)
+                        
+                    elif interaction_type == 'keyboard_zoom':
+                        logger.info("⌨️ Keyboard zoom")
+                        actions.move_to_element(map_container).click().perform()
+                        time.sleep(0.5)
+                        
+                        # Use arrow keys and other keys that actually exist
+                        zoom_key = random.choice([
+                            Keys.ARROW_UP, Keys.ARROW_DOWN, 
+                            Keys.ARROW_LEFT, Keys.ARROW_RIGHT,
+                            '+', '-', '='
+                        ])
+                        actions.send_keys(zoom_key).perform()
+                        
+                    elif interaction_type == 'mouse_wheel':
+                        logger.info("🖱️ Mouse wheel")
+                        # Safe wheel position
+                        wheel_x = random.randint(margin, margin + safe_width // 2)
+                        wheel_y = random.randint(margin, margin + safe_height // 2)
+                        
+                        logger.info(f"   Mouse wheel at offset ({wheel_x}, {wheel_y})")
+                        
+                        actions.move_to_element_with_offset(map_container, wheel_x, wheel_y).perform()
+                        time.sleep(0.2)
+                        
+                        # Multiple wheel events
+                        for _ in range(random.randint(1, 3)):
+                            direction = random.choice([-1, 1])
+                            self.driver.execute_script(f"""
+                                arguments[0].dispatchEvent(new WheelEvent('wheel', {{
+                                    deltaY: {direction * 120},
+                                    bubbles: true,
+                                    cancelable: true
+                                }}));
+                            """, map_container)
+                            time.sleep(0.2)
                     
                     # Wait between interactions to let tiles load
                     wait_time = random.uniform(3, 7)
@@ -357,8 +566,7 @@ class MapInteractionHandler:
                     
                 except Exception as interaction_error:
                     logger.warning(f"⚠️ Interaction error: {interaction_error}")
-                    with self.interaction_lock:
-                        self.interaction_stats['failed_interactions'] += 1
+                    # Continue with next interaction
                     continue
             
             logger.info(f"✅ Completed {interaction_count} map interactions")
@@ -369,132 +577,15 @@ class MapInteractionHandler:
             
         except Exception as e:
             logger.error(f"❌ Error during map interaction: {e}")
-
-    def _find_map_container(self):
-        """Find the map container element"""
-        possible_selectors = [
-            '#map',
-            '.map-container',
-            '[class*="map"]',
-            '[id*="map"]',
-            'canvas',
-            '.leaflet-container',
-            '.leaflet-map-pane'
-        ]
-        
-        for selector in possible_selectors:
-            try:
-                elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
-                if elements:
-                    map_container = elements[0]
-                    logger.info(f"🎯 Found map container: {selector}")
-                    
-                    # Scroll element into view
-                    self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", map_container)
-                    time.sleep(1)
-                    return map_container
-            except:
-                continue
-        return None
-
-    def _perform_interaction(self, interaction_type, map_container, actions, margin, safe_width, safe_height):
-        """Perform a specific type of interaction"""
-        try:
-            if interaction_type == 'scroll_zoom_in':
-                logger.info("🔍 Scroll zoom in")
-                actions.move_to_element(map_container).perform()
-                time.sleep(0.2)
-                self.driver.execute_script("""
-                    arguments[0].dispatchEvent(new WheelEvent('wheel', {
-                        deltaY: -100,
-                        bubbles: true,
-                        cancelable: true
-                    }));
-                """, map_container)
-                
-            elif interaction_type == 'scroll_zoom_out':
-                logger.info("🔍 Scroll zoom out")
-                actions.move_to_element(map_container).perform()
-                time.sleep(0.2)
-                self.driver.execute_script("""
-                    arguments[0].dispatchEvent(new WheelEvent('wheel', {
-                        deltaY: 100,
-                        bubbles: true,
-                        cancelable: true
-                    }));
-                """, map_container)
-                
-            elif interaction_type == 'pan_drag':
-                logger.info("↔️ Pan drag")
-                start_x = random.randint(margin, margin + safe_width // 2)
-                start_y = random.randint(margin, margin + safe_height // 2)
-                
-                max_offset = min(safe_width, safe_height) // 4
-                offset_x = random.randint(-max_offset, max_offset)
-                offset_y = random.randint(-max_offset, max_offset)
-                
-                logger.info(f"   Drag from offset ({start_x}, {start_y}) by ({offset_x}, {offset_y})")
-                
-                actions.move_to_element_with_offset(map_container, start_x, start_y)\
-                    .click_and_hold()\
-                    .move_by_offset(offset_x, offset_y)\
-                    .release()\
-                    .perform()
-                
-            elif interaction_type == 'double_click':
-                logger.info("👆 Double click zoom")
-                click_x = random.randint(margin, margin + safe_width // 2)
-                click_y = random.randint(margin, margin + safe_height // 2)
-                
-                logger.info(f"   Double click at offset ({click_x}, {click_y})")
-                
-                actions.move_to_element_with_offset(map_container, click_x, click_y)\
-                    .double_click()\
-                    .perform()
-                
-            elif interaction_type == 'click_zoom':
-                logger.info("👆 Click and zoom")
-                actions.move_to_element(map_container).click().perform()
-                time.sleep(0.5)
-                
-                self.driver.execute_script("""
-                    if (window.map && window.map.zoomIn) {
-                        window.map.zoomIn();
-                    } else if (window.mapInstance && window.mapInstance.zoomIn) {
-                        window.mapInstance.zoomIn();
-                    }
-                """)
-                
-            elif interaction_type == 'keyboard_zoom':
-                logger.info("⌨️ Keyboard zoom")
-                actions.move_to_element(map_container).click().perform()
-                time.sleep(0.5)
-                
-                zoom_key = random.choice([
-                    Keys.ARROW_UP, Keys.ARROW_DOWN, 
-                    Keys.ARROW_LEFT, Keys.ARROW_RIGHT,
-                    '+', '-', '='
-                ])
-                actions.send_keys(zoom_key).perform()
-                
-            elif interaction_type == 'mouse_wheel':
-                logger.info("🖱️ Mouse wheel")
-                wheel_x = random.randint(margin, margin + safe_width // 2)
-                wheel_y = random.randint(margin, margin + safe_height // 2)
-                actions.move_to_element_with_offset(map_container, wheel_x, wheel_y).perform()
             
-            return True
-            
-        except Exception as e:
-            logger.warning(f"⚠️ Interaction {interaction_type} failed: {e}")
-            return False
-
     def trigger_tile_loading(self):
         """Trigger tile loading using JavaScript"""
         logger.info("🚀 Triggering tile loading via JavaScript...")
         
         try:
+            # Script to trigger map events that should load tiles
             js_script = """
+            // Function to trigger map updates
             function triggerMapUpdates() {
                 console.log('Triggering map tile loading...');
                 
@@ -574,101 +665,3 @@ class MapInteractionHandler:
             
         except Exception as e:
             logger.error(f"❌ Error triggering tile loading: {e}")
-
-    def detect_city_boundaries(self, location_name):
-        """Detect city boundaries for complete coverage"""
-        logger.info(f"🌍 Detecting boundaries for {location_name}")
-        
-        try:
-            js_script = """
-            function getCityBounds() {
-                var mapInstances = [
-                    window.map,
-                    window.mapInstance, 
-                    window.leafletMap,
-                    document.querySelector('.leaflet-container')?._leaflet_map
-                ];
-                
-                for (var i = 0; i < mapInstances.length; i++) {
-                    var mapInstance = mapInstances[i];
-                    if (mapInstance && mapInstance.getBounds) {
-                        var bounds = mapInstance.getBounds();
-                        return {
-                            northeast: {
-                                lat: bounds.getNorthEast().lat,
-                                lng: bounds.getNorthEast().lng
-                            },
-                            southwest: {
-                                lat: bounds.getSouthWest().lat,
-                                lng: bounds.getSouthWest().lng
-                            },
-                            center: {
-                                lat: mapInstance.getCenter().lat,
-                                lng: mapInstance.getCenter().lng
-                            },
-                            zoom: mapInstance.getZoom()
-                        };
-                    }
-                }
-                return null;
-            }
-            
-            return getCityBounds();
-            """
-            
-            bounds = self.driver.execute_script(js_script)
-            
-            if bounds:
-                logger.info(f"🌍 City bounds detected:")
-                logger.info(f"  NE: {bounds['northeast']}")
-                logger.info(f"  SW: {bounds['southwest']}")
-                logger.info(f"  Center: {bounds['center']}")
-                logger.info(f"  Current zoom: {bounds['zoom']}")
-                return bounds
-            else:
-                logger.warning("⚠️ Could not detect city bounds")
-                return None
-                
-        except Exception as e:
-            logger.error(f"❌ Error detecting boundaries: {e}")
-            return None
-
-    def calculate_tile_coverage_needed(self, bounds, zoom_level):
-        """Calculate how many tiles needed for full coverage"""
-        if not bounds:
-            return None
-        
-        def deg2num(lat_deg, lon_deg, zoom):
-            lat_rad = math.radians(lat_deg)
-            n = 2.0 ** zoom
-            xtile = int((lon_deg + 180.0) / 360.0 * n)
-            ytile = int((1.0 - math.asinh(math.tan(lat_rad)) / math.pi) / 2.0 * n)
-            return (xtile, ytile)
-        
-        # Calculate tile coordinates for corners
-        ne_tile = deg2num(bounds['northeast']['lat'], bounds['northeast']['lng'], zoom_level)
-        sw_tile = deg2num(bounds['southwest']['lat'], bounds['southwest']['lng'], zoom_level)
-        
-        # Calculate coverage area
-        tile_count_x = abs(ne_tile[0] - sw_tile[0]) + 1
-        tile_count_y = abs(ne_tile[1] - sw_tile[1]) + 1
-        total_tiles = tile_count_x * tile_count_y
-        
-        logger.info(f"📊 Zoom {zoom_level} coverage calculation:")
-        logger.info(f"  X tiles: {tile_count_x} (from {sw_tile[0]} to {ne_tile[0]})")
-        logger.info(f"  Y tiles: {tile_count_y} (from {ne_tile[1]} to {sw_tile[1]})")
-        logger.info(f"  Total tiles needed: {total_tiles}")
-        
-        return {
-            'zoom': zoom_level,
-            'x_range': (sw_tile[0], ne_tile[0]),
-            'y_range': (ne_tile[1], sw_tile[1]),
-            'x_count': tile_count_x,
-            'y_count': tile_count_y,
-            'total_tiles': total_tiles
-        }
-
-    def get_interaction_stats(self):
-        """Get interaction statistics"""
-        with self.interaction_lock:
-            return self.interaction_stats.copy()
