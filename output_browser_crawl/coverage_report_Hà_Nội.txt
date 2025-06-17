@@ -1,21 +1,21 @@
 # FULL COVERAGE ANALYSIS: Hà Nội
-Generated: 2025-06-12T00:38:02.306890
+Generated: 2025-06-15T16:44:56.039272
 
 ## 📊 COVERAGE SUMMARY
-• Total tiles captured: 423
+• Total tiles captured: 603
 • Zoom levels covered: 9
 • Unique tile patterns: 2
 • Tile servers: 2
 
 ## 🔍 ZOOM LEVEL BREAKDOWN
 • Zoom 10: 40/1 tiles (4000.0% coverage)
-• Zoom 11: 40/1 tiles (4000.0% coverage)
-• Zoom 12: 40/1 tiles (4000.0% coverage)
+• Zoom 11: 200/1 tiles (20000.0% coverage)
+• Zoom 12: 45/1 tiles (4500.0% coverage)
 • Zoom 13: 45/1 tiles (4500.0% coverage)
-• Zoom 14: 45/4 tiles (1125.0% coverage)
-• Zoom 15: 44/6 tiles (733.3% coverage)
-• Zoom 16: 44/15 tiles (293.3% coverage)
-• Zoom 17: 45/40 tiles (112.5% coverage)
+• Zoom 14: 54/4 tiles (1350.0% coverage)
+• Zoom 15: 45/6 tiles (750.0% coverage)
+• Zoom 16: 54/15 tiles (360.0% coverage)
+• Zoom 17: 40/40 tiles (100.0% coverage)
 • Zoom 18: 80/144 tiles (55.6% coverage)
 
 ## 🎯 TILE PATTERNS

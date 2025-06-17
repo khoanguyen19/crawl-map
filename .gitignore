@@ -195,3 +195,5 @@ cython_debug/
 .cursorindexingignore
 
 downloaded_tiles
+pattern_verfication
+pattern_verfication_downloads

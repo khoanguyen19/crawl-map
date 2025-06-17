@@ -67,13 +67,88 @@ class BrowserGulandCrawler:
         os.makedirs('output_browser_crawl/screenshots', exist_ok=True)
         os.makedirs('output_browser_crawl/network_logs', exist_ok=True)
         
-        # Test locations
         self.test_locations = [
-            ("Đà Nẵng", 16.0544563, 108.0717219, "soi-quy-hoach/da-nang"),
+            # THÀNH PHỐ TRUNG ƯƠNG (5)
             ("Hà Nội", 21.0285, 105.8542, "soi-quy-hoach/ha-noi"),
             ("TP Hồ Chí Minh", 10.8231, 106.6297, "soi-quy-hoach/ho-chi-minh"),
-            ("Cần Thơ", 10.0452, 105.7469, "soi-quy-hoach/can-tho"),
-            ("Bình Dương", 11.3254, 106.4770, "soi-quy-hoach/binh-duong")
+            # ("Đà Nẵng", 16.0544563, 108.0717219, "soi-quy-hoach/da-nang"),
+            # ("Hải Phòng", 20.8449, 106.6881, "soi-quy-hoach/hai-phong"),
+            # ("Cần Thơ", 10.0452, 105.7469, "soi-quy-hoach/can-tho"),
+            
+            # # MIỀN BẮC (26)
+            # # Vùng Đông Bắc
+            # ("Hà Giang", 22.8025, 104.9784, "soi-quy-hoach/ha-giang"),
+            # ("Cao Bằng", 22.6666, 106.2639, "soi-quy-hoach/cao-bang"),
+            # ("Bắc Kạn", 22.1474, 105.8348, "soi-quy-hoach/bac-kan"),
+            # ("Tuyên Quang", 21.8267, 105.2280, "soi-quy-hoach/tuyen-quang"),
+            # ("Lạng Sơn", 21.8537, 106.7610, "soi-quy-hoach/lang-son"),
+            # ("Thái Nguyên", 21.5944, 105.8480, "soi-quy-hoach/thai-nguyen"),
+            # ("Phú Thọ", 21.4208, 105.2045, "soi-quy-hoach/phu-tho"),
+            # ("Bắc Giang", 21.2731, 106.1946, "soi-quy-hoach/bac-giang"),
+            # ("Quảng Ninh", 21.0064, 107.2925, "soi-quy-hoach/quang-ninh"),
+            # ("Bắc Ninh", 21.1861, 106.0763, "soi-quy-hoach/bac-ninh"),
+            
+            # # Vùng Tây Bắc
+            # ("Lai Châu", 22.3856, 103.4707, "soi-quy-hoach/lai-chau"),
+            # ("Điện Biên", 21.3847, 103.0175, "soi-quy-hoach/dien-bien"),
+            # ("Sơn La", 21.3256, 103.9188, "soi-quy-hoach/son-la"),
+            # ("Hòa Bình", 20.8156, 105.3373, "soi-quy-hoach/hoa-binh"),
+            
+            # # Vùng Đồng bằng sông Hồng
+            # ("Hải Dương", 20.9373, 106.3148, "soi-quy-hoach/hai-duong"),
+            # ("Hưng Yên", 20.6464, 106.0511, "soi-quy-hoach/hung-yen"),
+            # ("Hà Nam", 20.5835, 105.9230, "soi-quy-hoach/ha-nam"),
+            # ("Nam Định", 20.4341, 106.1675, "soi-quy-hoach/nam-dinh"),
+            # ("Thái Bình", 20.4500, 106.3400, "soi-quy-hoach/thai-binh"),
+            # ("Ninh Bình", 20.2506, 105.9744, "soi-quy-hoach/ninh-binh"),
+            # ("Vĩnh Phúc", 21.3609, 105.6049, "soi-quy-hoach/vinh-phuc"),
+            
+            # # MIỀN TRUNG (19)
+            # # Bắc Trung Bộ
+            # ("Thanh Hóa", 19.8069, 105.7851, "soi-quy-hoach/thanh-hoa"),
+            # ("Nghệ An", 18.6745, 105.6905, "soi-quy-hoach/nghe-an"),
+            # ("Hà Tĩnh", 18.3560, 105.9069, "soi-quy-hoach/ha-tinh"),
+            # ("Quảng Bình", 17.4809, 106.6238, "soi-quy-hoach/quang-binh"),
+            # ("Quảng Trị", 16.7404, 107.1854, "soi-quy-hoach/quang-tri"),
+            # ("Thừa Thiên Huế", 16.4674, 107.5905, "soi-quy-hoach/thua-thien-hue"),
+            
+            # # Nam Trung Bộ
+            # ("Quảng Nam", 15.5394, 108.0191, "soi-quy-hoach/quang-nam"),
+            # ("Quảng Ngãi", 15.1214, 108.8044, "soi-quy-hoach/quang-ngai"),
+            # ("Bình Định", 13.7757, 109.2219, "soi-quy-hoach/binh-dinh"),
+            # ("Phú Yên", 13.0882, 109.0929, "soi-quy-hoach/phu-yen"),
+            # ("Khánh Hòa", 12.2388, 109.1967, "soi-quy-hoach/khanh-hoa"),
+            # ("Ninh Thuận", 11.5645, 108.9899, "soi-quy-hoach/ninh-thuan"),
+            # ("Bình Thuận", 11.0904, 108.0721, "soi-quy-hoach/binh-thuan"),
+            
+            # # Tây Nguyên
+            # ("Kon Tum", 14.3497, 108.0005, "soi-quy-hoach/kon-tum"),
+            # ("Gia Lai", 13.8078, 108.1094, "soi-quy-hoach/gia-lai"),
+            # ("Đắk Lắk", 12.7100, 108.2378, "soi-quy-hoach/dak-lak"),
+            # ("Đắk Nông", 12.2646, 107.6098, "soi-quy-hoach/dak-nong"),
+            # ("Lâm Đồng", 11.5753, 108.1429, "soi-quy-hoach/lam-dong"),
+            
+            # # MIỀN NAM (14)
+            # # Đông Nam Bộ
+            # ("Bình Phước", 11.7511, 106.7234, "soi-quy-hoach/binh-phuoc"),
+            # ("Tây Ninh", 11.3100, 106.0989, "soi-quy-hoach/tay-ninh"),
+            # ("Bình Dương", 11.3254, 106.4770, "soi-quy-hoach/binh-duong"),
+            # ("Đồng Nai", 11.0686, 107.1676, "soi-quy-hoach/dong-nai"),
+            # ("Bà Rịa - Vũng Tàu", 10.5417, 107.2431, "soi-quy-hoach/ba-ria-vung-tau"),
+            
+            # # Đồng bằng sông Cửu Long
+            # ("Long An", 10.6957, 106.2431, "soi-quy-hoach/long-an"),
+            # ("Tiền Giang", 10.4493, 106.3420, "soi-quy-hoach/tien-giang"),
+            # ("Bến Tre", 10.2433, 106.3756, "soi-quy-hoach/ben-tre"),
+            # ("Trà Vinh", 9.9477, 106.3524, "soi-quy-hoach/tra-vinh"),
+            # ("Vĩnh Long", 10.2397, 105.9571, "soi-quy-hoach/vinh-long"),
+            # ("Đồng Tháp", 10.4938, 105.6881, "soi-quy-hoach/dong-thap"),
+            # ("An Giang", 10.3889, 105.4359, "soi-quy-hoach/an-giang"),
+            # ("Kiên Giang", 10.0125, 105.0808, "soi-quy-hoach/kien-giang"),
+            # ("Hậu Giang", 9.7571, 105.6412, "soi-quy-hoach/hau-giang"),
+            # ("Sóc Trăng", 9.6002, 105.9800, "soi-quy-hoach/soc-trang"),
+            # ("Bạc Liêu", 9.2515, 105.7244, "soi-quy-hoach/bac-lieu"),
+            # ("Cà Mau", 9.1769, 105.1524, "soi-quy-hoach/ca-mau")
         ]
         
         # Network request tracking
@@ -600,37 +675,48 @@ Method: Systematic zoom coverage 10-18 + Map interaction + Tile download
         parsed = urlparse(url)
         return f"{parsed.scheme}://{parsed.netloc}"
     
-    def run_browser_crawl(self):
-        """Run complete browser-based crawl with full coverage - TIMEOUT PROTECTED"""
+    def run_browser_crawl(self, max_hours=2):  # Tăng từ 1 giờ lên 2 giờ
+        """Run complete browser-based crawl with configurable timeout"""
         logger.info("🚀 STARTING FULL COVERAGE CRAWL (ZOOM 10-18)")
-        logger.info("=" * 70)
-        logger.info("🎯 Systematic coverage of all zoom levels 10-18")
         logger.info("=" * 70)
         
         crawl_start_time = time.time()
-        max_crawl_time = 3600  # 1 hour total limit
+        max_crawl_time = max_hours * 3600  # Flexible time limit
         
         try:
             if not self.setup_driver():
                 return None
             
+            logger.info(f"⏰ Time limit set to {max_hours} hours")
             logger.info("🌐 Warming up session...")
             self.driver.get("https://guland.vn/")
             time.sleep(random.uniform(3, 6))
             
             for i, (location_name, lat, lng, path) in enumerate(self.test_locations, 1):
                 # Check global timeout
-                if time.time() - crawl_start_time > max_crawl_time:
-                    logger.warning(f"⏰ Global timeout reached, stopping crawl")
+                elapsed_time = time.time() - crawl_start_time
+                remaining_time = max_crawl_time - elapsed_time
+                
+                if remaining_time < 300:  # Less than 5 minutes remaining
+                    logger.warning(f"⏰ Time limit reached: {elapsed_time/3600:.1f}h/{max_hours}h")
+                    logger.warning(f"⏰ Not enough time for next location, stopping")
+                    break
+                
+                # Estimate if we have enough time for this location
+                estimated_time_per_location = 600  # 10 minutes estimate
+                if remaining_time < estimated_time_per_location:
+                    logger.warning(f"⏰ Estimated {estimated_time_per_location/60:.1f}min needed, only {remaining_time/60:.1f}min left")
+                    logger.warning(f"⏰ Skipping remaining locations")
                     break
                     
                 logger.info(f"\n🌍 PROCESSING {i}/{len(self.test_locations)}: {location_name}")
+                logger.info(f"⏱️ Elapsed: {elapsed_time/3600:.1f}h, Remaining: {remaining_time/3600:.1f}h")
                 logger.info("=" * 60)
                 
                 location_start_time = time.time()
-                max_location_time = 600  # 10 minutes per location
                 
-                location_info = self.crawl_location_with_full_coverage(location_name, lat, lng, path)
+                # Process location với timeout riêng
+                location_info = self.crawl_location_with_timeout(location_name, lat, lng, path, timeout_minutes=10)
                 
                 location_elapsed = time.time() - location_start_time
                 logger.info(f"⏱️ {location_name} processed in {location_elapsed:.1f}s")
@@ -643,21 +729,23 @@ Method: Systematic zoom coverage 10-18 + Map interaction + Tile download
                     for zoom in range(10, 19):
                         if zoom in location_info['zoom_levels']:
                             count = location_info['zoom_levels'][zoom]['tile_count']
-                            logger.info(f"   Zoom {zoom}: {count} tiles")
+                            if count > 0:
+                                logger.info(f"   Zoom {zoom}: {count} tiles")
                 else:
                     logger.warning(f"⚠️ Failed to process {location_name}")
                 
-                # Delay between cities
+                # Adaptive delay between locations
                 if i < len(self.test_locations):
-                    # Check if we have time for next location
                     remaining_time = max_crawl_time - (time.time() - crawl_start_time)
-                    if remaining_time < 300:  # Less than 5 minutes remaining
-                        logger.warning(f"⏰ Not enough time for next location, stopping")
-                        break
+                    remaining_locations = len(self.test_locations) - i
+                    
+                    if remaining_locations > 0:
+                        time_per_location = remaining_time / remaining_locations
+                        delay = min(30, max(5, time_per_location * 0.05))  # 5% of remaining time per location
                         
-                    delay = min(30, remaining_time // 10)  # Adaptive delay
-                    logger.info(f"⏳ Waiting {delay:.1f}s before next location...")
-                    time.sleep(delay)
+                        logger.info(f"⏳ Waiting {delay:.1f}s before next location...")
+                        logger.info(f"📊 {remaining_locations} locations remaining, {remaining_time/60:.1f}min left")
+                        time.sleep(delay)
             
             # Generate final comprehensive report
             final_report = self.generate_final_report()
@@ -673,7 +761,35 @@ Method: Systematic zoom coverage 10-18 + Map interaction + Tile download
                 logger.info("🔚 Browser closed")
             
             total_elapsed = time.time() - crawl_start_time
-            logger.info(f"⏱️ Total crawl time: {total_elapsed:.1f}s")
+            logger.info(f"⏱️ Total crawl time: {total_elapsed/3600:.1f} hours")
+    
+    def crawl_location_with_timeout(self, location_name, lat, lng, path, timeout_minutes=10):
+        """Crawl location với timeout cụ thể"""
+        import signal
+        
+        def timeout_handler(signum, frame):
+            raise TimeoutError(f"Location crawl timeout after {timeout_minutes} minutes")
+        
+        # Set timeout
+        signal.signal(signal.SIGALRM, timeout_handler)
+        signal.alarm(timeout_minutes * 60)  # Convert to seconds
+        
+        try:
+            result = self.crawl_location_with_full_coverage(location_name, lat, lng, path)
+            signal.alarm(0)  # Cancel timeout
+            return result
+            
+        except TimeoutError as e:
+            logger.warning(f"⏰ {location_name} timed out after {timeout_minutes} minutes")
+            signal.alarm(0)  # Cancel timeout
+            self.discovered_data['failure_count'] += 1
+            return None
+            
+        except Exception as e:
+            logger.error(f"❌ Error in {location_name}: {e}")
+            signal.alarm(0)  # Cancel timeout
+            self.discovered_data['failure_count'] += 1
+            return None
     
     def generate_interaction_report(self):
         """Generate report for interaction-based crawling"""
@@ -755,56 +871,108 @@ Method: Map interaction simulation + Network request capture
             return False
 
 def main():
-    """Main function with download options"""
-    print("🎮 GULAND CRAWLER WITH TILE DOWNLOAD")
-    print("Crawls tile URLs and downloads them automatically")
+    """Main function with configurable timeout"""
+    print("🇻🇳 VIETNAM-WIDE GULAND CRAWLER")
+    print("Crawls tile URLs for Vietnamese provinces/cities")
     print("=" * 60)
     
-    # Ask user preferences
-    headless_input = input("Run in headless mode? (y/N): ").lower().strip()
+    # Time limit configuration
+    print("\nChọn giới hạn thời gian:")
+    print("1. Test (30 phút)")
+    print("2. Quick (1 giờ)")
+    print("3. Standard (2 giờ)")
+    print("4. Extended (4 giờ)")
+    print("5. Marathon (8 giờ)")
+    print("6. Custom")
+    
+    time_choice = input("Lựa chọn thời gian (1-6, default 3): ").strip()
+    time_map = {
+        '1': 0.5,   # 30 minutes
+        '2': 1,     # 1 hour
+        '3': 2,     # 2 hours
+        '4': 4,     # 4 hours
+        '5': 8,     # 8 hours
+        '6': None   # Custom
+    }
+    
+    max_hours = time_map.get(time_choice, 2)  # Default 2 hours
+    
+    if time_choice == '6':  # Custom
+        custom_input = input("Nhập số giờ (0.5-24): ").strip()
+        try:
+            max_hours = float(custom_input)
+            max_hours = max(0.5, min(24, max_hours))  # Between 30 minutes and 24 hours
+        except:
+            max_hours = 2
+    
+    # Scope selection
+    scope_choice = input("\nPhạm vi crawl (1=Test 5 locations, 2=All 63): ").strip()
+    if scope_choice == '2':
+        # Set all locations
+        max_hours = max(max_hours, 4)  # Minimum 4 hours for all locations
+        print(f"📊 All locations mode: minimum {max_hours} hours recommended")
+    
+    # Other configurations...
+    headless_input = input("Chạy ẩn browser? (y/N): ").lower().strip()
     headless = headless_input in ['y', 'yes']
     
-    download_input = input("Download tiles automatically? (Y/n): ").lower().strip()
+    download_input = input("Tự động download tiles? (Y/n): ").lower().strip()
     download_tiles = download_input not in ['n', 'no']
     
     workers = 5
     if download_tiles:
-        workers_input = input("Number of download workers (1-10, default 5): ").strip()
+        workers_input = input("Số worker download (1-10, default 5): ").strip()
         try:
             workers = int(workers_input) if workers_input else 5
             workers = max(1, min(10, workers))
         except:
             workers = 5
     
+    # Create crawler
     crawler = BrowserGulandCrawler(
         headless=headless, 
         enable_download=download_tiles,
         download_workers=workers
     )
     
+    print(f"\n🎯 CRAWL CONFIGURATION:")
+    print(f"⏰ Time limit: {max_hours} hours")
+    print(f"📊 Locations: {len(crawler.test_locations)}")
+    print(f"🖥️ Headless: {'Yes' if headless else 'No'}")
+    print(f"📥 Download: {'Yes' if download_tiles else 'No'}")
     if download_tiles:
-        print(f"📥 Download enabled with {workers} parallel workers")
-    else:
-        print("⏭️ Download disabled - only URLs will be collected")
+        print(f"👥 Workers: {workers}")
+    
+    estimated_time = len(crawler.test_locations) * 10 / 60  # 10 min per location
+    print(f"📊 Estimated time needed: {estimated_time:.1f} hours")
+    
+    if estimated_time > max_hours:
+        print(f"⚠️ WARNING: Time limit ({max_hours}h) may be insufficient!")
+        print(f"💡 Consider increasing time limit or reducing scope")
+    
+    confirm = input("\nBắt đầu crawl? (Y/n): ").lower().strip()
+    if confirm in ['n', 'no']:
+        print("Đã hủy.")
+        return
     
     try:
-        results = crawler.run_browser_crawl()
+        results = crawler.run_browser_crawl(max_hours=max_hours)
         
         if results and results['summary']['total_successful'] > 0:
-            print("\n✅ SUCCESS! Found tile patterns and servers")
+            print("\n✅ THÀNH CÔNG! Đã tìm thấy tile patterns và servers")
             if download_tiles:
-                print(f"📥 Downloaded {results['download_summary']['total_successful']} tiles")
-                print(f"📁 Check 'downloaded_tiles/' for downloaded tiles")
-            print("📁 Check 'output_browser_crawl/' for detailed results")
+                print(f"📥 Đã download {results['download_summary']['total_successful']} tiles")
+                print(f"📁 Kiểm tra thư mục 'downloaded_tiles/'")
+            print("📁 Kiểm tra thư mục 'output_browser_crawl/' để xem kết quả chi tiết")
         else:
-            print("\n⚠️ No successful results")
-            print("💡 Try running in non-headless mode for debugging")
+            print("\n⚠️ Không có kết quả thành công")
+            print("💡 Thử tăng thời gian hoặc giảm số location")
         
     except KeyboardInterrupt:
-        print("\n⏹️ Crawl interrupted by user")
+        print("\n⏹️ Crawl bị dừng bởi người dùng")
     except Exception as e:
-        print(f"\n❌ Crawl failed: {e}")
-        print("💡 Check logs for details")
+        print(f"\n❌ Crawl thất bại: {e}")
+        print("💡 Kiểm tra logs để biết chi tiết")
 
 if __name__ == "__main__":
     main()

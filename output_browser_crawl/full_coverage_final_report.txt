@@ -1,57 +1,36 @@
 
 # FULL COVERAGE GULAND CRAWLER FINAL REPORT (WITH DOWNLOADS)
-Generated: 2025-06-12T00:57:12.435585
+Generated: 2025-06-15T16:51:17.239671
 Method: Systematic zoom coverage 10-18 + Map interaction + Tile download
 
 ## 📊 CRAWL SUMMARY
-• Total Attempted: 5
-• Total Successful: 5
+• Total Attempted: 2
+• Total Successful: 2
 • Success Rate: 100.0%
-• Unique Tile Patterns: 8
-• Tile Servers: 5
+• Unique Tile Patterns: 2
+• Tile Servers: 2
 
 ## 📥 DOWNLOAD SUMMARY
-• Total tiles attempted: 2225
-• Successful downloads: 1840
-• Failed downloads: 385
-• Download success rate: 82.7%
-• Total downloaded: 62.4 MB
+• Total tiles attempted: 1038
+• Successful downloads: 782
+• Failed downloads: 256
+• Download success rate: 75.3%
+• Total downloaded: 35.3 MB
 
 ## 🎯 TILE PATTERNS DISCOVERED
-• https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png
 • https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
-• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/can-tho/{z}/{x}/{y}.png
-• https://s3-han02.fptcloud.com/guland6/land/binh-duong/{z}/{x}/{y}.png
-• https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png
 • https://s3-hn-2.cloud.cmctelecom.vn/guland7/land/ha-noi/{z}/{x}/{y}.png
-• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/da-nang/{z}/{x}/{y}.png
-• https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png
 
 ## 🗺️ TILE SERVERS
-• https://l5cfglaebpobj.vcdn.cloud
 • https://s3-hn-2.cloud.cmctelecom.vn
-• https://s3-han02.fptcloud.com
-• https://s3v2.interdata.vn:9000
-• https://guland.sgp1.cdn.digitaloceanspaces.com
+• https://l5cfglaebpobj.vcdn.cloud
 
 ## 📍 LOCATION DETAILS
-### Đà Nẵng
-• Tiles found: 450
-• Patterns: 2
-
 ### Hà Nội
-• Tiles found: 423
+• Tiles found: 603
 • Patterns: 2
 
 ### TP Hồ Chí Minh
-• Tiles found: 443
-• Patterns: 2
-
-### Cần Thơ
-• Tiles found: 420
-• Patterns: 2
-
-### Bình Dương
-• Tiles found: 489
+• Tiles found: 435
 • Patterns: 2
 
