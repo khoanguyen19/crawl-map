@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-06-18T10:37:35.333169",
+  "crawler": "Browser Pattern Discovery Crawler v4.0",
+  "method": "Systematic zoom coverage 10-18 for pattern discovery",
+  "summary": {
+    "total_attempted": 1,
+    "total_successful": 1,
+    "total_failed": 0,
+    "success_rate": 100.0,
+    "unique_tile_patterns": 1,
+    "tile_servers": 1
+  },
+  "tile_patterns": [
+    "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png"
+  ],
+  "tile_servers": [
+    "https://l5cfglaebpobj.vcdn.cloud"
+  ],
+  "successful_locations": [
+    {
+      "location_name": "TP Hồ Chí Minh",
+      "clean_name": "TP_Hồ_Chí_Minh",
+      "timestamp": "2025-06-18T10:37:35.331036",
+      "coordinates": {
+        "lat": 10.8231,
+        "lng": 106.6297
+      },
+      "discovered_patterns": [
+        "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png"
+      ],
+      "tile_servers": [
+        "https://l5cfglaebpobj.vcdn.cloud"
+      ],
+      "bounds": {
+        "center": {
+          "lat": 10.8230989,
+          "lng": 106.6296638
+        },
+        "northeast": {
+          "lat": 10.828321643898985,
+          "lng": 106.639963388443
+        },
+        "southwest": {
+          "lat": 10.817867960141587,
+          "lng": 106.61937475204468
+        },
+        "zoom": 17
+      },
+      "pattern_count": 1,
+      "server_count": 1
+    }
+  ]
+}

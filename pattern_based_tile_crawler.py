@@ -83,20 +83,75 @@ class PatternBasedTileCrawler:
         logger.info(f"📥 Download enabled: {enable_download}")
 
     def load_patterns_from_browser_results(self, city_name=None):
-        """Load patterns from specific city or all cities"""
+        """Load patterns from specific city or all cities - UPDATED for new structure"""
         if city_name:
-            # Load patterns cho thành phố cụ thể
-            city_file = f'output_browser_crawl/full_coverage_{city_name}.json'
+            # Load patterns cho thành phố cụ thể từ new structure
+            clean_city_name = city_name.replace(' ', '_').replace('TP ', '')
+            city_reports_dir = f'output_browser_crawl/cities/{clean_city_name}/reports'
+            
+            patterns = set()
+            
             try:
-                with open(city_file, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                return data.get('tile_patterns', [])
-            except FileNotFoundError:
-                logger.warning(f"❌ No results for {city_name}")
-                return []
+                # Try to find latest patterns report
+                if os.path.exists(city_reports_dir):
+                    pattern_files = list(Path(city_reports_dir).glob('patterns_*.json'))
+                    if pattern_files:
+                        # Get latest file
+                        latest_file = max(pattern_files, key=os.path.getctime)
+                        with open(latest_file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                        patterns.update(data.get('discovered_patterns', []))
+                        logger.info(f"📋 Loaded {len(patterns)} patterns from {latest_file}")
+                    else:
+                        logger.warning(f"❌ No pattern files found for {city_name}")
+                else:
+                    logger.warning(f"❌ No reports directory for {city_name}")
+                    
+            except Exception as e:
+                logger.error(f"❌ Error loading patterns for {city_name}: {e}")
+                
+            return list(patterns)
         else:
             # Load từ final report (tất cả patterns)
             return self.load_patterns_from_final_report()
+        
+    def load_patterns_from_final_report(self):
+        """Load patterns from new final report structure"""
+        patterns = set()
+        
+        # Try new final report location first
+        final_report_path = 'output_browser_crawl/reports/final_patterns_report.json'
+        try:
+            with open(final_report_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            patterns.update(data.get('tile_patterns', []))
+            logger.info(f"📋 Loaded {len(patterns)} patterns from final report")
+            return list(patterns)
+        except FileNotFoundError:
+            logger.warning(f"⚠️ Final report not found at {final_report_path}")
+        
+        # Fallback: load from all city reports
+        cities_dir = Path('output_browser_crawl/cities')
+        if cities_dir.exists():
+            for city_dir in cities_dir.iterdir():
+                if city_dir.is_dir():
+                    reports_dir = city_dir / 'reports'
+                    if reports_dir.exists():
+                        # Find latest patterns file for this city
+                        pattern_files = list(reports_dir.glob('patterns_*.json'))
+                        if pattern_files:
+                            latest_file = max(pattern_files, key=os.path.getctime)
+                            try:
+                                with open(latest_file, 'r', encoding='utf-8') as f:
+                                    data = json.load(f)
+                                city_patterns = data.get('discovered_patterns', [])
+                                patterns.update(city_patterns)
+                                logger.info(f"📋 Added {len(city_patterns)} patterns from {city_dir.name}")
+                            except Exception as e:
+                                logger.warning(f"⚠️ Failed to load {latest_file}: {e}")
+        
+        logger.info(f"📋 Total patterns loaded from all cities: {len(patterns)}")
+        return list(patterns)
 
     def deg2num(self, lat_deg, lon_deg, zoom):
         """Convert lat/lon to tile coordinates"""
@@ -610,20 +665,33 @@ class PatternBasedTileCrawler:
         return all_tiles
 
     def compare_with_browser_results(self, city_name, crawled_tiles):
-        """Compare crawled tiles with browser results for the city"""
+        """Compare crawled tiles with browser results for the city - UPDATED"""
         logger.info(f"📊 Comparing crawled tiles with browser results for {city_name}")
         
-        # Load browser results
-        city_file = f'output_browser_crawl/full_coverage_{city_name}.json'
+        # Load browser results from new structure
+        clean_city_name = city_name.replace(' ', '_').replace('TP ', '')
+        city_reports_dir = f'output_browser_crawl/cities/{clean_city_name}/reports'
+        
         try:
-            with open(city_file, 'r', encoding='utf-8') as f:
-                browser_data = json.load(f)
-        except FileNotFoundError:
-            logger.warning(f"❌ No browser results found for {city_name}")
+            # Find latest patterns file
+            if os.path.exists(city_reports_dir):
+                pattern_files = list(Path(city_reports_dir).glob('patterns_*.json'))
+                if pattern_files:
+                    latest_file = max(pattern_files, key=os.path.getctime)
+                    with open(latest_file, 'r', encoding='utf-8') as f:
+                        browser_data = json.load(f)
+                else:
+                    logger.warning(f"❌ No pattern files found for {city_name}")
+                    return None
+            else:
+                logger.warning(f"❌ No reports directory found for {city_name}")
+                return None
+        except Exception as e:
+            logger.warning(f"❌ Error loading browser results for {city_name}: {e}")
             return None
         
         browser_tiles = set()
-        for pattern in browser_data.get('tile_patterns', []):
+        for pattern in browser_data.get('discovered_patterns', []):
             # Generate expected tiles for this pattern
             expected_tiles = self.generate_sample_urls_from_pattern(pattern, [10, 11, 12, 13, 14, 15, 16, 18], sample_size=100)
             browser_tiles.update({(tile['x'], tile['y'], tile['zoom']) for tile in expected_tiles})
@@ -1249,33 +1317,38 @@ Execution time: {elapsed_time/60:.1f} minutes
         }
 
     def load_all_discovered_patterns(self):
-        """Load all discovered patterns from browser crawler results"""
+        """Load all discovered patterns from new browser crawler results structure"""
         patterns = set()
         
         # Try to load from final report first
         try:
-            with open('output_browser_crawl/full_coverage_final_report.json', 'r', encoding='utf-8') as f:
+            with open('output_browser_crawl/reports/final_patterns_report.json', 'r', encoding='utf-8') as f:
                 data = json.load(f)
             patterns.update(data.get('tile_patterns', []))
             logger.info(f"📋 Loaded {len(patterns)} patterns from final report")
         except FileNotFoundError:
-            logger.warning("⚠️ No final report found, loading from individual city files")
+            logger.warning("⚠️ No final patterns report found")
     
-        # Also load from individual city files
-        city_files_dir = Path('output_browser_crawl')
-        if city_files_dir.exists():
-            for city_file in city_files_dir.glob('full_coverage_*.json'):
-                if 'final_report' in city_file.name:
-                    continue
-                
-                try:
-                    with open(city_file, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                    city_patterns = data.get('tile_patterns', [])
-                    patterns.update(city_patterns)
-                    logger.info(f"📋 Loaded {len(city_patterns)} patterns from {city_file.name}")
-                except Exception as e:
-                    logger.warning(f"⚠️ Failed to load {city_file}: {e}")
+        # Also load from individual city files in new structure
+        cities_dir = Path('output_browser_crawl/cities')
+        if cities_dir.exists():
+            for city_dir in cities_dir.iterdir():
+                if city_dir.is_dir():
+                    reports_dir = city_dir / 'reports'
+                    if reports_dir.exists():
+                        # Find all pattern files for this city
+                        pattern_files = list(reports_dir.glob('patterns_*.json'))
+                        for pattern_file in pattern_files:
+                            try:
+                                with open(pattern_file, 'r', encoding='utf-8') as f:
+                                    data = json.load(f)
+                                city_patterns = data.get('discovered_patterns', [])
+                                patterns.update(city_patterns)
+                                logger.info(f"📋 Added {len(city_patterns)} patterns from {city_dir.name}")
+                            except Exception as e:
+                                logger.warning(f"⚠️ Failed to load {pattern_file}: {e}")
+        else:
+            logger.warning("⚠️ No cities directory found in output_browser_crawl")
     
         return list(patterns)
 
@@ -1661,41 +1734,67 @@ Duration: {elapsed_time/60:.1f} minutes
         return all_results
 
     def load_patterns_from_txt_reports(self, city_name=None):
-        """Load patterns from TXT coverage reports instead of JSON"""
+        """Load patterns from TXT coverage reports - UPDATED for new structure"""
         patterns = set()
     
         if city_name:
-            # Load patterns cho thành phố cụ thể từ TXT file
-            txt_file = f'output_browser_crawl/coverage_report_{city_name.replace(" ", "_")}.txt'
-            patterns_from_city = self.parse_patterns_from_txt(txt_file)
-            patterns.update(patterns_from_city)
-            logger.info(f"📋 Loaded {len(patterns_from_city)} patterns from {city_name} TXT report")
+            # Load patterns cho thành phố cụ thể từ TXT file trong new structure
+            clean_city_name = city_name.replace(' ', '_').replace('TP ', '')
+            txt_file = f'output_browser_crawl/cities/{clean_city_name}/reports/patterns_summary_*.txt'
+            
+            # Find latest summary file
+            txt_files = list(Path(f'output_browser_crawl/cities/{clean_city_name}/reports').glob('patterns_summary_*.txt'))
+            if txt_files:
+                latest_txt = max(txt_files, key=os.path.getctime)
+                patterns_from_city = self.parse_patterns_from_txt(latest_txt)
+                patterns.update(patterns_from_city)
+                logger.info(f"📋 Loaded {len(patterns_from_city)} patterns from {city_name} TXT report")
+            else:
+                logger.warning(f"⚠️ No TXT summary found for {city_name}")
         else:
-            # Load từ tất cả TXT files
-            txt_files_dir = Path('output_browser_crawl')
-            if txt_files_dir.exists():
-                for txt_file in txt_files_dir.glob('coverage_report_*.txt'):
-                    city_patterns = self.parse_patterns_from_txt(txt_file)
-                    patterns.update(city_patterns)
-                    logger.info(f"📋 Loaded {len(city_patterns)} patterns from {txt_file.name}")
+            # Load từ tất cả TXT files trong new structure
+            cities_dir = Path('output_browser_crawl/cities')
+            if cities_dir.exists():
+                for city_dir in cities_dir.iterdir():
+                    if city_dir.is_dir():
+                        reports_dir = city_dir / 'reports'
+                        if reports_dir.exists():
+                            # Find summary TXT files
+                            txt_files = list(reports_dir.glob('patterns_summary_*.txt'))
+                            for txt_file in txt_files:
+                                city_patterns = self.parse_patterns_from_txt(txt_file)
+                                patterns.update(city_patterns)
+                                logger.info(f"📋 Added {len(city_patterns)} patterns from {city_dir.name}")
     
         return list(patterns)
 
     def parse_patterns_from_txt(self, txt_file_path):
-        """Parse tile patterns from TXT coverage report"""
+        """Parse tile patterns from TXT report - UPDATED for new format"""
         patterns = set()
     
         try:
             with open(txt_file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Tìm section "## 🎯 TILE PATTERNS"
-            pattern_section_start = content.find("## 🎯 TILE PATTERNS")
+            # Look for "## 🎯 ALL DISCOVERED TILE PATTERNS" or "## 🎯 DISCOVERED PATTERNS"
+            pattern_sections = [
+                "## 🎯 ALL DISCOVERED TILE PATTERNS",
+                "## 🎯 DISCOVERED PATTERNS", 
+                "## 🎯 TILE PATTERNS"
+            ]
+            
+            pattern_section_start = -1
+            for section_name in pattern_sections:
+                pattern_section_start = content.find(section_name)
+                if pattern_section_start != -1:
+                    logger.info(f"🔍 Found patterns section: {section_name}")
+                    break
+            
             if pattern_section_start == -1:
                 logger.warning(f"⚠️ No patterns section found in {txt_file_path}")
                 return patterns
             
-            # Extract phần patterns (từ "## 🎯 TILE PATTERNS" đến hết file hoặc section tiếp theo)
+            # Extract phần patterns 
             pattern_section = content[pattern_section_start:]
             
             # Tìm section tiếp theo nếu có
@@ -1710,7 +1809,7 @@ Duration: {elapsed_time/60:.1f} minutes
                 if line.startswith('• ') and '{z}' in line and '{x}' in line and '{y}' in line:
                     pattern = line[2:].strip()  # Remove "• " prefix
                     patterns.add(pattern)
-                    logger.info(f"🎯 Found pattern: {pattern}")
+                    logger.debug(f"🎯 Found pattern: {pattern}")
             
             logger.info(f"📋 Parsed {len(patterns)} patterns from {txt_file_path}")
             
@@ -1723,22 +1822,35 @@ Duration: {elapsed_time/60:.1f} minutes
 
     # Update load_all_discovered_patterns to support TXT
     def load_all_discovered_patterns_from_txt(self):
-        """Load all discovered patterns from TXT reports"""
+        """Load all discovered patterns from TXT reports - UPDATED for new structure"""
         patterns = set()
     
-        # Load from individual city TXT files
-        txt_files_dir = Path('output_browser_crawl')
-        if txt_files_dir.exists():
-            for txt_file in txt_files_dir.glob('coverage_report_*.txt'):
-                try:
-                    city_patterns = self.parse_patterns_from_txt(txt_file)
-                    patterns.update(city_patterns)
-                    city_name = txt_file.stem.replace('coverage_report_', '')
-                    logger.info(f"📋 Added {len(city_patterns)} patterns from {city_name}")
-                except Exception as e:
-                    logger.warning(f"⚠️ Failed to load {txt_file}: {e}")
+        # Try to load from final summary first
+        final_summary_path = 'output_browser_crawl/reports/final_patterns_summary.txt'
+        if os.path.exists(final_summary_path):
+            final_patterns = self.parse_patterns_from_txt(final_summary_path)
+            patterns.update(final_patterns)
+            logger.info(f"📋 Loaded {len(final_patterns)} patterns from final summary")
     
-        logger.info(f"📋 Total unique patterns loaded: {len(patterns)}")
+        # Load from individual city TXT files in new structure
+        cities_dir = Path('output_browser_crawl/cities')
+        if cities_dir.exists():
+            for city_dir in cities_dir.iterdir():
+                if city_dir.is_dir():
+                    reports_dir = city_dir / 'reports'
+                    if reports_dir.exists():
+                        # Find all summary TXT files
+                        txt_files = list(reports_dir.glob('patterns_summary_*.txt'))
+                        for txt_file in txt_files:
+                            try:
+                                city_patterns = self.parse_patterns_from_txt(txt_file)
+                                patterns.update(city_patterns)
+                                city_name = city_dir.name
+                                logger.info(f"📋 Added {len(city_patterns)} patterns from {city_name}")
+                            except Exception as e:
+                                logger.warning(f"⚠️ Failed to load {txt_file}: {e}")
+    
+        logger.info(f"📋 Total unique patterns loaded from TXT: {len(patterns)}")
         return list(patterns)
 
     def generate_city_focused_report(self, city_results, start_time):

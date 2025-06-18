@@ -1,0 +1,23 @@
+# GULAND TILE PATTERNS DISCOVERY REPORT
+Generated: 2025-06-18T10:37:35.333169
+Method: Browser-based systematic pattern discovery
+
+## 📊 DISCOVERY SUMMARY
+• Total Locations Attempted: 1
+• Successful Discoveries: 1
+• Success Rate: 100.0%
+• Unique Tile Patterns: 1
+• Tile Servers: 1
+
+## 🎯 ALL DISCOVERED TILE PATTERNS
+• https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+
+## 🗺️ TILE SERVERS
+• https://l5cfglaebpobj.vcdn.cloud
+
+## 📍 LOCATION BREAKDOWN
+### TP Hồ Chí Minh
+• Patterns found: 1
+• Servers: 1
+  - https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+
