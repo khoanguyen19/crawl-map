@@ -1,23 +1,43 @@
 # GULAND TILE PATTERNS DISCOVERY REPORT
-Generated: 2025-06-18T10:37:35.333169
+Generated: 2025-06-19T17:15:17.016779
 Method: Browser-based systematic pattern discovery
 
 ## 📊 DISCOVERY SUMMARY
-• Total Locations Attempted: 1
-• Successful Discoveries: 1
+• Total Locations Attempted: 3
+• Successful Discoveries: 3
 • Success Rate: 100.0%
-• Unique Tile Patterns: 1
-• Tile Servers: 1
+• Unique Tile Patterns: 6
+• Tile Servers: 3
 
 ## 🎯 ALL DISCOVERED TILE PATTERNS
-• https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/dong-nai-2/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland6/land/baria-vungtau/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png
+• https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/an-giang/{z}/{x}/{y}.png
 
 ## 🗺️ TILE SERVERS
+• https://s3v2.interdata.vn:9000
 • https://l5cfglaebpobj.vcdn.cloud
+• https://s3-han02.fptcloud.com
 
 ## 📍 LOCATION BREAKDOWN
-### TP Hồ Chí Minh
-• Patterns found: 1
-• Servers: 1
-  - https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+### Đồng Nai
+• Patterns found: 2
+• Servers: 2
+  - https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/dong-nai-2/{z}/{x}/{y}.png
+  - https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png
+
+### Bà Rịa - Vũng Tàu
+• Patterns found: 2
+• Servers: 2
+  - https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png
+  - https://s3-han02.fptcloud.com/guland6/land/baria-vungtau/{z}/{x}/{y}.png
+
+### An Giang
+• Patterns found: 2
+• Servers: 2
+  - https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png
+  - https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/an-giang/{z}/{x}/{y}.png
 

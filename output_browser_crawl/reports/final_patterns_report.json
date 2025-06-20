@@ -1,53 +1,130 @@
 {
-  "timestamp": "2025-06-18T10:37:35.333169",
+  "timestamp": "2025-06-19T17:15:17.016779",
   "crawler": "Browser Pattern Discovery Crawler v4.0",
   "method": "Systematic zoom coverage 10-18 for pattern discovery",
   "summary": {
-    "total_attempted": 1,
-    "total_successful": 1,
+    "total_attempted": 3,
+    "total_successful": 3,
     "total_failed": 0,
     "success_rate": 100.0,
-    "unique_tile_patterns": 1,
-    "tile_servers": 1
+    "unique_tile_patterns": 6,
+    "tile_servers": 3
   },
   "tile_patterns": [
-    "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png"
+    "https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/dong-nai-2/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland6/land/baria-vungtau/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png",
+    "https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/an-giang/{z}/{x}/{y}.png"
   ],
   "tile_servers": [
-    "https://l5cfglaebpobj.vcdn.cloud"
+    "https://s3v2.interdata.vn:9000",
+    "https://l5cfglaebpobj.vcdn.cloud",
+    "https://s3-han02.fptcloud.com"
   ],
   "successful_locations": [
     {
-      "location_name": "TP Hồ Chí Minh",
-      "clean_name": "TP_Hồ_Chí_Minh",
-      "timestamp": "2025-06-18T10:37:35.331036",
+      "location_name": "Đồng Nai",
+      "clean_name": "Đồng_Nai",
+      "timestamp": "2025-06-19T17:05:37.395244",
       "coordinates": {
-        "lat": 10.8231,
-        "lng": 106.6297
+        "lat": 11.0686,
+        "lng": 107.1676
       },
       "discovered_patterns": [
-        "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png"
+        "https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/dong-nai-2/{z}/{x}/{y}.png",
+        "https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png"
       ],
       "tile_servers": [
-        "https://l5cfglaebpobj.vcdn.cloud"
+        "https://l5cfglaebpobj.vcdn.cloud",
+        "https://s3v2.interdata.vn:9000"
       ],
       "bounds": {
         "center": {
-          "lat": 10.8230989,
-          "lng": 106.6296638
+          "lat": 11.0686305,
+          "lng": 107.1675976
         },
         "northeast": {
-          "lat": 10.828321643898985,
-          "lng": 106.639963388443
+          "lat": 11.07373006567226,
+          "lng": 107.1778964996338
         },
         "southwest": {
-          "lat": 10.817867960141587,
-          "lng": 106.61937475204468
+          "lat": 11.06353774461887,
+          "lng": 107.15729713439943
         },
         "zoom": 17
       },
-      "pattern_count": 1,
-      "server_count": 1
+      "pattern_count": 2,
+      "server_count": 2
+    },
+    {
+      "location_name": "Bà Rịa - Vũng Tàu",
+      "clean_name": "Bà_Rịa_-_Vũng_Tàu",
+      "timestamp": "2025-06-19T17:10:23.451470",
+      "coordinates": {
+        "lat": 10.5417,
+        "lng": 107.2431
+      },
+      "discovered_patterns": [
+        "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+        "https://s3-han02.fptcloud.com/guland6/land/baria-vungtau/{z}/{x}/{y}.png"
+      ],
+      "tile_servers": [
+        "https://l5cfglaebpobj.vcdn.cloud",
+        "https://s3-han02.fptcloud.com"
+      ],
+      "bounds": {
+        "center": {
+          "lat": 10.5417397,
+          "lng": 107.2429976
+        },
+        "northeast": {
+          "lat": 10.546841783089656,
+          "lng": 107.25329875946046
+        },
+        "southwest": {
+          "lat": 10.536631557544727,
+          "lng": 107.23269939422609
+        },
+        "zoom": 17
+      },
+      "pattern_count": 2,
+      "server_count": 2
+    },
+    {
+      "location_name": "An Giang",
+      "clean_name": "An_Giang",
+      "timestamp": "2025-06-19T17:15:17.013986",
+      "coordinates": {
+        "lat": 10.3889,
+        "lng": 105.4359
+      },
+      "discovered_patterns": [
+        "https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png",
+        "https://s3v2.interdata.vn:9000/s3-17625-23156-storage-default/land/an-giang/{z}/{x}/{y}.png"
+      ],
+      "tile_servers": [
+        "https://l5cfglaebpobj.vcdn.cloud",
+        "https://s3v2.interdata.vn:9000"
+      ],
+      "bounds": {
+        "center": {
+          "lat": 10.5215836,
+          "lng": 105.1258955
+        },
+        "northeast": {
+          "lat": 10.526684700400924,
+          "lng": 105.13619899749757
+        },
+        "southwest": {
+          "lat": 10.516473807025909,
+          "lng": 105.1155996322632
+        },
+        "zoom": 17
+      },
+      "pattern_count": 2,
+      "server_count": 2
     }
   ]
 }

@@ -72,11 +72,10 @@ class BrowserGulandCrawler:
         self.setup_output_structure()
         
         self.test_locations = [
-            # THÀNH PHỐ TRUNG ƯƠNG (5)
-            ("TP Hồ Chí Minh", 10.8231, 106.6297, "soi-quy-hoach/tp-ho-chi-minh"),
-            # ("Đồng Nai", 11.0686, 107.1676, "soi-quy-hoach/dong-nai"),
-            # ("Bà Rịa - Vũng Tàu", 10.5417, 107.2431, "soi-quy-hoach/ba-ria-vung-tau"),
-            # ("An Giang", 10.3889, 105.4359, "soi-quy-hoach/an-giang"),
+            # ("TP Hồ Chí Minh", 10.8231, 106.6297, "soi-quy-hoach/tp-ho-chi-minh"),
+            ("Đồng Nai", 11.0686, 107.1676, "soi-quy-hoach/dong-nai"),
+            ("Bà Rịa - Vũng Tàu", 10.5417, 107.2431, "soi-quy-hoach/ba-ria-vung-tau"),
+            ("An Giang", 10.3889, 105.4359, "soi-quy-hoach/an-giang"),
             # ("Bắc Giang", 21.2731, 106.1946, "soi-quy-hoach/bac-giang"),
             # ("Bắc Kạn", 22.1474, 105.8348, "soi-quy-hoach/bac-kan"),
             # ("Bạc Liêu", 9.2515, 105.7244, "soi-quy-hoach/bac-lieu"),
