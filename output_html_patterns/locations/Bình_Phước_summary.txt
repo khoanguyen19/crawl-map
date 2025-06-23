@@ -1,0 +1,38 @@
+# TILE PATTERNS: Bình Phước
+Generated: 2025-06-22T22:57:59.655146
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 4
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png
+• Server: https://l5cfglaebpobj.vcdn.cloud
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: 17
+• Active: False
+
+### QH phân khu (QH_PHAN_KHU)
+• Data Type: layer_qhpk_2
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png

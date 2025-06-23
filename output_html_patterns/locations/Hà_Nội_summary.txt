@@ -1,0 +1,45 @@
+# TILE PATTERNS: Hà Nội
+Generated: 2025-06-22T23:00:12.629892
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 6
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
+• Server: https://l5cfglaebpobj.vcdn.cloud
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: 18
+• Active: False
+
+### QH phân khu (QH_PHAN_KHU)
+• Data Type: layer_qhpk_2
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
+
+### QH xây dựng (UNKNOWN_layer_qhpk_qhxd)
+• Data Type: layer_qhpk_qhxd
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: None
+• Active: False
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png

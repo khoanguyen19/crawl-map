@@ -1,0 +1,30 @@
+# TILE PATTERNS: Lào Cai
+Generated: 2025-06-22T23:03:04.302671
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 3
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png
+• Server: https://guland2.sgp1.cdn.digitaloceanspaces.com
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: 17
+• Active: False
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: 
+• Server: None
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png

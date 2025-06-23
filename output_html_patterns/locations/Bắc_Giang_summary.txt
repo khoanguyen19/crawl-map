@@ -1,0 +1,38 @@
+# TILE PATTERNS: Bắc Giang
+Generated: 2025-06-22T22:56:39.556534
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 4
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png
+• Server: https://l5cfglaebpobj.vcdn.cloud
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+• Server: https://s3-han02.fptcloud.com
+• Max Zoom: 17
+• Active: False
+
+### QH phân khu (QH_PHAN_KHU)
+• Data Type: layer_qhpk_2
+• Tile URL: https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png
+• Server: https://s3-han02.fptcloud.com
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png
+• Server: https://s3-han02.fptcloud.com
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png

@@ -1,0 +1,34 @@
+{
+  "location_name": "Lâm Đồng",
+  "timestamp": "2025-06-22T23:02:35.705532",
+  "map_types": {
+    "QH_2030": {
+      "display_name": "QH 2030",
+      "data_type": "layer_1",
+      "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": null,
+      "is_active": true,
+      "server": "https://l5cfglaebpobj.vcdn.cloud"
+    },
+    "KH_2025": {
+      "display_name": "KH 2025",
+      "data_type": "layer_2022",
+      "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": "16",
+      "is_active": false,
+      "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+    },
+    "QH_KHAC": {
+      "display_name": "QH khác",
+      "data_type": "layer_qhpk",
+      "tile_url": "",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": null
+    }
+  },
+  "total_patterns": 3
+}

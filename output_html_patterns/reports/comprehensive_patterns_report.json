@@ -1,0 +1,2146 @@
+{
+  "timestamp": "2025-06-22T23:10:15.528057",
+  "extraction_method": "HTML data-url attribute parsing",
+  "summary": {
+    "total_locations_processed": 63,
+    "successful_extractions": 63,
+    "failed_extractions": 0,
+    "success_rate": 100.0,
+    "total_patterns_found": 208,
+    "unique_tile_urls": 141,
+    "unique_servers": 6
+  },
+  "all_tile_patterns": [
+    "https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/quang-ngai-2030/{z}/{x}/{y}.png",
+    "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dong-thap-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/soc-trang-2030/{z}/{x}/{y}.png",
+    "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/tra-vinh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/tien-giang-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png",
+    "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/yen-bai-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dien-bien-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/quang-ninh-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/hung-yen-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/kon-tum-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/quang-nam-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ca-mau-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/binh-dinh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/bac-lieu-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/long-an-2030/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/nghe-an-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ha-tinh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png",
+    "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/thai-nguyen-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/thanh-hoa-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ben-tre-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dak-lak-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/lai-chau-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/ninh-binh-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/phu-tho-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png",
+    "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png",
+    "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/bac-ninh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/vinh-long-2030/{z}/{x}/{y}.png",
+    "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png",
+    "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png",
+    "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/son-la-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/tay-ninh-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+    "https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png",
+    "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png"
+  ],
+  "all_servers": [
+    "https://l5cfglaebpobj.vcdn.cloud",
+    "https://guland2.sgp1.cdn.digitaloceanspaces.com",
+    "https://s3-hn-2.cloud.cmctelecom.vn",
+    "https://251db3a9dce2de5.cmccloud.com.vn",
+    "https://guland.sgp1.cdn.digitaloceanspaces.com",
+    "https://s3-han02.fptcloud.com"
+  ],
+  "location_breakdown": {
+    "TP Hồ Chí Minh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Đồng Nai": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bà Rịa - Vũng Tàu": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "An Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bắc Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      }
+    },
+    "Bắc Kạn": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bạc Liêu": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/bac-lieu-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/bac-lieu-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bắc Ninh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/bac-ninh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/bac-ninh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bến Tre": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ben-tre-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ben-tre-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Bình Dương": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Bình Phước": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Bình Thuận": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Bình Định": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-dinh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-dinh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Cà Mau": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ca-mau-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ca-mau-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Cần Thơ": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Cao Bằng": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Gia Lai": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hà Nam": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hà Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hà Nội": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "UNKNOWN_layer_qhpk_qhxd": {
+        "display_name": "QH xây dựng",
+        "data_type": "layer_qhpk_qhxd",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Hà Tĩnh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ha-tinh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ha-tinh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hải Dương": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      }
+    },
+    "Hải Phòng": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      }
+    },
+    "Hậu Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hòa Bình": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Hưng Yên": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hung-yen-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hung-yen-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Khánh Hòa": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Kiên Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Kon Tum": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/kon-tum-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/kon-tum-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Lai Châu": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/lai-chau-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "15",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/lai-chau-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Lâm Đồng": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Lạng Sơn": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      }
+    },
+    "Lào Cai": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Long An": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/long-an-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/long-an-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Nam Định": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Nghệ An": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/nghe-an-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/nghe-an-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Ninh Bình": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ninh-binh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ninh-binh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Ninh Thuận": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Phú Thọ": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/phu-tho-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/phu-tho-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Phú Yên": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Quảng Bình": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Quảng Nam": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/quang-nam-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/quang-nam-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Quảng Ngãi": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-ngai-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-ngai-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Quảng Ninh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-ninh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-ninh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Quảng Trị": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Sóc Trăng": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/soc-trang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/soc-trang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Sơn La": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/son-la-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/son-la-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Tây Ninh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tay-ninh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tay-ninh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Thái Bình": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Thái Nguyên": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/thai-nguyen-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-han02.fptcloud.com"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/thai-nguyen-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Thanh Hóa": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/thanh-hoa-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/thanh-hoa-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Thừa Thiên Huế": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "18",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "UNKNOWN_layer_qhpk_qhxd": {
+        "display_name": "QH xây dựng",
+        "data_type": "layer_qhpk_qhxd",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Tiền Giang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/v2/tien-giang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/v2/tien-giang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Trà Vinh": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tra-vinh-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tra-vinh-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Tuyên Quang": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "16",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Vĩnh Long": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/vinh-long-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/vinh-long-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Vĩnh Phúc": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Yên Bái": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/yen-bai-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/yen-bai-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Đà Nẵng": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Đắk Lắk": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-lak-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-lak-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Đắk Nông": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_PHAN_KHU": {
+        "display_name": "QH phân khu",
+        "data_type": "layer_qhpk_2",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      }
+    },
+    "Điện Biên": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dien-bien-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dien-bien-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    },
+    "Đồng Tháp": {
+      "QH_2030": {
+        "display_name": "QH 2030",
+        "data_type": "layer_1",
+        "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dong-thap-2030/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": null,
+        "is_active": true,
+        "server": "https://l5cfglaebpobj.vcdn.cloud"
+      },
+      "KH_2025": {
+        "display_name": "KH 2025",
+        "data_type": "layer_2022",
+        "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png",
+        "tile_url_2030": null,
+        "max_zoom": "17",
+        "is_active": false,
+        "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+      },
+      "QH_KHAC": {
+        "display_name": "QH khác",
+        "data_type": "layer_qhpk",
+        "tile_url": "",
+        "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dong-thap-2030/{z}/{x}/{y}.png",
+        "max_zoom": null,
+        "is_active": false,
+        "server": null
+      }
+    }
+  }
+}

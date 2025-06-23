@@ -296,8 +296,12 @@ class PatternBasedTileCrawler:
                         latest_file = max(pattern_files, key=os.path.getctime)
                         with open(latest_file, 'r', encoding='utf-8') as f:
                             data = json.load(f)
-                        patterns.update(data.get('discovered_patterns', []))
-                        logger.info(f"📋 Loaded {len(patterns)} patterns from {latest_file}")
+                        all_patterns = data.get('discovered_patterns', [])
+                        # FILTER: Only patterns containing '-2030'
+                        filtered_patterns = [p for p in all_patterns if '-2030' in p]
+                        patterns.update(filtered_patterns)
+                        logger.info(f"📋 Loaded {len(filtered_patterns)} patterns (with -2030) from {latest_file}")
+                        logger.info(f"📋 Filtered out {len(all_patterns) - len(filtered_patterns)} patterns without -2030")
                     else:
                         logger.warning(f"❌ No pattern files found for {city_name}")
                 else:
@@ -312,7 +316,7 @@ class PatternBasedTileCrawler:
             return self.load_patterns_from_final_report()
         
     def load_patterns_from_final_report(self):
-        """Load patterns from new final report structure"""
+        """Load patterns from new final report structure - FILTER for -2030 only"""
         patterns = set()
         
         # Try new final report location first
@@ -320,8 +324,12 @@ class PatternBasedTileCrawler:
         try:
             with open(final_report_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            patterns.update(data.get('tile_patterns', []))
-            logger.info(f"📋 Loaded {len(patterns)} patterns from final report")
+            all_patterns = data.get('tile_patterns', [])
+            # FILTER: Only patterns containing '-2030'
+            filtered_patterns = [p for p in all_patterns if '-2030' in p]
+            patterns.update(filtered_patterns)
+            logger.info(f"📋 Loaded {len(filtered_patterns)} patterns (with -2030) from final report")
+            logger.info(f"📋 Filtered out {len(all_patterns) - len(filtered_patterns)} patterns without -2030")
             return list(patterns)
         except FileNotFoundError:
             logger.warning(f"⚠️ Final report not found at {final_report_path}")
@@ -340,13 +348,17 @@ class PatternBasedTileCrawler:
                             try:
                                 with open(latest_file, 'r', encoding='utf-8') as f:
                                     data = json.load(f)
-                                city_patterns = data.get('discovered_patterns', [])
-                                patterns.update(city_patterns)
-                                logger.info(f"📋 Added {len(city_patterns)} patterns from {city_dir.name}")
+                                all_city_patterns = data.get('discovered_patterns', [])
+                                # FILTER: Only patterns containing '-2030'
+                                filtered_city_patterns = [p for p in all_city_patterns if '-2030' in p]
+                                patterns.update(filtered_city_patterns)
+                                logger.info(f"📋 Added {len(filtered_city_patterns)} patterns (with -2030) from {city_dir.name}")
+                                if len(all_city_patterns) > len(filtered_city_patterns):
+                                    logger.info(f"📋 Filtered out {len(all_city_patterns) - len(filtered_city_patterns)} patterns without -2030 from {city_dir.name}")
                             except Exception as e:
                                 logger.warning(f"⚠️ Failed to load {latest_file}: {e}")
         
-        logger.info(f"📋 Total patterns loaded from all cities: {len(patterns)}")
+        logger.info(f"📋 Total patterns loaded from all cities (with -2030): {len(patterns)}")
         return list(patterns)
 
     def deg2num(self, lat_deg, lon_deg, zoom):
@@ -1123,7 +1135,7 @@ downloaded_tiles/
         return report
 
     def load_all_discovered_patterns_from_txt(self):
-        """Load patterns from TXT coverage reports - NEW METHOD"""
+        """Load patterns from TXT coverage reports - FILTER for -2030 only"""
         patterns = set()
         
         # Look for TXT coverage reports in output_browser_crawl structure
@@ -1132,6 +1144,9 @@ downloaded_tiles/
         if not cities_dir.exists():
             logger.warning(f"❌ Cities directory not found: {cities_dir}")
             return []
+        
+        total_found = 0
+        total_filtered = 0
         
         for city_dir in cities_dir.iterdir():
             if city_dir.is_dir():
@@ -1150,6 +1165,8 @@ downloaded_tiles/
                             # Extract patterns from TXT content
                             lines = content.split('\n')
                             in_patterns_section = False
+                            city_patterns_found = 0
+                            city_patterns_filtered = 0
                             
                             for line in lines:
                                 line = line.strip()
@@ -1188,18 +1205,34 @@ downloaded_tiles/
                                             
                                             # Validate it looks like a tile pattern
                                             if all(placeholder in url for placeholder in ['{z}', '{x}', '{y}']):
-                                                patterns.add(url)
-                                                logger.debug(f"  ✅ Found pattern: {url}")
+                                                city_patterns_found += 1
+                                                total_found += 1
+                                                
+                                                # FILTER: Only accept patterns with '-2030'
+                                                if '-2030' in url:
+                                                    patterns.add(url)
+                                                    city_patterns_filtered += 1
+                                                    total_filtered += 1
+                                                    logger.debug(f"  ✅ Found -2030 pattern: {url}")
+                                                else:
+                                                    logger.debug(f"  ⏭️ Skipped non-2030 pattern: {url}")
+                            
+                            if city_patterns_found > 0:
+                                logger.info(f"📋 {city_dir.name}: Found {city_patterns_filtered}/{city_patterns_found} patterns with -2030")
                     
                         except Exception as e:
                             logger.warning(f"⚠️ Error reading {txt_file}: {e}")
                             continue
     
-        logger.info(f"📋 Loaded {len(patterns)} unique patterns from TXT reports")
+        logger.info(f"📋 FILTER SUMMARY:")
+        logger.info(f"  Total patterns found: {total_found}")
+        logger.info(f"  Patterns with -2030: {total_filtered}")
+        logger.info(f"  Filtered out: {total_found - total_filtered}")
+        logger.info(f"📋 Using {len(patterns)} unique -2030 patterns from TXT reports")
         
         # If no patterns found from TXT, fallback to JSON
         if not patterns:
-            logger.warning("⚠️ No patterns found in TXT files, falling back to JSON")
+            logger.warning("⚠️ No -2030 patterns found in TXT files, falling back to JSON")
             return self.load_patterns_from_final_report()
         
         return list(patterns)

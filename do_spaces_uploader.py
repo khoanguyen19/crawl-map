@@ -141,7 +141,7 @@ class DigitalOceanSpacesUploader:
                 return False
 
     def upload_single_file(self, local_path, s3_key, file_info=None):
-        """Upload a single file to Spaces"""
+        """Upload a single file to Spaces with public ACL - WORKING VERSION"""
         try:
             # Skip if already uploaded (resume functionality)
             resume_key = f"{s3_key}:{file_info['md5'] if file_info else 'unknown'}"
@@ -189,19 +189,22 @@ class DigitalOceanSpacesUploader:
                 else:
                     content_type = 'application/octet-stream'
             
-            # Upload file
+            # 🆕 WORKING METHOD: Upload with public ACL and optimization headers
             extra_args = {
-                'ContentType': content_type,
+                'ACL': 'public-read',                    # ✅ MAKE FILES PUBLICLY ACCESSIBLE
+                'ContentType': content_type,             # ✅ PROPER CONTENT TYPE  
+                'CacheControl': 'max-age=31536000, public',  # ✅ CACHE 1 YEAR
+                'ContentDisposition': 'inline',          # ✅ DISPLAY IN BROWSER
                 'Metadata': {
                     'original-name': os.path.basename(local_path),
                     'upload-time': datetime.now().isoformat(),
-                    'md5-hash': file_info['md5']
+                    'md5-hash': file_info['md5'],
+                    'tile-type': 'map-tile',
+                    'public-access': 'enabled'           # ✅ MARK AS PUBLIC
                 }
             }
             
-            # For public access (optional)
-            # extra_args['ACL'] = 'public-read'
-            
+            # 🚀 UPLOAD WITH PUBLIC ACL (tested and working!)
             self.s3_client.upload_file(
                 local_path,
                 self.bucket_name,
@@ -214,13 +217,21 @@ class DigitalOceanSpacesUploader:
             self.stats['uploaded_files'] += 1
             self.stats['uploaded_bytes'] += file_info['size']
             
-            logger.debug(f"✅ Uploaded: {s3_key} ({file_info['size']} bytes)")
+            # Generate public URLs
+            direct_url = f"https://{self.bucket_name}.{self.region}.digitaloceanspaces.com/{s3_key}"
+            cdn_url = f"https://{self.bucket_name}.{self.region}.cdn.digitaloceanspaces.com/{s3_key}"
+            
+            logger.debug(f"✅ Uploaded PUBLIC: {s3_key} ({file_info['size']} bytes)")
+            logger.debug(f"🔗 Direct URL: {direct_url}")
             
             return {
                 'success': True,
                 'file': s3_key,
                 'size': file_info['size'],
-                'content_type': content_type
+                'content_type': content_type,
+                'public_url': direct_url,
+                'cdn_url': cdn_url,
+                'acl_public': True
             }
             
         except Exception as e:
@@ -433,6 +444,298 @@ class DigitalOceanSpacesUploader:
             logger.error(f"❌ Error listing Spaces contents: {e}")
             return []
 
+    def check_city_exists_in_spaces(self, city_name, s3_prefix=''):
+        """
+        Check if a city folder already exists in Spaces
+        
+        Args:
+            city_name: Name of the city (e.g., 'hanoi', 'hcmc')
+            s3_prefix: S3 prefix if any
+            
+        Returns:
+            dict: {
+                'exists': bool,
+                'file_count': int,
+                'total_size': int,
+                'sample_files': list
+            }
+        """
+        try:
+            # Construct the city prefix
+            if s3_prefix:
+                city_prefix = f"{s3_prefix}/{city_name}/"
+            else:
+                city_prefix = f"{city_name}/"
+            
+            logger.info(f"🔍 Checking if city exists: {city_prefix}")
+            
+            # List objects with city prefix
+            response = self.s3_client.list_objects_v2(
+                Bucket=self.bucket_name,
+                Prefix=city_prefix,
+                MaxKeys=1000  # Adjust based on expected files per city
+            )
+            
+            if 'Contents' not in response:
+                return {
+                    'exists': False,
+                    'file_count': 0,
+                    'total_size': 0,
+                    'sample_files': []
+                }
+            
+            contents = response['Contents']
+            total_size = sum(obj['Size'] for obj in contents)
+            sample_files = [obj['Key'] for obj in contents[:5]]  # First 5 files as sample
+            
+            return {
+                'exists': True,
+                'file_count': len(contents),
+                'total_size': total_size,
+                'sample_files': sample_files
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ Error checking city existence: {e}")
+            return {
+                'exists': False,
+                'file_count': 0,
+                'total_size': 0,
+                'sample_files': []
+            }
+
+    def scan_cities_in_local_directory(self, local_dir):
+        """
+        Scan local directory to identify individual city folders
+        
+        Args:
+            local_dir: Local directory path
+            
+        Returns:
+            list: List of city folder names
+        """
+        cities = []
+        
+        if not os.path.exists(local_dir):
+            logger.error(f"❌ Local directory not found: {local_dir}")
+            return cities
+        
+        # Assume city folders are direct subdirectories
+        for item in os.listdir(local_dir):
+            item_path = os.path.join(local_dir, item)
+            if os.path.isdir(item_path):
+                cities.append(item)
+        
+        logger.info(f"🏙️ Found {len(cities)} cities in local directory: {', '.join(cities)}")
+        return cities
+
+    def filter_existing_cities(self, local_dir, s3_prefix='', skip_existing=True):
+        """
+        Filter out cities that already exist in Spaces
+        
+        Args:
+            local_dir: Local directory containing city folders
+            s3_prefix: S3 prefix if any
+            skip_existing: If True, skip cities that already exist
+            
+        Returns:
+            dict: {
+                'cities_to_upload': list,
+                'existing_cities': list,
+                'city_status': dict
+            }
+        """
+        cities = self.scan_cities_in_local_directory(local_dir)
+        cities_to_upload = []
+        existing_cities = []
+        city_status = {}
+        
+        print(f"\n🔍 CHECKING CITY EXISTENCE IN SPACES")
+        print("=" * 40)
+        
+        for city in cities:
+            city_info = self.check_city_exists_in_spaces(city, s3_prefix)
+            city_status[city] = city_info
+            
+            if city_info['exists']:
+                existing_cities.append(city)
+                size_mb = city_info['total_size'] / 1024 / 1024
+                print(f"✅ {city}: EXISTS ({city_info['file_count']} files, {size_mb:.1f} MB)")
+                if not skip_existing:
+                    cities_to_upload.append(city)
+            else:
+                cities_to_upload.append(city)
+                print(f"🆕 {city}: NOT FOUND - will upload")
+        
+        print(f"\n📊 SUMMARY:")
+        print(f"  🏙️ Total cities found: {len(cities)}")
+        print(f"  ✅ Already exist: {len(existing_cities)}")
+        print(f"  📤 To upload: {len(cities_to_upload)}")
+        
+        if existing_cities and skip_existing:
+            print(f"\n⏭️ SKIPPING: {', '.join(existing_cities)}")
+        
+        return {
+            'cities_to_upload': cities_to_upload,
+            'existing_cities': existing_cities,
+            'city_status': city_status
+        }
+
+    def upload_directory_with_city_filter(self, local_dir, s3_prefix='', max_workers=5, skip_existing_cities=True):
+        """
+        Upload directory but skip cities that already exist in Spaces
+        
+        Args:
+            local_dir: Local directory to upload
+            s3_prefix: S3 prefix
+            max_workers: Number of parallel workers
+            skip_existing_cities: Whether to skip existing cities
+        """
+        
+        logger.info(f"🚀 Starting upload with city filtering")
+        logger.info(f"📁 Local directory: {local_dir}")
+        logger.info(f"🪣 Bucket: {self.bucket_name}")
+        logger.info(f"📂 S3 prefix: {s3_prefix if s3_prefix else '(none - direct to bucket root)'}")
+        logger.info(f"🏙️ Skip existing cities: {skip_existing_cities}")
+        
+        self.stats['start_time'] = time.time()
+        
+        # Filter cities
+        filter_result = self.filter_existing_cities(local_dir, s3_prefix, skip_existing_cities)
+        
+        if not filter_result['cities_to_upload']:
+            logger.warning("⚠️ No cities to upload (all may already exist)")
+            return
+        
+        # Scan only the cities we want to upload
+        files_to_upload = []
+        
+        for city in filter_result['cities_to_upload']:
+            city_path = os.path.join(local_dir, city)
+            logger.info(f"🔍 Scanning city: {city}")
+            
+            city_files = self.scan_directory(city_path, os.path.join(s3_prefix, city) if s3_prefix else city)
+            files_to_upload.extend(city_files)
+        
+        if not files_to_upload:
+            logger.warning("⚠️ No files found to upload")
+            return
+        
+        # Continue with normal upload process
+        logger.info(f"📤 Starting parallel upload of {len(files_to_upload)} files...")
+        
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            with tqdm(total=len(files_to_upload), desc="Uploading files", unit="file") as pbar:
+                
+                future_to_file = {
+                    executor.submit(
+                        self.upload_single_file,
+                        file_data['local_path'],
+                        file_data['s3_key'],
+                        file_data['file_info']
+                    ): file_data for file_data in files_to_upload
+                }
+                
+                for future in as_completed(future_to_file):
+                    file_data = future_to_file[future]
+                    try:
+                        result = future.result()
+                        
+                        if result['success']:
+                            if result.get('skipped'):
+                                pbar.set_postfix(status=f"Skipped: {result['file']}")
+                            else:
+                                pbar.set_postfix(status=f"Uploaded: {result['file']}")
+                        else:
+                            pbar.set_postfix(status=f"Failed: {result['file']}")
+                            logger.error(f"❌ Upload failed: {result['file']} - {result.get('error', 'Unknown error')}")
+                        
+                        pbar.update(1)
+                        
+                        if (self.stats['uploaded_files'] + self.stats['skipped_files']) % 100 == 0:
+                            self.save_resume_state()
+                            
+                    except Exception as e:
+                        logger.error(f"❌ Task error for {file_data['s3_key']}: {e}")
+                        pbar.update(1)
+        
+        self.save_resume_state()
+        self.stats['end_time'] = time.time()
+        self.generate_upload_report()
+        
+        # Show final city status
+        print(f"\n🏙️ FINAL CITY STATUS:")
+        print("=" * 25)
+        for city, status in filter_result['city_status'].items():
+            if city in filter_result['cities_to_upload']:
+                print(f"  📤 {city}: UPLOADED")
+            else:
+                size_mb = status['total_size'] / 1024 / 1024
+                print(f"  ⏭️ {city}: SKIPPED ({status['file_count']} files, {size_mb:.1f} MB)")
+
+    def interactive_city_selection(self, local_dir, s3_prefix=''):
+        """
+        Interactive mode to let user choose which cities to upload
+        """
+        filter_result = self.filter_existing_cities(local_dir, s3_prefix, skip_existing=False)
+        
+        if not filter_result['existing_cities']:
+            print("🆕 No existing cities found - all will be uploaded")
+            return filter_result['cities_to_upload']
+        
+        print(f"\n🤔 INTERACTIVE CITY SELECTION:")
+        print("=" * 35)
+        print("Found existing cities in Spaces. Choose action:")
+        print("1. ⏭️ Skip all existing cities (recommended)")
+        print("2. 🔄 Re-upload all cities (overwrite)")
+        print("3. 🎯 Select specific cities to upload")
+        
+        while True:
+            choice = input("\nChoose option (1/2/3, default: 1): ").strip()
+            
+            if choice == '' or choice == '1':
+                return filter_result['cities_to_upload']
+            
+            elif choice == '2':
+                print("⚠️ This will re-upload ALL cities (including existing ones)")
+                confirm = input("Are you sure? (y/n): ").lower()
+                if confirm == 'y':
+                    return self.scan_cities_in_local_directory(local_dir)
+                else:
+                    continue
+            
+            elif choice == '3':
+                selected_cities = []
+                all_cities = self.scan_cities_in_local_directory(local_dir)
+                
+                print(f"\n🎯 SELECT CITIES TO UPLOAD:")
+                for i, city in enumerate(all_cities, 1):
+                    status = filter_result['city_status'][city]
+                    if status['exists']:
+                        size_mb = status['total_size'] / 1024 / 1024
+                        print(f"{i:2d}. {city} (EXISTS: {status['file_count']} files, {size_mb:.1f} MB)")
+                    else:
+                        print(f"{i:2d}. {city} (NEW)")
+                
+                selection = input(f"\nEnter city numbers (1-{len(all_cities)}, comma-separated): ").strip()
+                try:
+                    indices = [int(x.strip()) - 1 for x in selection.split(',')]
+                    selected_cities = [all_cities[i] for i in indices if 0 <= i < len(all_cities)]
+                    
+                    if selected_cities:
+                        print(f"✅ Selected cities: {', '.join(selected_cities)}")
+                        return selected_cities
+                    else:
+                        print("❌ No valid cities selected")
+                        continue
+                except ValueError:
+                    print("❌ Invalid input format")
+                    continue
+            
+            else:
+                print("❌ Invalid choice. Please enter 1, 2, or 3")
+                continue
+
 def load_config():
     """Load configuration from file or environment variables"""
     config = {}
@@ -457,313 +760,21 @@ def load_config():
     return config
 
 def create_sample_config():
-    """Create a sample configuration file"""
-    sample_config = {
-        "access_key": "YOUR_DO_SPACES_ACCESS_KEY",
-        "secret_key": "YOUR_DO_SPACES_SECRET_KEY",
-        "endpoint_url": "https://sgp1.digitaloceanspaces.com",
-        "bucket_name": "your-bucket-name",
-        "region": "sgp1"
-    }
-    
-    config_file = 'spaces_config.json'
-    with open(config_file, 'w') as f:
-        json.dump(sample_config, f, indent=2)
-    
-    print(f"📝 Created sample config file: {config_file}")
-    print("Please edit this file with your actual Digital Ocean Spaces credentials")
-
-def check_city_exists_in_spaces(self, city_name, s3_prefix=''):
-    """
-    Check if a city folder already exists in Spaces
-    
-    Args:
-        city_name: Name of the city (e.g., 'hanoi', 'hcmc')
-        s3_prefix: S3 prefix if any
-        
-    Returns:
-        dict: {
-            'exists': bool,
-            'file_count': int,
-            'total_size': int,
-            'sample_files': list
-        }
-    """
-    try:
-        # Construct the city prefix
-        if s3_prefix:
-            city_prefix = f"{s3_prefix}/{city_name}/"
-        else:
-            city_prefix = f"{city_name}/"
-        
-        logger.info(f"🔍 Checking if city exists: {city_prefix}")
-        
-        # List objects with city prefix
-        response = self.s3_client.list_objects_v2(
-            Bucket=self.bucket_name,
-            Prefix=city_prefix,
-            MaxKeys=1000  # Adjust based on expected files per city
-        )
-        
-        if 'Contents' not in response:
-            return {
-                'exists': False,
-                'file_count': 0,
-                'total_size': 0,
-                'sample_files': []
-            }
-        
-        contents = response['Contents']
-        total_size = sum(obj['Size'] for obj in contents)
-        sample_files = [obj['Key'] for obj in contents[:5]]  # First 5 files as sample
-        
-        return {
-            'exists': True,
-            'file_count': len(contents),
-            'total_size': total_size,
-            'sample_files': sample_files
+        """Create a sample configuration file"""
+        sample_config = {
+            "access_key": "YOUR_DO_SPACES_ACCESS_KEY",
+            "secret_key": "YOUR_DO_SPACES_SECRET_KEY",
+            "endpoint_url": "https://sgp1.digitaloceanspaces.com",
+            "bucket_name": "your-bucket-name",
+            "region": "sgp1"
         }
         
-    except Exception as e:
-        logger.error(f"❌ Error checking city existence: {e}")
-        return {
-            'exists': False,
-            'file_count': 0,
-            'total_size': 0,
-            'sample_files': []
-        }
-
-def scan_cities_in_local_directory(self, local_dir):
-    """
-    Scan local directory to identify individual city folders
-    
-    Args:
-        local_dir: Local directory path
+        config_file = 'spaces_config.json'
+        with open(config_file, 'w') as f:
+            json.dump(sample_config, f, indent=2)
         
-    Returns:
-        list: List of city folder names
-    """
-    cities = []
-    
-    if not os.path.exists(local_dir):
-        logger.error(f"❌ Local directory not found: {local_dir}")
-        return cities
-    
-    # Assume city folders are direct subdirectories
-    for item in os.listdir(local_dir):
-        item_path = os.path.join(local_dir, item)
-        if os.path.isdir(item_path):
-            cities.append(item)
-    
-    logger.info(f"🏙️ Found {len(cities)} cities in local directory: {', '.join(cities)}")
-    return cities
-
-def filter_existing_cities(self, local_dir, s3_prefix='', skip_existing=True):
-    """
-    Filter out cities that already exist in Spaces
-    
-    Args:
-        local_dir: Local directory containing city folders
-        s3_prefix: S3 prefix if any
-        skip_existing: If True, skip cities that already exist
-        
-    Returns:
-        dict: {
-            'cities_to_upload': list,
-            'existing_cities': list,
-            'city_status': dict
-        }
-    """
-    cities = self.scan_cities_in_local_directory(local_dir)
-    cities_to_upload = []
-    existing_cities = []
-    city_status = {}
-    
-    print(f"\n🔍 CHECKING CITY EXISTENCE IN SPACES")
-    print("=" * 40)
-    
-    for city in cities:
-        city_info = self.check_city_exists_in_spaces(city, s3_prefix)
-        city_status[city] = city_info
-        
-        if city_info['exists']:
-            existing_cities.append(city)
-            size_mb = city_info['total_size'] / 1024 / 1024
-            print(f"✅ {city}: EXISTS ({city_info['file_count']} files, {size_mb:.1f} MB)")
-            if not skip_existing:
-                cities_to_upload.append(city)
-        else:
-            cities_to_upload.append(city)
-            print(f"🆕 {city}: NOT FOUND - will upload")
-    
-    print(f"\n📊 SUMMARY:")
-    print(f"  🏙️ Total cities found: {len(cities)}")
-    print(f"  ✅ Already exist: {len(existing_cities)}")
-    print(f"  📤 To upload: {len(cities_to_upload)}")
-    
-    if existing_cities and skip_existing:
-        print(f"\n⏭️ SKIPPING: {', '.join(existing_cities)}")
-    
-    return {
-        'cities_to_upload': cities_to_upload,
-        'existing_cities': existing_cities,
-        'city_status': city_status
-    }
-
-def upload_directory_with_city_filter(self, local_dir, s3_prefix='', max_workers=5, skip_existing_cities=True):
-    """
-    Upload directory but skip cities that already exist in Spaces
-    
-    Args:
-        local_dir: Local directory to upload
-        s3_prefix: S3 prefix
-        max_workers: Number of parallel workers
-        skip_existing_cities: Whether to skip existing cities
-    """
-    
-    logger.info(f"🚀 Starting upload with city filtering")
-    logger.info(f"📁 Local directory: {local_dir}")
-    logger.info(f"🪣 Bucket: {self.bucket_name}")
-    logger.info(f"📂 S3 prefix: {s3_prefix if s3_prefix else '(none - direct to bucket root)'}")
-    logger.info(f"🏙️ Skip existing cities: {skip_existing_cities}")
-    
-    self.stats['start_time'] = time.time()
-    
-    # Filter cities
-    filter_result = self.filter_existing_cities(local_dir, s3_prefix, skip_existing_cities)
-    
-    if not filter_result['cities_to_upload']:
-        logger.warning("⚠️ No cities to upload (all may already exist)")
-        return
-    
-    # Scan only the cities we want to upload
-    files_to_upload = []
-    
-    for city in filter_result['cities_to_upload']:
-        city_path = os.path.join(local_dir, city)
-        logger.info(f"🔍 Scanning city: {city}")
-        
-        city_files = self.scan_directory(city_path, os.path.join(s3_prefix, city) if s3_prefix else city)
-        files_to_upload.extend(city_files)
-    
-    if not files_to_upload:
-        logger.warning("⚠️ No files found to upload")
-        return
-    
-    # Continue with normal upload process
-    logger.info(f"📤 Starting parallel upload of {len(files_to_upload)} files...")
-    
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        with tqdm(total=len(files_to_upload), desc="Uploading files", unit="file") as pbar:
-            
-            future_to_file = {
-                executor.submit(
-                    self.upload_single_file,
-                    file_data['local_path'],
-                    file_data['s3_key'],
-                    file_data['file_info']
-                ): file_data for file_data in files_to_upload
-            }
-            
-            for future in as_completed(future_to_file):
-                file_data = future_to_file[future]
-                try:
-                    result = future.result()
-                    
-                    if result['success']:
-                        if result.get('skipped'):
-                            pbar.set_postfix(status=f"Skipped: {result['file']}")
-                        else:
-                            pbar.set_postfix(status=f"Uploaded: {result['file']}")
-                    else:
-                        pbar.set_postfix(status=f"Failed: {result['file']}")
-                        logger.error(f"❌ Upload failed: {result['file']} - {result.get('error', 'Unknown error')}")
-                    
-                    pbar.update(1)
-                    
-                    if (self.stats['uploaded_files'] + self.stats['skipped_files']) % 100 == 0:
-                        self.save_resume_state()
-                        
-                except Exception as e:
-                    logger.error(f"❌ Task error for {file_data['s3_key']}: {e}")
-                    pbar.update(1)
-    
-    self.save_resume_state()
-    self.stats['end_time'] = time.time()
-    self.generate_upload_report()
-    
-    # Show final city status
-    print(f"\n🏙️ FINAL CITY STATUS:")
-    print("=" * 25)
-    for city, status in filter_result['city_status'].items():
-        if city in filter_result['cities_to_upload']:
-            print(f"  📤 {city}: UPLOADED")
-        else:
-            size_mb = status['total_size'] / 1024 / 1024
-            print(f"  ⏭️ {city}: SKIPPED ({status['file_count']} files, {size_mb:.1f} MB)")
-
-def interactive_city_selection(self, local_dir, s3_prefix=''):
-    """
-    Interactive mode to let user choose which cities to upload
-    """
-    filter_result = self.filter_existing_cities(local_dir, s3_prefix, skip_existing=False)
-    
-    if not filter_result['existing_cities']:
-        print("🆕 No existing cities found - all will be uploaded")
-        return filter_result['cities_to_upload']
-    
-    print(f"\n🤔 INTERACTIVE CITY SELECTION:")
-    print("=" * 35)
-    print("Found existing cities in Spaces. Choose action:")
-    print("1. ⏭️ Skip all existing cities (recommended)")
-    print("2. 🔄 Re-upload all cities (overwrite)")
-    print("3. 🎯 Select specific cities to upload")
-    
-    while True:
-        choice = input("\nChoose option (1/2/3, default: 1): ").strip()
-        
-        if choice == '' or choice == '1':
-            return filter_result['cities_to_upload']
-        
-        elif choice == '2':
-            print("⚠️ This will re-upload ALL cities (including existing ones)")
-            confirm = input("Are you sure? (y/n): ").lower()
-            if confirm == 'y':
-                return self.scan_cities_in_local_directory(local_dir)
-            else:
-                continue
-        
-        elif choice == '3':
-            selected_cities = []
-            all_cities = self.scan_cities_in_local_directory(local_dir)
-            
-            print(f"\n🎯 SELECT CITIES TO UPLOAD:")
-            for i, city in enumerate(all_cities, 1):
-                status = filter_result['city_status'][city]
-                if status['exists']:
-                    size_mb = status['total_size'] / 1024 / 1024
-                    print(f"{i:2d}. {city} (EXISTS: {status['file_count']} files, {size_mb:.1f} MB)")
-                else:
-                    print(f"{i:2d}. {city} (NEW)")
-            
-            selection = input(f"\nEnter city numbers (1-{len(all_cities)}, comma-separated): ").strip()
-            try:
-                indices = [int(x.strip()) - 1 for x in selection.split(',')]
-                selected_cities = [all_cities[i] for i in indices if 0 <= i < len(all_cities)]
-                
-                if selected_cities:
-                    print(f"✅ Selected cities: {', '.join(selected_cities)}")
-                    return selected_cities
-                else:
-                    print("❌ No valid cities selected")
-                    continue
-            except ValueError:
-                print("❌ Invalid input format")
-                continue
-        
-        else:
-            print("❌ Invalid choice. Please enter 1, 2, or 3")
-            continue
+        print(f"📝 Created sample config file: {config_file}")
+        print("Please edit this file with your actual Digital Ocean Spaces credentials")
 
 def main():
     print("🚀 DIGITAL OCEAN SPACES UPLOADER")
