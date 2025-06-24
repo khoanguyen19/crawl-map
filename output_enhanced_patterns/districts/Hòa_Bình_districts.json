@@ -1,0 +1,431 @@
+{
+  "province_name": "Hòa Bình",
+  "admin_code": "17",
+  "timestamp": "2025-06-24T00:03:43.449771",
+  "districts": {
+    "Huyện Cao Phong": {
+      "district_info": {
+        "id": "154",
+        "name": "Huyện Cao Phong",
+        "slug": "huyen-cao-phong"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Cao Phong",
+        "timestamp": "2025-06-24T00:03:57.971307",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-cao-phong"
+    },
+    "Huyện Kim Bôi": {
+      "district_info": {
+        "id": "153",
+        "name": "Huyện Kim Bôi",
+        "slug": "huyen-kim-boi"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Kim Bôi",
+        "timestamp": "2025-06-24T00:04:09.551192",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-kim-boi/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-kim-boi"
+    },
+    "Huyện Lạc Sơn": {
+      "district_info": {
+        "id": "157",
+        "name": "Huyện Lạc Sơn",
+        "slug": "huyen-lac-son"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Lạc Sơn",
+        "timestamp": "2025-06-24T00:04:21.047568",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-son/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-lac-son"
+    },
+    "Huyện Lạc Thủy": {
+      "district_info": {
+        "id": "159",
+        "name": "Huyện Lạc Thủy",
+        "slug": "huyen-lac-thuy"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Lạc Thủy",
+        "timestamp": "2025-06-24T00:04:32.484711",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-thuy/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-lac-thuy"
+    },
+    "Huyện Lương Sơn": {
+      "district_info": {
+        "id": "152",
+        "name": "Huyện Lương Sơn",
+        "slug": "huyen-luong-son"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Lương Sơn",
+        "timestamp": "2025-06-24T00:04:43.501253",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/huyen-luong-son/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-luong-son"
+    },
+    "Huyện Mai Châu": {
+      "district_info": {
+        "id": "156",
+        "name": "Huyện Mai Châu",
+        "slug": "huyen-mai-chau"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Mai Châu",
+        "timestamp": "2025-06-24T00:04:56.001018",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hoa-binh/huyen-mai-chau/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-mai-chau"
+    },
+    "Huyện Tân Lạc": {
+      "district_info": {
+        "id": "155",
+        "name": "Huyện Tân Lạc",
+        "slug": "huyen-tan-lac"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Tân Lạc",
+        "timestamp": "2025-06-24T00:05:07.200528",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-tan-lac/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-tan-lac"
+    },
+    "Huyện Yên Thủy": {
+      "district_info": {
+        "id": "158",
+        "name": "Huyện Yên Thủy",
+        "slug": "huyen-yen-thuy"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Yên Thủy",
+        "timestamp": "2025-06-24T00:05:19.249891",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-yen-thuy/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-yen-thuy"
+    },
+    "Huyện Đà Bắc": {
+      "district_info": {
+        "id": "150",
+        "name": "Huyện Đà Bắc",
+        "slug": "huyen-da-bac"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Huyện Đà Bắc",
+        "timestamp": "2025-06-24T00:05:30.975201",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-da-bac/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "15",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/huyen-da-bac"
+    },
+    "Thành phố Hòa Bình": {
+      "district_info": {
+        "id": "148",
+        "name": "Thành phố Hòa Bình",
+        "slug": "thanh-pho-hoa-binh"
+      },
+      "patterns": {
+        "location_name": "Hòa Bình - Thành phố Hòa Bình",
+        "timestamp": "2025-06-24T00:05:41.904385",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/thanh-pho-hoa-binh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hoa-binh/thanh-pho-hoa-binh"
+    }
+  },
+  "total_districts": 10,
+  "successful_districts": 10,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

@@ -1,0 +1,347 @@
+{
+  "province_name": "Hậu Giang",
+  "admin_code": "93",
+  "timestamp": "2025-06-24T00:01:49.549623",
+  "districts": {
+    "Huyện Châu Thành A": {
+      "district_info": {
+        "id": "932",
+        "name": "Huyện Châu Thành A",
+        "slug": "huyen-chau-thanh-a"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Huyện Châu Thành A",
+        "timestamp": "2025-06-24T00:02:04.901058",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh-a/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/huyen-chau-thanh-a"
+    },
+    "Huyện Châu Thành": {
+      "district_info": {
+        "id": "933",
+        "name": "Huyện Châu Thành",
+        "slug": "huyen-chau-thanh"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Huyện Châu Thành",
+        "timestamp": "2025-06-24T00:02:16.900571",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/huyen-chau-thanh"
+    },
+    "Huyện Long Mỹ": {
+      "district_info": {
+        "id": "936",
+        "name": "Huyện Long Mỹ",
+        "slug": "huyen-long-my"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Huyện Long Mỹ",
+        "timestamp": "2025-06-24T00:02:28.647191",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-long-my/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/huyen-long-my"
+    },
+    "Huyện Phụng Hiệp": {
+      "district_info": {
+        "id": "934",
+        "name": "Huyện Phụng Hiệp",
+        "slug": "huyen-phung-hiep"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Huyện Phụng Hiệp",
+        "timestamp": "2025-06-24T00:02:39.945192",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/huyen-phung-hiep"
+    },
+    "Huyện Vị Thuỷ": {
+      "district_info": {
+        "id": "935",
+        "name": "Huyện Vị Thuỷ",
+        "slug": "huyen-vi-thuy"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Huyện Vị Thuỷ",
+        "timestamp": "2025-06-24T00:02:51.355108",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-vi-thuy/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/huyen-vi-thuy"
+    },
+    "Thành phố Vị Thanh": {
+      "district_info": {
+        "id": "930",
+        "name": "Thành phố Vị Thanh",
+        "slug": "thanh-pho-vi-thanh"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Thành phố Vị Thanh",
+        "timestamp": "2025-06-24T00:03:03.542776",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-vi-thanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/thanh-pho-vi-thanh"
+    },
+    "Thành phố Ngã Bảy": {
+      "district_info": {
+        "id": "931",
+        "name": "Thành phố Ngã Bảy",
+        "slug": "thanh-pho-nga-bay"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Thành phố Ngã Bảy",
+        "timestamp": "2025-06-24T00:03:15.251962",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-nga-bay/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/thanh-pho-nga-bay"
+    },
+    "Thị xã Long Mỹ": {
+      "district_info": {
+        "id": "937",
+        "name": "Thị xã Long Mỹ",
+        "slug": "thi-xa-long-my"
+      },
+      "patterns": {
+        "location_name": "Hậu Giang - Thị xã Long Mỹ",
+        "timestamp": "2025-06-24T00:03:27.359028",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thi-xa-long-my/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hau-giang/thi-xa-long-my"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 8,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

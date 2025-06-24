@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Lào Cai
+Generated: 2025-06-24T00:22:07.898197
+Admin Code: 10
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Hà
+• District ID: 085
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-bac-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bac-ha/{z}/{x}/{y}.png
+
+### Huyện Bảo Thắng
+• District ID: 086
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-bao-thang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bao-thang/{z}/{x}/{y}.png
+
+### Huyện Bảo Yên
+• District ID: 087
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-bao-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/lao-cai/huyen-bao-yen/{z}/{x}/{y}.png
+
+### Huyện Bát Xát
+• District ID: 082
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-bat-xat
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/huyen-bat-xat/{z}/{x}/{y}.png
+
+### Huyện Mường Khương
+• District ID: 083
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-muong-khuong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-muong-khuong/{z}/{x}/{y}.png
+
+### Huyện Si Ma Cai
+• District ID: 084
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-si-ma-cai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-si-ma-cai/{z}/{x}/{y}.png
+
+### Huyện Văn Bàn
+• District ID: 089
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/huyen-van-ban
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-van-ban/{z}/{x}/{y}.png
+
+### Thành phố Lào Cai
+• District ID: 080
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/thanh-pho-lao-cai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png
+
+### Thị xã Sa Pa
+• District ID: 088
+• URL: https://guland.vn/soi-quy-hoach/lao-cai/thi-xa-sa-pa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/thi-xa-sa-pa/{z}/{x}/{y}.png

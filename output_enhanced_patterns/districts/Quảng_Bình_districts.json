@@ -1,0 +1,302 @@
+{
+  "province_name": "Quảng Bình",
+  "admin_code": "44",
+  "timestamp": "2025-06-24T00:42:54.376294",
+  "districts": {
+    "Huyện Bố Trạch": {
+      "district_info": {
+        "id": "455",
+        "name": "Huyện Bố Trạch",
+        "slug": "huyen-bo-trach"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Huyện Bố Trạch",
+        "timestamp": "2025-06-24T00:43:09.769315",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/huyen-bo-trach"
+    },
+    "Huyện Lệ Thủy": {
+      "district_info": {
+        "id": "457",
+        "name": "Huyện Lệ Thủy",
+        "slug": "huyen-le-thuy"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Huyện Lệ Thủy",
+        "timestamp": "2025-06-24T00:43:19.885613",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/huyen-le-thuy"
+    },
+    "Huyện Minh Hóa": {
+      "district_info": {
+        "id": "452",
+        "name": "Huyện Minh Hóa",
+        "slug": "huyen-minh-hoa"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Huyện Minh Hóa",
+        "timestamp": "2025-06-24T00:43:30.535696",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/huyen-minh-hoa"
+    },
+    "Huyện Quảng Ninh": {
+      "district_info": {
+        "id": "456",
+        "name": "Huyện Quảng Ninh",
+        "slug": "huyen-quang-ninh"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Huyện Quảng Ninh",
+        "timestamp": "2025-06-24T00:43:40.573462",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/huyen-quang-ninh"
+    },
+    "Thị xã Ba Đồn": {
+      "district_info": {
+        "id": "458",
+        "name": "Thị xã Ba Đồn",
+        "slug": "thi-xa-ba-don"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Thị xã Ba Đồn",
+        "timestamp": "2025-06-24T00:43:51.171979",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/thi-xa-ba-don/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/thi-xa-ba-don"
+    },
+    "Huyện Tuyên Hóa": {
+      "district_info": {
+        "id": "453",
+        "name": "Huyện Tuyên Hóa",
+        "slug": "huyen-tuyen-hoa"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Huyện Tuyên Hóa",
+        "timestamp": "2025-06-24T00:44:01.160421",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-tuyen-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/huyen-tuyen-hoa"
+    },
+    "Thành phố Thành Phố Đồng Hới": {
+      "district_info": {
+        "id": "450",
+        "name": "Thành phố Thành Phố Đồng Hới",
+        "slug": "thanh-pho-thanh-pho-dong-hoi"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Thành phố Thành Phố Đồng Hới",
+        "timestamp": "2025-06-24T00:44:11.617138",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/thanh-pho-thanh-pho-dong-hoi"
+    },
+    "Thị xã Quảng Trạch": {
+      "district_info": {
+        "id": "454",
+        "name": "Thị xã Quảng Trạch",
+        "slug": "thi-xa-quang-trach"
+      },
+      "patterns": {
+        "location_name": "Quảng Bình - Thị xã Quảng Trạch",
+        "timestamp": "2025-06-24T00:44:21.684747",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-quang-trach--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-binh/thi-xa-quang-trach"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 8,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

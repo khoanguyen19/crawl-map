@@ -1,0 +1,67 @@
+# DISTRICT PATTERNS: Hậu Giang
+Generated: 2025-06-24T00:01:49.549623
+Admin Code: 93
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Châu Thành A
+• District ID: 932
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/huyen-chau-thanh-a
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh-a/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 933
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Long Mỹ
+• District ID: 936
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/huyen-long-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-long-my/{z}/{x}/{y}.png
+
+### Huyện Phụng Hiệp
+• District ID: 934
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/huyen-phung-hiep
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png
+
+### Huyện Vị Thuỷ
+• District ID: 935
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/huyen-vi-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-vi-thuy/{z}/{x}/{y}.png
+
+### Thành phố Vị Thanh
+• District ID: 930
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/thanh-pho-vi-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-vi-thanh/{z}/{x}/{y}.png
+
+### Thành phố Ngã Bảy
+• District ID: 931
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/thanh-pho-nga-bay
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-nga-bay/{z}/{x}/{y}.png
+
+### Thị xã Long Mỹ
+• District ID: 937
+• URL: https://guland.vn/soi-quy-hoach/hau-giang/thi-xa-long-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thi-xa-long-my/{z}/{x}/{y}.png

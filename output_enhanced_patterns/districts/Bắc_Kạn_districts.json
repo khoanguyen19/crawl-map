@@ -1,0 +1,296 @@
+{
+  "province_name": "Bắc Kạn",
+  "admin_code": "06",
+  "timestamp": "2025-06-23T23:15:17.621731",
+  "districts": {
+    "Huyện Ba Bể": {
+      "district_info": {
+        "id": "061",
+        "name": "Huyện Ba Bể",
+        "slug": "huyen-ba-be"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Ba Bể",
+        "timestamp": "2025-06-23T23:15:31.317242",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/bac-kan/huyen-ba-be/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-ba-be"
+    },
+    "Huyện Bạch Thông": {
+      "district_info": {
+        "id": "063",
+        "name": "Huyện Bạch Thông",
+        "slug": "huyen-bach-thong"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Bạch Thông",
+        "timestamp": "2025-06-23T23:15:47.853644",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-bach-thong"
+    },
+    "Huyện Chợ Đồn": {
+      "district_info": {
+        "id": "064",
+        "name": "Huyện Chợ Đồn",
+        "slug": "huyen-cho-don"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Chợ Đồn",
+        "timestamp": "2025-06-23T23:16:01.847982",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-cho-don"
+    },
+    "Huyện Na Rì": {
+      "district_info": {
+        "id": "066",
+        "name": "Huyện Na Rì",
+        "slug": "huyen-na-ri"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Na Rì",
+        "timestamp": "2025-06-23T23:16:27.516485",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/bac-kan/huyen-na-ri/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-na-ri"
+    },
+    "Huyện Ngân Sơn": {
+      "district_info": {
+        "id": "062",
+        "name": "Huyện Ngân Sơn",
+        "slug": "huyen-ngan-son"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Ngân Sơn",
+        "timestamp": "2025-06-23T23:16:40.830943",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-ngan-son/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-ngan-son"
+    },
+    "Huyện Pác Nặm": {
+      "district_info": {
+        "id": "060",
+        "name": "Huyện Pác Nặm",
+        "slug": "huyen-pac-nam"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Huyện Pác Nặm",
+        "timestamp": "2025-06-23T23:16:53.196153",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-pac-nam/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/huyen-pac-nam"
+    },
+    "Thành phố Thành Phố Bắc Kạn": {
+      "district_info": {
+        "id": "058",
+        "name": "Thành phố Thành Phố Bắc Kạn",
+        "slug": "thanh-pho-thanh-pho-bac-kan"
+      },
+      "patterns": {
+        "location_name": "Bắc Kạn - Thành phố Thành Phố Bắc Kạn",
+        "timestamp": "2025-06-23T23:17:06.058880",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/thanh-pho-bac-kan/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/bac-kan/thanh-pho-thanh-pho-bac-kan"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 7,
+  "failed_districts": 1,
+  "api_method_used": "API_SUCCESS"
+}

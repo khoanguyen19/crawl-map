@@ -1,0 +1,305 @@
+{
+  "province_name": "Tuyên Quang",
+  "admin_code": "08",
+  "timestamp": "2025-06-24T01:19:43.219123",
+  "districts": {
+    "Huyện Chiêm Hóa": {
+      "district_info": {
+        "id": "073",
+        "name": "Huyện Chiêm Hóa",
+        "slug": "huyen-chiem-hoa"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Chiêm Hóa",
+        "timestamp": "2025-06-24T01:19:58.941052",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-chiem-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-chiem-hoa"
+    },
+    "Huyện Hàm Yên": {
+      "district_info": {
+        "id": "074",
+        "name": "Huyện Hàm Yên",
+        "slug": "huyen-ham-yen"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Hàm Yên",
+        "timestamp": "2025-06-24T01:20:10.749295",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/tuyen-quang/huyen-ham-yen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-ham-yen"
+    },
+    "Huyện Lâm Bình": {
+      "district_info": {
+        "id": "071",
+        "name": "Huyện Lâm Bình",
+        "slug": "huyen-lam-binh"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Lâm Bình",
+        "timestamp": "2025-06-24T01:20:22.346472",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/tuyen-quang/huyen-lam-binh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-lam-binh"
+    },
+    "Huyện Nà Hang": {
+      "district_info": {
+        "id": "072",
+        "name": "Huyện Nà Hang",
+        "slug": "huyen-na-hang"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Nà Hang",
+        "timestamp": "2025-06-24T01:20:33.920043",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-na-hang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-na-hang"
+    },
+    "Huyện Sơn Dương": {
+      "district_info": {
+        "id": "076",
+        "name": "Huyện Sơn Dương",
+        "slug": "huyen-son-duong"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Sơn Dương",
+        "timestamp": "2025-06-24T01:20:46.825203",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-son-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-son-duong"
+    },
+    "Huyện Yên Sơn": {
+      "district_info": {
+        "id": "075",
+        "name": "Huyện Yên Sơn",
+        "slug": "huyen-yen-son"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Huyện Yên Sơn",
+        "timestamp": "2025-06-24T01:20:58.991063",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/tuyen-quang/huyen-yen-son/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-yen-son"
+    },
+    "Thành phố Tuyên Quang": {
+      "district_info": {
+        "id": "070",
+        "name": "Thành phố Tuyên Quang",
+        "slug": "thanh-pho-tuyen-quang"
+      },
+      "patterns": {
+        "location_name": "Tuyên Quang - Thành phố Tuyên Quang",
+        "timestamp": "2025-06-24T01:21:09.073032",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/tuyen-quang/thanh-pho-tuyen-quang"
+    }
+  },
+  "total_districts": 7,
+  "successful_districts": 7,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

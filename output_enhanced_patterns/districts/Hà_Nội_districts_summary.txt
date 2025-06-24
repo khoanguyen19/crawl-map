@@ -1,0 +1,220 @@
+# DISTRICT PATTERNS: Hà Nội
+Generated: 2025-06-23T23:46:48.020060
+Admin Code: 01
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 30
+• Successful: 30
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ba Vì
+• District ID: 271
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-ba-vi
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ba-vi--25/{z}/{x}/{y}.png
+
+### Huyện Chương Mỹ
+• District ID: 277
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-chuong-my
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-chuong-my/{z}/{x}/{y}.png
+
+### Huyện Gia Lâm
+• District ID: 018
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-gia-lam
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-gia-lam--25/{z}/{x}/{y}.png
+
+### Huyện Hoài Đức
+• District ID: 274
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-hoai-duc
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-hoai-duc/{z}/{x}/{y}.png
+
+### Huyện Mê Linh
+• District ID: 250
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-me-linh
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-me-linh/{z}/{x}/{y}.png
+
+### Huyện Mỹ Đức
+• District ID: 282
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-my-duc
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-my-duc--25/{z}/{x}/{y}.png
+
+### Huyện Phú Xuyên
+• District ID: 280
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-phu-xuyen
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-phu-xuyen/{z}/{x}/{y}.png
+
+### Huyện Phúc Thọ
+• District ID: 272
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-phuc-tho
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-phuc-tho--25/{z}/{x}/{y}.png
+
+### Huyện Quốc Oai
+• District ID: 275
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-quoc-oai
+• Patterns found: 6
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-quoc-oai/{z}/{x}/{y}.png
+
+### Huyện Sóc Sơn
+• District ID: 016
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-soc-son
+• Patterns found: 6
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-soc-son/{z}/{x}/{y}.png
+
+### Huyện Thạch Thất
+• District ID: 276
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-thach-that
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-thach-that/{z}/{x}/{y}.png
+
+### Huyện Thanh Trì
+• District ID: 020
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-thanh-tri
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-tri/{z}/{x}/{y}.png
+
+### Huyện Thanh Oai
+• District ID: 278
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-thanh-oai
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-oai/{z}/{x}/{y}.png
+
+### Huyện Thường Tín
+• District ID: 279
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-thuong-tin
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thuong-tin/{z}/{x}/{y}.png
+
+### Huyện Ứng Hòa
+• District ID: 281
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-ung-hoa
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ung-hoa/{z}/{x}/{y}.png
+
+### Huyện Đan Phượng
+• District ID: 273
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-dan-phuong
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-dan-phuong/{z}/{x}/{y}.png
+
+### Huyện Đông Anh
+• District ID: 017
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/huyen-dong-anh
+• Patterns found: 6
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-dong-anh/{z}/{x}/{y}.png
+
+### Quận Ba Đình
+• District ID: 001
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-ba-dinh
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ba-dinh/{z}/{x}/{y}.png
+
+### Quận Bắc Từ Liêm
+• District ID: 021
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-bac-tu-liem
+• Patterns found: 4
+
+
+### Quận Cầu Giấy
+• District ID: 005
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-cau-giay
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/quan-cau-giay/{z}/{x}/{y}.png
+
+### Quận Hà Đông
+• District ID: 268
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-ha-dong
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ha-dong/{z}/{x}/{y}.png
+
+### Quận Hai Bà Trưng
+• District ID: 007
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-hai-ba-trung
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hai-ba-trung/{z}/{x}/{y}.png
+
+### Quận Hoàn Kiếm
+• District ID: 002
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-hoan-kiem
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoan-kiem/{z}/{x}/{y}.png
+
+### Quận Hoàng Mai
+• District ID: 008
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-hoang-mai
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoang-mai--25/{z}/{x}/{y}.png
+
+### Quận Long Biên
+• District ID: 004
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-long-bien
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-long-bien--25/{z}/{x}/{y}.png
+
+### Quận Nam Từ Liêm
+• District ID: 019
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-nam-tu-liem
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-nam-tu-liem--25/{z}/{x}/{y}.png
+
+### Quận Tây Hồ
+• District ID: 003
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-tay-ho
+• Patterns found: 5
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/quan-tay-ho/{z}/{x}/{y}.png
+
+### Quận Thanh Xuân
+• District ID: 009
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-thanh-xuan
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-thanh-xuan--25/{z}/{x}/{y}.png
+
+### Quận Đống Đa
+• District ID: 006
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/quan-dong-da
+• Patterns found: 6
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png
+
+### Thị xã Sơn Tây
+• District ID: 269
+• URL: https://guland.vn/soi-quy-hoach/ha-noi/thi-xa-son-tay
+• Patterns found: 6
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/thi-xa-son-tay/{z}/{x}/{y}.png

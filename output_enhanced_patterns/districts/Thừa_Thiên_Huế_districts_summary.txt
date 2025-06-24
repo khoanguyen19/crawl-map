@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Thừa Thiên Huế
+Generated: 2025-06-24T01:13:00.264723
+Admin Code: 46
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện A Lưới
+• District ID: 481
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-a-luoi
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-a-luoi--25/{z}/{x}/{y}.png
+
+### Huyện Nam Đông
+• District ID: 483
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-nam-dong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thua-thien-hue/huyen-nam-dong/{z}/{x}/{y}.png
+
+### Huyện Phong Điền
+• District ID: 476
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phong-dien
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/huyen-phong-dien/{z}/{x}/{y}.png
+
+### Huyện Phú Vang
+• District ID: 478
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phu-vang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-vang--25/{z}/{x}/{y}.png
+
+### Huyện Phú Lộc
+• District ID: 482
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phu-loc
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-loc/{z}/{x}/{y}.png
+
+### Huyện Quảng Điền
+• District ID: 477
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-quang-dien
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-quang-dien--25/{z}/{x}/{y}.png
+
+### Thành phố Huế
+• District ID: 474
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/thanh-pho-hue
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png
+
+### Thị xã Hương Thủy
+• District ID: 479
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/thi-xa-huong-thuy
+• Patterns found: 4
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/thua-thien-hue/thi-xa-huong-thuy/{z}/{x}/{y}.png
+
+### Thị xã Hương Trà
+• District ID: 480
+• URL: https://guland.vn/soi-quy-hoach/thua-thien-hue/thi-xa-huong-tra
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/thi-xa-huong-tra--25/{z}/{x}/{y}.png

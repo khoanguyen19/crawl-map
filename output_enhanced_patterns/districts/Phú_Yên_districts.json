@@ -1,0 +1,389 @@
+{
+  "province_name": "Phú Yên",
+  "admin_code": "54",
+  "timestamp": "2025-06-24T00:40:49.327125",
+  "districts": {
+    "Huyện Phú Hoà": {
+      "district_info": {
+        "id": "563",
+        "name": "Huyện Phú Hoà",
+        "slug": "huyen-phu-hoa"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Phú Hoà",
+        "timestamp": "2025-06-24T00:41:04.524985",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-phu-hoa--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-phu-hoa"
+    },
+    "Huyện Sơn Hòa": {
+      "district_info": {
+        "id": "560",
+        "name": "Huyện Sơn Hòa",
+        "slug": "huyen-son-hoa"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Sơn Hòa",
+        "timestamp": "2025-06-24T00:41:15.765182",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-son-hoa"
+    },
+    "Huyện Sông Hinh": {
+      "district_info": {
+        "id": "561",
+        "name": "Huyện Sông Hinh",
+        "slug": "huyen-song-hinh"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Sông Hinh",
+        "timestamp": "2025-06-24T00:41:27.788524",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-song-hinh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-song-hinh"
+    },
+    "Huyện Tây Hoà": {
+      "district_info": {
+        "id": "562",
+        "name": "Huyện Tây Hoà",
+        "slug": "huyen-tay-hoa"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Tây Hoà",
+        "timestamp": "2025-06-24T00:41:39.763701",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/huyen-tay-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-tay-hoa"
+    },
+    "Huyện Tuy An": {
+      "district_info": {
+        "id": "559",
+        "name": "Huyện Tuy An",
+        "slug": "huyen-tuy-an"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Tuy An",
+        "timestamp": "2025-06-24T00:41:51.987429",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/phu-yen/huyen-tuy-an--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-tuy-an"
+    },
+    "Huyện Đồng Xuân": {
+      "district_info": {
+        "id": "558",
+        "name": "Huyện Đồng Xuân",
+        "slug": "huyen-dong-xuan"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Đồng Xuân",
+        "timestamp": "2025-06-24T00:42:03.458464",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-dong-xuan--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-dong-xuan"
+    },
+    "Huyện Đông Hòa": {
+      "district_info": {
+        "id": "564",
+        "name": "Huyện Đông Hòa",
+        "slug": "huyen-dong-hoa"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Huyện Đông Hòa",
+        "timestamp": "2025-06-24T00:42:15.021650",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/thi-xa-dong-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/huyen-dong-hoa"
+    },
+    "Thành phố Tuy Hoà": {
+      "district_info": {
+        "id": "555",
+        "name": "Thành phố Tuy Hoà",
+        "slug": "thanh-pho-tuy-hoa"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Thành phố Tuy Hoà",
+        "timestamp": "2025-06-24T00:42:26.194873",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thanh-pho-tuy-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/thanh-pho-tuy-hoa"
+    },
+    "Thị xã Sông Cầu": {
+      "district_info": {
+        "id": "557",
+        "name": "Thị xã Sông Cầu",
+        "slug": "thi-xa-song-cau"
+      },
+      "patterns": {
+        "location_name": "Phú Yên - Thị xã Sông Cầu",
+        "timestamp": "2025-06-24T00:42:38.060797",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thi-xa-song-cau/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/phu-yen/thi-xa-song-cau"
+    }
+  },
+  "total_districts": 9,
+  "successful_districts": 9,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

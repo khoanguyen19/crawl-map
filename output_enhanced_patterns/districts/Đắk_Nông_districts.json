@@ -1,0 +1,419 @@
+{
+  "province_name": "Đắk Nông",
+  "admin_code": "67",
+  "timestamp": "2025-06-24T01:32:39.310048",
+  "districts": {
+    "Huyện Cư Jút": {
+      "district_info": {
+        "id": "662",
+        "name": "Huyện Cư Jút",
+        "slug": "huyen-cu-jut"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Cư Jút",
+        "timestamp": "2025-06-24T01:32:54.501714",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-cu-jut/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-cu-jut"
+    },
+    "Huyện Krông Nô": {
+      "district_info": {
+        "id": "664",
+        "name": "Huyện Krông Nô",
+        "slug": "huyen-krong-no"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Krông Nô",
+        "timestamp": "2025-06-24T01:33:05.570616",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-krong-no/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-krong-no"
+    },
+    "Huyện Tuy Đức": {
+      "district_info": {
+        "id": "667",
+        "name": "Huyện Tuy Đức",
+        "slug": "huyen-tuy-duc"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Tuy Đức",
+        "timestamp": "2025-06-24T01:33:17.370626",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-tuy-duc--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-tuy-duc"
+    },
+    "Huyện Đăk Glong": {
+      "district_info": {
+        "id": "661",
+        "name": "Huyện Đăk Glong",
+        "slug": "huyen-dak-glong"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Đăk Glong",
+        "timestamp": "2025-06-24T01:33:28.510300",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-glong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-glong"
+    },
+    "Huyện Đắk Mil": {
+      "district_info": {
+        "id": "663",
+        "name": "Huyện Đắk Mil",
+        "slug": "huyen-dak-mil"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Đắk Mil",
+        "timestamp": "2025-06-24T01:33:40.036364",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-mil--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-mil"
+    },
+    "Huyện Đắk Song": {
+      "district_info": {
+        "id": "665",
+        "name": "Huyện Đắk Song",
+        "slug": "huyen-dak-song"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Đắk Song",
+        "timestamp": "2025-06-24T01:33:51.579634",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-song"
+    },
+    "Huyện Đắk R'Lấp": {
+      "district_info": {
+        "id": "666",
+        "name": "Huyện Đắk R'Lấp",
+        "slug": "huyen-dak-rlap"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Huyện Đắk R'Lấp",
+        "timestamp": "2025-06-24T01:34:02.814775",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-rlap--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-rlap"
+    },
+    "Thị xã Gia Nghĩa": {
+      "district_info": {
+        "id": "660",
+        "name": "Thị xã Gia Nghĩa",
+        "slug": "thi-xa-gia-nghia"
+      },
+      "patterns": {
+        "location_name": "Đắk Nông - Thị xã Gia Nghĩa",
+        "timestamp": "2025-06-24T01:34:12.941704",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/dak-nong/thi-xa-gia-nghia"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 8,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

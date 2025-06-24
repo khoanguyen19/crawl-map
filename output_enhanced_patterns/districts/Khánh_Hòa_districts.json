@@ -1,0 +1,368 @@
+{
+  "province_name": "Khánh Hòa",
+  "admin_code": "58",
+  "timestamp": "2025-06-24T00:08:15.783977",
+  "districts": {
+    "Huyện Bác Ái": {
+      "district_info": {
+        "id": "584",
+        "name": "Huyện Bác Ái",
+        "slug": "huyen-bac-ai"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Bác Ái",
+        "timestamp": "2025-06-24T00:08:29.183349",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-bac-ai"
+    },
+    "Huyện Ninh Sơn": {
+      "district_info": {
+        "id": "585",
+        "name": "Huyện Ninh Sơn",
+        "slug": "huyen-ninh-son"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Ninh Sơn",
+        "timestamp": "2025-06-24T00:08:39.224506",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-son"
+    },
+    "Huyện Ninh Hải": {
+      "district_info": {
+        "id": "586",
+        "name": "Huyện Ninh Hải",
+        "slug": "huyen-ninh-hai"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Ninh Hải",
+        "timestamp": "2025-06-24T00:08:49.443238",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-hai"
+    },
+    "Huyện Ninh Phước": {
+      "district_info": {
+        "id": "587",
+        "name": "Huyện Ninh Phước",
+        "slug": "huyen-ninh-phuoc"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Ninh Phước",
+        "timestamp": "2025-06-24T00:08:59.580046",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-phuoc"
+    },
+    "Huyện Thuận Bắc": {
+      "district_info": {
+        "id": "588",
+        "name": "Huyện Thuận Bắc",
+        "slug": "huyen-thuan-bac"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Thuận Bắc",
+        "timestamp": "2025-06-24T00:09:09.814842",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-thuan-bac"
+    },
+    "Huyện Thuận Nam": {
+      "district_info": {
+        "id": "589",
+        "name": "Huyện Thuận Nam",
+        "slug": "huyen-thuan-nam"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Huyện Thuận Nam",
+        "timestamp": "2025-06-24T00:09:19.947198",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-thuan-nam"
+    },
+    "Thành phố Phan Rang-Tháp Chàm": {
+      "district_info": {
+        "id": "582",
+        "name": "Thành phố Phan Rang-Tháp Chàm",
+        "slug": "thanh-pho-phan-rang-thap-cham"
+      },
+      "patterns": {
+        "location_name": "Khánh Hòa - Thành phố Phan Rang-Tháp Chàm",
+        "timestamp": "2025-06-24T00:09:30.131612",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/khanh-hoa/thanh-pho-phan-rang-thap-cham"
+    }
+  },
+  "total_districts": 7,
+  "successful_districts": 7,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

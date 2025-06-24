@@ -1,0 +1,67 @@
+# DISTRICT PATTERNS: Đà Nẵng
+Generated: 2025-06-24T01:27:30.969912
+Admin Code: 48
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Hòa Vang
+• District ID: 497
+• URL: https://guland.vn/soi-quy-hoach/da-nang/huyen-hoa-vang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png
+
+### Huyện Hoàng Sa
+• District ID: 498
+• URL: https://guland.vn/soi-quy-hoach/da-nang/huyen-hoang-sa
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png
+
+### Quận Cẩm Lệ
+• District ID: 495
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-cam-le
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-cam-le/{z}/{x}/{y}.png
+
+### Quận Hải Châu
+• District ID: 492
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-hai-chau
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png
+
+### Quận Liên Chiểu
+• District ID: 490
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-lien-chieu
+• Patterns found: 4
+
+  • KH 2025: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png
+
+### Quận Ngũ Hành Sơn
+• District ID: 494
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-ngu-hanh-son
+• Patterns found: 4
+
+  • KH 2025: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png
+
+### Quận Sơn Trà
+• District ID: 493
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-son-tra
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/quan-son-tra/{z}/{x}/{y}.png
+
+### Quận Thanh Khê
+• District ID: 491
+• URL: https://guland.vn/soi-quy-hoach/da-nang/quan-thanh-khe
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-thanh-khe/{z}/{x}/{y}.png

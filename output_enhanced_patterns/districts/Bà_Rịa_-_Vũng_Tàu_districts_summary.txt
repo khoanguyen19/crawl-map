@@ -1,0 +1,60 @@
+# DISTRICT PATTERNS: Bà Rịa - Vũng Tàu
+Generated: 2025-06-23T23:08:53.869601
+Admin Code: 77
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 7
+• Failed: 1
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Châu Đức
+• District ID: 750
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-chau-duc
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png
+
+### Huyện Long Điền
+• District ID: 752
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-long-dien
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ba-ria-vung-tau/huyen-long-dien/{z}/{x}/{y}.png
+
+### Huyện Xuyên Mộc
+• District ID: 751
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-xuyen-moc
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-xuyen-moc--dc-lyk/{z}/{x}/{y}.png
+
+### Huyện Đất Đỏ
+• District ID: 753
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-dat-do
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-long-dat/{z}/{x}/{y}.png
+
+### Thành phố Vũng Tàu
+• District ID: 747
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thanh-pho-vung-tau
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thanh-pho-vung-tau--25/{z}/{x}/{y}.png
+
+### Thành phố Bà Rịa
+• District ID: 748
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thanh-pho-ba-ria
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ba-ria-vung-tau/thanh-pho-ba-ria/{z}/{x}/{y}.png
+
+### Thị xã Phú Mỹ
+• District ID: 754
+• URL: https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thi-xa-phu-my
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thi-xa-phu-my/{z}/{x}/{y}.png

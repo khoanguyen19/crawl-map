@@ -1,0 +1,30 @@
+# TILE PATTERNS: Gia Lai
+Generated: 2025-06-23T23:38:53.007720
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 3
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png
+• Server: https://l5cfglaebpobj.vcdn.cloud
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: 17
+• Active: False
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: 
+• Server: None
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png

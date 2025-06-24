@@ -1,0 +1,30 @@
+# TILE PATTERNS: Bắc Kạn
+Generated: 2025-06-23T23:15:17.548889
+Method: HTML data-url attribute extraction
+
+## 📊 SUMMARY
+• Total map types: 3
+
+## 🗺️ MAP TYPE PATTERNS
+
+### QH 2030 (QH_2030)
+• Data Type: layer_1
+• Tile URL: https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png
+• Server: https://251db3a9dce2de5.cmccloud.com.vn
+• Max Zoom: None
+• Active: True
+
+### KH 2025 (KH_2025)
+• Data Type: layer_2022
+• Tile URL: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png
+• Server: https://s3-hn-2.cloud.cmctelecom.vn
+• Max Zoom: 16
+• Active: False
+
+### QH khác (QH_KHAC)
+• Data Type: layer_qhpk
+• Tile URL: 
+• Server: None
+• Max Zoom: None
+• Active: False
+• Alternative URL (2030): https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png

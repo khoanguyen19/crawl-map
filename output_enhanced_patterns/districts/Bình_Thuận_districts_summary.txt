@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Bình Thuận
+Generated: 2025-06-23T23:27:05.182913
+Admin Code: 60
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 9
+• Failed: 1
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Bình
+• District ID: 596
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-bac-binh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-bac-binh/{z}/{x}/{y}.png
+
+### Huyện Hàm Thuận Bắc
+• District ID: 597
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-ham-thuan-bac
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png
+
+### Huyện Hàm Thuận Nam
+• District ID: 598
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-ham-thuan-nam
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-nam/{z}/{x}/{y}.png
+
+### Huyện Hàm Tân
+• District ID: 601
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-ham-tan
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-tan/{z}/{x}/{y}.png
+
+### Huyện Tánh Linh
+• District ID: 599
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-tanh-linh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-tanh-linh/{z}/{x}/{y}.png
+
+### Huyện Tuy Phong
+• District ID: 595
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-tuy-phong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/binh-thuan/huyen-tuy-phong/{z}/{x}/{y}.png
+
+### Huyện Đức Linh
+• District ID: 600
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/huyen-duc-linh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-duc-linh/{z}/{x}/{y}.png
+
+### Thành phố Phan Thiết
+• District ID: 593
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/thanh-pho-phan-thiet
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/binh-thuan/thanh-pho-phan-thiet/{z}/{x}/{y}.png
+
+### Thị xã La Gi
+• District ID: 594
+• URL: https://guland.vn/soi-quy-hoach/binh-thuan/thi-xa-la-gi
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/thi-xa-la-gi/{z}/{x}/{y}.png

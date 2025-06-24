@@ -1,0 +1,368 @@
+{
+  "province_name": "Bà Rịa - Vũng Tàu",
+  "admin_code": "77",
+  "timestamp": "2025-06-23T23:08:53.869601",
+  "districts": {
+    "Huyện Châu Đức": {
+      "district_info": {
+        "id": "750",
+        "name": "Huyện Châu Đức",
+        "slug": "huyen-chau-duc"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Huyện Châu Đức",
+        "timestamp": "2025-06-23T23:09:07.473689",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-chau-duc"
+    },
+    "Huyện Long Điền": {
+      "district_info": {
+        "id": "752",
+        "name": "Huyện Long Điền",
+        "slug": "huyen-long-dien"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Huyện Long Điền",
+        "timestamp": "2025-06-23T23:09:27.375910",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ba-ria-vung-tau/huyen-long-dien/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-long-dien"
+    },
+    "Huyện Xuyên Mộc": {
+      "district_info": {
+        "id": "751",
+        "name": "Huyện Xuyên Mộc",
+        "slug": "huyen-xuyen-moc"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Huyện Xuyên Mộc",
+        "timestamp": "2025-06-23T23:09:37.141544",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-xuyen-moc--dc-lyk/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-xuyen-moc"
+    },
+    "Huyện Đất Đỏ": {
+      "district_info": {
+        "id": "753",
+        "name": "Huyện Đất Đỏ",
+        "slug": "huyen-dat-do"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Huyện Đất Đỏ",
+        "timestamp": "2025-06-23T23:09:46.954889",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-long-dat/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/huyen-dat-do"
+    },
+    "Thành phố Vũng Tàu": {
+      "district_info": {
+        "id": "747",
+        "name": "Thành phố Vũng Tàu",
+        "slug": "thanh-pho-vung-tau"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Thành phố Vũng Tàu",
+        "timestamp": "2025-06-23T23:09:56.919766",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thanh-pho-vung-tau--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thanh-pho-vung-tau"
+    },
+    "Thành phố Bà Rịa": {
+      "district_info": {
+        "id": "748",
+        "name": "Thành phố Bà Rịa",
+        "slug": "thanh-pho-ba-ria"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Thành phố Bà Rịa",
+        "timestamp": "2025-06-23T23:10:06.693075",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ba-ria-vung-tau/thanh-pho-ba-ria/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thanh-pho-ba-ria"
+    },
+    "Thị xã Phú Mỹ": {
+      "district_info": {
+        "id": "754",
+        "name": "Thị xã Phú Mỹ",
+        "slug": "thi-xa-phu-my"
+      },
+      "patterns": {
+        "location_name": "Bà Rịa - Vũng Tàu - Thị xã Phú Mỹ",
+        "timestamp": "2025-06-23T23:10:17.379784",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thi-xa-phu-my/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ba-ria-vung-tau/thi-xa-phu-my"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 7,
+  "failed_districts": 1,
+  "api_method_used": "API_SUCCESS"
+}

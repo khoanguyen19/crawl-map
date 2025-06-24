@@ -1,0 +1,101 @@
+# DISTRICT PATTERNS: Quảng Ninh
+Generated: 2025-06-24T00:50:37.766614
+Admin Code: 22
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 14
+• Successful: 13
+• Failed: 1
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ba Chẽ
+• District ID: 202
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-ba-che
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-ba-che/{z}/{x}/{y}.png
+
+### Huyện Bình Liêu
+• District ID: 198
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-binh-lieu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-binh-lieu/{z}/{x}/{y}.png
+
+### Huyện Hải Hà
+• District ID: 201
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-hai-ha
+• Patterns found: 3
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-ninh/huyen-hai-ha/{z}/{x}/{y}.png
+
+### Huyện Hoành Bồ
+• District ID: 204
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-hoanh-bo
+• Patterns found: 2
+
+
+### Huyện Tiên Yên
+• District ID: 199
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-tien-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/quang-ninh/huyen-tien-yen/{z}/{x}/{y}.png
+
+### Huyện Vân Đồn
+• District ID: 203
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-van-don
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-van-don--25/{z}/{x}/{y}.png
+
+### Huyện Đầm Hà
+• District ID: 200
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/huyen-dam-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/quang-ninh/huyen-dam-ha/{z}/{x}/{y}.png
+
+### Thành phố Hạ Long
+• District ID: 193
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thanh-pho-ha-long
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-ha-long/{z}/{x}/{y}.png
+
+### Thành phố Móng Cái
+• District ID: 194
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thanh-pho-mong-cai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-mong-cai/{z}/{x}/{y}.png
+
+### Thành phố Cẩm Phả
+• District ID: 195
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thanh-pho-cam-pha
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png
+
+### Thành phố Uông Bí
+• District ID: 196
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thanh-pho-uong-bi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-uong-bi--25/{z}/{x}/{y}.png
+
+### Thị xã Đông Triều
+• District ID: 205
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thi-xa-dong-trieu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-dong-trieu/{z}/{x}/{y}.png
+
+### Thị xã Quảng Yên
+• District ID: 206
+• URL: https://guland.vn/soi-quy-hoach/quang-ninh/thi-xa-quang-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thi-xa-quang-yen/{z}/{x}/{y}.png

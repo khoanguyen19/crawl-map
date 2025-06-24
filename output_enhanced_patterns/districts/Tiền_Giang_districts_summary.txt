@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: Tiền Giang
+Generated: 2025-06-24T01:15:11.049139
+Admin Code: 82
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cái Bè
+• District ID: 819
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-cai-be
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cai-be/{z}/{x}/{y}.png
+
+### Huyện Cai Lậy
+• District ID: 820
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-cai-lay
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-cai-lay/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 821
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Chợ Gạo
+• District ID: 822
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-cho-gao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cho-gao--25/{z}/{x}/{y}.png
+
+### Huyện Gò Công Tây
+• District ID: 823
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-go-cong-tay
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-go-cong-tay--25/{z}/{x}/{y}.png
+
+### Huyện Gò Công Đông
+• District ID: 824
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-go-cong-dong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-go-cong-dong/{z}/{x}/{y}.png
+
+### Huyện Tân Phước
+• District ID: 818
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-tan-phuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phuoc/{z}/{x}/{y}.png
+
+### Huyện Tân Phú Đông
+• District ID: 825
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/huyen-tan-phu-dong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phu-dong/{z}/{x}/{y}.png
+
+### Thành phố Mỹ Tho
+• District ID: 815
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/thanh-pho-my-tho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thanh-pho-my-tho--25/{z}/{x}/{y}.png
+
+### Thị xã Gò Công
+• District ID: 816
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/thi-xa-go-cong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/thi-xa-go-cong/{z}/{x}/{y}.png
+
+### Thị xã Cai Lậy
+• District ID: 817
+• URL: https://guland.vn/soi-quy-hoach/tien-giang/thi-xa-cai-lay
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thi-xa-cai-lay--25/{z}/{x}/{y}.png

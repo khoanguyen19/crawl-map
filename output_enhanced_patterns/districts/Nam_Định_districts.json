@@ -1,0 +1,422 @@
+{
+  "province_name": "Nam Định",
+  "admin_code": "36",
+  "timestamp": "2025-06-24T00:27:31.581320",
+  "districts": {
+    "Huyện Giao Thủy": {
+      "district_info": {
+        "id": "365",
+        "name": "Huyện Giao Thủy",
+        "slug": "huyen-giao-thuy"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Giao Thủy",
+        "timestamp": "2025-06-24T00:27:46.447906",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-giao-thuy"
+    },
+    "Huyện Hải Hậu": {
+      "district_info": {
+        "id": "366",
+        "name": "Huyện Hải Hậu",
+        "slug": "huyen-hai-hau"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Hải Hậu",
+        "timestamp": "2025-06-24T00:27:58.869496",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-hai-hau/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-hai-hau"
+    },
+    "Huyện Mỹ Lộc": {
+      "district_info": {
+        "id": "358",
+        "name": "Huyện Mỹ Lộc",
+        "slug": "huyen-my-loc"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Mỹ Lộc",
+        "timestamp": "2025-06-24T00:28:10.385454",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nam-dinh/huyen-my-loc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-my-loc"
+    },
+    "Huyện Nam Trực": {
+      "district_info": {
+        "id": "362",
+        "name": "Huyện Nam Trực",
+        "slug": "huyen-nam-truc"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Nam Trực",
+        "timestamp": "2025-06-24T00:28:22.554520",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nam-dinh/huyen-nam-truc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-nam-truc"
+    },
+    "Huyện Nghĩa Hưng": {
+      "district_info": {
+        "id": "361",
+        "name": "Huyện Nghĩa Hưng",
+        "slug": "huyen-nghia-hung"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Nghĩa Hưng",
+        "timestamp": "2025-06-24T00:28:34.783506",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-nghia-hung/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-nghia-hung"
+    },
+    "Huyện Trực Ninh": {
+      "district_info": {
+        "id": "363",
+        "name": "Huyện Trực Ninh",
+        "slug": "huyen-truc-ninh"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Trực Ninh",
+        "timestamp": "2025-06-24T00:28:47.725885",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-truc-ninh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-truc-ninh"
+    },
+    "Huyện Vụ Bản": {
+      "district_info": {
+        "id": "359",
+        "name": "Huyện Vụ Bản",
+        "slug": "huyen-vu-ban"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Vụ Bản",
+        "timestamp": "2025-06-24T00:28:59.558587",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-vu-ban/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-vu-ban"
+    },
+    "Huyện Xuân Trường": {
+      "district_info": {
+        "id": "364",
+        "name": "Huyện Xuân Trường",
+        "slug": "huyen-xuan-truong"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Xuân Trường",
+        "timestamp": "2025-06-24T00:29:11.617025",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-xuan-truong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-xuan-truong"
+    },
+    "Huyện Ý Yên": {
+      "district_info": {
+        "id": "360",
+        "name": "Huyện Ý Yên",
+        "slug": "huyen-y-yen"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Huyện Ý Yên",
+        "timestamp": "2025-06-24T00:29:23.203898",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-y-yen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/huyen-y-yen"
+    },
+    "Thành phố Nam Định": {
+      "district_info": {
+        "id": "356",
+        "name": "Thành phố Nam Định",
+        "slug": "thanh-pho-nam-dinh"
+      },
+      "patterns": {
+        "location_name": "Nam Định - Thành phố Nam Định",
+        "timestamp": "2025-06-24T00:29:33.674435",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/nam-dinh/thanh-pho-nam-dinh"
+    }
+  },
+  "total_districts": 10,
+  "successful_districts": 10,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

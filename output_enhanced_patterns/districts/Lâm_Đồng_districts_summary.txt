@@ -1,0 +1,95 @@
+# DISTRICT PATTERNS: Lâm Đồng
+Generated: 2025-06-24T00:17:02.496165
+Admin Code: 68
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 12
+• Successful: 12
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bảo Lâm
+• District ID: 680
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-bao-lam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-bao-lam/{z}/{x}/{y}.png
+
+### Huyện Cát Tiên
+• District ID: 683
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-cat-tien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-cat-tien/{z}/{x}/{y}.png
+
+### Huyện Di Linh
+• District ID: 679
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-di-linh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png
+
+### Huyện Lạc Dương
+• District ID: 675
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-lac-duong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lac-duong--25/{z}/{x}/{y}.png
+
+### Huyện Lâm Hà
+• District ID: 676
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-lam-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lam-ha/{z}/{x}/{y}.png
+
+### Huyện Đạ Huoai
+• District ID: 681
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-da-huoai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-huoai/{z}/{x}/{y}.png
+
+### Huyện Đạ Tẻh
+• District ID: 682
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-da-teh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-teh/{z}/{x}/{y}.png
+
+### Huyện Đam Rông
+• District ID: 674
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-dam-rong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-dam-rong/{z}/{x}/{y}.png
+
+### Huyện Đơn Dương
+• District ID: 677
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-don-duong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-don-duong/{z}/{x}/{y}.png
+
+### Huyện Đức Trọng
+• District ID: 678
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/huyen-duc-trong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-duc-trong/{z}/{x}/{y}.png
+
+### Thành phố Đà Lạt
+• District ID: 672
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/thanh-pho-da-lat
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-da-lat--25/{z}/{x}/{y}.png
+
+### Thành phố Bảo Lộc
+• District ID: 673
+• URL: https://guland.vn/soi-quy-hoach/lam-dong/thanh-pho-bao-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-bao-loc--25/{z}/{x}/{y}.png

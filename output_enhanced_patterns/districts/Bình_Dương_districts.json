@@ -1,0 +1,488 @@
+{
+  "province_name": "Bình Dương",
+  "admin_code": "74",
+  "timestamp": "2025-06-23T23:23:06.337421",
+  "districts": {
+    "Huyện Bắc Tân Uyên": {
+      "district_info": {
+        "id": "726",
+        "name": "Huyện Bắc Tân Uyên",
+        "slug": "huyen-bac-tan-uyen"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Huyện Bắc Tân Uyên",
+        "timestamp": "2025-06-23T23:23:20.536725",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/huyen-bac-tan-uyen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "UNKNOWN_layer_qhpk_qhxd": {
+            "display_name": "QH xây dựng",
+            "data_type": "layer_qhpk_qhxd",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 5
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/huyen-bac-tan-uyen"
+    },
+    "Huyện Bàu Bàng": {
+      "district_info": {
+        "id": "719",
+        "name": "Huyện Bàu Bàng",
+        "slug": "huyen-bau-bang"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Huyện Bàu Bàng",
+        "timestamp": "2025-06-23T23:23:31.181507",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-bau-bang--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/huyen-bau-bang"
+    },
+    "Huyện Dầu Tiếng": {
+      "district_info": {
+        "id": "720",
+        "name": "Huyện Dầu Tiếng",
+        "slug": "huyen-dau-tieng"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Huyện Dầu Tiếng",
+        "timestamp": "2025-06-23T23:23:41.000023",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/huyen-dau-tieng"
+    },
+    "Huyện Phú Giáo": {
+      "district_info": {
+        "id": "722",
+        "name": "Huyện Phú Giáo",
+        "slug": "huyen-phu-giao"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Huyện Phú Giáo",
+        "timestamp": "2025-06-23T23:23:51.649960",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-phu-giao--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/huyen-phu-giao"
+    },
+    "Thành phố Thủ Dầu Một": {
+      "district_info": {
+        "id": "718",
+        "name": "Thành phố Thủ Dầu Một",
+        "slug": "thanh-pho-thu-dau-mot"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Thành phố Thủ Dầu Một",
+        "timestamp": "2025-06-23T23:24:01.635945",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/thanh-pho-thu-dau-mot/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/thanh-pho-thu-dau-mot"
+    },
+    "Thị xã Dĩ An": {
+      "district_info": {
+        "id": "724",
+        "name": "Thị xã Dĩ An",
+        "slug": "thi-xa-di-an"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Thị xã Dĩ An",
+        "timestamp": "2025-06-23T23:24:12.162850",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-di-an"
+    },
+    "Thị xã Thuận An": {
+      "district_info": {
+        "id": "725",
+        "name": "Thị xã Thuận An",
+        "slug": "thi-xa-thuan-an"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Thị xã Thuận An",
+        "timestamp": "2025-06-23T23:24:21.995568",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-thuan-an"
+    },
+    "Thị xã Bến Cát": {
+      "district_info": {
+        "id": "721",
+        "name": "Thị xã Bến Cát",
+        "slug": "thi-xa-ben-cat"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Thị xã Bến Cát",
+        "timestamp": "2025-06-23T23:24:32.103955",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-ben-cat--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "UNKNOWN_layer_qhpk_qhxd": {
+            "display_name": "QH xây dựng",
+            "data_type": "layer_qhpk_qhxd",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 5
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-ben-cat"
+    },
+    "Thị xã Tân Uyên": {
+      "district_info": {
+        "id": "723",
+        "name": "Thị xã Tân Uyên",
+        "slug": "thi-xa-tan-uyen"
+      },
+      "patterns": {
+        "location_name": "Bình Dương - Thị xã Tân Uyên",
+        "timestamp": "2025-06-23T23:24:41.839898",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-tan-uyen--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-tan-uyen"
+    }
+  },
+  "total_districts": 9,
+  "successful_districts": 9,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

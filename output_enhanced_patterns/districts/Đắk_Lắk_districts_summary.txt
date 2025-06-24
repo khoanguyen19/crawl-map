@@ -1,0 +1,116 @@
+# DISTRICT PATTERNS: Đắk Lắk
+Generated: 2025-06-24T01:29:25.419247
+Admin Code: 66
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 15
+• Successful: 15
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Lắk
+• District ID: 656
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-lak
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-lak/{z}/{x}/{y}.png
+
+### Huyện Buôn Đôn
+• District ID: 647
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-buon-don
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-buon-don--25/{z}/{x}/{y}.png
+
+### Huyện Cư Kuin
+• District ID: 657
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-cu-kuin
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-cu-kuin/{z}/{x}/{y}.png
+
+### Huyện Cư M'gar
+• District ID: 648
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-cu-mgar
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-cu-mgar--25/{z}/{x}/{y}.png
+
+### Huyện Ea H'leo
+• District ID: 645
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-ea-hleo
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-hleo--25/{z}/{x}/{y}.png
+
+### Huyện Ea Kar
+• District ID: 651
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-ea-kar
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-ea-kar/{z}/{x}/{y}.png
+
+### Huyện Ea Súp
+• District ID: 646
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-ea-sup
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-sup--25/{z}/{x}/{y}.png
+
+### Huyện Krông Búk
+• District ID: 649
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-krong-buk
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-buk--25/{z}/{x}/{y}.png
+
+### Huyện Krông Năng
+• District ID: 650
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-krong-nang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-nang/{z}/{x}/{y}.png
+
+### Huyện Krông Bông
+• District ID: 653
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-krong-bong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-bong/{z}/{x}/{y}.png
+
+### Huyện Krông Pắc
+• District ID: 654
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-krong-pac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png
+
+### Huyện Krông A Na
+• District ID: 655
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-krong-a-na
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-ana--25/{z}/{x}/{y}.png
+
+### Huyện M'Đrắk
+• District ID: 652
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/huyen-mdrak
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-mdrak/{z}/{x}/{y}.png
+
+### Thành phố Buôn Ma Thuột
+• District ID: 643
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/thanh-pho-buon-ma-thuot
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/thanh-pho-buon-ma-thuot/{z}/{x}/{y}.png
+
+### Thị xã Thị Xã Buôn Hồ
+• District ID: 644
+• URL: https://guland.vn/soi-quy-hoach/dak-lak/thi-xa-thi-xa-buon-ho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png

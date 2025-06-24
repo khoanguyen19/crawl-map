@@ -1,0 +1,81 @@
+# DISTRICT PATTERNS: Bình Định
+Generated: 2025-06-23T23:29:18.028402
+Admin Code: 52
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 10
+• Failed: 1
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện An Lão
+• District ID: 542
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-an-lao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-an-lao/{z}/{x}/{y}.png
+
+### Huyện Hoài Ân
+• District ID: 544
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-hoai-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-hoai-an/{z}/{x}/{y}.png
+
+### Huyện Phù Mỹ
+• District ID: 545
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-phu-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-my/{z}/{x}/{y}.png
+
+### Huyện Phù Cát
+• District ID: 548
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-phu-cat
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png
+
+### Huyện Tây Sơn
+• District ID: 547
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-tay-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tay-son/{z}/{x}/{y}.png
+
+### Huyện Tuy Phước
+• District ID: 550
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-tuy-phuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tuy-phuoc/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Thạnh
+• District ID: 546
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/huyen-vinh-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-vinh-thanh/{z}/{x}/{y}.png
+
+### Thành phố Qui Nhơn
+• District ID: 540
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/thanh-pho-qui-nhon
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thanh-pho-quy-nhon/{z}/{x}/{y}.png
+
+### Thị xã Hoài Nhơn
+• District ID: 543
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/thi-xa-hoai-nhon
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/binh-dinh/thi-xa-hoai-nhon--25/{z}/{x}/{y}.png
+
+### Thị xã An Nhơn
+• District ID: 549
+• URL: https://guland.vn/soi-quy-hoach/binh-dinh/thi-xa-an-nhon
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thi-xa-an-nhon/{z}/{x}/{y}.png

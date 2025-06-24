@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: Bình Phước
+Generated: 2025-06-23T23:24:56.653063
+Admin Code: 70
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bù Gia Mập
+• District ID: 691
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-bu-gia-map
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-gia-map/{z}/{x}/{y}.png
+
+### Huyện Bù Đốp
+• District ID: 693
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-bu-dop
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-bu-dop--25/{z}/{x}/{y}.png
+
+### Huyện Bù Đăng
+• District ID: 696
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-bu-dang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-dang/{z}/{x}/{y}.png
+
+### Huyện Hớn Quản
+• District ID: 694
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-hon-quan
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+
+### Huyện Lộc Ninh
+• District ID: 692
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-loc-ninh
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-phuoc/huyen-loc-ninh--25/{z}/{x}/{y}.png
+
+### Huyện Phú Riềng
+• District ID: 698
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-phu-rieng
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-phu-rieng/{z}/{x}/{y}.png
+
+### Huyện Đồng Phú
+• District ID: 695
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/huyen-dong-phu
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-dong-phu/{z}/{x}/{y}.png
+
+### Thành phố Đồng Xoài
+• District ID: 689
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/thanh-pho-dong-xoai
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+
+### Thị xã Chơn Thành
+• District ID: 697
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/thi-xa-chon-thanh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+
+### Thị xã Phước Long
+• District ID: 688
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/thi-xa-phuoc-long
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/thi-xa-phuoc-long--25/{z}/{x}/{y}.png
+
+### Thị xã Bình Long
+• District ID: 690
+• URL: https://guland.vn/soi-quy-hoach/binh-phuoc/thi-xa-binh-long
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/thi-xa-binh-long/{z}/{x}/{y}.png

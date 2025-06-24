@@ -1,0 +1,419 @@
+{
+  "province_name": "Đà Nẵng",
+  "admin_code": "48",
+  "timestamp": "2025-06-24T01:27:30.969912",
+  "districts": {
+    "Huyện Hòa Vang": {
+      "district_info": {
+        "id": "497",
+        "name": "Huyện Hòa Vang",
+        "slug": "huyen-hoa-vang"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Huyện Hòa Vang",
+        "timestamp": "2025-06-24T01:27:46.184108",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/huyen-hoa-vang"
+    },
+    "Huyện Hoàng Sa": {
+      "district_info": {
+        "id": "498",
+        "name": "Huyện Hoàng Sa",
+        "slug": "huyen-hoang-sa"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Huyện Hoàng Sa",
+        "timestamp": "2025-06-24T01:27:58.019281",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/huyen-hoang-sa"
+    },
+    "Quận Cẩm Lệ": {
+      "district_info": {
+        "id": "495",
+        "name": "Quận Cẩm Lệ",
+        "slug": "quan-cam-le"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Cẩm Lệ",
+        "timestamp": "2025-06-24T01:28:10.414783",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-cam-le/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-cam-le"
+    },
+    "Quận Hải Châu": {
+      "district_info": {
+        "id": "492",
+        "name": "Quận Hải Châu",
+        "slug": "quan-hai-chau"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Hải Châu",
+        "timestamp": "2025-06-24T01:28:22.679875",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-hai-chau"
+    },
+    "Quận Liên Chiểu": {
+      "district_info": {
+        "id": "490",
+        "name": "Quận Liên Chiểu",
+        "slug": "quan-lien-chieu"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Liên Chiểu",
+        "timestamp": "2025-06-24T01:28:34.444678",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-lien-chieu"
+    },
+    "Quận Ngũ Hành Sơn": {
+      "district_info": {
+        "id": "494",
+        "name": "Quận Ngũ Hành Sơn",
+        "slug": "quan-ngu-hanh-son"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Ngũ Hành Sơn",
+        "timestamp": "2025-06-24T01:28:45.908069",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-ngu-hanh-son"
+    },
+    "Quận Sơn Trà": {
+      "district_info": {
+        "id": "493",
+        "name": "Quận Sơn Trà",
+        "slug": "quan-son-tra"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Sơn Trà",
+        "timestamp": "2025-06-24T01:28:57.488662",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/quan-son-tra/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-son-tra"
+    },
+    "Quận Thanh Khê": {
+      "district_info": {
+        "id": "491",
+        "name": "Quận Thanh Khê",
+        "slug": "quan-thanh-khe"
+      },
+      "patterns": {
+        "location_name": "Đà Nẵng - Quận Thanh Khê",
+        "timestamp": "2025-06-24T01:29:09.460063",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-thanh-khe/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/da-nang/quan-thanh-khe"
+    }
+  },
+  "total_districts": 8,
+  "successful_districts": 8,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

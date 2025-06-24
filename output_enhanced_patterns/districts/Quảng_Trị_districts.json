@@ -1,0 +1,413 @@
+{
+  "province_name": "Quảng Trị",
+  "admin_code": "45",
+  "timestamp": "2025-06-24T00:53:37.064612",
+  "districts": {
+    "Huyện Cam Lộ": {
+      "district_info": {
+        "id": "468",
+        "name": "Huyện Cam Lộ",
+        "slug": "huyen-cam-lo"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Cam Lộ",
+        "timestamp": "2025-06-24T00:53:52.398360",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-cam-lo/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-cam-lo"
+    },
+    "Huyện Cồn Cỏ": {
+      "district_info": {
+        "id": "471",
+        "name": "Huyện Cồn Cỏ",
+        "slug": "huyen-con-co"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Cồn Cỏ",
+        "timestamp": "2025-06-24T00:54:04.954596",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-con-co"
+    },
+    "Huyện Gio Linh": {
+      "district_info": {
+        "id": "466",
+        "name": "Huyện Gio Linh",
+        "slug": "huyen-gio-linh"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Gio Linh",
+        "timestamp": "2025-06-24T00:54:16.537210",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-gio-linh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-gio-linh"
+    },
+    "Huyện Hải Lăng": {
+      "district_info": {
+        "id": "470",
+        "name": "Huyện Hải Lăng",
+        "slug": "huyen-hai-lang"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Hải Lăng",
+        "timestamp": "2025-06-24T00:54:29.643061",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/quang-tri/huyen-hai-lang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-hai-lang"
+    },
+    "Huyện Hướng Hóa": {
+      "district_info": {
+        "id": "465",
+        "name": "Huyện Hướng Hóa",
+        "slug": "huyen-huong-hoa"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Hướng Hóa",
+        "timestamp": "2025-06-24T00:54:41.437348",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-huong-hoa"
+    },
+    "Huyện Triệu Phong": {
+      "district_info": {
+        "id": "469",
+        "name": "Huyện Triệu Phong",
+        "slug": "huyen-trieu-phong"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Triệu Phong",
+        "timestamp": "2025-06-24T00:54:55.322842",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-trieu-phong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-trieu-phong"
+    },
+    "Huyện Vĩnh Linh": {
+      "district_info": {
+        "id": "464",
+        "name": "Huyện Vĩnh Linh",
+        "slug": "huyen-vinh-linh"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Vĩnh Linh",
+        "timestamp": "2025-06-24T00:55:07.671876",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-vinh-linh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-vinh-linh"
+    },
+    "Huyện Đa Krông": {
+      "district_info": {
+        "id": "467",
+        "name": "Huyện Đa Krông",
+        "slug": "huyen-da-krong"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Huyện Đa Krông",
+        "timestamp": "2025-06-24T00:55:19.878091",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-da-krong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/huyen-da-krong"
+    },
+    "Thành phố Đông Hà": {
+      "district_info": {
+        "id": "461",
+        "name": "Thành phố Đông Hà",
+        "slug": "thanh-pho-dong-ha"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Thành phố Đông Hà",
+        "timestamp": "2025-06-24T00:55:31.614357",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thanh-pho-dong-ha/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/thanh-pho-dong-ha"
+    },
+    "Thị xã Quảng Trị": {
+      "district_info": {
+        "id": "462",
+        "name": "Thị xã Quảng Trị",
+        "slug": "thi-xa-quang-tri"
+      },
+      "patterns": {
+        "location_name": "Quảng Trị - Thị xã Quảng Trị",
+        "timestamp": "2025-06-24T00:55:41.746306",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/quang-tri/thi-xa-quang-tri"
+    }
+  },
+  "total_districts": 10,
+  "successful_districts": 10,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

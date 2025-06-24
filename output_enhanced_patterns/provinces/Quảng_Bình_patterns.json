@@ -1,0 +1,25 @@
+{
+  "location_name": "Quảng Bình",
+  "timestamp": "2025-06-24T00:42:54.307929",
+  "map_types": {
+    "QH_2030": {
+      "display_name": "QH 2030",
+      "data_type": "layer_1",
+      "tile_url": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": null,
+      "is_active": true,
+      "server": "https://l5cfglaebpobj.vcdn.cloud"
+    },
+    "QH_KHAC": {
+      "display_name": "QH khác",
+      "data_type": "layer_qhpk",
+      "tile_url": "",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": null
+    }
+  },
+  "total_patterns": 2
+}

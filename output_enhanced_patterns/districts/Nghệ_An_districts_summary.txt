@@ -1,0 +1,156 @@
+# DISTRICT PATTERNS: Nghệ An
+Generated: 2025-06-24T00:29:51.053446
+Admin Code: 40
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 21
+• Successful: 21
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Anh Sơn
+• District ID: 424
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-anh-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-anh-son/{z}/{x}/{y}.png
+
+### Huyện Con Cuông
+• District ID: 422
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-con-cuong
+• Patterns found: 2
+
+
+### Huyện Diễn Châu
+• District ID: 425
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-dien-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-dien-chau--25/{z}/{x}/{y}.png
+
+### Huyện Hưng Nguyên
+• District ID: 431
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-hung-nguyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-hung-nguyen/{z}/{x}/{y}.png
+
+### Huyện Kỳ Sơn
+• District ID: 417
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-ky-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-ky-son/{z}/{x}/{y}.png
+
+### Huyện Nam Đàn
+• District ID: 430
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-nam-dan
+• Patterns found: 2
+
+
+### Huyện Nghĩa Đàn
+• District ID: 419
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-nghia-dan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-nghia-dan/{z}/{x}/{y}.png
+
+### Huyện Nghi Lộc
+• District ID: 429
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-nghi-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-nghi-loc--25/{z}/{x}/{y}.png
+
+### Huyện Quế Phong
+• District ID: 415
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-que-phong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-que-phong/{z}/{x}/{y}.png
+
+### Huyện Quỳ Châu
+• District ID: 416
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-quy-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-quy-chau/{z}/{x}/{y}.png
+
+### Huyện Quỳ Hợp
+• District ID: 420
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-quy-hop
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-quy-hop/{z}/{x}/{y}.png
+
+### Huyện Quỳnh Lưu
+• District ID: 421
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-quynh-luu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/nghe-an/huyen-quynh-luu/{z}/{x}/{y}.png
+
+### Huyện Tân Kỳ
+• District ID: 423
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-tan-ky
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-tan-ky/{z}/{x}/{y}.png
+
+### Huyện Thanh Chương
+• District ID: 428
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-thanh-chuong
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-thanh-chuong--25/{z}/{x}/{y}.png
+
+### Huyện Tương Dương
+• District ID: 418
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-tuong-duong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-tuong-duong/{z}/{x}/{y}.png
+
+### Huyện Yên Thành
+• District ID: 426
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-yen-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-yen-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Đô Lương
+• District ID: 427
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/huyen-do-luong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/nghe-an/huyen-do-luong/{z}/{x}/{y}.png
+
+### Thành phố Vinh
+• District ID: 412
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/thanh-pho-vinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png
+
+### Thị xã Cửa Lò
+• District ID: 413
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/thi-xa-cua-lo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-cua-lo/{z}/{x}/{y}.png
+
+### Thị xã Thái Hoà
+• District ID: 414
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/thi-xa-thai-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-thai-hoa/{z}/{x}/{y}.png
+
+### Thị xã Hoàng Mai
+• District ID: 432
+• URL: https://guland.vn/soi-quy-hoach/nghe-an/thi-xa-hoang-mai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thi-xa-hoang-mai/{z}/{x}/{y}.png

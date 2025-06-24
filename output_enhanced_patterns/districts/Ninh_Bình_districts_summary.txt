@@ -1,0 +1,66 @@
+# DISTRICT PATTERNS: Ninh Bình
+Generated: 2025-06-24T00:34:16.158468
+Admin Code: 37
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Gia Viễn
+• District ID: 373
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-gia-vien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-gia-vien/{z}/{x}/{y}.png
+
+### Huyện Hoa Lư
+• District ID: 374
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-hoa-lu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+
+### Huyện Kim Sơn
+• District ID: 376
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-kim-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-kim-son--25/{z}/{x}/{y}.png
+
+### Huyện Nho Quan
+• District ID: 372
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-nho-quan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-nho-quan/{z}/{x}/{y}.png
+
+### Huyện Yên Khánh
+• District ID: 375
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-yen-khanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ninh-binh/huyen-yen-khanh/{z}/{x}/{y}.png
+
+### Huyện Yên Mô
+• District ID: 377
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/huyen-yen-mo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-yen-mo--25/{z}/{x}/{y}.png
+
+### Thành phố Ninh Bình
+• District ID: 369
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/thanh-pho-ninh-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+
+### Thành phố Tam Điệp
+• District ID: 370
+• URL: https://guland.vn/soi-quy-hoach/ninh-binh/thanh-pho-tam-diep
+• Patterns found: 2
+

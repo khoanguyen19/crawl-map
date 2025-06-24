@@ -1,0 +1,66 @@
+# DISTRICT PATTERNS: Bắc Ninh
+Generated: 2025-06-23T23:19:11.889481
+Admin Code: 27
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Gia Bình
+• District ID: 263
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-gia-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-gia-binh--25/{z}/{x}/{y}.png
+
+### Huyện Lương Tài
+• District ID: 264
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-luong-tai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/huyen-luong-tai/{z}/{x}/{y}.png
+
+### Huyện Quế Võ
+• District ID: 259
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-que-vo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png
+
+### Huyện Thuận Thành
+• District ID: 262
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-thuan-thanh
+• Patterns found: 2
+
+
+### Huyện Tiên Du
+• District ID: 260
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-tien-du
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-tien-du--25/{z}/{x}/{y}.png
+
+### Huyện Yên Phong
+• District ID: 258
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/huyen-yen-phong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-yen-phong/{z}/{x}/{y}.png
+
+### Thành phố Bắc Ninh
+• District ID: 256
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/thanh-pho-bac-ninh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/thanh-pho-bac-ninh/{z}/{x}/{y}.png
+
+### Thị xã Từ Sơn
+• District ID: 261
+• URL: https://guland.vn/soi-quy-hoach/bac-ninh/thi-xa-tu-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thanh-pho-tu-son--dc/{z}/{x}/{y}.png

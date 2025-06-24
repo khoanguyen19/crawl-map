@@ -1,0 +1,66 @@
+# DISTRICT PATTERNS: Thái Bình
+Generated: 2025-06-24T01:03:26.137952
+Admin Code: 34
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Hưng Hà
+• District ID: 339
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-hung-ha
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-hung-ha/{z}/{x}/{y}.png
+
+### Huyện Kiến Xương
+• District ID: 343
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-kien-xuong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-kien-xuong/{z}/{x}/{y}.png
+
+### Huyện Quỳnh Phụ
+• District ID: 338
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-quynh-phu
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-quynh-phu--25/{z}/{x}/{y}.png
+
+### Huyện Thái Thụy
+• District ID: 341
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-thai-thuy
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-thai-thuy/{z}/{x}/{y}.png
+
+### Huyện Tiền Hải
+• District ID: 342
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-tien-hai
+• Patterns found: 3
+
+
+### Huyện Vũ Thư
+• District ID: 344
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-vu-thu
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-vu-thu/{z}/{x}/{y}.png
+
+### Huyện Đông Hưng
+• District ID: 340
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/huyen-dong-hung
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-dong-hung/{z}/{x}/{y}.png
+
+### Thành phố Thái Bình
+• District ID: 336
+• URL: https://guland.vn/soi-quy-hoach/thai-binh/thanh-pho-thai-binh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png

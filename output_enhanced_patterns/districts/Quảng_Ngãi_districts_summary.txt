@@ -1,0 +1,104 @@
+# DISTRICT PATTERNS: Quảng Ngãi
+Generated: 2025-06-24T00:47:57.666974
+Admin Code: 51
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 14
+• Successful: 14
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ba Tơ
+• District ID: 535
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-ba-to
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ba-to/{z}/{x}/{y}.png
+
+### Huyện Bình Sơn
+• District ID: 524
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-binh-son
+• Patterns found: 2
+
+
+### Huyện Lý Sơn
+• District ID: 536
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-ly-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ly-son/{z}/{x}/{y}.png
+
+### Huyện Minh Long
+• District ID: 531
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-minh-long
+• Patterns found: 2
+
+
+### Huyện Mộ Đức
+• District ID: 533
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-mo-duc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-mo-duc/{z}/{x}/{y}.png
+
+### Huyện Nghĩa Hành
+• District ID: 532
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-nghia-hanh
+• Patterns found: 2
+
+
+### Huyện Sơn Tịnh
+• District ID: 527
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-son-tinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-tinh--bs/{z}/{x}/{y}.png
+
+### Huyện Sơn Hà
+• District ID: 529
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-son-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-ha/{z}/{x}/{y}.png
+
+### Huyện Sơn Tây
+• District ID: 530
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-son-tay
+• Patterns found: 2
+
+
+### Huyện Tây Trà
+• District ID: 526
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-tay-tra
+• Patterns found: 2
+
+
+### Huyện Trà Bồng
+• District ID: 525
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-tra-bong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/huyen-tra-bong/{z}/{x}/{y}.png
+
+### Huyện Tư Nghĩa
+• District ID: 528
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/huyen-tu-nghia
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-tu-nghia/{z}/{x}/{y}.png
+
+### Thành phố Quảng Ngãi
+• District ID: 522
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/thanh-pho-quang-ngai
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png
+
+### Thị xã Đức Phổ
+• District ID: 534
+• URL: https://guland.vn/soi-quy-hoach/quang-ngai/thi-xa-duc-pho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/thi-xa-duc-pho/{z}/{x}/{y}.png

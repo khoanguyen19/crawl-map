@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: An Giang
+Generated: 2025-06-23T23:10:33.201585
+Admin Code: 89
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện An Phú
+• District ID: 886
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-an-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-an-phu--25/{z}/{x}/{y}.png
+
+### Huyện Châu Phú
+• District ID: 889
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-chau-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 892
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Chợ Mới
+• District ID: 893
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-cho-moi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-cho-moi/{z}/{x}/{y}.png
+
+### Huyện Phú Tân
+• District ID: 888
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-phu-tan
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-phu-tan--25/{z}/{x}/{y}.png
+
+### Huyện Thoại Sơn
+• District ID: 894
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-thoai-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-thoai-son/{z}/{x}/{y}.png
+
+### Huyện Tịnh Biên
+• District ID: 890
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-tinh-bien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/huyen-tinh-bien/{z}/{x}/{y}.png
+
+### Huyện Tri Tôn
+• District ID: 891
+• URL: https://guland.vn/soi-quy-hoach/an-giang/huyen-tri-ton
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-tri-ton/{z}/{x}/{y}.png
+
+### Thành phố Long Xuyên
+• District ID: 883
+• URL: https://guland.vn/soi-quy-hoach/an-giang/thanh-pho-long-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/thanh-pho-long-xuyen/{z}/{x}/{y}.png
+
+### Thành phố Châu Đốc
+• District ID: 884
+• URL: https://guland.vn/soi-quy-hoach/an-giang/thanh-pho-chau-doc
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thanh-pho-chau-doc--25/{z}/{x}/{y}.png
+
+### Thị xã Tân Châu
+• District ID: 887
+• URL: https://guland.vn/soi-quy-hoach/an-giang/thi-xa-tan-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thi-xa-tan-chau--25/{z}/{x}/{y}.png

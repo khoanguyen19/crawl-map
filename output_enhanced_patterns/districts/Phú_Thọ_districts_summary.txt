@@ -1,0 +1,101 @@
+# DISTRICT PATTERNS: Phú Thọ
+Generated: 2025-06-24T00:37:56.024088
+Admin Code: 25
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 13
+• Successful: 13
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cẩm Khê
+• District ID: 235
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-cam-khe
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-cam-khe/{z}/{x}/{y}.png
+
+### Huyện Hạ Hoà
+• District ID: 231
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-ha-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-ha-hoa/{z}/{x}/{y}.png
+
+### Huyện Lâm Thao
+• District ID: 237
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-lam-thao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-lam-thao/{z}/{x}/{y}.png
+
+### Huyện Phù Ninh
+• District ID: 233
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-phu-ninh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-phu-ninh/{z}/{x}/{y}.png
+
+### Huyện Tam Nông
+• District ID: 236
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-tam-nong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png
+
+### Huyện Tân Sơn
+• District ID: 240
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-tan-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tan-son/{z}/{x}/{y}.png
+
+### Huyện Thanh Ba
+• District ID: 232
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-thanh-ba
+• Patterns found: 2
+
+
+### Huyện Thanh Sơn
+• District ID: 238
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-thanh-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-thanh-son--dc/{z}/{x}/{y}.png
+
+### Huyện Thanh Thuỷ
+• District ID: 239
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-thanh-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-thanh-thuy/{z}/{x}/{y}.png
+
+### Huyện Yên Lập
+• District ID: 234
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-yen-lap
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/huyen-yen-lap/{z}/{x}/{y}.png
+
+### Huyện Đoan Hùng
+• District ID: 230
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/huyen-doan-hung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-doan-hung/{z}/{x}/{y}.png
+
+### Thành phố Việt Trì
+• District ID: 227
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/thanh-pho-viet-tri
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/thanh-pho-viet-tri/{z}/{x}/{y}.png
+
+### Thị xã Phú Thọ
+• District ID: 228
+• URL: https://guland.vn/soi-quy-hoach/phu-tho/thi-xa-phu-tho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/thi-xa-phu-tho/{z}/{x}/{y}.png

@@ -1,0 +1,130 @@
+# DISTRICT PATTERNS: Gia Lai
+Generated: 2025-06-23T23:38:53.091071
+Admin Code: 64
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 17
+• Successful: 17
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Chư Păh
+• District ID: 627
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-chu-pah
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-pah/{z}/{x}/{y}.png
+
+### Huyện Chư Prông
+• District ID: 632
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-chu-prong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-prong/{z}/{x}/{y}.png
+
+### Huyện Chư Sê
+• District ID: 633
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-chu-se
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png
+
+### Huyện Chư Pưh
+• District ID: 639
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-chu-puh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-puh/{z}/{x}/{y}.png
+
+### Huyện Ia Grai
+• District ID: 628
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-ia-grai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-grai/{z}/{x}/{y}.png
+
+### Huyện Ia Pa
+• District ID: 635
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-ia-pa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-pa/{z}/{x}/{y}.png
+
+### Huyện KBang
+• District ID: 625
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-kbang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kbang/{z}/{x}/{y}.png
+
+### Huyện Kông Chro
+• District ID: 630
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-kong-chro
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kong-chro/{z}/{x}/{y}.png
+
+### Huyện Krông Pa
+• District ID: 637
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-krong-pa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-krong-pa/{z}/{x}/{y}.png
+
+### Huyện Mang Yang
+• District ID: 629
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-mang-yang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-mang-yang/{z}/{x}/{y}.png
+
+### Huyện Phú Thiện
+• District ID: 638
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-phu-thien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-phu-thien/{z}/{x}/{y}.png
+
+### Huyện Đăk Đoa
+• District ID: 626
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-dak-doa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-dak-doa/{z}/{x}/{y}.png
+
+### Huyện Đăk Pơ
+• District ID: 634
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-dak-po
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-dak-po/{z}/{x}/{y}.png
+
+### Huyện Đức Cơ
+• District ID: 631
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/huyen-duc-co
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-duc-co/{z}/{x}/{y}.png
+
+### Thành phố Pleiku
+• District ID: 622
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/thanh-pho-pleiku
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thanh-pho-pleiku/{z}/{x}/{y}.png
+
+### Thị xã An Khê
+• District ID: 623
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/thi-xa-an-khe
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thi-xa-an-khe/{z}/{x}/{y}.png
+
+### Thị xã Ayun Pa
+• District ID: 624
+• URL: https://guland.vn/soi-quy-hoach/gia-lai/thi-xa-ayun-pa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/thi-xa-ayun-pa/{z}/{x}/{y}.png

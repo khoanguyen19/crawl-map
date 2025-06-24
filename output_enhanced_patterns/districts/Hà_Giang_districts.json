@@ -1,0 +1,464 @@
+{
+  "province_name": "Hà Giang",
+  "admin_code": "02",
+  "timestamp": "2025-06-23T23:44:12.828449",
+  "districts": {
+    "Huyện Bắc Mê": {
+      "district_info": {
+        "id": "031",
+        "name": "Huyện Bắc Mê",
+        "slug": "huyen-bac-me"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Bắc Mê",
+        "timestamp": "2025-06-23T23:44:28.166678",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-me--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-bac-me"
+    },
+    "Huyện Bắc Quang": {
+      "district_info": {
+        "id": "034",
+        "name": "Huyện Bắc Quang",
+        "slug": "huyen-bac-quang"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Bắc Quang",
+        "timestamp": "2025-06-23T23:44:40.283135",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-quang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-bac-quang"
+    },
+    "Huyện Hoàng Su Phì": {
+      "district_info": {
+        "id": "032",
+        "name": "Huyện Hoàng Su Phì",
+        "slug": "huyen-hoang-su-phi"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Hoàng Su Phì",
+        "timestamp": "2025-06-23T23:44:52.723448",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-hoang-su-phi"
+    },
+    "Huyện Mèo Vạc": {
+      "district_info": {
+        "id": "027",
+        "name": "Huyện Mèo Vạc",
+        "slug": "huyen-meo-vac"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Mèo Vạc",
+        "timestamp": "2025-06-23T23:45:05.121582",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-meo-vac"
+    },
+    "Huyện Quản Bạ": {
+      "district_info": {
+        "id": "029",
+        "name": "Huyện Quản Bạ",
+        "slug": "huyen-quan-ba"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Quản Bạ",
+        "timestamp": "2025-06-23T23:45:16.619841",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-quan-ba/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-quan-ba"
+    },
+    "Huyện Quang Bình": {
+      "district_info": {
+        "id": "035",
+        "name": "Huyện Quang Bình",
+        "slug": "huyen-quang-binh"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Quang Bình",
+        "timestamp": "2025-06-23T23:45:29.248609",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/ha-giang/huyen-quang-binh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-quang-binh"
+    },
+    "Huyện Vị Xuyên": {
+      "district_info": {
+        "id": "030",
+        "name": "Huyện Vị Xuyên",
+        "slug": "huyen-vi-xuyen"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Vị Xuyên",
+        "timestamp": "2025-06-23T23:45:41.350349",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-vi-xuyen"
+    },
+    "Huyện Xín Mần": {
+      "district_info": {
+        "id": "033",
+        "name": "Huyện Xín Mần",
+        "slug": "huyen-xin-man"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Xín Mần",
+        "timestamp": "2025-06-23T23:45:53.187567",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-xin-man/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-xin-man"
+    },
+    "Huyện Yên Minh": {
+      "district_info": {
+        "id": "028",
+        "name": "Huyện Yên Minh",
+        "slug": "huyen-yen-minh"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Yên Minh",
+        "timestamp": "2025-06-23T23:46:05.435682",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-yen-minh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-yen-minh"
+    },
+    "Huyện Đồng Văn": {
+      "district_info": {
+        "id": "026",
+        "name": "Huyện Đồng Văn",
+        "slug": "huyen-dong-van"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Huyện Đồng Văn",
+        "timestamp": "2025-06-23T23:46:17.621095",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-dong-van/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/huyen-dong-van"
+    },
+    "Thành phố Hà Giang": {
+      "district_info": {
+        "id": "024",
+        "name": "Thành phố Hà Giang",
+        "slug": "thanh-pho-ha-giang"
+      },
+      "patterns": {
+        "location_name": "Hà Giang - Thành phố Hà Giang",
+        "timestamp": "2025-06-23T23:46:29.898256",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-giang/thanh-pho-ha-giang"
+    }
+  },
+  "total_districts": 11,
+  "successful_districts": 11,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

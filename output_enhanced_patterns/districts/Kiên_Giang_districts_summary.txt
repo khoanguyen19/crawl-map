@@ -1,0 +1,116 @@
+# DISTRICT PATTERNS: Kiên Giang
+Generated: 2025-06-24T00:09:46.546669
+Admin Code: 91
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 15
+• Successful: 15
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện An Biên
+• District ID: 908
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-an-bien
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png
+
+### Huyện An Minh
+• District ID: 909
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-an-minh
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-minh/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 905
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-chau-thanh
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Giang Thành
+• District ID: 914
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-giang-thanh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kien-giang/huyen-giang-thanh/{z}/{x}/{y}.png
+
+### Huyện Giồng Riềng
+• District ID: 906
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-giong-rieng
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-giong-rieng/{z}/{x}/{y}.png
+
+### Huyện Gò Quao
+• District ID: 907
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-go-quao
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-go-quao/{z}/{x}/{y}.png
+
+### Huyện Hòn Đất
+• District ID: 903
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-hon-dat
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-hon-dat/{z}/{x}/{y}.png
+
+### Huyện Kiên Lương
+• District ID: 902
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-kien-luong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-luong/{z}/{x}/{y}.png
+
+### Huyện Kiên Hải
+• District ID: 912
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-kien-hai
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-hai/{z}/{x}/{y}.png
+
+### Huyện Tân Hiệp
+• District ID: 904
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-tan-hiep
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-tan-hiep--25/{z}/{x}/{y}.png
+
+### Huyện U Minh Thượng
+• District ID: 913
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-u-minh-thuong
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-u-minh-thuong--25/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Thuận
+• District ID: 910
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/huyen-vinh-thuan
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-vinh-thuan/{z}/{x}/{y}.png
+
+### Thành phố Rạch Giá
+• District ID: 899
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/thanh-pho-rach-gia
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/thanh-pho-rach-gia/{z}/{x}/{y}.png
+
+### Thành phố Phú Quốc
+• District ID: 911
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/thanh-pho-phu-quoc
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-phu-quoc--25/{z}/{x}/{y}.png
+
+### Thị xã Hà Tiên
+• District ID: 900
+• URL: https://guland.vn/soi-quy-hoach/kien-giang/thi-xa-ha-tien
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-ha-tien/{z}/{x}/{y}.png

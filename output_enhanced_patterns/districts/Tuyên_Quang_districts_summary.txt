@@ -1,0 +1,60 @@
+# DISTRICT PATTERNS: Tuyên Quang
+Generated: 2025-06-24T01:19:43.219123
+Admin Code: 08
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 7
+• Successful: 7
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Chiêm Hóa
+• District ID: 073
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-chiem-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-chiem-hoa/{z}/{x}/{y}.png
+
+### Huyện Hàm Yên
+• District ID: 074
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-ham-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/tuyen-quang/huyen-ham-yen/{z}/{x}/{y}.png
+
+### Huyện Lâm Bình
+• District ID: 071
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-lam-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/tuyen-quang/huyen-lam-binh/{z}/{x}/{y}.png
+
+### Huyện Nà Hang
+• District ID: 072
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-na-hang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-na-hang/{z}/{x}/{y}.png
+
+### Huyện Sơn Dương
+• District ID: 076
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-son-duong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-son-duong/{z}/{x}/{y}.png
+
+### Huyện Yên Sơn
+• District ID: 075
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/huyen-yen-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/tuyen-quang/huyen-yen-son/{z}/{x}/{y}.png
+
+### Thành phố Tuyên Quang
+• District ID: 070
+• URL: https://guland.vn/soi-quy-hoach/tuyen-quang/thanh-pho-tuyen-quang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png

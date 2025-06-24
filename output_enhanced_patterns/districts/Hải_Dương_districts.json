@@ -1,0 +1,776 @@
+{
+  "province_name": "Hải Dương",
+  "admin_code": "31",
+  "timestamp": "2025-06-23T23:55:42.517289",
+  "districts": {
+    "Huyện An Dương": {
+      "district_info": {
+        "id": "312",
+        "name": "Huyện An Dương",
+        "slug": "huyen-an-duong"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện An Dương",
+        "timestamp": "2025-06-23T23:55:56.347821",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-an-duong"
+    },
+    "Huyện An Lão": {
+      "district_info": {
+        "id": "313",
+        "name": "Huyện An Lão",
+        "slug": "huyen-an-lao"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện An Lão",
+        "timestamp": "2025-06-23T23:56:06.478861",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-an-lao"
+    },
+    "Huyện Bạch Long Vĩ": {
+      "district_info": {
+        "id": "318",
+        "name": "Huyện Bạch Long Vĩ",
+        "slug": "huyen-bach-long-vi"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Bạch Long Vĩ",
+        "timestamp": "2025-06-23T23:56:17.316519",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-bach-long-vi"
+    },
+    "Huyện Cát Hải": {
+      "district_info": {
+        "id": "317",
+        "name": "Huyện Cát Hải",
+        "slug": "huyen-cat-hai"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Cát Hải",
+        "timestamp": "2025-06-23T23:56:27.785773",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-cat-hai"
+    },
+    "Huyện Kiến Thuỵ": {
+      "district_info": {
+        "id": "314",
+        "name": "Huyện Kiến Thuỵ",
+        "slug": "huyen-kien-thuy"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Kiến Thuỵ",
+        "timestamp": "2025-06-23T23:56:37.930536",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-kien-thuy"
+    },
+    "Huyện Thuỷ Nguyên": {
+      "district_info": {
+        "id": "311",
+        "name": "Huyện Thuỷ Nguyên",
+        "slug": "huyen-thuy-nguyen"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Thuỷ Nguyên",
+        "timestamp": "2025-06-23T23:56:48.052611",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-thuy-nguyen"
+    },
+    "Huyện Tiên Lãng": {
+      "district_info": {
+        "id": "315",
+        "name": "Huyện Tiên Lãng",
+        "slug": "huyen-tien-lang"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Tiên Lãng",
+        "timestamp": "2025-06-23T23:56:58.302763",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-tien-lang"
+    },
+    "Huyện Vĩnh Bảo": {
+      "district_info": {
+        "id": "316",
+        "name": "Huyện Vĩnh Bảo",
+        "slug": "huyen-vinh-bao"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Huyện Vĩnh Bảo",
+        "timestamp": "2025-06-23T23:57:08.499677",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/huyen-vinh-bao"
+    },
+    "Quận Dương Kinh": {
+      "district_info": {
+        "id": "309",
+        "name": "Quận Dương Kinh",
+        "slug": "quan-duong-kinh"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Dương Kinh",
+        "timestamp": "2025-06-23T23:57:18.656100",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-duong-kinh"
+    },
+    "Quận Hải An": {
+      "district_info": {
+        "id": "306",
+        "name": "Quận Hải An",
+        "slug": "quan-hai-an"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Hải An",
+        "timestamp": "2025-06-23T23:57:30.622636",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-hai-an"
+    },
+    "Quận Hồng Bàng": {
+      "district_info": {
+        "id": "303",
+        "name": "Quận Hồng Bàng",
+        "slug": "quan-hong-bang"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Hồng Bàng",
+        "timestamp": "2025-06-23T23:57:40.721582",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-hong-bang"
+    },
+    "Quận Kiến An": {
+      "district_info": {
+        "id": "307",
+        "name": "Quận Kiến An",
+        "slug": "quan-kien-an"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Kiến An",
+        "timestamp": "2025-06-23T23:57:50.656571",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-kien-an"
+    },
+    "Quận Lê Chân": {
+      "district_info": {
+        "id": "305",
+        "name": "Quận Lê Chân",
+        "slug": "quan-le-chan"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Lê Chân",
+        "timestamp": "2025-06-23T23:58:00.808107",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-le-chan"
+    },
+    "Quận Ngô Quyền": {
+      "district_info": {
+        "id": "304",
+        "name": "Quận Ngô Quyền",
+        "slug": "quan-ngo-quyen"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Ngô Quyền",
+        "timestamp": "2025-06-23T23:58:10.943997",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-ngo-quyen"
+    },
+    "Quận Đồ Sơn": {
+      "district_info": {
+        "id": "308",
+        "name": "Quận Đồ Sơn",
+        "slug": "quan-do-son"
+      },
+      "patterns": {
+        "location_name": "Hải Dương - Quận Đồ Sơn",
+        "timestamp": "2025-06-23T23:58:21.113200",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/hai-duong/quan-do-son"
+    }
+  },
+  "total_districts": 15,
+  "successful_districts": 15,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

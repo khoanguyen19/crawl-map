@@ -1,0 +1,60 @@
+# DISTRICT PATTERNS: Khánh Hòa
+Generated: 2025-06-24T00:08:15.783977
+Admin Code: 58
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 7
+• Successful: 7
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bác Ái
+• District ID: 584
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-bac-ai
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Huyện Ninh Sơn
+• District ID: 585
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-son
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Huyện Ninh Hải
+• District ID: 586
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-hai
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Huyện Ninh Phước
+• District ID: 587
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-ninh-phuoc
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Huyện Thuận Bắc
+• District ID: 588
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-thuan-bac
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Huyện Thuận Nam
+• District ID: 589
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/huyen-thuan-nam
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Thành phố Phan Rang-Tháp Chàm
+• District ID: 582
+• URL: https://guland.vn/soi-quy-hoach/khanh-hoa/thanh-pho-phan-rang-thap-cham
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png

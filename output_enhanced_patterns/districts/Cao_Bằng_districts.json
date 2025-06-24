@@ -1,0 +1,530 @@
+{
+  "province_name": "Cao Bằng",
+  "admin_code": "04",
+  "timestamp": "2025-06-23T23:35:56.557044",
+  "districts": {
+    "Huyện Bảo Lâm": {
+      "district_info": {
+        "id": "042",
+        "name": "Huyện Bảo Lâm",
+        "slug": "huyen-bao-lam"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Bảo Lâm",
+        "timestamp": "2025-06-23T23:36:11.864869",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lam/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-bao-lam"
+    },
+    "Huyện Bảo Lạc": {
+      "district_info": {
+        "id": "043",
+        "name": "Huyện Bảo Lạc",
+        "slug": "huyen-bao-lac"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Bảo Lạc",
+        "timestamp": "2025-06-23T23:36:24.971364",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lac/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-bao-lac"
+    },
+    "Huyện Hạ Lang": {
+      "district_info": {
+        "id": "048",
+        "name": "Huyện Hạ Lang",
+        "slug": "huyen-ha-lang"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Hạ Lang",
+        "timestamp": "2025-06-23T23:36:36.608330",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-ha-lang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-ha-lang"
+    },
+    "Huyện Hà Quảng": {
+      "district_info": {
+        "id": "045",
+        "name": "Huyện Hà Quảng",
+        "slug": "huyen-ha-quang"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Hà Quảng",
+        "timestamp": "2025-06-23T23:36:48.599549",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-ha-quang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-ha-quang"
+    },
+    "Huyện Hoà An": {
+      "district_info": {
+        "id": "051",
+        "name": "Huyện Hoà An",
+        "slug": "huyen-hoa-an"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Hoà An",
+        "timestamp": "2025-06-23T23:37:00.685613",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-hoa-an/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-hoa-an"
+    },
+    "Huyện Nguyên Bình": {
+      "district_info": {
+        "id": "052",
+        "name": "Huyện Nguyên Bình",
+        "slug": "huyen-nguyen-binh"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Nguyên Bình",
+        "timestamp": "2025-06-23T23:37:13.353883",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-nguyen-binh--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "15",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-nguyen-binh"
+    },
+    "Huyện Phục Hoà": {
+      "district_info": {
+        "id": "050",
+        "name": "Huyện Phục Hoà",
+        "slug": "huyen-phuc-hoa"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Phục Hoà",
+        "timestamp": "2025-06-23T23:37:25.145666",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-phuc-hoa"
+    },
+    "Huyện Quảng Uyên": {
+      "district_info": {
+        "id": "049",
+        "name": "Huyện Quảng Uyên",
+        "slug": "huyen-quang-uyen"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Quảng Uyên",
+        "timestamp": "2025-06-23T23:37:36.885319",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-quang-hoa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-quang-uyen"
+    },
+    "Huyện Thạch An": {
+      "district_info": {
+        "id": "053",
+        "name": "Huyện Thạch An",
+        "slug": "huyen-thach-an"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Thạch An",
+        "timestamp": "2025-06-23T23:37:48.517974",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-thach-an--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-thach-an"
+    },
+    "Huyện Thông Nông": {
+      "district_info": {
+        "id": "044",
+        "name": "Huyện Thông Nông",
+        "slug": "huyen-thong-nong"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Thông Nông",
+        "timestamp": "2025-06-23T23:38:00.717261",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-thong-nong"
+    },
+    "Huyện Trà Lĩnh": {
+      "district_info": {
+        "id": "046",
+        "name": "Huyện Trà Lĩnh",
+        "slug": "huyen-tra-linh"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Trà Lĩnh",
+        "timestamp": "2025-06-23T23:38:12.722828",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 2
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-tra-linh"
+    },
+    "Huyện Trùng Khánh": {
+      "district_info": {
+        "id": "047",
+        "name": "Huyện Trùng Khánh",
+        "slug": "huyen-trung-khanh"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Huyện Trùng Khánh",
+        "timestamp": "2025-06-23T23:38:24.620625",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-trung-khanh/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "15",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/huyen-trung-khanh"
+    },
+    "Thành phố Cao Bằng": {
+      "district_info": {
+        "id": "040",
+        "name": "Thành phố Cao Bằng",
+        "slug": "thanh-pho-cao-bang"
+      },
+      "patterns": {
+        "location_name": "Cao Bằng - Thành phố Cao Bằng",
+        "timestamp": "2025-06-23T23:38:36.585146",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/cao-bang/thanh-pho-cao-bang"
+    }
+  },
+  "total_districts": 13,
+  "successful_districts": 13,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

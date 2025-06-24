@@ -1,0 +1,389 @@
+{
+  "province_name": "Vĩnh Phúc",
+  "admin_code": "26",
+  "timestamp": "2025-06-24T01:23:17.075759",
+  "districts": {
+    "Huyện Bình Xuyên": {
+      "district_info": {
+        "id": "249",
+        "name": "Huyện Bình Xuyên",
+        "slug": "huyen-binh-xuyen"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Bình Xuyên",
+        "timestamp": "2025-06-24T01:23:33.530001",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-binh-xuyen--bs-lyk/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-binh-xuyen"
+    },
+    "Huyện Lập Thạch": {
+      "district_info": {
+        "id": "246",
+        "name": "Huyện Lập Thạch",
+        "slug": "huyen-lap-thach"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Lập Thạch",
+        "timestamp": "2025-06-24T01:23:45.039205",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-lap-thach--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-lap-thach"
+    },
+    "Huyện Sông Lô": {
+      "district_info": {
+        "id": "253",
+        "name": "Huyện Sông Lô",
+        "slug": "huyen-song-lo"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Sông Lô",
+        "timestamp": "2025-06-24T01:23:59.419165",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/vinh-phuc/huyen-song-lo/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-song-lo"
+    },
+    "Huyện Tam Dương": {
+      "district_info": {
+        "id": "247",
+        "name": "Huyện Tam Dương",
+        "slug": "huyen-tam-duong"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Tam Dương",
+        "timestamp": "2025-06-24T01:24:10.735900",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-tam-duong"
+    },
+    "Huyện Tam Đảo": {
+      "district_info": {
+        "id": "248",
+        "name": "Huyện Tam Đảo",
+        "slug": "huyen-tam-dao"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Tam Đảo",
+        "timestamp": "2025-06-24T01:24:22.185898",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-phuc/huyen-tam-dao/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-tam-dao"
+    },
+    "Huyện Vĩnh Tường": {
+      "district_info": {
+        "id": "252",
+        "name": "Huyện Vĩnh Tường",
+        "slug": "huyen-vinh-tuong"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Vĩnh Tường",
+        "timestamp": "2025-06-24T01:24:34.041623",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-vinh-tuong--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-vinh-tuong"
+    },
+    "Huyện Yên Lạc": {
+      "district_info": {
+        "id": "251",
+        "name": "Huyện Yên Lạc",
+        "slug": "huyen-yen-lac"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Huyện Yên Lạc",
+        "timestamp": "2025-06-24T01:24:45.823726",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-yen-lac--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-yen-lac"
+    },
+    "Thành phố Vĩnh Yên": {
+      "district_info": {
+        "id": "243",
+        "name": "Thành phố Vĩnh Yên",
+        "slug": "thanh-pho-vinh-yen"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Thành phố Vĩnh Yên",
+        "timestamp": "2025-06-24T01:24:57.171900",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-vinh-yen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/thanh-pho-vinh-yen"
+    },
+    "Thị xã Phúc Yên": {
+      "district_info": {
+        "id": "244",
+        "name": "Thị xã Phúc Yên",
+        "slug": "thi-xa-phuc-yen"
+      },
+      "patterns": {
+        "location_name": "Vĩnh Phúc - Thị xã Phúc Yên",
+        "timestamp": "2025-06-24T01:25:08.544062",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-phuc-yen--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-han02.fptcloud.com"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/vinh-phuc/thi-xa-phuc-yen"
+    }
+  },
+  "total_districts": 9,
+  "successful_districts": 9,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

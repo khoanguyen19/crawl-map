@@ -114,23 +114,131 @@ class EnhancedMultiMapTileDownloader:
         logger.info(f"👥 Workers: {self.max_workers}, Timeout: {self.timeout}s")
         logger.info(f"📥 Download enabled: {enable_download}")
         logger.info(f"📁 NEW Structure: downloaded_tiles/cities/<city>/<map_type>/<zoom>/")
-
-    def create_map_type_folder_structure(self, city_name, map_type, zoom_level):
-        """Create NEW folder structure: downloaded_tiles/cities/<city>/<map_type>/<zoom>/"""
-        # Clean city name for folder
-        clean_city_name = self.clean_city_name(city_name)
         
-        # Get map type folder name
+        # NEW: Store district data for KH_2025
+        self.district_data = {}
+        self.load_district_data()
+    
+    def load_district_data(self):
+        """Load district data from HTML extractor district results"""
+        try:
+            # Load from enhanced HTML extractor district outputs
+            districts_dir = Path('output_enhanced_patterns/districts')
+            if not districts_dir.exists():
+                logger.warning("⚠️ No district data found from HTML extractor")
+                return
+            
+            district_files = list(districts_dir.glob('*_districts.json'))
+            
+            for district_file in district_files:
+                try:
+                    with open(district_file, 'r', encoding='utf-8') as f:
+                        district_data = json.load(f)
+                    
+                    province_name = district_data.get('province_name', '')
+                    clean_city_name = self.clean_city_name(province_name)
+                    
+                    # Store district info for this city
+                    if clean_city_name not in self.district_data:
+                        self.district_data[clean_city_name] = {}
+                    
+                    districts_info = district_data.get('districts', {})
+                    for district_name, district_info in districts_info.items():
+                        patterns = district_info.get('patterns', {})
+                        map_types = patterns.get('map_types', {})
+                        
+                        # Only store if has KH_2025 patterns
+                        if 'KH_2025' in map_types:
+                            clean_district_name = self.clean_district_name(district_name)
+                            
+                            self.district_data[clean_city_name][clean_district_name] = {
+                                'original_name': district_name,
+                                'district_info': district_info.get('district_info', {}),
+                                'kh_2025_patterns': map_types['KH_2025']
+                            }
+                    
+                    logger.info(f"📍 Loaded {len(self.district_data.get(clean_city_name, {}))} districts for {province_name}")
+                    
+                except Exception as e:
+                    logger.warning(f"⚠️ Error loading district file {district_file}: {e}")
+                    continue
+            
+            total_districts = sum(len(districts) for districts in self.district_data.values())
+            logger.info(f"✅ Loaded district data: {len(self.district_data)} cities, {total_districts} districts with KH_2025")
+            
+        except Exception as e:
+            logger.error(f"❌ Error loading district data: {e}")
+
+    def clean_district_name(self, district_name):
+        """Clean district name for folder creation - ENHANCED with proper district formatting"""
+        original_name = district_name
+        clean_name = district_name.lower().strip()
+        
+        # Vietnamese diacritics removal
+        import unicodedata
+        clean_name = unicodedata.normalize('NFD', clean_name)
+        clean_name = ''.join(c for c in clean_name if unicodedata.category(c) != 'Mn')
+        
+        # Standardized district name mapping with proper format
+        district_transformations = {
+            # Quận patterns
+            r'^quan\s+(\d+)$': r'quan-\1',                    # "Quận 1" -> "quan-1"
+            r'^quan\s+(.+)$': r'quan-\1',                     # "Quận Bình Thạnh" -> "quan-binh-thanh"
+            
+            # Huyện patterns  
+            r'^huyen\s+(.+)$': r'huyen-\1',                   # "Huyện Củ Chi" -> "huyen-cu-chi"
+            
+            # Thị xã patterns
+            r'^thi\s+xa\s+(.+)$': r'thi-xa-\1',              # "Thị xã Thuận An" -> "thi-xa-thuan-an"
+            
+            # Thành phố patterns
+            r'^thanh\s+pho\s+(.+)$': r'thanh-pho-\1',        # "Thành phố Thủ Đức" -> "thanh-pho-thu-duc"
+            r'^tp\s+(.+)$': r'thanh-pho-\1',                 # "TP Thủ Đức" -> "thanh-pho-thu-duc"
+        }
+        
+        # Apply transformations
+        transformed = False
+        for pattern, replacement in district_transformations.items():
+            if re.match(pattern, clean_name):
+                clean_name = re.sub(pattern, replacement, clean_name)
+                transformed = True
+                break
+        
+        # If no transformation applied, use the original cleaning logic
+        if not transformed:
+            # Remove common prefixes if they weren't handled above
+            clean_name = re.sub(r'^(quan|huyen|thi xa|thanh pho|tp)\s+', '', clean_name)
+        
+        # Final cleanup
+        clean_name = clean_name.replace(' ', '-')           # Spaces to hyphens
+        clean_name = re.sub(r'[^\w-]', '', clean_name)      # Remove special chars except hyphens
+        clean_name = re.sub(r'-+', '-', clean_name)         # Multiple hyphens to single
+        clean_name = clean_name.strip('-')                  # Remove leading/trailing hyphens
+        
+        logger.debug(f"District name transformation: '{original_name}' -> '{clean_name}'")
+        
+        return clean_name
+
+    def create_map_type_folder_structure(self, city_name, map_type, zoom_level, district_name=None):
+        """Create folder structure - ENHANCED with district support for KH_2025"""
+        clean_city_name = self.clean_city_name(city_name)
         map_config = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])
         map_folder = map_config['folder_name']
         
-        # Create full path: downloaded_tiles/cities/<city>/<map_type>/<zoom>/
-        city_path = Path(self.base_download_dir) / 'cities' / clean_city_name / map_folder / str(zoom_level)
-        city_path.mkdir(parents=True, exist_ok=True)
+        # NEW: Special handling for KH_2025 with district structure
+        if map_type == 'KH_2025' and district_name:
+            clean_district_name = self.clean_district_name(district_name)
+            # Structure: downloaded_tiles/cities/<city>/kh-2025/<district>/<zoom>/
+            city_path = Path(self.base_download_dir) / 'cities' / clean_city_name / map_folder / clean_district_name / str(zoom_level)
+            logger.debug(f"📁 KH_2025 District structure: {city_path}")
+        else:
+            # Original structure for other map types: downloaded_tiles/cities/<city>/<map_type>/<zoom>/
+            city_path = Path(self.base_download_dir) / 'cities' / clean_city_name / map_folder / str(zoom_level)
+            logger.debug(f"📁 Standard structure: {city_path}")
         
-        logger.debug(f"📁 Created structure: {city_path}")
+        city_path.mkdir(parents=True, exist_ok=True)
         return str(city_path)
-    
+
     def clean_city_name(self, city_name):
         """Clean city name for folder creation - ENHANCED with all Vietnamese provinces"""
         # Remove special characters and spaces
@@ -432,16 +540,15 @@ class EnhancedMultiMapTileDownloader:
         else:
             return 'UNKNOWN'
 
-    def download_single_tile_with_map_type(self, tile_info, city_name, map_type):
-        """Download single tile with NEW multi-map folder structure"""
+    def download_single_tile_with_map_type(self, tile_info, city_name, map_type, district_name=None):
+        """Download single tile - ENHANCED with district support"""
         try:
-            # Get tile details
             url = tile_info['url']
             zoom = tile_info['zoom']
             x = tile_info['x']
             y = tile_info['y']
             
-            # Detect format from URL
+            # Detect format
             if '.png' in url.lower():
                 format_ext = 'png'
             elif '.jpg' in url.lower() or '.jpeg' in url.lower():
@@ -449,16 +556,15 @@ class EnhancedMultiMapTileDownloader:
             elif '.webp' in url.lower():
                 format_ext = 'webp'
             else:
-                format_ext = 'png'  # default
+                format_ext = 'png'
             
-            # Create folder structure with map type
-            folder_path = self.create_map_type_folder_structure(city_name, map_type, zoom)
+            # Create folder structure with optional district
+            folder_path = self.create_map_type_folder_structure(city_name, map_type, zoom, district_name)
             
-            # Create filename: <x>_<y>.<format>
             filename = f"{x}_{y}.{format_ext}"
             filepath = os.path.join(folder_path, filename)
             
-            # Skip if file already exists
+            # Skip if exists
             if os.path.exists(filepath):
                 file_size = os.path.getsize(filepath)
                 logger.debug(f"⏭️ File exists: {filename} ({file_size} bytes)")
@@ -476,6 +582,7 @@ class EnhancedMultiMapTileDownloader:
                     'size': file_size,
                     'tile_info': tile_info,
                     'map_type': map_type,
+                    'district_name': district_name,  # NEW
                     'status': 'already_exists'
                 }
             
@@ -483,13 +590,11 @@ class EnhancedMultiMapTileDownloader:
             response = self.session.get(url, timeout=self.timeout)
             
             if response.status_code == 200:
-                # Check if it's actually an image
                 content_type = response.headers.get('content-type', '').lower()
                 if any(img_type in content_type for img_type in ['image/', 'application/octet-stream']):
                     size = len(response.content)
                     
-                    # Additional validation - check image size
-                    if size > 100:  # Minimum size for valid tile
+                    if size > 100:
                         # Save file
                         with open(filepath, 'wb') as f:
                             f.write(response.content)
@@ -504,7 +609,8 @@ class EnhancedMultiMapTileDownloader:
                             self.stats['map_type_stats'][map_type]['successful'] += 1
                             self.stats['map_type_stats'][map_type]['bytes'] += size
                         
-                        logger.debug(f"✅ Downloaded: {filename} ({size} bytes) -> {map_type}")
+                        district_log = f" -> {district_name}" if district_name else ""
+                        logger.debug(f"✅ Downloaded: {filename} ({size} bytes) -> {map_type}{district_log}")
                         
                         return {
                             'success': True,
@@ -513,6 +619,7 @@ class EnhancedMultiMapTileDownloader:
                             'tile_info': tile_info,
                             'content_type': content_type,
                             'map_type': map_type,
+                            'district_name': district_name,  # NEW
                             'status': 'downloaded'
                         }
                 
@@ -527,7 +634,8 @@ class EnhancedMultiMapTileDownloader:
                     'success': False,
                     'reason': f'Invalid content type: {content_type}',
                     'tile_info': tile_info,
-                    'map_type': map_type
+                    'map_type': map_type,
+                    'district_name': district_name
                 }
             else:
                 # HTTP error
@@ -541,21 +649,10 @@ class EnhancedMultiMapTileDownloader:
                     'success': False,
                     'reason': f'HTTP {response.status_code}',
                     'tile_info': tile_info,
-                    'map_type': map_type
+                    'map_type': map_type,
+                    'district_name': district_name
                 }
                 
-        except requests.exceptions.Timeout:
-            with self.stats_lock:
-                self.stats['total_failed'] += 1
-                if map_type not in self.stats['map_type_stats']:
-                    self.stats['map_type_stats'][map_type] = {'attempted': 0, 'successful': 0, 'bytes': 0}
-                self.stats['map_type_stats'][map_type]['attempted'] += 1
-            return {
-                'success': False,
-                'reason': 'Timeout',
-                'tile_info': tile_info,
-                'map_type': map_type
-            }
         except Exception as e:
             with self.stats_lock:
                 self.stats['total_failed'] += 1
@@ -566,23 +663,25 @@ class EnhancedMultiMapTileDownloader:
                 'success': False,
                 'reason': f'Error: {str(e)}',
                 'tile_info': tile_info,
-                'map_type': map_type
+                'map_type': map_type,
+                'district_name': district_name
             }
 
-    def download_tiles_batch_with_map_types(self, tile_urls, city_name, map_type):
-        """Download batch of tiles with NEW multi-map structure"""
+    def download_tiles_batch_with_map_types(self, tile_urls, city_name, map_type, district_name=None):
+        """Download batch of tiles - ENHANCED with district support"""
         if not tile_urls:
             return []
         
         map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
-        logger.info(f"📥 Downloading {len(tile_urls)} tiles for {city_name} - {map_display}")
+        district_log = f" - {district_name}" if district_name else ""
+        logger.info(f"📥 Downloading {len(tile_urls)} tiles for {city_name}{district_log} - {map_display}")
         
         results = []
         
         # Download tiles in parallel
         with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_tile = {
-                executor.submit(self.download_single_tile_with_map_type, tile_info, city_name, map_type): tile_info 
+                executor.submit(self.download_single_tile_with_map_type, tile_info, city_name, map_type, district_name): tile_info 
                 for tile_info in tile_urls
             }
             
@@ -594,7 +693,7 @@ class EnhancedMultiMapTileDownloader:
                     # Log progress every 50 tiles
                     if len(results) % 50 == 0:
                         successful = len([r for r in results if r['success']])
-                        logger.info(f"📊 Progress {map_display}: {len(results)}/{len(tile_urls)} ({successful} successful)")
+                        logger.info(f"📊 Progress {map_display}{district_log}: {len(results)}/{len(tile_urls)} ({successful} successful)")
                         
                 except Exception as e:
                     tile_info = future_to_tile[future]
@@ -603,7 +702,8 @@ class EnhancedMultiMapTileDownloader:
                         'success': False,
                         'reason': f'Processing error: {str(e)}',
                         'tile_info': tile_info,
-                        'map_type': map_type
+                        'map_type': map_type,
+                        'district_name': district_name
                     })
         
         # Update global stats
@@ -612,11 +712,452 @@ class EnhancedMultiMapTileDownloader:
         
         with self.stats_lock:
             self.stats['total_attempted'] += len(tile_urls)
-            # Individual download functions already update successful/failed counts
         
-        logger.info(f"📊 Batch complete {map_display}: {successful}/{len(tile_urls)} successful")
+        logger.info(f"📊 Batch complete {map_display}{district_log}: {successful}/{len(tile_urls)} successful")
         
         return results
+
+    def crawl_pattern_for_city_and_map_type(self, pattern, city_coverage, city_name, map_type, district_name=None):
+        """Crawl with district support for KH_2025"""
+        all_tiles = []
+        
+        map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
+        district_log = f" - {district_name}" if district_name else ""
+        logger.info(f"🔍 {city_name}{district_log} - {map_display}")
+        
+        for zoom, coverage in city_coverage.items():
+            logger.info(f"  Zoom {zoom}: X({coverage['x_min']}-{coverage['x_max']}), Y({coverage['y_min']}-{coverage['y_max']})")
+            
+            # Generate ALL coordinates in city coverage
+            all_coordinates = []
+            for x in range(coverage['x_min'], coverage['x_max'] + 1):
+                for y in range(coverage['y_min'], coverage['y_max'] + 1):
+                    all_coordinates.append((x, y))
+            
+            logger.info(f"📊 Trying {len(all_coordinates)} coordinates for zoom {zoom}")
+            
+            # Generate URLs for this zoom level
+            zoom_urls = []
+            for x, y in all_coordinates:
+                url = pattern.replace('{z}', str(zoom))
+                url = url.replace('{x}', str(x))
+                url = url.replace('{y}', str(y))
+                
+                zoom_urls.append({
+                    'url': url,
+                    'zoom': zoom,
+                    'x': x,
+                    'y': y,
+                    'pattern': pattern
+                })
+            
+            # Process in batches with district support
+            batch_size = 100
+            zoom_successful = 0
+            zoom_total = 0
+            
+            for i in range(0, len(zoom_urls), batch_size):
+                batch = zoom_urls[i:i+batch_size]
+                
+                logger.info(f"📦 Processing {map_display}{district_log} batch {i//batch_size + 1}/{(len(zoom_urls)-1)//batch_size + 1}")
+                
+                # Download tiles with map type and district structure
+                batch_results = self.download_tiles_batch_with_map_types(batch, city_name, map_type, district_name)
+                
+                # Count results
+                successful_in_batch = len([r for r in batch_results if r.get('success')])
+                zoom_successful += successful_in_batch
+                zoom_total += len(batch)
+                
+                # Add successful tiles only
+                all_tiles.extend([r for r in batch_results if r.get('success')])
+                
+                if successful_in_batch > 0:
+                    logger.info(f"✅ Found {successful_in_batch}/{len(batch)} tiles in batch")
+                
+                # Short delay
+                time.sleep(0.1)
+            
+            logger.info(f"📊 Zoom {zoom} final: {zoom_successful}/{zoom_total} tiles ({zoom_successful/zoom_total*100:.1f}%)")
+        
+        return all_tiles
+
+    def crawl_multi_map_patterns(self, zoom_levels=[10, 12, 14], use_html_source=True, skip_existing=True, target_map_types=None):
+        """Enhanced crawling with KH_2025 district support"""
+        
+        # COMPLETE Vietnam city coordinates (lat, lng, radius_km)
+        city_coords = {
+        # Major cities - Extra large radius
+            'hanoi': (21.0285, 105.8542, 150),      # Hà Nội + vùng phụ cận
+            'hcm': (10.8231, 106.6297, 200),       # HCM + toàn bộ vùng Đông Nam Bộ
+            'danang': (16.0544563, 108.0717219, 120), # Đà Nẵng + vùng miền Trung
+            'haiphong': (20.8449, 106.6881, 100),  # Hải Phòng + vùng ven biển
+            'cantho': (10.0452, 105.7469, 120),    # Cần Thơ + ĐBSCL
+            
+            # All provinces - Large radius for complete coverage
+            'dongnai': (11.0686, 107.1676, 150),
+            'baria_vungtau': (10.5417, 107.2431, 100),
+            'angiang': (10.3889, 105.4359, 120),
+            'bacgiang': (21.2731, 106.1946, 100),
+            'backan': (22.1474, 105.8348, 120),
+            'baclieu': (9.2515, 105.7244, 100),
+            'bacninh': (21.1861, 106.0763, 80),
+            'bentre': (10.2433, 106.3756, 100),
+            'binhduong': (11.3254, 106.4770, 120),
+            'binhphuoc': (11.7511, 106.7234, 150),
+            'binhthuan': (11.0904, 108.0721, 150),
+            'binhdinh': (13.7757, 109.2219, 120),
+            'camau': (9.1769, 105.1524, 150),       # Cà Mau - southernmost
+            'caobang': (22.6666, 106.2639, 120),
+            'gialai': (13.8078, 108.1094, 180),     # Gia Lai - tỉnh lớn
+            'hanam': (20.5835, 105.9230, 80),
+            'hagiang': (22.8025, 104.9784, 150),    # Hà Giang - northernmost
+            'hatinh': (18.3560, 105.9069, 120),
+            'haiduong': (20.9373, 106.3146, 100),  # Hải Dương - gần Hà Nội
+            'haugiang': (9.7571, 105.6412, 100),
+            'hoabinh': (20.8156, 105.3373, 150),
+            'hungyen': (20.6464, 106.0511, 80),
+            'khanhhoa': (12.2388, 109.1967, 120),
+            'kiengiang': (10.0125, 105.0808, 200),  # Kiên Giang - có Phú Quốc
+            'kontum': (14.3497, 108.0005, 150),
+            'laichau': (22.3856, 103.4707, 150),
+            'lamdong': (11.5753, 108.1429, 150),    # Lâm Đồng - cao nguyên
+            'langson': (21.8537, 106.7610, 120),
+            'laocai': (22.4809, 103.9755, 150),     # Lào Cai - có Sa Pa
+            'longan': (10.6957, 106.2431, 100),
+            'namdinh': (20.4341, 106.1675, 100),
+            'nghean': (18.6745, 105.6905, 200),     # Nghệ An - tỉnh lớn nhất
+            'ninhbinh': (20.2506, 105.9744, 100),
+            'ninhthuan': (11.5645, 108.9899, 120),
+            'phutho': (21.4208, 105.2045, 120),
+            'phuyen': (13.0882, 109.0929, 100),
+            'quangbinh': (17.4809, 106.6238, 150),
+            'quangnam': (15.5394, 108.0191, 150),
+            'quangngai': (15.1214, 108.8044, 120),
+            'quangninh': (21.0064, 107.2925, 150),  # Quảng Ninh - có Hạ Long
+            'quangtri': (16.7404, 107.1854, 100),
+            'soctrang': (9.6002, 105.9800, 100),
+            'sonla': (21.3256, 103.9188, 200),      # Sơn La - tỉnh lớn thứ 2
+            'tayninh': (11.3100, 106.0989, 120),
+            'thaibinh': (20.4500, 106.3400, 80),
+            'thainguyen': (21.5944, 105.8480, 120),
+            'thanhhoa': (19.8069, 105.7851, 180),   # Thanh Hóa - tỉnh lớn
+            'thuathienhue': (16.4674, 107.5905, 120),
+            'tiengiang': (10.4493, 106.3420, 100),
+            'travinh': (9.9477, 106.3524, 100),
+            'tuyenquang': (21.8267, 105.2280, 120),
+            'vinhlong': (10.2397, 105.9571, 100),
+            'vinhphuc': (21.3609, 105.6049, 100),
+            'yenbai': (21.7168, 104.8986, 120),
+            'daklak': (12.7100, 108.2378, 180),     # Đắk Lắk - tỉnh lớn Tây Nguyên
+            'daknong': (12.2646, 107.6098, 150),
+            'dienbien': (21.3847, 103.0175, 150),
+            'dongthap': (10.4938, 105.6881, 120)
+        }
+        
+        # Load patterns grouped by city and map type
+        patterns_by_city_and_type = self.load_patterns_from_html_extractor(use_html_source)
+        
+        if not patterns_by_city_and_type:
+            logger.error("❌ No patterns found! Run HTML extractor first.")
+            return []
+
+        # Filter target map types
+        if target_map_types:
+            logger.info(f"🎯 Target map types: {[MAP_TYPE_CONFIG[mt]['display_name'] for mt in target_map_types]}")
+        else:
+            target_map_types = list(MAP_TYPE_CONFIG.keys())
+            target_map_types.remove('UNKNOWN')
+
+        all_results = []
+        
+        for city_name, city_map_patterns in patterns_by_city_and_type.items():
+            if city_name not in city_coords:
+                logger.info(f"⚠️ Skipping {city_name} - coordinates not configured")
+                continue
+            
+            lat, lng, radius_km = city_coords[city_name]
+            logger.info(f"\n🏙️ CRAWLING CITY: {city_name.upper()}")
+            logger.info(f"📍 Center: {lat}, {lng} (radius: {radius_km}km)")
+            
+            # Generate city coverage
+            city_coverage = self.generate_city_tile_coverage(lat, lng, zoom_levels, radius_km)
+            
+            city_results = {
+                'city': city_name,
+                'coordinates': (lat, lng, radius_km),
+                'coverage': city_coverage,
+                'map_type_results': {},
+                'total_tiles': 0,
+                'successful_tiles': 0
+            }
+            
+            # Process each map type for this city
+            for map_type, patterns_list in city_map_patterns.items():
+                if map_type not in target_map_types:
+                    logger.info(f"⏭️ Skipping {MAP_TYPE_CONFIG.get(map_type, {}).get('display_name', map_type)} - not in target list")
+                    continue
+                
+                map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
+                logger.info(f"🗺️ Processing {map_display}: {len(patterns_list)} patterns")
+                
+                # NEW: Special handling for KH_2025 with districts
+                if map_type == 'KH_2025' and city_name in self.district_data:
+                    logger.info(f"🏘️ KH_2025 detected - using district-level structure")
+                    
+                    districts = self.district_data[city_name]
+                    logger.info(f"📍 Found {len(districts)} districts with KH_2025 data")
+                    
+                    city_results['map_type_results'][map_type] = {
+                        'map_type': map_type,
+                        'display_name': map_display,
+                        'patterns': patterns_list,
+                        'districts': {},
+                        'total_tiles': 0,
+                        'successful_tiles': 0,
+                        'folder_structure': f"downloaded_tiles/cities/{self.clean_city_name(city_name)}/{MAP_TYPE_CONFIG[map_type]['folder_name']}/<district>/<zoom>/"
+                    }
+                    
+                    # Process each district
+                    for district_name, district_info in districts.items():
+                        logger.info(f"🏘️ Processing district: {district_info['original_name']}")
+                        
+                        # Check if this district already downloaded
+                        if skip_existing:
+                            already_downloaded, status_msg = self.check_city_district_map_type_downloaded(city_name, map_type, district_name)
+                            if already_downloaded:
+                                logger.info(f"⏭️ SKIPPING {district_info['original_name']}: {status_msg}")
+                                continue
+                        
+                        # Use district-specific patterns if available, otherwise use city patterns
+                        district_patterns = district_info.get('kh_2025_patterns', {}).get('tile_url')
+                        if district_patterns:
+                            district_pattern_list = [district_patterns]
+                        else:
+                            district_pattern_list = patterns_list
+                        
+                        district_tiles = []
+                        
+                        # Process each pattern for this district
+                        for pattern in district_pattern_list:
+                            logger.info(f"🚀 Crawling district pattern: {pattern}")
+                            
+                            # Crawl with district structure
+                            pattern_tiles = self.crawl_pattern_for_city_and_map_type(
+                                pattern, city_coverage, city_name, map_type, district_info['original_name']
+                            )
+                            
+                            if pattern_tiles:
+                                district_tiles.extend(pattern_tiles)
+                        
+                        if district_tiles:
+                            successful_count = len([t for t in district_tiles if t.get('success')])
+                            
+                            city_results['map_type_results'][map_type]['districts'][district_name] = {
+                                'district_name': district_info['original_name'],
+                                'tiles': district_tiles,
+                                'total_tiles': len(district_tiles),
+                                'successful_tiles': successful_count,
+                                'patterns': district_pattern_list
+                            }
+                            
+                            city_results['map_type_results'][map_type]['total_tiles'] += len(district_tiles)
+                            city_results['map_type_results'][map_type]['successful_tiles'] += successful_count
+                            
+                            logger.info(f"✅ {district_info['original_name']}: {successful_count}/{len(district_tiles)} tiles")
+                        else:
+                            logger.warning(f"⚠️ No tiles found for district {district_info['original_name']}")
+                    
+                    # Update city totals
+                    city_results['total_tiles'] += city_results['map_type_results'][map_type]['total_tiles']
+                    city_results['successful_tiles'] += city_results['map_type_results'][map_type]['successful_tiles']
+                    
+                else:
+                    # EXISTING: Standard processing for other map types
+                    # Check if this map type already exists
+                    if skip_existing:
+                        already_downloaded, status_msg = self.check_city_map_type_downloaded(city_name, map_type)
+                        if already_downloaded:
+                            logger.info(f"⏭️ SKIPPING {city_name} - {map_display}: {status_msg}")
+                            continue
+                    
+                    map_type_tiles = []
+                    
+                    # Process each pattern for this map type
+                    for pattern in patterns_list:
+                        logger.info(f"🚀 Crawling pattern: {pattern}")
+                        
+                        # Crawl with standard structure
+                        pattern_tiles = self.crawl_pattern_for_city_and_map_type(
+                            pattern, city_coverage, city_name, map_type
+                        )
+                        
+                        if pattern_tiles:
+                            map_type_tiles.extend(pattern_tiles)
+                    
+                    if map_type_tiles:
+                        successful_count = len([t for t in map_type_tiles if t.get('success')])
+                        
+                        city_results['map_type_results'][map_type] = {
+                            'map_type': map_type,
+                            'display_name': map_display,
+                            'patterns': patterns_list,
+                            'tiles': map_type_tiles,
+                            'total_tiles': len(map_type_tiles),
+                            'successful_tiles': successful_count,
+                            'folder_structure': f"downloaded_tiles/cities/{self.clean_city_name(city_name)}/{MAP_TYPE_CONFIG[map_type]['folder_name']}/<zoom>/"
+                        }
+                        
+                        city_results['total_tiles'] += len(map_type_tiles)
+                        city_results['successful_tiles'] += successful_count
+                        
+                        logger.info(f"✅ {map_display}: {successful_count}/{len(map_type_tiles)} tiles")
+                    else:
+                        logger.warning(f"⚠️ No tiles found for {map_display}")
+            
+            if city_results['map_type_results']:
+                all_results.append(city_results)
+                logger.info(f"✅ {city_name} complete: {city_results['successful_tiles']}/{city_results['total_tiles']} total tiles")
+            else:
+                logger.warning(f"⚠️ No results for {city_name}")
+        
+        return all_results
+
+    def check_city_district_map_type_downloaded(self, city_name, map_type, district_name):
+        """Check if specific city + district + map type already downloaded"""
+        clean_city_name = self.clean_city_name(city_name)
+        clean_district_name = self.clean_district_name(district_name)
+        map_folder = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['folder_name']
+        
+        # District structure: downloaded_tiles/cities/<city>/kh-2025/<district>/
+        city_district_path = Path(self.base_download_dir) / 'cities' / clean_city_name / map_folder / clean_district_name
+        
+        if not city_district_path.exists():
+            return False, "No district download folder found"
+        
+        # Check if any zoom folders exist with tiles
+        zoom_folders = [d for d in city_district_path.iterdir() if d.is_dir() and d.name.isdigit()]
+        
+        if not zoom_folders:
+            return False, "No zoom folders found in district"
+        
+        # Count total tiles
+        total_tiles = 0
+        for zoom_folder in zoom_folders:
+            tile_files = list(zoom_folder.glob('*.*'))
+            total_tiles += len(tile_files)
+    
+        if total_tiles == 0:
+            return False, "District zoom folders exist but no tiles found"
+    
+        return True, f"Found {total_tiles:,} tiles in {len(zoom_folders)} zoom levels for district {district_name}"
+
+    def deg2num(self, lat_deg, lon_deg, zoom):
+        """Convert lat/lon to tile coordinates"""
+        lat_rad = math.radians(lat_deg)
+        n = 2.0 ** zoom
+        x = int((lon_deg + 180.0) / 360.0 * n)
+        y = int((1.0 - math.asinh(math.tan(lat_rad)) / math.pi) / 2.0 * n)
+        return (x, y)
+
+    def generate_city_tile_coverage(self, lat, lng, zoom_levels, radius_km=20):
+        """Generate tile coverage for specific city - OPTIMIZED"""
+        city_coverages = {}
+        
+        for zoom in zoom_levels:
+            # Calculate tile coordinates for city center
+            center_x, center_y = self.deg2num(lat, lng, zoom)
+            
+            # Calculate radius in tiles - more accurate calculation
+            lat_rad = math.radians(lat)
+            meters_per_pixel = 156543.03392 * math.cos(lat_rad) / (2 ** zoom)
+            pixels_per_tile = 256
+            meters_per_tile = meters_per_pixel * pixels_per_tile
+            radius_tiles = int((radius_km * 1000) / meters_per_tile)
+            
+            # Ensure reasonable coverage
+            radius_tiles = max(radius_tiles, 5)   # At least 5 tiles radius
+            radius_tiles = min(radius_tiles, 50)  # Max 50 tiles radius to avoid too many tiles
+            
+            city_coverages[zoom] = {
+                'center_x': center_x,
+                'center_y': center_y,
+                'x_min': center_x - radius_tiles,
+                'x_max': center_x + radius_tiles,
+                'y_min': center_y - radius_tiles,
+                'y_max': center_y + radius_tiles,
+                'radius_tiles': radius_tiles,
+                'total_tiles': (2 * radius_tiles + 1) ** 2
+            }
+            
+            logger.info(f"  Zoom {zoom}: Center({center_x},{center_y}), Radius={radius_tiles} tiles, Total={city_coverages[zoom]['total_tiles']} tiles")
+        
+        return city_coverages
+
+    def crawl_pattern_for_city_and_map_type(self, pattern, city_coverage, city_name, map_type, district_name=None):
+        """Exhaustive crawl with NEW multi-map folder structure"""
+        all_tiles = []
+        
+        map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
+        district_log = f" - {district_name}" if district_name else ""
+        logger.info(f"🔍 {city_name}{district_log} - {map_display}")
+        
+        for zoom, coverage in city_coverage.items():
+            logger.info(f"  Zoom {zoom}: X({coverage['x_min']}-{coverage['x_max']}), Y({coverage['y_min']}-{coverage['y_max']})")
+            
+            # Generate ALL coordinates in city coverage
+            all_coordinates = []
+            for x in range(coverage['x_min'], coverage['x_max'] + 1):
+                for y in range(coverage['y_min'], coverage['y_max'] + 1):
+                    all_coordinates.append((x, y))
+            
+            logger.info(f"📊 Trying {len(all_coordinates)} coordinates for zoom {zoom}")
+            
+            # Generate URLs for this zoom level
+            zoom_urls = []
+            for x, y in all_coordinates:
+                url = pattern.replace('{z}', str(zoom))
+                url = url.replace('{x}', str(x))
+                url = url.replace('{y}', str(y))
+                
+                zoom_urls.append({
+                    'url': url,
+                    'zoom': zoom,
+                    'x': x,
+                    'y': y,
+                    'pattern': pattern
+                })
+            
+            # Process in batches with district support
+            batch_size = 100
+            zoom_successful = 0
+            zoom_total = 0
+            
+            for i in range(0, len(zoom_urls), batch_size):
+                batch = zoom_urls[i:i+batch_size]
+                
+                logger.info(f"📦 Processing {map_display}{district_log} batch {i//batch_size + 1}/{(len(zoom_urls)-1)//batch_size + 1}")
+                
+                # Download tiles with map type and district structure
+                batch_results = self.download_tiles_batch_with_map_types(batch, city_name, map_type, district_name)
+                
+                # Count results
+                successful_in_batch = len([r for r in batch_results if r.get('success')])
+                zoom_successful += successful_in_batch
+                zoom_total += len(batch)
+                
+                # Add successful tiles only
+                all_tiles.extend([r for r in batch_results if r.get('success')])
+                
+                if successful_in_batch > 0:
+                    logger.info(f"✅ Found {successful_in_batch}/{len(batch)} tiles in batch")
+                
+                # Short delay
+                time.sleep(0.1)
+            
+            logger.info(f"📊 Zoom {zoom} final: {zoom_successful}/{zoom_total} tiles ({zoom_successful/zoom_total*100:.1f}%)")
+        
+        return all_tiles
 
     def load_patterns_from_html_extractor(self, use_html_reports=True):
         """Load patterns from HTML extractor results - ENHANCED for multi-map support"""
@@ -772,112 +1313,6 @@ class EnhancedMultiMapTileDownloader:
             logger.error(f"❌ No pattern sources found!")
             return {}
 
-    def deg2num(self, lat_deg, lon_deg, zoom):
-        """Convert lat/lon to tile coordinates"""
-        lat_rad = math.radians(lat_deg)
-        n = 2.0 ** zoom
-        x = int((lon_deg + 180.0) / 360.0 * n)
-        y = int((1.0 - math.asinh(math.tan(lat_rad)) / math.pi) / 2.0 * n)
-        return (x, y)
-
-    def generate_city_tile_coverage(self, lat, lng, zoom_levels, radius_km=20):
-        """Generate tile coverage for specific city - OPTIMIZED"""
-        city_coverages = {}
-        
-        for zoom in zoom_levels:
-            # Calculate tile coordinates for city center
-            center_x, center_y = self.deg2num(lat, lng, zoom)
-            
-            # Calculate radius in tiles - more accurate calculation
-            lat_rad = math.radians(lat)
-            meters_per_pixel = 156543.03392 * math.cos(lat_rad) / (2 ** zoom)
-            pixels_per_tile = 256
-            meters_per_tile = meters_per_pixel * pixels_per_tile
-            radius_tiles = int((radius_km * 1000) / meters_per_tile)
-            
-            # Ensure reasonable coverage
-            radius_tiles = max(radius_tiles, 5)   # At least 5 tiles radius
-            radius_tiles = min(radius_tiles, 50)  # Max 50 tiles radius to avoid too many tiles
-            
-            city_coverages[zoom] = {
-                'center_x': center_x,
-                'center_y': center_y,
-                'x_min': center_x - radius_tiles,
-                'x_max': center_x + radius_tiles,
-                'y_min': center_y - radius_tiles,
-                'y_max': center_y + radius_tiles,
-                'radius_tiles': radius_tiles,
-                'total_tiles': (2 * radius_tiles + 1) ** 2
-            }
-            
-            logger.info(f"  Zoom {zoom}: Center({center_x},{center_y}), Radius={radius_tiles} tiles, Total={city_coverages[zoom]['total_tiles']} tiles")
-        
-        return city_coverages
-
-    def crawl_pattern_for_city_and_map_type(self, pattern, city_coverage, city_name, map_type):
-        """Exhaustive crawl with NEW multi-map folder structure"""
-        all_tiles = []
-        
-        map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
-        logger.info(f"🔍 {city_name} - {map_display}")
-        
-        for zoom, coverage in city_coverage.items():
-            logger.info(f"  Zoom {zoom}: X({coverage['x_min']}-{coverage['x_max']}), Y({coverage['y_min']}-{coverage['y_max']})")
-            
-            # Generate ALL coordinates in city coverage
-            all_coordinates = []
-            for x in range(coverage['x_min'], coverage['x_max'] + 1):
-                for y in range(coverage['y_min'], coverage['y_max'] + 1):
-                    all_coordinates.append((x, y))
-            
-            logger.info(f"📊 Trying {len(all_coordinates)} coordinates for zoom {zoom}")
-            
-            # Generate URLs for this zoom level
-            zoom_urls = []
-            for x, y in all_coordinates:
-                url = pattern.replace('{z}', str(zoom))
-                url = url.replace('{x}', str(x))
-                url = url.replace('{y}', str(y))
-                
-                zoom_urls.append({
-                    'url': url,
-                    'zoom': zoom,
-                    'x': x,
-                    'y': y,
-                    'pattern': pattern
-                })
-            
-            # Process in batches
-            batch_size = 100
-            zoom_successful = 0
-            zoom_total = 0
-            
-            for i in range(0, len(zoom_urls), batch_size):
-                batch = zoom_urls[i:i+batch_size]
-                
-                logger.info(f"📦 Processing {map_display} batch {i//batch_size + 1}/{(len(zoom_urls)-1)//batch_size + 1}")
-                
-                # Download tiles with map type structure
-                batch_results = self.download_tiles_batch_with_map_types(batch, city_name, map_type)
-                
-                # Count results
-                successful_in_batch = len([r for r in batch_results if r.get('success')])
-                zoom_successful += successful_in_batch
-                zoom_total += len(batch)
-                
-                # Add successful tiles only
-                all_tiles.extend([r for r in batch_results if r.get('success')])
-                
-                if successful_in_batch > 0:
-                    logger.info(f"✅ Found {successful_in_batch}/{len(batch)} tiles in batch")
-                
-                # Short delay to be respectful
-                time.sleep(0.1)
-            
-            logger.info(f"📊 Zoom {zoom} final: {zoom_successful}/{zoom_total} tiles ({zoom_successful/zoom_total*100:.1f}%)")
-        
-        return all_tiles
-
     def crawl_multi_map_patterns(self, zoom_levels=[10, 12, 14], use_html_source=True, skip_existing=True, target_map_types=None):
         """Enhanced crawling with multi-map support"""
         
@@ -963,7 +1398,7 @@ class EnhancedMultiMapTileDownloader:
             logger.info(f"🎯 Target map types: {[MAP_TYPE_CONFIG[mt]['display_name'] for mt in target_map_types]}")
         else:
             target_map_types = list(MAP_TYPE_CONFIG.keys())
-            target_map_types.remove('UNKNOWN')  # Don't target unknown by default
+            target_map_types.remove('UNKNOWN')
 
         all_results = []
         
@@ -997,46 +1432,119 @@ class EnhancedMultiMapTileDownloader:
                 map_display = MAP_TYPE_CONFIG.get(map_type, MAP_TYPE_CONFIG['UNKNOWN'])['display_name']
                 logger.info(f"🗺️ Processing {map_display}: {len(patterns_list)} patterns")
                 
-                # Check if this map type already exists
-                if skip_existing:
-                    already_downloaded, status_msg = self.check_city_map_type_downloaded(city_name, map_type)
-                    if already_downloaded:
-                        logger.info(f"⏭️ SKIPPING {city_name} - {map_display}: {status_msg}")
-                        continue
-                
-                map_type_tiles = []
-                
-                # Process each pattern for this map type
-                for pattern in patterns_list:
-                    logger.info(f"🚀 Crawling pattern: {pattern}")
+                # NEW: Special handling for KH_2025 with districts
+                if map_type == 'KH_2025' and city_name in self.district_data:
+                    logger.info(f"🏘️ KH_2025 detected - using district-level structure")
                     
-                    # Crawl with new structure
-                    pattern_tiles = self.crawl_pattern_for_city_and_map_type(
-                        pattern, city_coverage, city_name, map_type
-                    )
-                    
-                    if pattern_tiles:
-                        map_type_tiles.extend(pattern_tiles)
-                
-                if map_type_tiles:
-                    successful_count = len([t for t in map_type_tiles if t.get('success')])
+                    districts = self.district_data[city_name]
+                    logger.info(f"📍 Found {len(districts)} districts with KH_2025 data")
                     
                     city_results['map_type_results'][map_type] = {
                         'map_type': map_type,
                         'display_name': map_display,
                         'patterns': patterns_list,
-                        'tiles': map_type_tiles,
-                        'total_tiles': len(map_type_tiles),
-                        'successful_tiles': successful_count,
-                        'folder_structure': f"downloaded_tiles/cities/{self.clean_city_name(city_name)}/{MAP_TYPE_CONFIG[map_type]['folder_name']}/<zoom>/"
+                        'districts': {},
+                        'total_tiles': 0,
+                        'successful_tiles': 0,
+                        'folder_structure': f"downloaded_tiles/cities/{self.clean_city_name(city_name)}/{MAP_TYPE_CONFIG[map_type]['folder_name']}/<district>/<zoom>/"
                     }
                     
-                    city_results['total_tiles'] += len(map_type_tiles)
-                    city_results['successful_tiles'] += successful_count
+                    # Process each district
+                    for district_name, district_info in districts.items():
+                        logger.info(f"🏘️ Processing district: {district_info['original_name']}")
+                        
+                        # Check if this district already downloaded
+                        if skip_existing:
+                            already_downloaded, status_msg = self.check_city_district_map_type_downloaded(city_name, map_type, district_name)
+                            if already_downloaded:
+                                logger.info(f"⏭️ SKIPPING {district_info['original_name']}: {status_msg}")
+                                continue
+                        
+                        # Use district-specific patterns if available, otherwise use city patterns
+                        district_patterns = district_info.get('kh_2025_patterns', {}).get('tile_url')
+                        if district_patterns:
+                            district_pattern_list = [district_patterns]
+                        else:
+                            district_pattern_list = patterns_list
+                        
+                        district_tiles = []
+                        
+                        # Process each pattern for this district
+                        for pattern in district_pattern_list:
+                            logger.info(f"🚀 Crawling district pattern: {pattern}")
+                            
+                            # Crawl with district structure
+                            pattern_tiles = self.crawl_pattern_for_city_and_map_type(
+                                pattern, city_coverage, city_name, map_type, district_info['original_name']
+                            )
+                            
+                            if pattern_tiles:
+                                district_tiles.extend(pattern_tiles)
+                        
+                        if district_tiles:
+                            successful_count = len([t for t in district_tiles if t.get('success')])
+                            
+                            city_results['map_type_results'][map_type]['districts'][district_name] = {
+                                'district_name': district_info['original_name'],
+                                'tiles': district_tiles,
+                                'total_tiles': len(district_tiles),
+                                'successful_tiles': successful_count,
+                                'patterns': district_pattern_list
+                            }
+                            
+                            city_results['map_type_results'][map_type]['total_tiles'] += len(district_tiles)
+                            city_results['map_type_results'][map_type]['successful_tiles'] += successful_count
+                            
+                            logger.info(f"✅ {district_info['original_name']}: {successful_count}/{len(district_tiles)} tiles")
+                        else:
+                            logger.warning(f"⚠️ No tiles found for district {district_info['original_name']}")
                     
-                    logger.info(f"✅ {map_display}: {successful_count}/{len(map_type_tiles)} tiles")
+                    # Update city totals
+                    city_results['total_tiles'] += city_results['map_type_results'][map_type]['total_tiles']
+                    city_results['successful_tiles'] += city_results['map_type_results'][map_type]['successful_tiles']
+                    
                 else:
-                    logger.warning(f"⚠️ No tiles found for {map_display}")
+                    # EXISTING: Standard processing for other map types
+                    # Check if this map type already exists
+                    if skip_existing:
+                        already_downloaded, status_msg = self.check_city_map_type_downloaded(city_name, map_type)
+                        if already_downloaded:
+                            logger.info(f"⏭️ SKIPPING {city_name} - {map_display}: {status_msg}")
+                            continue
+                    
+                    map_type_tiles = []
+                    
+                    # Process each pattern for this map type
+                    for pattern in patterns_list:
+                        logger.info(f"🚀 Crawling pattern: {pattern}")
+                        
+                        # Crawl with standard structure
+                        pattern_tiles = self.crawl_pattern_for_city_and_map_type(
+                            pattern, city_coverage, city_name, map_type
+                        )
+                        
+                        if pattern_tiles:
+                            map_type_tiles.extend(pattern_tiles)
+                    
+                    if map_type_tiles:
+                        successful_count = len([t for t in map_type_tiles if t.get('success')])
+                        
+                        city_results['map_type_results'][map_type] = {
+                            'map_type': map_type,
+                            'display_name': map_display,
+                            'patterns': patterns_list,
+                            'tiles': map_type_tiles,
+                            'total_tiles': len(map_type_tiles),
+                            'successful_tiles': successful_count,
+                            'folder_structure': f"downloaded_tiles/cities/{self.clean_city_name(city_name)}/{MAP_TYPE_CONFIG[map_type]['folder_name']}/<zoom>/"
+                        }
+                        
+                        city_results['total_tiles'] += len(map_type_tiles)
+                        city_results['successful_tiles'] += successful_count
+                        
+                        logger.info(f"✅ {map_display}: {successful_count}/{len(map_type_tiles)} tiles")
+                    else:
+                        logger.warning(f"⚠️ No tiles found for {map_display}")
             
             if city_results['map_type_results']:
                 all_results.append(city_results)

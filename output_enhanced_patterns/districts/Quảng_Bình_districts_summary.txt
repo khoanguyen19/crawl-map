@@ -1,0 +1,62 @@
+# DISTRICT PATTERNS: Quảng Bình
+Generated: 2025-06-24T00:42:54.376294
+Admin Code: 44
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bố Trạch
+• District ID: 455
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/huyen-bo-trach
+• Patterns found: 2
+
+
+### Huyện Lệ Thủy
+• District ID: 457
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/huyen-le-thuy
+• Patterns found: 2
+
+
+### Huyện Minh Hóa
+• District ID: 452
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/huyen-minh-hoa
+• Patterns found: 2
+
+
+### Huyện Quảng Ninh
+• District ID: 456
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/huyen-quang-ninh
+• Patterns found: 2
+
+
+### Thị xã Ba Đồn
+• District ID: 458
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/thi-xa-ba-don
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/thi-xa-ba-don/{z}/{x}/{y}.png
+
+### Huyện Tuyên Hóa
+• District ID: 453
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/huyen-tuyen-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-tuyen-hoa/{z}/{x}/{y}.png
+
+### Thành phố Thành Phố Đồng Hới
+• District ID: 450
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/thanh-pho-thanh-pho-dong-hoi
+• Patterns found: 2
+
+
+### Thị xã Quảng Trạch
+• District ID: 454
+• URL: https://guland.vn/soi-quy-hoach/quang-binh/thi-xa-quang-trach
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-quang-trach--25/{z}/{x}/{y}.png

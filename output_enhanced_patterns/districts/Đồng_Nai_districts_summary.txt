@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: Đồng Nai
+Generated: 2025-06-23T23:06:19.634430
+Admin Code: 75
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cẩm Mỹ
+• District ID: 739
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-cam-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-cam-my--25/{z}/{x}/{y}.png
+
+### Huyện Long Thành
+• District ID: 740
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-long-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-long-thanh/{z}/{x}/{y}.png
+
+### Huyện Nhơn Trạch
+• District ID: 742
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-nhon-trach
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-nhon-trach--25/{z}/{x}/{y}.png
+
+### Huyện Tân Phú
+• District ID: 734
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-tan-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-tan-phu/{z}/{x}/{y}.png
+
+### Huyện Thống Nhất
+• District ID: 738
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-thong-nhat
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png
+
+### Huyện Trảng Bom
+• District ID: 737
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-trang-bom
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-trang-bom/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Cửu
+• District ID: 735
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-vinh-cuu
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-vinh-cuu--25/{z}/{x}/{y}.png
+
+### Huyện Xuân Lộc
+• District ID: 741
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-xuan-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-xuan-loc/{z}/{x}/{y}.png
+
+### Huyện Định Quán
+• District ID: 736
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/huyen-dinh-quan
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-dinh-quan--25/{z}/{x}/{y}.png
+
+### Thành phố Biên Hòa
+• District ID: 731
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/thanh-pho-bien-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-bien-hoa--25/{z}/{x}/{y}.png
+
+### Thành phố Long Khánh
+• District ID: 732
+• URL: https://guland.vn/soi-quy-hoach/dong-nai/thanh-pho-long-khanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-long-khanh--25/{z}/{x}/{y}.png

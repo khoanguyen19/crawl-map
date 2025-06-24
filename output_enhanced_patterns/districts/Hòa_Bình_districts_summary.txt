@@ -1,0 +1,81 @@
+# DISTRICT PATTERNS: Hòa Bình
+Generated: 2025-06-24T00:03:43.449771
+Admin Code: 17
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cao Phong
+• District ID: 154
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-cao-phong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png
+
+### Huyện Kim Bôi
+• District ID: 153
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-kim-boi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-kim-boi/{z}/{x}/{y}.png
+
+### Huyện Lạc Sơn
+• District ID: 157
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-lac-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-son/{z}/{x}/{y}.png
+
+### Huyện Lạc Thủy
+• District ID: 159
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-lac-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-thuy/{z}/{x}/{y}.png
+
+### Huyện Lương Sơn
+• District ID: 152
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-luong-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/huyen-luong-son/{z}/{x}/{y}.png
+
+### Huyện Mai Châu
+• District ID: 156
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-mai-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hoa-binh/huyen-mai-chau/{z}/{x}/{y}.png
+
+### Huyện Tân Lạc
+• District ID: 155
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-tan-lac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-tan-lac/{z}/{x}/{y}.png
+
+### Huyện Yên Thủy
+• District ID: 158
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-yen-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-yen-thuy/{z}/{x}/{y}.png
+
+### Huyện Đà Bắc
+• District ID: 150
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/huyen-da-bac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-da-bac/{z}/{x}/{y}.png
+
+### Thành phố Hòa Bình
+• District ID: 148
+• URL: https://guland.vn/soi-quy-hoach/hoa-binh/thanh-pho-hoa-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/thanh-pho-hoa-binh/{z}/{x}/{y}.png

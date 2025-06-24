@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Tây Ninh
+Generated: 2025-06-24T01:01:12.714966
+Admin Code: 72
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bến Cầu
+• District ID: 711
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-ben-cau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-ben-cau--25/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 708
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Dương Minh Châu
+• District ID: 707
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-duong-minh-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-duong-minh-chau--25/{z}/{x}/{y}.png
+
+### Huyện Gò Dầu
+• District ID: 710
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-go-dau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-go-dau--25/{z}/{x}/{y}.png
+
+### Huyện Hòa Thành
+• District ID: 709
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-hoa-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-hoa-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Tân Biên
+• District ID: 705
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-tan-bien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-bien--25/{z}/{x}/{y}.png
+
+### Huyện Tân Châu
+• District ID: 706
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-tan-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-chau--25/{z}/{x}/{y}.png
+
+### Huyện Trảng Bàng
+• District ID: 712
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/huyen-trang-bang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-trang-bang--25/{z}/{x}/{y}.png
+
+### Thành phố Tây Ninh
+• District ID: 703
+• URL: https://guland.vn/soi-quy-hoach/tay-ninh/thanh-pho-tay-ninh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png

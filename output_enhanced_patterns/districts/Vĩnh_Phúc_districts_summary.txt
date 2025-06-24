@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Vĩnh Phúc
+Generated: 2025-06-24T01:23:17.075759
+Admin Code: 26
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bình Xuyên
+• District ID: 249
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-binh-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-binh-xuyen--bs-lyk/{z}/{x}/{y}.png
+
+### Huyện Lập Thạch
+• District ID: 246
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-lap-thach
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-lap-thach--25/{z}/{x}/{y}.png
+
+### Huyện Sông Lô
+• District ID: 253
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-song-lo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/vinh-phuc/huyen-song-lo/{z}/{x}/{y}.png
+
+### Huyện Tam Dương
+• District ID: 247
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-tam-duong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png
+
+### Huyện Tam Đảo
+• District ID: 248
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-tam-dao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-phuc/huyen-tam-dao/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Tường
+• District ID: 252
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-vinh-tuong
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-vinh-tuong--25/{z}/{x}/{y}.png
+
+### Huyện Yên Lạc
+• District ID: 251
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/huyen-yen-lac
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-yen-lac--25/{z}/{x}/{y}.png
+
+### Thành phố Vĩnh Yên
+• District ID: 243
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/thanh-pho-vinh-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-vinh-yen/{z}/{x}/{y}.png
+
+### Thị xã Phúc Yên
+• District ID: 244
+• URL: https://guland.vn/soi-quy-hoach/vinh-phuc/thi-xa-phuc-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-phuc-yen--25/{z}/{x}/{y}.png

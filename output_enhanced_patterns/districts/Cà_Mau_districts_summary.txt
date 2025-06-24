@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Cà Mau
+Generated: 2025-06-23T23:31:43.232461
+Admin Code: 96
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cái Nước
+• District ID: 969
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-cai-nuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-cai-nuoc/{z}/{x}/{y}.png
+
+### Huyện Năm Căn
+• District ID: 971
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-nam-can
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-nam-can--25/{z}/{x}/{y}.png
+
+### Huyện Ngọc Hiển
+• District ID: 973
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-ngoc-hien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-ngoc-hien/{z}/{x}/{y}.png
+
+### Huyện Phú Tân
+• District ID: 972
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-phu-tan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-phu-tan/{z}/{x}/{y}.png
+
+### Huyện Thới Bình
+• District ID: 967
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-thoi-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-thoi-binh/{z}/{x}/{y}.png
+
+### Huyện Trần Văn Thời
+• District ID: 968
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-tran-van-thoi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-tran-van-thoi/{z}/{x}/{y}.png
+
+### Huyện U Minh
+• District ID: 966
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-u-minh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-u-minh/{z}/{x}/{y}.png
+
+### Huyện Đầm Dơi
+• District ID: 970
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/huyen-dam-doi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-dam-doi/{z}/{x}/{y}.png
+
+### Thành phố Cà Mau
+• District ID: 964
+• URL: https://guland.vn/soi-quy-hoach/ca-mau/thanh-pho-ca-mau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png

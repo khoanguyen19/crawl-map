@@ -1,0 +1,95 @@
+# DISTRICT PATTERNS: Đồng Tháp
+Generated: 2025-06-24T01:36:45.975916
+Admin Code: 87
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 12
+• Successful: 12
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cao Lãnh
+• District ID: 873
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-cao-lanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 877
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-chau-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Hồng Ngự
+• District ID: 870
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-hong-ngu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-hong-ngu/{z}/{x}/{y}.png
+
+### Huyện Lai Vung
+• District ID: 876
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-lai-vung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lai-vung/{z}/{x}/{y}.png
+
+### Huyện Lấp Vò
+• District ID: 875
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-lap-vo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lap-vo/{z}/{x}/{y}.png
+
+### Huyện Tam Nông
+• District ID: 871
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-tam-nong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-tam-nong/{z}/{x}/{y}.png
+
+### Huyện Tân Hồng
+• District ID: 869
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-tan-hong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-thap/huyen-tan-hong/{z}/{x}/{y}.png
+
+### Huyện Thanh Bình
+• District ID: 874
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-thanh-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-thanh-binh--25/{z}/{x}/{y}.png
+
+### Huyện Tháp Mười
+• District ID: 872
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/huyen-thap-muoi
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/huyen-thap-muoi--25/{z}/{x}/{y}.png
+
+### Thành phố Cao Lãnh
+• District ID: 866
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/thanh-pho-cao-lanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/thanh-pho-cao-lanh--25/{z}/{x}/{y}.png
+
+### Thành phố Sa Đéc
+• District ID: 867
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/thanh-pho-sa-dec
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/thanh-pho-sa-dec/{z}/{x}/{y}.png
+
+### Thành phố Hồng Ngự
+• District ID: 868
+• URL: https://guland.vn/soi-quy-hoach/dong-thap/thanh-pho-hong-ngu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png

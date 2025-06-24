@@ -1,0 +1,73 @@
+# DISTRICT PATTERNS: Yên Bái
+Generated: 2025-06-24T01:25:25.095937
+Admin Code: 15
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Lục Yên
+• District ID: 135
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-luc-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-luc-yen/{z}/{x}/{y}.png
+
+### Huyện Mù Căng Chải
+• District ID: 137
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-mu-cang-chai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/yen-bai/huyen-mu-cang-chai/{z}/{x}/{y}.png
+
+### Huyện Trạm Tấu
+• District ID: 139
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-tram-tau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-tram-tau/{z}/{x}/{y}.png
+
+### Huyện Trấn Yên
+• District ID: 138
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-tran-yen
+• Patterns found: 2
+
+
+### Huyện Văn Yên
+• District ID: 136
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-van-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-van-yen/{z}/{x}/{y}.png
+
+### Huyện Văn Chấn
+• District ID: 140
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-van-chan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/huyen-van-chan/{z}/{x}/{y}.png
+
+### Huyện Yên Bình
+• District ID: 141
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/huyen-yen-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-yen-binh/{z}/{x}/{y}.png
+
+### Thành phố Yên Bái
+• District ID: 132
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/thanh-pho-yen-bai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+
+### Thị xã Nghĩa Lộ
+• District ID: 133
+• URL: https://guland.vn/soi-quy-hoach/yen-bai/thi-xa-nghia-lo
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thi-xa-nghia-lo/{z}/{x}/{y}.png

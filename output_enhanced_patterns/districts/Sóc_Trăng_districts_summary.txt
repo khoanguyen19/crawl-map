@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: Sóc Trăng
+Generated: 2025-06-24T00:55:58.777721
+Admin Code: 94
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Châu Thành
+• District ID: 942
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Cù Lao Dung
+• District ID: 945
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-cu-lao-dung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-cu-lao-dung/{z}/{x}/{y}.png
+
+### Huyện Kế Sách
+• District ID: 943
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-ke-sach
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-ke-sach/{z}/{x}/{y}.png
+
+### Huyện Long Phú
+• District ID: 946
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-long-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-long-phu/{z}/{x}/{y}.png
+
+### Huyện Mỹ Tú
+• District ID: 944
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-my-tu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-tu/{z}/{x}/{y}.png
+
+### Huyện Mỹ Xuyên
+• District ID: 947
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-my-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-xuyen/{z}/{x}/{y}.png
+
+### Huyện Thạnh Trị
+• District ID: 949
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-thanh-tri
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-thanh-tri/{z}/{x}/{y}.png
+
+### Huyện Trần Đề
+• District ID: 951
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/huyen-tran-de
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-tran-de/{z}/{x}/{y}.png
+
+### Thành phố Sóc Trăng
+• District ID: 941
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/thanh-pho-soc-trang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png
+
+### Thị xã Ngã Năm
+• District ID: 948
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/thi-xa-nga-nam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-nga-nam/{z}/{x}/{y}.png
+
+### Thị xã Vĩnh Châu
+• District ID: 950
+• URL: https://guland.vn/soi-quy-hoach/soc-trang/thi-xa-vinh-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-vinh-chau/{z}/{x}/{y}.png

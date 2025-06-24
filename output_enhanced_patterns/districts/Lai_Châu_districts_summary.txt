@@ -1,0 +1,66 @@
+# DISTRICT PATTERNS: Lai Châu
+Generated: 2025-06-24T00:15:21.400517
+Admin Code: 12
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Mường Tè
+• District ID: 107
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-muong-te
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-muong-te/{z}/{x}/{y}.png
+
+### Huyện Nậm Nhùn
+• District ID: 112
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-nam-nhun
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/thanh-pho-lai-chau/{z}/{x}/{y}.png
+
+### Huyện Phong Thổ
+• District ID: 109
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-phong-tho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-phong-tho/{z}/{x}/{y}.png
+
+### Huyện Sìn Hồ
+• District ID: 108
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-sin-ho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png
+
+### Huyện Tam Đường
+• District ID: 106
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-tam-duong
+• Patterns found: 2
+
+
+### Huyện Tân Uyên
+• District ID: 111
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-tan-uyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-tan-uyen/{z}/{x}/{y}.png
+
+### Huyện Than Uyên
+• District ID: 110
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/huyen-than-uyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-than-uyen/{z}/{x}/{y}.png
+
+### Thành phố Lai Châu
+• District ID: 105
+• URL: https://guland.vn/soi-quy-hoach/lai-chau/thanh-pho-lai-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/thanh-pho-lai-chau/{z}/{x}/{y}.png

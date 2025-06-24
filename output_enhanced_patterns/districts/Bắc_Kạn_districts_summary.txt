@@ -1,0 +1,59 @@
+# DISTRICT PATTERNS: Bắc Kạn
+Generated: 2025-06-23T23:15:17.621731
+Admin Code: 06
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 7
+• Failed: 1
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ba Bể
+• District ID: 061
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-ba-be
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/bac-kan/huyen-ba-be/{z}/{x}/{y}.png
+
+### Huyện Bạch Thông
+• District ID: 063
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-bach-thong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png
+
+### Huyện Chợ Đồn
+• District ID: 064
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-cho-don
+• Patterns found: 2
+
+
+### Huyện Na Rì
+• District ID: 066
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-na-ri
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/bac-kan/huyen-na-ri/{z}/{x}/{y}.png
+
+### Huyện Ngân Sơn
+• District ID: 062
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-ngan-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-ngan-son/{z}/{x}/{y}.png
+
+### Huyện Pác Nặm
+• District ID: 060
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/huyen-pac-nam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-pac-nam/{z}/{x}/{y}.png
+
+### Thành phố Thành Phố Bắc Kạn
+• District ID: 058
+• URL: https://guland.vn/soi-quy-hoach/bac-kan/thanh-pho-thanh-pho-bac-kan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/thanh-pho-bac-kan/{z}/{x}/{y}.png

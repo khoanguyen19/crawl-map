@@ -1,0 +1,177 @@
+# DISTRICT PATTERNS: TP Hồ Chí Minh
+Generated: 2025-06-23T23:01:35.395139
+Admin Code: 79
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 24
+• Successful: 24
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Quận 1
+• District ID: 760
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-1
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-1/{z}/{x}/{y}.png
+
+### Quận 3
+• District ID: 770
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-3
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-3/{z}/{x}/{y}.png
+
+### Quận 4
+• District ID: 773
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-4
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-4/{z}/{x}/{y}.png
+
+### Quận 5
+• District ID: 774
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-5
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-5/{z}/{x}/{y}.png
+
+### Quận 6
+• District ID: 775
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-6
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-6/{z}/{x}/{y}.png
+
+### Quận 7
+• District ID: 778
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-7
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/ho-chi-minh/quan-7/{z}/{x}/{y}.png
+
+### Quận 8
+• District ID: 776
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-8
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/quan-8/{z}/{x}/{y}.png
+
+### Quận 9
+• District ID: 763
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-9
+• Patterns found: 4
+
+
+### Quận 10
+• District ID: 771
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-10
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-10/{z}/{x}/{y}.png
+
+### Quận 11
+• District ID: 772
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-11
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2021/ho-chi-minh/quan-11/{z}/{x}/{y}.png
+
+### Quận 12
+• District ID: 761
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-12
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-12/{z}/{x}/{y}.png
+
+### Huyện Bình Chánh
+• District ID: 785
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/huyen-binh-chanh
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-binh-chanh/{z}/{x}/{y}.png
+
+### Huyện Cần Giờ
+• District ID: 787
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/huyen-can-gio
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/huyen-can-gio__lyk/{z}/{x}/{y}.png
+
+### Huyện Củ Chi
+• District ID: 783
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/huyen-cu-chi
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-cu-chi/{z}/{x}/{y}.png
+
+### Huyện Hóc Môn
+• District ID: 784
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/huyen-hoc-mon
+• Patterns found: 4
+
+
+### Huyện Nhà Bè
+• District ID: 786
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/huyen-nha-be
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/huyen-nha-be/{z}/{x}/{y}.png
+
+### Quận Bình Thạnh
+• District ID: 765
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-binh-thanh
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-binh-thanh/{z}/{x}/{y}.png
+
+### Quận Bình Tân
+• District ID: 777
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-binh-tan
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-binh-tan/{z}/{x}/{y}.png
+
+### Quận Gò Vấp
+• District ID: 764
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-go-vap
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-go-vap/{z}/{x}/{y}.png
+
+### Quận Phú Nhuận
+• District ID: 768
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-phu-nhuan
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-phu-nhuan/{z}/{x}/{y}.png
+
+### Quận Tân Bình
+• District ID: 766
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-tan-binh
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png
+
+### Quận Tân Phú
+• District ID: 767
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-tan-phu
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-phu/{z}/{x}/{y}.png
+
+### Quận Thủ Đức
+• District ID: 762
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/quan-thu-duc
+• Patterns found: 5
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/tp-ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png
+
+### Thành phố Thủ Đức
+• District ID: 769
+• URL: https://guland.vn/soi-quy-hoach/tp-ho-chi-minh/thanh-pho-thu-duc
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png

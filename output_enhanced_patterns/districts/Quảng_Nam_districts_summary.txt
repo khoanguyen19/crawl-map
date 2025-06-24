@@ -1,0 +1,134 @@
+# DISTRICT PATTERNS: Quảng Nam
+Generated: 2025-06-24T00:44:36.610881
+Admin Code: 49
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 18
+• Successful: 18
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Trà My
+• District ID: 515
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-bac-tra-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-bac-tra-my/{z}/{x}/{y}.png
+
+### Huyện Duy Xuyên
+• District ID: 508
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-duy-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-duy-xuyen/{z}/{x}/{y}.png
+
+### Huyện Hiệp Đức
+• District ID: 512
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-hiep-duc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png
+
+### Huyện Nam Giang
+• District ID: 510
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-nam-giang
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nam-giang/{z}/{x}/{y}.png
+
+### Huyện Nam Trà My
+• District ID: 516
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-nam-tra-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nam-tra-my/{z}/{x}/{y}.png
+
+### Huyện Nông Sơn
+• District ID: 519
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-nong-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nong-son/{z}/{x}/{y}.png
+
+### Huyện Núi Thành
+• District ID: 517
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-nui-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nui-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Phú Ninh
+• District ID: 518
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-phu-ninh
+• Patterns found: 2
+
+
+### Huyện Phước Sơn
+• District ID: 511
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-phuoc-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-phuoc-son/{z}/{x}/{y}.png
+
+### Huyện Quế Sơn
+• District ID: 509
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-que-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/quang-nam/huyen-que-son/{z}/{x}/{y}.png
+
+### Huyện Tây Giang
+• District ID: 504
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-tay-giang
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-tay-giang/{z}/{x}/{y}.png
+
+### Huyện Thăng Bình
+• District ID: 513
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-thang-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-thang-binh/{z}/{x}/{y}.png
+
+### Huyện Tiên Phước
+• District ID: 514
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-tien-phuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-tien-phuoc/{z}/{x}/{y}.png
+
+### Huyện Đại Lộc
+• District ID: 506
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-dai-loc
+• Patterns found: 2
+
+
+### Huyện Đông Giang
+• District ID: 505
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/huyen-dong-giang
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-dong-giang--25/{z}/{x}/{y}.png
+
+### Thành phố Tam Kỳ
+• District ID: 502
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/thanh-pho-tam-ky
+• Patterns found: 2
+
+
+### Thành phố Hội An
+• District ID: 503
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/thanh-pho-hoi-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/thanh-pho-hoi-an/{z}/{x}/{y}.png
+
+### Thị xã Điện Bàn
+• District ID: 507
+• URL: https://guland.vn/soi-quy-hoach/quang-nam/thi-xa-dien-ban
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/thi-xa-dien-ban--25/{z}/{x}/{y}.png

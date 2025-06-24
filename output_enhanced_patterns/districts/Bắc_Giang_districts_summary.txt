@@ -1,0 +1,81 @@
+# DISTRICT PATTERNS: Bắc Giang
+Generated: 2025-06-23T23:12:57.788659
+Admin Code: 24
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Hiệp Hòa
+• District ID: 223
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-hiep-hoa
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-hiep-hoa/{z}/{x}/{y}.png
+
+### Huyện Lạng Giang
+• District ID: 217
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-lang-giang
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-lang-giang/{z}/{x}/{y}.png
+
+### Huyện Lục Nam
+• District ID: 218
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-luc-nam
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-luc-nam1/{z}/{x}/{y}.png
+
+### Huyện Lục Ngạn
+• District ID: 219
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-luc-ngan
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-giang/huyen-luc-ngan/{z}/{x}/{y}.png
+
+### Huyện Sơn Động
+• District ID: 220
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-son-dong
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-son-dong/{z}/{x}/{y}.png
+
+### Huyện Tân Yên
+• District ID: 216
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-tan-yen
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-tan-yen/{z}/{x}/{y}.png
+
+### Huyện Việt Yên
+• District ID: 222
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-viet-yen
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thi-xa-viet-yen/{z}/{x}/{y}.png
+
+### Huyện Yên Thế
+• District ID: 215
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-yen-the
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-yen-the/{z}/{x}/{y}.png
+
+### Huyện Yên Dũng
+• District ID: 221
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/huyen-yen-dung
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+
+### Thành phố Bắc Giang
+• District ID: 213
+• URL: https://guland.vn/soi-quy-hoach/bac-giang/thanh-pho-bac-giang
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png

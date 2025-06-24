@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Bến Tre
+Generated: 2025-06-23T23:21:03.288020
+Admin Code: 83
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ba Tri
+• District ID: 836
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-ba-tri
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-ba-tri/{z}/{x}/{y}.png
+
+### Huyện Bình Đại
+• District ID: 835
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-binh-dai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ben-tre/huyen-binh-dai/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 831
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-chau-thanh/{z}/{x}/{y}.png
+
+### Huyện Chợ Lách
+• District ID: 832
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-cho-lach
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-cho-lach/{z}/{x}/{y}.png
+
+### Huyện Giồng Trôm
+• District ID: 834
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-giong-trom
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-giong-trom/{z}/{x}/{y}.png
+
+### Huyện Mỏ Cày Nam
+• District ID: 833
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-mo-cay-nam
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-mo-cay-nam/{z}/{x}/{y}.png
+
+### Huyện Mỏ Cày Bắc
+• District ID: 838
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-mo-cay-bac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-mo-cay-bac/{z}/{x}/{y}.png
+
+### Huyện Thạnh Phú
+• District ID: 837
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/huyen-thanh-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-thanh-phu--25/{z}/{x}/{y}.png
+
+### Thành phố Bến Tre
+• District ID: 829
+• URL: https://guland.vn/soi-quy-hoach/ben-tre/thanh-pho-ben-tre
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png

@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Cần Thơ
+Generated: 2025-06-23T23:33:49.673990
+Admin Code: 92
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cờ Đỏ
+• District ID: 925
+• URL: https://guland.vn/soi-quy-hoach/can-tho/huyen-co-do
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-co-do/{z}/{x}/{y}.png
+
+### Huyện Phong Điền
+• District ID: 926
+• URL: https://guland.vn/soi-quy-hoach/can-tho/huyen-phong-dien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-phong-dien--25/{z}/{x}/{y}.png
+
+### Huyện Thới Lai
+• District ID: 927
+• URL: https://guland.vn/soi-quy-hoach/can-tho/huyen-thoi-lai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-thoi-lai/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Thạnh
+• District ID: 924
+• URL: https://guland.vn/soi-quy-hoach/can-tho/huyen-vinh-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-vinh-thanh/{z}/{x}/{y}.png
+
+### Quận Bình Thuỷ
+• District ID: 918
+• URL: https://guland.vn/soi-quy-hoach/can-tho/quan-binh-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png
+
+### Quận Cái Răng
+• District ID: 919
+• URL: https://guland.vn/soi-quy-hoach/can-tho/quan-cai-rang
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/can-tho/quan-cai-rang--25/{z}/{x}/{y}.png
+
+### Quận Ninh Kiều
+• District ID: 916
+• URL: https://guland.vn/soi-quy-hoach/can-tho/quan-ninh-kieu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-ninh-kieu/{z}/{x}/{y}.png
+
+### Quận Ô Môn
+• District ID: 917
+• URL: https://guland.vn/soi-quy-hoach/can-tho/quan-o-mon
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-o-mon--25/{z}/{x}/{y}.png
+
+### Quận Thốt Nốt
+• District ID: 923
+• URL: https://guland.vn/soi-quy-hoach/can-tho/quan-thot-not
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-thot-not/{z}/{x}/{y}.png

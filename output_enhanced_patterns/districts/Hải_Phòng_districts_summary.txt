@@ -1,0 +1,116 @@
+# DISTRICT PATTERNS: Hải Phòng
+Generated: 2025-06-23T23:58:37.746676
+Admin Code: 31
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 15
+• Successful: 15
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện An Dương
+• District ID: 312
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-an-duong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-duong--25/{z}/{x}/{y}.png
+
+### Huyện An Lão
+• District ID: 313
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-an-lao
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-lao/{z}/{x}/{y}.png
+
+### Huyện Bạch Long Vĩ
+• District ID: 318
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-bach-long-vi
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-bach-long-vi/{z}/{x}/{y}.png
+
+### Huyện Cát Hải
+• District ID: 317
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-cat-hai
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-cat-hai/{z}/{x}/{y}.png
+
+### Huyện Kiến Thuỵ
+• District ID: 314
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-kien-thuy
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-kien-thuy/{z}/{x}/{y}.png
+
+### Huyện Thuỷ Nguyên
+• District ID: 311
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-thuy-nguyen
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-thuy-nguyen/{z}/{x}/{y}.png
+
+### Huyện Tiên Lãng
+• District ID: 315
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-tien-lang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-tien-lang--25/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Bảo
+• District ID: 316
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/huyen-vinh-bao
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-vinh-bao/{z}/{x}/{y}.png
+
+### Quận Dương Kinh
+• District ID: 309
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-duong-kinh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-duong-kinh/{z}/{x}/{y}.png
+
+### Quận Hải An
+• District ID: 306
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-hai-an
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hai-an--dclyk/{z}/{x}/{y}.png
+
+### Quận Hồng Bàng
+• District ID: 303
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-hong-bang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hong-bang/{z}/{x}/{y}.png
+
+### Quận Kiến An
+• District ID: 307
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-kien-an
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-kien-an/{z}/{x}/{y}.png
+
+### Quận Lê Chân
+• District ID: 305
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-le-chan
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png
+
+### Quận Ngô Quyền
+• District ID: 304
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-ngo-quyen
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-ngo-quyen/{z}/{x}/{y}.png
+
+### Quận Đồ Sơn
+• District ID: 308
+• URL: https://guland.vn/soi-quy-hoach/hai-phong/quan-do-son
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-do-son--25/{z}/{x}/{y}.png

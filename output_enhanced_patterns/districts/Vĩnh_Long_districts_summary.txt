@@ -1,0 +1,67 @@
+# DISTRICT PATTERNS: Vĩnh Long
+Generated: 2025-06-24T01:21:25.388577
+Admin Code: 86
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện  Vũng Liêm
+• District ID: 859
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-vung-liem
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-vung-liem/{z}/{x}/{y}.png
+
+### Huyện Bình Tân
+• District ID: 863
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-binh-tan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-binh-tan--bs/{z}/{x}/{y}.png
+
+### Huyện Long Hồ
+• District ID: 857
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-long-ho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-long-ho/{z}/{x}/{y}.png
+
+### Huyện Mang Thít
+• District ID: 858
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-mang-thit
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-mang-thit--25/{z}/{x}/{y}.png
+
+### Huyện Tam Bình
+• District ID: 860
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-tam-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-tam-binh/{z}/{x}/{y}.png
+
+### Huyện Trà Ôn
+• District ID: 862
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/huyen-tra-on
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-tra-on/{z}/{x}/{y}.png
+
+### Thành phố Vĩnh Long
+• District ID: 855
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/thanh-pho-vinh-long
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png
+
+### Thị xã Bình Minh
+• District ID: 861
+• URL: https://guland.vn/soi-quy-hoach/vinh-long/thi-xa-binh-minh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thi-xa-binh-minh--dc/{z}/{x}/{y}.png

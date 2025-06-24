@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Trà Vinh
+Generated: 2025-06-24T01:17:39.224240
+Admin Code: 84
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Càng Long
+• District ID: 844
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-cang-long
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cang-long/{z}/{x}/{y}.png
+
+### Huyện Cầu Kè
+• District ID: 845
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-cau-ke
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ke--25/{z}/{x}/{y}.png
+
+### Huyện Cầu Ngang
+• District ID: 848
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-cau-ngang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ngang--25/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 847
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Duyên Hải
+• District ID: 850
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-duyen-hai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-duyen-hai--25/{z}/{x}/{y}.png
+
+### Huyện Tiểu Cần
+• District ID: 846
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-tieu-can
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tieu-can--25/{z}/{x}/{y}.png
+
+### Huyện Trà Cú
+• District ID: 849
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/huyen-tra-cu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tra-cu/{z}/{x}/{y}.png
+
+### Thành phố Trà Vinh
+• District ID: 842
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/thanh-pho-tra-vinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png
+
+### Thị xã Duyên Hải
+• District ID: 851
+• URL: https://guland.vn/soi-quy-hoach/tra-vinh/thi-xa-duyen-hai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thi-xa-duyen-hai--25/{z}/{x}/{y}.png

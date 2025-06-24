@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Phú Yên
+Generated: 2025-06-24T00:40:49.327125
+Admin Code: 54
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Phú Hoà
+• District ID: 563
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-phu-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-phu-hoa--25/{z}/{x}/{y}.png
+
+### Huyện Sơn Hòa
+• District ID: 560
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-son-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png
+
+### Huyện Sông Hinh
+• District ID: 561
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-song-hinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-song-hinh/{z}/{x}/{y}.png
+
+### Huyện Tây Hoà
+• District ID: 562
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-tay-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/huyen-tay-hoa/{z}/{x}/{y}.png
+
+### Huyện Tuy An
+• District ID: 559
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-tuy-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/phu-yen/huyen-tuy-an--25/{z}/{x}/{y}.png
+
+### Huyện Đồng Xuân
+• District ID: 558
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-dong-xuan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-dong-xuan--25/{z}/{x}/{y}.png
+
+### Huyện Đông Hòa
+• District ID: 564
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/huyen-dong-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/thi-xa-dong-hoa/{z}/{x}/{y}.png
+
+### Thành phố Tuy Hoà
+• District ID: 555
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/thanh-pho-tuy-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thanh-pho-tuy-hoa/{z}/{x}/{y}.png
+
+### Thị xã Sông Cầu
+• District ID: 557
+• URL: https://guland.vn/soi-quy-hoach/phu-yen/thi-xa-song-cau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thi-xa-song-cau/{z}/{x}/{y}.png

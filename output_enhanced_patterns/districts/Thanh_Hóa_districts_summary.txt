@@ -1,0 +1,197 @@
+# DISTRICT PATTERNS: Thanh Hóa
+Generated: 2025-06-24T01:07:24.612670
+Admin Code: 38
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 27
+• Successful: 27
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bá Thước
+• District ID: 386
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-ba-thuoc
+• Patterns found: 2
+
+
+### Huyện Cẩm Thủy
+• District ID: 390
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-cam-thuy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-cam-thuy/{z}/{x}/{y}.png
+
+### Huyện Hà Trung
+• District ID: 392
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-ha-trung
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-ha-trung/{z}/{x}/{y}.png
+
+### Huyện Hậu Lộc
+• District ID: 400
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-hau-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-hau-loc/{z}/{x}/{y}.png
+
+### Huyện Hoằng Hóa
+• District ID: 399
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-hoang-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-hoang-hoa/{z}/{x}/{y}.png
+
+### Huyện Lang Chánh
+• District ID: 388
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-lang-chanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-lang-chanh/{z}/{x}/{y}.png
+
+### Huyện Mường Lát
+• District ID: 384
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-muong-lat
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-muong-lat/{z}/{x}/{y}.png
+
+### Huyện Nga Sơn
+• District ID: 401
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-nga-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nga-son/{z}/{x}/{y}.png
+
+### Huyện Ngọc Lặc
+• District ID: 389
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-ngoc-lac
+• Patterns found: 2
+
+
+### Huyện Như Xuân
+• District ID: 402
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-nhu-xuan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-xuan/{z}/{x}/{y}.png
+
+### Huyện Như Thanh
+• District ID: 403
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-nhu-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-thanh/{z}/{x}/{y}.png
+
+### Huyện Nông Cống
+• District ID: 404
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-nong-cong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-nong-cong/{z}/{x}/{y}.png
+
+### Huyện Quan Hóa
+• District ID: 385
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-quan-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-quan-hoa/{z}/{x}/{y}.png
+
+### Huyện Quan Sơn
+• District ID: 387
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-quan-son
+• Patterns found: 2
+
+
+### Huyện Quảng Xương
+• District ID: 406
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-quang-xuong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-quang-xuong/{z}/{x}/{y}.png
+
+### Huyện Thạch Thành
+• District ID: 391
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-thach-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-thach-thanh/{z}/{x}/{y}.png
+
+### Huyện Thiệu Hóa
+• District ID: 398
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-thieu-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-thieu-hoa--25/{z}/{x}/{y}.png
+
+### Huyện Thọ Xuân
+• District ID: 395
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-tho-xuan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-tho-xuan/{z}/{x}/{y}.png
+
+### Huyện Thường Xuân
+• District ID: 396
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-thuong-xuan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thanh-hoa/huyen-thuong-xuan/{z}/{x}/{y}.png
+
+### Huyện Tĩnh Gia
+• District ID: 407
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-tinh-gia
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/thi-xa-nghi-son/{z}/{x}/{y}.png
+
+### Huyện Triệu Sơn
+• District ID: 397
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-trieu-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-trieu-son--dc/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Lộc
+• District ID: 393
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-vinh-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-vinh-loc--bs/{z}/{x}/{y}.png
+
+### Huyện Yên Định
+• District ID: 394
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-yen-dinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-yen-dinh/{z}/{x}/{y}.png
+
+### Huyện Đông Sơn
+• District ID: 405
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/huyen-dong-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/thanh-hoa/huyen-dong-son/{z}/{x}/{y}.png
+
+### Thành phố Thanh Hóa
+• District ID: 380
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/thanh-pho-thanh-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png
+
+### Thành phố Sầm Sơn
+• District ID: 382
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/thanh-pho-sam-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-sam-son/{z}/{x}/{y}.png
+
+### Thị xã Bỉm Sơn
+• District ID: 381
+• URL: https://guland.vn/soi-quy-hoach/thanh-hoa/thi-xa-bim-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/thi-xa-bim-son/{z}/{x}/{y}.png

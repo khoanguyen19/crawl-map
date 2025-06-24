@@ -1,0 +1,263 @@
+{
+  "province_name": "Hà Nam",
+  "admin_code": "35",
+  "timestamp": "2025-06-23T23:42:42.115645",
+  "districts": {
+    "Huyện Bình Lục": {
+      "district_info": {
+        "id": "352",
+        "name": "Huyện Bình Lục",
+        "slug": "huyen-binh-luc"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Huyện Bình Lục",
+        "timestamp": "2025-06-23T23:42:57.761257",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-binh-luc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/huyen-binh-luc"
+    },
+    "Huyện Duy Tiên": {
+      "district_info": {
+        "id": "349",
+        "name": "Huyện Duy Tiên",
+        "slug": "huyen-duy-tien"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Huyện Duy Tiên",
+        "timestamp": "2025-06-23T23:43:09.283356",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-duy-tien--bs/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/huyen-duy-tien"
+    },
+    "Huyện Kim Bảng": {
+      "district_info": {
+        "id": "350",
+        "name": "Huyện Kim Bảng",
+        "slug": "huyen-kim-bang"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Huyện Kim Bảng",
+        "timestamp": "2025-06-23T23:43:20.992148",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-kim-bang--dc-lyk/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/huyen-kim-bang"
+    },
+    "Huyện Lý Nhân": {
+      "district_info": {
+        "id": "353",
+        "name": "Huyện Lý Nhân",
+        "slug": "huyen-ly-nhan"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Huyện Lý Nhân",
+        "timestamp": "2025-06-23T23:43:32.327477",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-ly-nhan/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/huyen-ly-nhan"
+    },
+    "Huyện Thanh Liêm": {
+      "district_info": {
+        "id": "351",
+        "name": "Huyện Thanh Liêm",
+        "slug": "huyen-thanh-liem"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Huyện Thanh Liêm",
+        "timestamp": "2025-06-23T23:43:43.865690",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-thanh-liem--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/huyen-thanh-liem"
+    },
+    "Thành phố Phủ Lý": {
+      "district_info": {
+        "id": "347",
+        "name": "Thành phố Phủ Lý",
+        "slug": "thanh-pho-phu-ly"
+      },
+      "patterns": {
+        "location_name": "Hà Nam - Thành phố Phủ Lý",
+        "timestamp": "2025-06-23T23:43:56.532780",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://l5cfglaebpobj.vcdn.cloud"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ha-nam/thanh-pho-phu-ly"
+    }
+  },
+  "total_districts": 6,
+  "successful_districts": 6,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

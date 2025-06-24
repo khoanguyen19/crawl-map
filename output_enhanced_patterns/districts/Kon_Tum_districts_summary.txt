@@ -1,0 +1,81 @@
+# DISTRICT PATTERNS: Kon Tum
+Generated: 2025-06-24T00:13:02.184998
+Admin Code: 62
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ia H' Drai
+• District ID: 618
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-ia-h-drai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ia-hdrai/{z}/{x}/{y}.png
+
+### Huyện Kon Plông
+• District ID: 613
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-kon-plong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-kon-plong/{z}/{x}/{y}.png
+
+### Huyện Kon Rẫy
+• District ID: 614
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-kon-ray
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-kon-ray/{z}/{x}/{y}.png
+
+### Huyện Ngọc Hồi
+• District ID: 611
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-ngoc-hoi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ngoc-hoi/{z}/{x}/{y}.png
+
+### Huyện Sa Thầy
+• District ID: 616
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-sa-thay
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-sa-thay/{z}/{x}/{y}.png
+
+### Huyện Tu Mơ Rông
+• District ID: 617
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-tu-mo-rong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-tu-mo-rong/{z}/{x}/{y}.png
+
+### Huyện Đắk Glei
+• District ID: 610
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-dak-glei
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-dak-glei/{z}/{x}/{y}.png
+
+### Huyện Đắk Tô
+• District ID: 612
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-dak-to
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kon-tum/huyen-dak-to/{z}/{x}/{y}.png
+
+### Huyện Đắk Hà
+• District ID: 615
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/huyen-dak-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-dak-ha/{z}/{x}/{y}.png
+
+### Thành phố Kon Tum
+• District ID: 608
+• URL: https://guland.vn/soi-quy-hoach/kon-tum/thanh-pho-kon-tum
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png

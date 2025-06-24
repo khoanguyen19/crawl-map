@@ -1,0 +1,80 @@
+# DISTRICT PATTERNS: Nam Định
+Generated: 2025-06-24T00:27:31.581320
+Admin Code: 36
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Giao Thủy
+• District ID: 365
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-giao-thuy
+• Patterns found: 2
+
+
+### Huyện Hải Hậu
+• District ID: 366
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-hai-hau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-hai-hau/{z}/{x}/{y}.png
+
+### Huyện Mỹ Lộc
+• District ID: 358
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-my-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nam-dinh/huyen-my-loc/{z}/{x}/{y}.png
+
+### Huyện Nam Trực
+• District ID: 362
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-nam-truc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nam-dinh/huyen-nam-truc/{z}/{x}/{y}.png
+
+### Huyện Nghĩa Hưng
+• District ID: 361
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-nghia-hung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-nghia-hung/{z}/{x}/{y}.png
+
+### Huyện Trực Ninh
+• District ID: 363
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-truc-ninh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-truc-ninh/{z}/{x}/{y}.png
+
+### Huyện Vụ Bản
+• District ID: 359
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-vu-ban
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-vu-ban/{z}/{x}/{y}.png
+
+### Huyện Xuân Trường
+• District ID: 364
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-xuan-truong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-xuan-truong/{z}/{x}/{y}.png
+
+### Huyện Ý Yên
+• District ID: 360
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/huyen-y-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-y-yen/{z}/{x}/{y}.png
+
+### Thành phố Nam Định
+• District ID: 356
+• URL: https://guland.vn/soi-quy-hoach/nam-dinh/thanh-pho-nam-dinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png

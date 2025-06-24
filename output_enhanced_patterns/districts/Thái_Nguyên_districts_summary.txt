@@ -1,0 +1,72 @@
+# DISTRICT PATTERNS: Thái Nguyên
+Generated: 2025-06-24T01:05:19.157086
+Admin Code: 19
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Phú Lương
+• District ID: 168
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-phu-luong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+
+### Huyện Phú Bình
+• District ID: 173
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-phu-binh
+• Patterns found: 2
+
+
+### Huyện Võ Nhai
+• District ID: 170
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-vo-nhai
+• Patterns found: 2
+
+
+### Huyện Đại Từ
+• District ID: 171
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-dai-tu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+
+### Huyện Định Hóa
+• District ID: 167
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-dinh-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/huyen-dinh-hoa/{z}/{x}/{y}.png
+
+### Huyện Đồng Hỷ
+• District ID: 169
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/huyen-dong-hy
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
+
+### Thành phố Thái Nguyên
+• District ID: 164
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/thanh-pho-thai-nguyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png
+
+### Thành phố Sông Công
+• District ID: 165
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/thanh-pho-song-cong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-song-cong/{z}/{x}/{y}.png
+
+### Thị xã Phổ Yên
+• District ID: 172
+• URL: https://guland.vn/soi-quy-hoach/thai-nguyen/thi-xa-pho-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-pho-yen/{z}/{x}/{y}.png

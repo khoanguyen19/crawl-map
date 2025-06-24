@@ -1,0 +1,305 @@
+{
+  "province_name": "Ninh Thuận",
+  "admin_code": "58",
+  "timestamp": "2025-06-24T00:36:09.565632",
+  "districts": {
+    "Huyện Bác Ái": {
+      "district_info": {
+        "id": "584",
+        "name": "Huyện Bác Ái",
+        "slug": "huyen-bac-ai"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Bác Ái",
+        "timestamp": "2025-06-24T00:36:24.847673",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-bac-ai--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-bac-ai"
+    },
+    "Huyện Ninh Sơn": {
+      "district_info": {
+        "id": "585",
+        "name": "Huyện Ninh Sơn",
+        "slug": "huyen-ninh-son"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Ninh Sơn",
+        "timestamp": "2025-06-24T00:36:37.039044",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-son"
+    },
+    "Huyện Ninh Hải": {
+      "district_info": {
+        "id": "586",
+        "name": "Huyện Ninh Hải",
+        "slug": "huyen-ninh-hai"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Ninh Hải",
+        "timestamp": "2025-06-24T00:36:49.970081",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-hai/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-hai"
+    },
+    "Huyện Ninh Phước": {
+      "district_info": {
+        "id": "587",
+        "name": "Huyện Ninh Phước",
+        "slug": "huyen-ninh-phuoc"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Ninh Phước",
+        "timestamp": "2025-06-24T00:37:02.179048",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-phuoc"
+    },
+    "Huyện Thuận Bắc": {
+      "district_info": {
+        "id": "588",
+        "name": "Huyện Thuận Bắc",
+        "slug": "huyen-thuan-bac"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Thuận Bắc",
+        "timestamp": "2025-06-24T00:37:14.637889",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-bac/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-thuan-bac"
+    },
+    "Huyện Thuận Nam": {
+      "district_info": {
+        "id": "589",
+        "name": "Huyện Thuận Nam",
+        "slug": "huyen-thuan-nam"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Huyện Thuận Nam",
+        "timestamp": "2025-06-24T00:37:27.045367",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-thuan-nam"
+    },
+    "Thành phố Phan Rang-Tháp Chàm": {
+      "district_info": {
+        "id": "582",
+        "name": "Thành phố Phan Rang-Tháp Chàm",
+        "slug": "thanh-pho-phan-rang-thap-cham"
+      },
+      "patterns": {
+        "location_name": "Ninh Thuận - Thành phố Phan Rang-Tháp Chàm",
+        "timestamp": "2025-06-24T00:37:39.808099",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/thanh-pho-phan-rang-thap-cham--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/ninh-thuan/thanh-pho-phan-rang-thap-cham"
+    }
+  },
+  "total_districts": 7,
+  "successful_districts": 7,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

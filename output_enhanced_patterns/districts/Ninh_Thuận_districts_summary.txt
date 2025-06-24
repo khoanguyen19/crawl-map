@@ -1,0 +1,60 @@
+# DISTRICT PATTERNS: Ninh Thuận
+Generated: 2025-06-24T00:36:09.565632
+Admin Code: 58
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 7
+• Successful: 7
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bác Ái
+• District ID: 584
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-bac-ai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-bac-ai--25/{z}/{x}/{y}.png
+
+### Huyện Ninh Sơn
+• District ID: 585
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son--25/{z}/{x}/{y}.png
+
+### Huyện Ninh Hải
+• District ID: 586
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-hai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-hai/{z}/{x}/{y}.png
+
+### Huyện Ninh Phước
+• District ID: 587
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-ninh-phuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png
+
+### Huyện Thuận Bắc
+• District ID: 588
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-thuan-bac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-bac/{z}/{x}/{y}.png
+
+### Huyện Thuận Nam
+• District ID: 589
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/huyen-thuan-nam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png
+
+### Thành phố Phan Rang-Tháp Chàm
+• District ID: 582
+• URL: https://guland.vn/soi-quy-hoach/ninh-thuan/thanh-pho-phan-rang-thap-cham
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/thanh-pho-phan-rang-thap-cham--25/{z}/{x}/{y}.png

@@ -1,0 +1,488 @@
+{
+  "province_name": "Thừa Thiên Huế",
+  "admin_code": "46",
+  "timestamp": "2025-06-24T01:13:00.264723",
+  "districts": {
+    "Huyện A Lưới": {
+      "district_info": {
+        "id": "481",
+        "name": "Huyện A Lưới",
+        "slug": "huyen-a-luoi"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện A Lưới",
+        "timestamp": "2025-06-24T01:13:15.928924",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-a-luoi--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-a-luoi"
+    },
+    "Huyện Nam Đông": {
+      "district_info": {
+        "id": "483",
+        "name": "Huyện Nam Đông",
+        "slug": "huyen-nam-dong"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện Nam Đông",
+        "timestamp": "2025-06-24T01:13:28.971614",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thua-thien-hue/huyen-nam-dong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-nam-dong"
+    },
+    "Huyện Phong Điền": {
+      "district_info": {
+        "id": "476",
+        "name": "Huyện Phong Điền",
+        "slug": "huyen-phong-dien"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện Phong Điền",
+        "timestamp": "2025-06-24T01:13:41.753757",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/huyen-phong-dien/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phong-dien"
+    },
+    "Huyện Phú Vang": {
+      "district_info": {
+        "id": "478",
+        "name": "Huyện Phú Vang",
+        "slug": "huyen-phu-vang"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện Phú Vang",
+        "timestamp": "2025-06-24T01:13:52.899295",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-vang--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phu-vang"
+    },
+    "Huyện Phú Lộc": {
+      "district_info": {
+        "id": "482",
+        "name": "Huyện Phú Lộc",
+        "slug": "huyen-phu-loc"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện Phú Lộc",
+        "timestamp": "2025-06-24T01:14:04.203855",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-loc/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "UNKNOWN_layer_qhpk_qhxd": {
+            "display_name": "QH xây dựng",
+            "data_type": "layer_qhpk_qhxd",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 5
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-phu-loc"
+    },
+    "Huyện Quảng Điền": {
+      "district_info": {
+        "id": "477",
+        "name": "Huyện Quảng Điền",
+        "slug": "huyen-quang-dien"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Huyện Quảng Điền",
+        "timestamp": "2025-06-24T01:14:17.195448",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-quang-dien--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/huyen-quang-dien"
+    },
+    "Thành phố Huế": {
+      "district_info": {
+        "id": "474",
+        "name": "Thành phố Huế",
+        "slug": "thanh-pho-hue"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Thành phố Huế",
+        "timestamp": "2025-06-24T01:14:29.787171",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "UNKNOWN_layer_qhpk_qhxd": {
+            "display_name": "QH xây dựng",
+            "data_type": "layer_qhpk_qhxd",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 5
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/thanh-pho-hue"
+    },
+    "Thị xã Hương Thủy": {
+      "district_info": {
+        "id": "479",
+        "name": "Thị xã Hương Thủy",
+        "slug": "thi-xa-huong-thuy"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Thị xã Hương Thủy",
+        "timestamp": "2025-06-24T01:14:42.149340",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://sgp1.digitaloceanspaces.com/guland/2022/thua-thien-hue/thi-xa-huong-thuy/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "18",
+            "is_active": false,
+            "server": "https://sgp1.digitaloceanspaces.com"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/thi-xa-huong-thuy"
+    },
+    "Thị xã Hương Trà": {
+      "district_info": {
+        "id": "480",
+        "name": "Thị xã Hương Trà",
+        "slug": "thi-xa-huong-tra"
+      },
+      "patterns": {
+        "location_name": "Thừa Thiên Huế - Thị xã Hương Trà",
+        "timestamp": "2025-06-24T01:14:54.606355",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://251db3a9dce2de5.cmccloud.com.vn"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/thi-xa-huong-tra--25/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_PHAN_KHU": {
+            "display_name": "QH phân khu",
+            "data_type": "layer_qhpk_2",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png",
+            "tile_url_2030": "https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          }
+        },
+        "total_patterns": 4
+      },
+      "url": "https://guland.vn/soi-quy-hoach/thua-thien-hue/thi-xa-huong-tra"
+    }
+  },
+  "total_districts": 9,
+  "successful_districts": 9,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

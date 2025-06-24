@@ -1,0 +1,389 @@
+{
+  "province_name": "Lào Cai",
+  "admin_code": "10",
+  "timestamp": "2025-06-24T00:22:07.898197",
+  "districts": {
+    "Huyện Bắc Hà": {
+      "district_info": {
+        "id": "085",
+        "name": "Huyện Bắc Hà",
+        "slug": "huyen-bac-ha"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Bắc Hà",
+        "timestamp": "2025-06-24T00:22:24.215066",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bac-ha/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-bac-ha"
+    },
+    "Huyện Bảo Thắng": {
+      "district_info": {
+        "id": "086",
+        "name": "Huyện Bảo Thắng",
+        "slug": "huyen-bao-thang"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Bảo Thắng",
+        "timestamp": "2025-06-24T00:22:36.027771",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bao-thang/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-bao-thang"
+    },
+    "Huyện Bảo Yên": {
+      "district_info": {
+        "id": "087",
+        "name": "Huyện Bảo Yên",
+        "slug": "huyen-bao-yen"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Bảo Yên",
+        "timestamp": "2025-06-24T00:22:47.755562",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/lao-cai/huyen-bao-yen/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-bao-yen"
+    },
+    "Huyện Bát Xát": {
+      "district_info": {
+        "id": "082",
+        "name": "Huyện Bát Xát",
+        "slug": "huyen-bat-xat"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Bát Xát",
+        "timestamp": "2025-06-24T00:22:59.976812",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/huyen-bat-xat/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-bat-xat"
+    },
+    "Huyện Mường Khương": {
+      "district_info": {
+        "id": "083",
+        "name": "Huyện Mường Khương",
+        "slug": "huyen-muong-khuong"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Mường Khương",
+        "timestamp": "2025-06-24T00:23:12.979234",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-muong-khuong/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-muong-khuong"
+    },
+    "Huyện Si Ma Cai": {
+      "district_info": {
+        "id": "084",
+        "name": "Huyện Si Ma Cai",
+        "slug": "huyen-si-ma-cai"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Si Ma Cai",
+        "timestamp": "2025-06-24T00:23:24.818326",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-si-ma-cai/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-si-ma-cai"
+    },
+    "Huyện Văn Bàn": {
+      "district_info": {
+        "id": "089",
+        "name": "Huyện Văn Bàn",
+        "slug": "huyen-van-ban"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Huyện Văn Bàn",
+        "timestamp": "2025-06-24T00:23:37.043641",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-van-ban/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/huyen-van-ban"
+    },
+    "Thành phố Lào Cai": {
+      "district_info": {
+        "id": "080",
+        "name": "Thành phố Lào Cai",
+        "slug": "thanh-pho-lao-cai"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Thành phố Lào Cai",
+        "timestamp": "2025-06-24T00:23:47.283645",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "17",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/thanh-pho-lao-cai"
+    },
+    "Thị xã Sa Pa": {
+      "district_info": {
+        "id": "088",
+        "name": "Thị xã Sa Pa",
+        "slug": "thi-xa-sa-pa"
+      },
+      "patterns": {
+        "location_name": "Lào Cai - Thị xã Sa Pa",
+        "timestamp": "2025-06-24T00:23:59.305906",
+        "map_types": {
+          "QH_2030": {
+            "display_name": "QH 2030",
+            "data_type": "layer_1",
+            "tile_url": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": null,
+            "is_active": true,
+            "server": "https://guland2.sgp1.cdn.digitaloceanspaces.com"
+          },
+          "KH_2025": {
+            "display_name": "KH 2025",
+            "data_type": "layer_2022",
+            "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/thi-xa-sa-pa/{z}/{x}/{y}.png",
+            "tile_url_2030": null,
+            "max_zoom": "16",
+            "is_active": false,
+            "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+          },
+          "QH_KHAC": {
+            "display_name": "QH khác",
+            "data_type": "layer_qhpk",
+            "tile_url": "",
+            "tile_url_2030": "https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png",
+            "max_zoom": null,
+            "is_active": false,
+            "server": null
+          }
+        },
+        "total_patterns": 3
+      },
+      "url": "https://guland.vn/soi-quy-hoach/lao-cai/thi-xa-sa-pa"
+    }
+  },
+  "total_districts": 9,
+  "successful_districts": 9,
+  "failed_districts": 0,
+  "api_method_used": "API_SUCCESS"
+}

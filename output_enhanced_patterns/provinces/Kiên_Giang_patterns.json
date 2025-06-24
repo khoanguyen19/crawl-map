@@ -1,0 +1,43 @@
+{
+  "location_name": "Kiên Giang",
+  "timestamp": "2025-06-24T00:09:46.449488",
+  "map_types": {
+    "QH_2030": {
+      "display_name": "QH 2030",
+      "data_type": "layer_1",
+      "tile_url": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": null,
+      "is_active": true,
+      "server": "https://l5cfglaebpobj.vcdn.cloud"
+    },
+    "KH_2025": {
+      "display_name": "KH 2025",
+      "data_type": "layer_2022",
+      "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": "17",
+      "is_active": false,
+      "server": "https://s3-han02.fptcloud.com"
+    },
+    "QH_PHAN_KHU": {
+      "display_name": "QH phân khu",
+      "data_type": "layer_qhpk_2",
+      "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+    },
+    "QH_KHAC": {
+      "display_name": "QH khác",
+      "data_type": "layer_qhpk",
+      "tile_url": "https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": "https://s3-hn-2.cloud.cmctelecom.vn"
+    }
+  },
+  "total_patterns": 4
+}

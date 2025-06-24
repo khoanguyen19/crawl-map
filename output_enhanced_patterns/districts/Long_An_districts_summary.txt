@@ -1,0 +1,116 @@
+# DISTRICT PATTERNS: Long An
+Generated: 2025-06-24T00:24:15.579332
+Admin Code: 80
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 15
+• Successful: 15
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bến Lức
+• District ID: 803
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-ben-luc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-ben-luc/{z}/{x}/{y}.png
+
+### Huyện Cần Đước
+• District ID: 806
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-can-duoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-can-duoc/{z}/{x}/{y}.png
+
+### Huyện Cần Giuộc
+• District ID: 807
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-can-giuoc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png
+
+### Huyện Châu Thành
+• District ID: 808
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-chau-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-chau-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Mộc Hóa
+• District ID: 798
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-moc-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-moc-hoa/{z}/{x}/{y}.png
+
+### Huyện Tân Hưng
+• District ID: 796
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-tan-hung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-hung--25/{z}/{x}/{y}.png
+
+### Huyện Tân Thạnh
+• District ID: 799
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-tan-thanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-thanh--25/{z}/{x}/{y}.png
+
+### Huyện Tân Trụ
+• District ID: 805
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-tan-tru
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-tan-tru/{z}/{x}/{y}.png
+
+### Huyện Thạnh Hóa
+• District ID: 800
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-thanh-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-thanh-hoa/{z}/{x}/{y}.png
+
+### Huyện Thủ Thừa
+• District ID: 804
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-thu-thua
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-thu-thua--25/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Hưng
+• District ID: 797
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-vinh-hung
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-vinh-hung--25/{z}/{x}/{y}.png
+
+### Huyện Đức Huệ
+• District ID: 801
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-duc-hue
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hue--25/{z}/{x}/{y}.png
+
+### Huyện Đức Hòa
+• District ID: 802
+• URL: https://guland.vn/soi-quy-hoach/long-an/huyen-duc-hoa
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hoa--25/{z}/{x}/{y}.png
+
+### Thành phố Tân An
+• District ID: 794
+• URL: https://guland.vn/soi-quy-hoach/long-an/thanh-pho-tan-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/thanh-pho-tan-an/{z}/{x}/{y}.png
+
+### Thị xã Kiến Tường
+• District ID: 795
+• URL: https://guland.vn/soi-quy-hoach/long-an/thi-xa-kien-tuong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/thi-xa-kien-tuong/{z}/{x}/{y}.png

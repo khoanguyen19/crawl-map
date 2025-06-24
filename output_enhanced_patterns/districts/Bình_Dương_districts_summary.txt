@@ -1,0 +1,74 @@
+# DISTRICT PATTERNS: Bình Dương
+Generated: 2025-06-23T23:23:06.337421
+Admin Code: 74
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 9
+• Successful: 9
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Tân Uyên
+• District ID: 726
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/huyen-bac-tan-uyen
+• Patterns found: 5
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/huyen-bac-tan-uyen/{z}/{x}/{y}.png
+
+### Huyện Bàu Bàng
+• District ID: 719
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/huyen-bau-bang
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-bau-bang--25/{z}/{x}/{y}.png
+
+### Huyện Dầu Tiếng
+• District ID: 720
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/huyen-dau-tieng
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+
+### Huyện Phú Giáo
+• District ID: 722
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/huyen-phu-giao
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-phu-giao--25/{z}/{x}/{y}.png
+
+### Thành phố Thủ Dầu Một
+• District ID: 718
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/thanh-pho-thu-dau-mot
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/thanh-pho-thu-dau-mot/{z}/{x}/{y}.png
+
+### Thị xã Dĩ An
+• District ID: 724
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-di-an
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+
+### Thị xã Thuận An
+• District ID: 725
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-thuan-an
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+
+### Thị xã Bến Cát
+• District ID: 721
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-ben-cat
+• Patterns found: 5
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-ben-cat--25/{z}/{x}/{y}.png
+
+### Thị xã Tân Uyên
+• District ID: 723
+• URL: https://guland.vn/soi-quy-hoach/binh-duong/thi-xa-tan-uyen
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-tan-uyen--25/{z}/{x}/{y}.png

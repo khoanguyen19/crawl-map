@@ -1,0 +1,43 @@
+{
+  "location_name": "Lạng Sơn",
+  "timestamp": "2025-06-24T00:19:37.932358",
+  "map_types": {
+    "QH_2030": {
+      "display_name": "QH 2030",
+      "data_type": "layer_1",
+      "tile_url": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": null,
+      "is_active": true,
+      "server": "https://l5cfglaebpobj.vcdn.cloud"
+    },
+    "KH_2025": {
+      "display_name": "KH 2025",
+      "data_type": "layer_2022",
+      "tile_url": "https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png",
+      "tile_url_2030": null,
+      "max_zoom": "17",
+      "is_active": false,
+      "server": "https://s3-han02.fptcloud.com"
+    },
+    "QH_PHAN_KHU": {
+      "display_name": "QH phân khu",
+      "data_type": "layer_qhpk_2",
+      "tile_url": "https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": "https://s3-han02.fptcloud.com"
+    },
+    "QH_KHAC": {
+      "display_name": "QH khác",
+      "data_type": "layer_qhpk",
+      "tile_url": "https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png",
+      "tile_url_2030": "https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png",
+      "max_zoom": null,
+      "is_active": false,
+      "server": "https://s3-han02.fptcloud.com"
+    }
+  },
+  "total_patterns": 4
+}

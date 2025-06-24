@@ -1,0 +1,2582 @@
+# ENHANCED GULAND TILE PATTERNS REPORT
+Generated: 2025-06-24T01:39:09.944737
+Method: Enhanced HTML parsing with district-level extraction
+
+## 📊 EXTRACTION SUMMARY
+### Province Level
+• Locations processed: 63/63
+• Success rate: 100.0%
+• Total patterns found: 208
+
+### District Level (NEW!)
+• Districts processed: 708
+• Failed districts: 5
+• Provinces with district data: 63
+• Unique district patterns: 712
+
+### Overall
+• Total unique tile URLs: 712
+• Unique servers: 7
+
+## 🗺️ ALL UNIQUE TILE PATTERNS
+• https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png
+• https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png
+• https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png
+• https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png
+• https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png
+• https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png
+• https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png
+• https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png
+• https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/bac-lieu-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/bac-ninh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ben-tre-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/binh-dinh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ca-mau-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dak-lak-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dien-bien-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/dong-thap-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ha-tinh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/hung-yen-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/kon-tum-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/lai-chau-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/long-an-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/nghe-an-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/ninh-binh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/phu-tho-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/quang-ngai-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/quang-ninh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/soc-trang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/son-la-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/tay-ninh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/tra-vinh-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/quang-nam-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/thai-nguyen-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/thanh-hoa-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/v2/tien-giang-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/vinh-long-2030/{z}/{x}/{y}.png
+• https://l5cfglaebpobj.vcdn.cloud/yen-bai-2030/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-an-phu--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-phu-tan--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thanh-pho-chau-doc--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thi-xa-tan-chau--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-bau-bang--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-phu-giao--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-ben-cat--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-tan-uyen--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/binh-phuoc/huyen-loc-ninh--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/can-tho/quan-cai-rang--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/huyen-thap-muoi--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/thanh-pho-cao-lanh--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh-a/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-long-my/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-vi-thuy/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-nga-bay/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-vi-thanh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thi-xa-long-my/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-minh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-tan-hiep--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-u-minh-thuong--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-vinh-thuan/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/thanh-pho-rach-gia/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-chi-lang--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-huu-lung/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-trang-dinh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-dong-giang--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nam-giang/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nui-thanh--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-tay-giang/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/thi-xa-dien-ban--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ba-to/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ly-son/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/tuyen-quang/huyen-ham-yen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-lap-thach--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-vinh-tuong--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-yen-lac--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-phuc-yen--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-vinh-yen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-hiep-hoa/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-lang-giang/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-luc-nam1/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-son-dong/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-tan-yen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-yen-the/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thi-xa-viet-yen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-dong-hai/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-hong-dan/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-giong-trom/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-mo-cay-nam/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-thanh-phu--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/binh-dinh/thi-xa-hoai-nhon--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/binh-thuan/thanh-pho-phan-thiet/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-buon-don--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-cu-kuin/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-hleo--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-sup--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-ana--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-buk--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-mil--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-rlap--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-tuy-duc--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-cam-my--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-dinh-quan--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-nhon-trach--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-vinh-cuu--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-bien-hoa--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-long-khanh--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/huyen-luong-son/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/thanh-pho-hoa-binh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-phu-cu--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-tien-lu--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-van-giang/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-dien-chau--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-nghi-loc--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-thanh-chuong--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-yen-thanh--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/phu-yen/huyen-tuy-an--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-ha-long/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-bac-yen/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-thuan-chau/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-ha-trung/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-hau-loc/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-muong-lat/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-thieu-hoa--25/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-vinh-loc--bs/{z}/{x}/{y}.png
+• https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-yen-dinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/bac-kan/huyen-ba-be/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/dien-bien/huyen-tua-chua/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/nghe-an/huyen-do-luong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/quang-ninh/huyen-dam-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thanh-hoa/huyen-thuong-xuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thua-thien-hue/huyen-nam-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-muong-nhe/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-tuan-giao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-dak-glei/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-kon-ray/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/lao-cai/huyen-bao-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/thanh-hoa/huyen-dong-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-chiem-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-na-hang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-son-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/huyen-tinh-bien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/thanh-pho-long-xuyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ba-ria-vung-tau/thanh-pho-ba-ria/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-ang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-cha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-yen-minh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-tinh/huyen-vu-quang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/huyen-can-gio__lyk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/quan-8/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-da-bac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-tan-lac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-yen-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hung-yen/thi-xa-my-hao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-dak-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-tu-mo-rong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nam-dinh/huyen-nam-truc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-quy-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-tan-ky/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ninh-binh/huyen-yen-khanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-doan-hung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tan-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-thanh-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/thanh-pho-viet-tri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/huyen-quynh-nhai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-nong-cong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-thach-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/thi-xa-bim-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/tuyen-quang/huyen-yen-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/huyen-van-chan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2021/ho-chi-minh/quan-11/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/quang-ninh/huyen-tien-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/tuyen-quang/huyen-lam-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/ho-chi-minh/quan-7/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-binh-gia/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-dinh-lap/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/nghe-an/huyen-quynh-luu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/quang-nam/huyen-que-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/vinh-phuc/huyen-song-lo/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-hoa-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-phuoc-long/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-vinh-loi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thi-xa-gia-rai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-phu-xuyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-thach-that/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/quan-cau-giay/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ba-ria-vung-tau/huyen-long-dien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/huyen-luong-tai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/thanh-pho-bac-ninh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-ba-tri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-cho-lach/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-mo-cay-bac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/binh-thuan/huyen-tuy-phong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-cai-nuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-thoi-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-u-minh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-lak/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/thanh-pho-buon-ma-thuot/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-long-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-trang-bom/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-thap/huyen-tan-hong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-pah/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-prong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-puh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-dak-po/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-duc-co/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-grai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-pa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kbang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kong-chro/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-krong-pa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-mang-yang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-phu-thien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thanh-pho-pleiku/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thi-xa-an-khe/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-loc-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-thach-ha--cmd/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/thi-xa-hong-linh--bs/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-binh-chanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-cu-chi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-1/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-10/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-3/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-4/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-5/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-6/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-binh-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-go-vap/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-an-thi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-kim-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kien-giang/huyen-giang-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kon-tum/huyen-dak-to/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-bac-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-cao-loc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-ben-luc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-can-duoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-tan-tru/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-thanh-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/thanh-pho-tan-an/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nam-dinh/huyen-my-loc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-anh-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-ky-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-que-phong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-tuong-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-cua-lo/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-thai-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/huyen-tay-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/thi-xa-dong-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-bac-tra-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-duy-xuyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nam-tra-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nong-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-mo-duc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-tinh--bs/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-tu-nghia/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/huyen-phong-dien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-cai-lay/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-go-cong-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phu-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/thi-xa-go-cong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-tra-on/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-vung-liem/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-phuc/huyen-tam-dao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/bac-kan/huyen-na-ri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thi-xa-muong-lay/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-xin-man/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/huyen-bat-xat/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-gia-vien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-nho-quan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/huyen-yen-lap/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/thi-xa-phu-tho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/quang-tri/huyen-hai-lang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-sop-cop/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-yen-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-cam-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-hoang-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-lang-chanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-quan-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/thi-xa-nghi-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/yen-bai/huyen-mu-cang-chai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-cam-le/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-thanh-khe/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-ha-lang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-hoa-an/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-kim-boi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-hung-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-thai-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-dang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-gia-map/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/thi-xa-binh-long/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-cho-moi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-thoai-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-tri-ton/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-ngan-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-pac-nam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/thanh-pho-bac-kan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ben-tre/huyen-binh-dai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/huyen-bac-tan-uyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/thanh-pho-thu-dau-mot/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-bu-dop--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-dong-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-phu-rieng/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/thi-xa-phuoc-long--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-dam-doi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-nam-can--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-ngoc-hien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-phu-tan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-tran-van-thoi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-co-do/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-phong-dien--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-thoi-lai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-vinh-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-ninh-kieu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-o-mon--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-thot-not/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/quan-son-tra/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-chau-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-hong-ngu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lai-vung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lap-vo/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-tam-nong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-thanh-binh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/thanh-pho-sa-dec/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-binh-luc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-ly-nhan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-thanh-liem--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-duy-tien--bs/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-kim-bang--dc-lyk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-cam-xuyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-can-loc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-khe/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-nghi-xuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thi-xa-ky-anh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-giong-rieng/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-go-quao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-hon-dat/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-hai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-luong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-ha-tien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-phu-quoc--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-bao-lam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-cat-tien/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-huoai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-teh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-dam-rong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-don-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-duc-trong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lac-duong--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lam-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-bao-loc--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-da-lat--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-loc-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-van-lang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-bac-ai--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-hai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-bac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/thanh-pho-phan-rang-thap-cham--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-quang-trach--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-tuyen-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/thi-xa-ba-don/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-phuoc-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-thang-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-tien-phuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/thanh-pho-hoi-an/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/huyen-tra-bong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/thi-xa-duc-pho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thanh-pho-dong-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-chau-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-cu-lao-dung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-ke-sach/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-long-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-tu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-xuyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-thanh-tri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-tran-de/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-nga-nam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-vinh-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-ben-cau--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-duong-minh-chau--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-go-dau--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-bien--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-chau--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-hoa-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-trang-bang--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-a-luoi--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-loc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-vang--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-quang-dien--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/thi-xa-huong-tra--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cang-long/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ke--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ngang--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-duyen-hai--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tieu-can--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tra-cu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thi-xa-duyen-hai--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-binh-tan--bs/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-long-ho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-mang-thit--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-tam-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thi-xa-binh-minh--dc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-binh-xuyen--bs-lyk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-long-dat/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-xuyen-moc--dc-lyk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thanh-pho-vung-tau--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thi-xa-phu-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-giang/huyen-luc-ngan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-gia-binh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-tien-du--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-yen-phong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thanh-pho-tu-son--dc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-an-lao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-hoai-an/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tay-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tuy-phuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-vinh-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thanh-pho-quy-nhon/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thi-xa-an-nhon/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-bac-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-duc-linh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-tan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-nam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-tanh-linh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/thi-xa-la-gi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-ha-quang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-nguyen-binh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-quang-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-thach-an--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-trung-khanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-cu-mgar--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-ea-kar/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-bong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-nang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-mdrak/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-cu-jut/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-glong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-krong-no/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-tan-phu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-xuan-loc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-dak-doa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/thi-xa-ayun-pa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-me--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-quang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-quan-ba/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ba-vi--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-chuong-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-dan-phuong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-gia-lam--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-hoai-duc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-me-linh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-my-duc--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-phuc-tho--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-oai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-tri/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thuong-tin/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ung-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ba-dinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ha-dong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hai-ba-trung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoan-kiem/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoang-mai--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-long-bien--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-nam-tu-liem--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-thanh-xuan--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-duong--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-lao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-bach-long-vi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-cat-hai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-kien-thuy/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-thuy-nguyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-tien-lang--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-vinh-bao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-do-son--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-duong-kinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hai-an--dclyk/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hong-bang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-kien-an/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-ngo-quyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/huyen-nha-be/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-12/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-binh-tan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-phu-nhuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hoa-binh/huyen-mai-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-van-lam/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-yen-my/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ia-hdrai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-kon-plong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ngoc-hoi/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-sa-thay/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-muong-te/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-phong-tho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-tan-uyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-than-uyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/thanh-pho-lai-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bac-ha/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bao-thang/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-muong-khuong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-si-ma-cai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-van-ban/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/thi-xa-sa-pa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-chau-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hoa--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hue--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-moc-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-hung--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-thanh--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-thu-thua--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-vinh-hung--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/thi-xa-kien-tuong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-hai-hau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-nghia-hung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-truc-ninh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-vu-ban/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-xuan-truong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-y-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-hung-nguyen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-nghia-dan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-quy-hop/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thi-xa-hoang-mai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-kim-son--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-yen-mo--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-cam-khe/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-ha-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-lam-thao/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-phu-ninh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-thanh-son--dc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-dong-xuan--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-phu-hoa--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-song-hinh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thanh-pho-tuy-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thi-xa-song-cau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-ba-che/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-binh-lieu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-van-don--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-dong-trieu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-mong-cai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-uong-bi--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thi-xa-quang-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-mai-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-moc-chau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-muong-la/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-phu-yen--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-song-ma/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-van-ho/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-dong-hung/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-kien-xuong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-quynh-phu--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-vu-thu/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/huyen-dinh-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-pho-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-song-cong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nga-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-thanh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-xuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-quang-xuong/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-tho-xuan/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-trieu-son--dc/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-sam-son/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cai-be/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cho-gao--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-go-cong-tay--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thanh-pho-my-tho--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thi-xa-cai-lay--25/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-luc-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-tram-tau/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-van-yen/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-yen-binh/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thi-xa-nghia-lo/{z}/{x}/{y}.png
+• https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-giang/huyen-quang-binh/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-dong-anh/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-quoc-oai/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-soc-son/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/quan-tay-ho/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/thi-xa-son-tay/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-ninh/huyen-hai-ha/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-cam-lo/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-da-krong/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-gio-linh/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-trieu-phong/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-vinh-linh/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/thua-thien-hue/thi-xa-huong-thuy/{z}/{x}/{y}.png
+• https://sgp1.digitaloceanspaces.com/guland/2022/tp-ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png
+
+## 🏘️ DISTRICT-SPECIFIC PATTERNS (KH_2025)
+
+## 🏢 TILE SERVERS
+• https://251db3a9dce2de5.cmccloud.com.vn
+• https://guland.sgp1.cdn.digitaloceanspaces.com
+• https://guland2.sgp1.cdn.digitaloceanspaces.com
+• https://l5cfglaebpobj.vcdn.cloud
+• https://s3-han02.fptcloud.com
+• https://s3-hn-2.cloud.cmctelecom.vn
+• https://sgp1.digitaloceanspaces.com
+
+## 📍 PROVINCE BREAKDOWN
+
+### TP Hồ Chí Minh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/tp-ho-chi-minh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd/{z}/{x}/{y}.png
+
+### Đồng Nai
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/dong-nai-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bà Rịa - Vũng Tàu
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ba-ria-vung-tau-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland4/vungtau-qhpk/{z}/{x}/{y}.png
+
+### An Giang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/an-giang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bắc Giang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/bac-giang-2030-2/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+• QH phân khu: https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-han02.fptcloud.com/guland/bac-giang-qhxd/{z}/{x}/{y}.png
+
+### Bắc Kạn
+• QH 2030: https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/bac-kan-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bạc Liêu
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/bac-lieu-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bắc Ninh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/bac-ninh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bến Tre
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ben-tre-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png
+• QH khác: 
+
+### Bình Dương
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/binh-duong-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-duong/{z}/{x}/{y}.png
+
+### Bình Phước
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/binh-phuoc-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-phuoc/{z}/{x}/{y}.png
+
+### Bình Thuận
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/binh-thuan-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/binh-thuan/{z}/{x}/{y}.png
+
+### Bình Định
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/binh-dinh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png
+• QH khác: 
+
+### Cà Mau
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ca-mau-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png
+• QH khác: 
+
+### Cần Thơ
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/can-tho-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png
+• QH khác: 
+
+### Cao Bằng
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/cao-bang-2030-dc/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png
+• QH khác: 
+
+### Gia Lai
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/gia-lai-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hà Nam
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/ha-nam-2030-dc/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hà Giang
+• QH 2030: https://guland.sgp1.cdn.digitaloceanspaces.com/qh/ha-giang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hà Nội
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ha-noi-2030-2/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• QH xây dựng: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland4/hanoi-qhpk2/{z}/{x}/{y}.png
+
+### Hà Tĩnh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ha-tinh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hải Dương
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/hai-duong-2030-dc/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+• QH phân khu: https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-han02.fptcloud.com/guland/hai-duong-qhxd/{z}/{x}/{y}.png
+
+### Hải Phòng
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/hai-phong-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png
+• QH phân khu: https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png
+• QH khác: https://s3-han02.fptcloud.com/guland5/qhxd/hai-phong/{z}/{x}/{y}.png
+
+### Hậu Giang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/hau-giang-2030--dc/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hòa Bình
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/hoa-binh-2030-2/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png
+• QH khác: 
+
+### Hưng Yên
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/hung-yen-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png
+• QH khác: 
+
+### Khánh Hòa
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/khanh-hoa-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qhxd-khanhhoa/{z}/{x}/{y}.png
+
+### Kiên Giang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/kien-giang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland4/phuquoc-qhxd/{z}/{x}/{y}.png
+
+### Kon Tum
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/kon-tum-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Lai Châu
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/lai-chau-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png
+• QH khác: 
+
+### Lâm Đồng
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/lam-dong-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png
+• QH khác: 
+
+### Lạng Sơn
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/lang-son-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png
+• QH phân khu: https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-han02.fptcloud.com/guland/lang-son-qhxd/{z}/{x}/{y}.png
+
+### Lào Cai
+• QH 2030: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh/lao-cai-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png
+• QH khác: 
+
+### Long An
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/long-an-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png
+• QH khác: 
+
+### Nam Định
+• QH 2030: https://guland.sgp1.cdn.digitaloceanspaces.com/qh/nam-dinh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png
+• QH khác: 
+
+### Nghệ An
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/nghe-an-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png
+• QH khác: 
+
+### Ninh Bình
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/ninh-binh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+• QH khác: 
+
+### Ninh Thuận
+• QH 2030: https://251db3a9dce2de5.cmccloud.com.vn/guland6/qh/ninh-thuan-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Phú Thọ
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/phu-tho-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png
+• QH khác: 
+
+### Phú Yên
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/phu-yen-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png
+• QH khác: 
+
+### Quảng Bình
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/quang-binh-2030/{z}/{x}/{y}.png
+• QH khác: 
+
+### Quảng Nam
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/quang-nam-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png
+• QH khác: 
+
+### Quảng Ngãi
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/quang-ngai-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Quảng Ninh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/quang-ninh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Quảng Trị
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/new_24092024/quang-tri-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png
+• QH khác: 
+
+### Sóc Trăng
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/soc-trang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png
+• QH khác: 
+
+### Sơn La
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/son-la-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png
+• QH khác: 
+
+### Tây Ninh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/tay-ninh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Thái Bình
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/thai-binh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland4/thaibinh-qhxd/{z}/{x}/{y}.png
+
+### Thái Nguyên
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/thai-nguyen-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png
+• QH khác: 
+
+### Thanh Hóa
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/thanh-hoa-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png
+• QH khác: 
+
+### Thừa Thiên Huế
+• QH 2030: https://251db3a9dce2de5.cmccloud.com.vn/guland2/qh/thua-thien-hue-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png
+• QH xây dựng: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qhxd/hue/{z}/{x}/{y}.png
+
+### Tiền Giang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/v2/tien-giang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+• QH khác: 
+
+### Trà Vinh
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/tra-vinh-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png
+• QH khác: 
+
+### Tuyên Quang
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/tuyen-quang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png
+• QH khác: 
+
+### Vĩnh Long
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/vinh-long-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png
+• QH khác: 
+
+### Vĩnh Phúc
+• QH 2030: https://251db3a9dce2de5.cmccloud.com.vn/guland4/qh/vinh-phuc-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png
+• QH khác: 
+
+### Yên Bái
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/yen-bai-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+• QH khác: 
+
+### Đà Nẵng
+• QH 2030: https://guland.sgp1.cdn.digitaloceanspaces.com/qh/da-nang-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland4/danang-qhc/{z}/{x}/{y}.png
+
+### Đắk Lắk
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/dak-lak-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png
+• QH khác: 
+
+### Đắk Nông
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/dak-nong-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png
+• QH phân khu: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png
+• QH khác: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qhxd/dak-nong/{z}/{x}/{y}.png
+
+### Điện Biên
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/dien-bien-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+• QH khác: 
+
+### Đồng Tháp
+• QH 2030: https://l5cfglaebpobj.vcdn.cloud/dong-thap-2030/{z}/{x}/{y}.png
+• KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png
+• QH khác: 
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### TP Hồ Chí Minh (24 districts)
+  #### Quận 1
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-1/{z}/{x}/{y}.png
+  #### Quận 3
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-3/{z}/{x}/{y}.png
+  #### Quận 4
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-4/{z}/{x}/{y}.png
+  #### Quận 5
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-5/{z}/{x}/{y}.png
+  #### Quận 6
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-6/{z}/{x}/{y}.png
+  #### Quận 7
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/ho-chi-minh/quan-7/{z}/{x}/{y}.png
+  #### Quận 8
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/quan-8/{z}/{x}/{y}.png
+  #### Quận 9
+  #### Quận 10
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-10/{z}/{x}/{y}.png
+  #### Quận 11
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2021/ho-chi-minh/quan-11/{z}/{x}/{y}.png
+  #### Quận 12
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-12/{z}/{x}/{y}.png
+  #### Huyện Bình Chánh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-binh-chanh/{z}/{x}/{y}.png
+  #### Huyện Cần Giờ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ho-chi-minh/huyen-can-gio__lyk/{z}/{x}/{y}.png
+  #### Huyện Củ Chi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/huyen-cu-chi/{z}/{x}/{y}.png
+  #### Huyện Hóc Môn
+  #### Huyện Nhà Bè
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/huyen-nha-be/{z}/{x}/{y}.png
+  #### Quận Bình Thạnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-binh-thanh/{z}/{x}/{y}.png
+  #### Quận Bình Tân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-binh-tan/{z}/{x}/{y}.png
+  #### Quận Gò Vấp
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-go-vap/{z}/{x}/{y}.png
+  #### Quận Phú Nhuận
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ho-chi-minh/quan-phu-nhuan/{z}/{x}/{y}.png
+  #### Quận Tân Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-binh/{z}/{x}/{y}.png
+  #### Quận Tân Phú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/quan-tan-phu/{z}/{x}/{y}.png
+  #### Quận Thủ Đức
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/tp-ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png
+  #### Thành phố Thủ Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ho-chi-minh/thanh-pho-thu-duc/{z}/{x}/{y}.png
+
+### Đồng Nai (11 districts)
+  #### Huyện Cẩm Mỹ
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-cam-my--25/{z}/{x}/{y}.png
+  #### Huyện Long Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-long-thanh/{z}/{x}/{y}.png
+  #### Huyện Nhơn Trạch
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-nhon-trach--25/{z}/{x}/{y}.png
+  #### Huyện Tân Phú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-tan-phu/{z}/{x}/{y}.png
+  #### Huyện Thống Nhất
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-thong-nhat/{z}/{x}/{y}.png
+  #### Huyện Trảng Bom
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-nai/huyen-trang-bom/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Cửu
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-vinh-cuu--25/{z}/{x}/{y}.png
+  #### Huyện Xuân Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dong-nai/huyen-xuan-loc/{z}/{x}/{y}.png
+  #### Huyện Định Quán
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/huyen-dinh-quan--25/{z}/{x}/{y}.png
+  #### Thành phố Biên Hòa
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-bien-hoa--25/{z}/{x}/{y}.png
+  #### Thành phố Long Khánh
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dong-nai/thanh-pho-long-khanh--25/{z}/{x}/{y}.png
+
+### Bà Rịa - Vũng Tàu (7 districts)
+  #### Huyện Châu Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-chau-duc--25/{z}/{x}/{y}.png
+  #### Huyện Long Điền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ba-ria-vung-tau/huyen-long-dien/{z}/{x}/{y}.png
+  #### Huyện Xuyên Mộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-xuyen-moc--dc-lyk/{z}/{x}/{y}.png
+  #### Huyện Đất Đỏ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/huyen-long-dat/{z}/{x}/{y}.png
+  #### Thành phố Vũng Tàu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thanh-pho-vung-tau--25/{z}/{x}/{y}.png
+  #### Thành phố Bà Rịa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ba-ria-vung-tau/thanh-pho-ba-ria/{z}/{x}/{y}.png
+  #### Thị xã Phú Mỹ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ba-ria-vung-tau/thi-xa-phu-my/{z}/{x}/{y}.png
+
+### An Giang (11 districts)
+  #### Huyện An Phú
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-an-phu--25/{z}/{x}/{y}.png
+  #### Huyện Châu Phú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-phu/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Chợ Mới
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-cho-moi/{z}/{x}/{y}.png
+  #### Huyện Phú Tân
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/huyen-phu-tan--25/{z}/{x}/{y}.png
+  #### Huyện Thoại Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-thoai-son/{z}/{x}/{y}.png
+  #### Huyện Tịnh Biên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/huyen-tinh-bien/{z}/{x}/{y}.png
+  #### Huyện Tri Tôn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/an-giang/huyen-tri-ton/{z}/{x}/{y}.png
+  #### Thành phố Long Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/an-giang/thanh-pho-long-xuyen/{z}/{x}/{y}.png
+  #### Thành phố Châu Đốc
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thanh-pho-chau-doc--25/{z}/{x}/{y}.png
+  #### Thị xã Tân Châu
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/an-giang/thi-xa-tan-chau--25/{z}/{x}/{y}.png
+
+### Bắc Giang (10 districts)
+  #### Huyện Hiệp Hòa
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-hiep-hoa/{z}/{x}/{y}.png
+  #### Huyện Lạng Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-lang-giang/{z}/{x}/{y}.png
+  #### Huyện Lục Nam
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-luc-nam1/{z}/{x}/{y}.png
+  #### Huyện Lục Ngạn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-giang/huyen-luc-ngan/{z}/{x}/{y}.png
+  #### Huyện Sơn Động
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-son-dong/{z}/{x}/{y}.png
+  #### Huyện Tân Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-tan-yen/{z}/{x}/{y}.png
+  #### Huyện Việt Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thi-xa-viet-yen/{z}/{x}/{y}.png
+  #### Huyện Yên Thế
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/huyen-yen-the/{z}/{x}/{y}.png
+  #### Huyện Yên Dũng
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+  #### Thành phố Bắc Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-giang/thanh-pho-bac-giang/{z}/{x}/{y}.png
+
+### Bắc Kạn (7 districts)
+  #### Huyện Ba Bể
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/bac-kan/huyen-ba-be/{z}/{x}/{y}.png
+  #### Huyện Bạch Thông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-bach-thong/{z}/{x}/{y}.png
+  #### Huyện Chợ Đồn
+  #### Huyện Na Rì
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/bac-kan/huyen-na-ri/{z}/{x}/{y}.png
+  #### Huyện Ngân Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-ngan-son/{z}/{x}/{y}.png
+  #### Huyện Pác Nặm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/huyen-pac-nam/{z}/{x}/{y}.png
+  #### Thành phố Thành Phố Bắc Kạn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/bac-kan/thanh-pho-bac-kan/{z}/{x}/{y}.png
+
+### Bạc Liêu (7 districts)
+  #### Huyện Hoà Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-hoa-binh/{z}/{x}/{y}.png
+  #### Huyện Hồng Dân
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-hong-dan/{z}/{x}/{y}.png
+  #### Huyện Phước Long
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-phuoc-long/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Lợi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-vinh-loi/{z}/{x}/{y}.png
+  #### Huyện Đông Hải
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-dong-hai/{z}/{x}/{y}.png
+  #### Thành phố Bạc Liêu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png
+  #### Thị xã Giá Rai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thi-xa-gia-rai/{z}/{x}/{y}.png
+
+### Bắc Ninh (8 districts)
+  #### Huyện Gia Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-gia-binh--25/{z}/{x}/{y}.png
+  #### Huyện Lương Tài
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/huyen-luong-tai/{z}/{x}/{y}.png
+  #### Huyện Quế Võ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thi-xa-que-vo/{z}/{x}/{y}.png
+  #### Huyện Thuận Thành
+  #### Huyện Tiên Du
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-tien-du--25/{z}/{x}/{y}.png
+  #### Huyện Yên Phong
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/huyen-yen-phong/{z}/{x}/{y}.png
+  #### Thành phố Bắc Ninh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/bac-ninh/thanh-pho-bac-ninh/{z}/{x}/{y}.png
+  #### Thị xã Từ Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/bac-ninh/thanh-pho-tu-son--dc/{z}/{x}/{y}.png
+
+### Bến Tre (9 districts)
+  #### Huyện Ba Tri
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-ba-tri/{z}/{x}/{y}.png
+  #### Huyện Bình Đại
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ben-tre/huyen-binh-dai/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Chợ Lách
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-cho-lach/{z}/{x}/{y}.png
+  #### Huyện Giồng Trôm
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-giong-trom/{z}/{x}/{y}.png
+  #### Huyện Mỏ Cày Nam
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-mo-cay-nam/{z}/{x}/{y}.png
+  #### Huyện Mỏ Cày Bắc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/huyen-mo-cay-bac/{z}/{x}/{y}.png
+  #### Huyện Thạnh Phú
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ben-tre/huyen-thanh-phu--25/{z}/{x}/{y}.png
+  #### Thành phố Bến Tre
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ben-tre/thanh-pho-ben-tre/{z}/{x}/{y}.png
+
+### Bình Dương (9 districts)
+  #### Huyện Bắc Tân Uyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/huyen-bac-tan-uyen/{z}/{x}/{y}.png
+  #### Huyện Bàu Bàng
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-bau-bang--25/{z}/{x}/{y}.png
+  #### Huyện Dầu Tiếng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+  #### Huyện Phú Giáo
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/huyen-phu-giao--25/{z}/{x}/{y}.png
+  #### Thành phố Thủ Dầu Một
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-duong/thanh-pho-thu-dau-mot/{z}/{x}/{y}.png
+  #### Thị xã Dĩ An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+  #### Thị xã Thuận An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/binh-duong/huyen-dau-tieng/{z}/{x}/{y}.png
+  #### Thị xã Bến Cát
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-ben-cat--25/{z}/{x}/{y}.png
+  #### Thị xã Tân Uyên
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-duong/thanh-pho-tan-uyen--25/{z}/{x}/{y}.png
+
+### Bình Phước (11 districts)
+  #### Huyện Bù Gia Mập
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-gia-map/{z}/{x}/{y}.png
+  #### Huyện Bù Đốp
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-bu-dop--25/{z}/{x}/{y}.png
+  #### Huyện Bù Đăng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/huyen-bu-dang/{z}/{x}/{y}.png
+  #### Huyện Hớn Quản
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+  #### Huyện Lộc Ninh
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/binh-phuoc/huyen-loc-ninh--25/{z}/{x}/{y}.png
+  #### Huyện Phú Riềng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-phu-rieng/{z}/{x}/{y}.png
+  #### Huyện Đồng Phú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-dong-phu/{z}/{x}/{y}.png
+  #### Thành phố Đồng Xoài
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+  #### Thị xã Chơn Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/huyen-hon-quan--25/{z}/{x}/{y}.png
+  #### Thị xã Phước Long
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/binh-phuoc/thi-xa-phuoc-long--25/{z}/{x}/{y}.png
+  #### Thị xã Bình Long
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2024/binh-phuoc/thi-xa-binh-long/{z}/{x}/{y}.png
+
+### Bình Thuận (9 districts)
+  #### Huyện Bắc Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-bac-binh/{z}/{x}/{y}.png
+  #### Huyện Hàm Thuận Bắc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-bac/{z}/{x}/{y}.png
+  #### Huyện Hàm Thuận Nam
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-thuan-nam/{z}/{x}/{y}.png
+  #### Huyện Hàm Tân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-ham-tan/{z}/{x}/{y}.png
+  #### Huyện Tánh Linh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-tanh-linh/{z}/{x}/{y}.png
+  #### Huyện Tuy Phong
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/binh-thuan/huyen-tuy-phong/{z}/{x}/{y}.png
+  #### Huyện Đức Linh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/huyen-duc-linh/{z}/{x}/{y}.png
+  #### Thành phố Phan Thiết
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/binh-thuan/thanh-pho-phan-thiet/{z}/{x}/{y}.png
+  #### Thị xã La Gi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-thuan/thi-xa-la-gi/{z}/{x}/{y}.png
+
+### Bình Định (10 districts)
+  #### Huyện An Lão
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-an-lao/{z}/{x}/{y}.png
+  #### Huyện Hoài Ân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-hoai-an/{z}/{x}/{y}.png
+  #### Huyện Phù Mỹ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-my/{z}/{x}/{y}.png
+  #### Huyện Phù Cát
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-phu-cat/{z}/{x}/{y}.png
+  #### Huyện Tây Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tay-son/{z}/{x}/{y}.png
+  #### Huyện Tuy Phước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-tuy-phuoc/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Thạnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/huyen-vinh-thanh/{z}/{x}/{y}.png
+  #### Thành phố Qui Nhơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thanh-pho-quy-nhon/{z}/{x}/{y}.png
+  #### Thị xã Hoài Nhơn
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/binh-dinh/thi-xa-hoai-nhon--25/{z}/{x}/{y}.png
+  #### Thị xã An Nhơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/binh-dinh/thi-xa-an-nhon/{z}/{x}/{y}.png
+
+### Cà Mau (9 districts)
+  #### Huyện Cái Nước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-cai-nuoc/{z}/{x}/{y}.png
+  #### Huyện Năm Căn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-nam-can--25/{z}/{x}/{y}.png
+  #### Huyện Ngọc Hiển
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-ngoc-hien/{z}/{x}/{y}.png
+  #### Huyện Phú Tân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-phu-tan/{z}/{x}/{y}.png
+  #### Huyện Thới Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-thoi-binh/{z}/{x}/{y}.png
+  #### Huyện Trần Văn Thời
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-tran-van-thoi/{z}/{x}/{y}.png
+  #### Huyện U Minh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ca-mau/huyen-u-minh/{z}/{x}/{y}.png
+  #### Huyện Đầm Dơi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/huyen-dam-doi/{z}/{x}/{y}.png
+  #### Thành phố Cà Mau
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ca-mau/thanh-pho-ca-mau/{z}/{x}/{y}.png
+
+### Cần Thơ (9 districts)
+  #### Huyện Cờ Đỏ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-co-do/{z}/{x}/{y}.png
+  #### Huyện Phong Điền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-phong-dien--25/{z}/{x}/{y}.png
+  #### Huyện Thới Lai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-thoi-lai/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Thạnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/huyen-vinh-thanh/{z}/{x}/{y}.png
+  #### Quận Bình Thuỷ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-binh-thuy/{z}/{x}/{y}.png
+  #### Quận Cái Răng
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/can-tho/quan-cai-rang--25/{z}/{x}/{y}.png
+  #### Quận Ninh Kiều
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-ninh-kieu/{z}/{x}/{y}.png
+  #### Quận Ô Môn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-o-mon--25/{z}/{x}/{y}.png
+  #### Quận Thốt Nốt
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/can-tho/quan-thot-not/{z}/{x}/{y}.png
+
+### Cao Bằng (13 districts)
+  #### Huyện Bảo Lâm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lam/{z}/{x}/{y}.png
+  #### Huyện Bảo Lạc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lac/{z}/{x}/{y}.png
+  #### Huyện Hạ Lang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-ha-lang/{z}/{x}/{y}.png
+  #### Huyện Hà Quảng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-ha-quang/{z}/{x}/{y}.png
+  #### Huyện Hoà An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-hoa-an/{z}/{x}/{y}.png
+  #### Huyện Nguyên Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-nguyen-binh--25/{z}/{x}/{y}.png
+  #### Huyện Phục Hoà
+  #### Huyện Quảng Uyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-quang-hoa/{z}/{x}/{y}.png
+  #### Huyện Thạch An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-thach-an--25/{z}/{x}/{y}.png
+  #### Huyện Thông Nông
+  #### Huyện Trà Lĩnh
+  #### Huyện Trùng Khánh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-trung-khanh/{z}/{x}/{y}.png
+  #### Thành phố Cao Bằng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png
+
+### Gia Lai (17 districts)
+  #### Huyện Chư Păh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-pah/{z}/{x}/{y}.png
+  #### Huyện Chư Prông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-prong/{z}/{x}/{y}.png
+  #### Huyện Chư Sê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-chu-se/{z}/{x}/{y}.png
+  #### Huyện Chư Pưh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-chu-puh/{z}/{x}/{y}.png
+  #### Huyện Ia Grai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-grai/{z}/{x}/{y}.png
+  #### Huyện Ia Pa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-ia-pa/{z}/{x}/{y}.png
+  #### Huyện KBang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kbang/{z}/{x}/{y}.png
+  #### Huyện Kông Chro
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-kong-chro/{z}/{x}/{y}.png
+  #### Huyện Krông Pa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-krong-pa/{z}/{x}/{y}.png
+  #### Huyện Mang Yang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-mang-yang/{z}/{x}/{y}.png
+  #### Huyện Phú Thiện
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-phu-thien/{z}/{x}/{y}.png
+  #### Huyện Đăk Đoa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/huyen-dak-doa/{z}/{x}/{y}.png
+  #### Huyện Đăk Pơ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-dak-po/{z}/{x}/{y}.png
+  #### Huyện Đức Cơ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/huyen-duc-co/{z}/{x}/{y}.png
+  #### Thành phố Pleiku
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thanh-pho-pleiku/{z}/{x}/{y}.png
+  #### Thị xã An Khê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/gia-lai/thi-xa-an-khe/{z}/{x}/{y}.png
+  #### Thị xã Ayun Pa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/gia-lai/thi-xa-ayun-pa/{z}/{x}/{y}.png
+
+### Hà Nam (6 districts)
+  #### Huyện Bình Lục
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-binh-luc/{z}/{x}/{y}.png
+  #### Huyện Duy Tiên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-duy-tien--bs/{z}/{x}/{y}.png
+  #### Huyện Kim Bảng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-kim-bang--dc-lyk/{z}/{x}/{y}.png
+  #### Huyện Lý Nhân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-ly-nhan/{z}/{x}/{y}.png
+  #### Huyện Thanh Liêm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-thanh-liem--25/{z}/{x}/{y}.png
+  #### Thành phố Phủ Lý
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png
+
+### Hà Giang (11 districts)
+  #### Huyện Bắc Mê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-me--25/{z}/{x}/{y}.png
+  #### Huyện Bắc Quang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-quang/{z}/{x}/{y}.png
+  #### Huyện Hoàng Su Phì
+  #### Huyện Mèo Vạc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+  #### Huyện Quản Bạ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-quan-ba/{z}/{x}/{y}.png
+  #### Huyện Quang Bình
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-giang/huyen-quang-binh/{z}/{x}/{y}.png
+  #### Huyện Vị Xuyên
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png
+  #### Huyện Xín Mần
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-xin-man/{z}/{x}/{y}.png
+  #### Huyện Yên Minh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-yen-minh/{z}/{x}/{y}.png
+  #### Huyện Đồng Văn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+  #### Thành phố Hà Giang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
+
+### Hà Nội (30 districts)
+  #### Huyện Ba Vì
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ba-vi--25/{z}/{x}/{y}.png
+  #### Huyện Chương Mỹ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-chuong-my/{z}/{x}/{y}.png
+  #### Huyện Gia Lâm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-gia-lam--25/{z}/{x}/{y}.png
+  #### Huyện Hoài Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-hoai-duc/{z}/{x}/{y}.png
+  #### Huyện Mê Linh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-me-linh/{z}/{x}/{y}.png
+  #### Huyện Mỹ Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-my-duc--25/{z}/{x}/{y}.png
+  #### Huyện Phú Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-phu-xuyen/{z}/{x}/{y}.png
+  #### Huyện Phúc Thọ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-phuc-tho--25/{z}/{x}/{y}.png
+  #### Huyện Quốc Oai
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-quoc-oai/{z}/{x}/{y}.png
+  #### Huyện Sóc Sơn
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-soc-son/{z}/{x}/{y}.png
+  #### Huyện Thạch Thất
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/huyen-thach-that/{z}/{x}/{y}.png
+  #### Huyện Thanh Trì
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-tri/{z}/{x}/{y}.png
+  #### Huyện Thanh Oai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thanh-oai/{z}/{x}/{y}.png
+  #### Huyện Thường Tín
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-thuong-tin/{z}/{x}/{y}.png
+  #### Huyện Ứng Hòa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-ung-hoa/{z}/{x}/{y}.png
+  #### Huyện Đan Phượng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/huyen-dan-phuong/{z}/{x}/{y}.png
+  #### Huyện Đông Anh
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/huyen-dong-anh/{z}/{x}/{y}.png
+  #### Quận Ba Đình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ba-dinh/{z}/{x}/{y}.png
+  #### Quận Bắc Từ Liêm
+  #### Quận Cầu Giấy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/ha-noi/quan-cau-giay/{z}/{x}/{y}.png
+  #### Quận Hà Đông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-ha-dong/{z}/{x}/{y}.png
+  #### Quận Hai Bà Trưng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hai-ba-trung/{z}/{x}/{y}.png
+  #### Quận Hoàn Kiếm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoan-kiem/{z}/{x}/{y}.png
+  #### Quận Hoàng Mai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-hoang-mai--25/{z}/{x}/{y}.png
+  #### Quận Long Biên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-long-bien--25/{z}/{x}/{y}.png
+  #### Quận Nam Từ Liêm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-nam-tu-liem--25/{z}/{x}/{y}.png
+  #### Quận Tây Hồ
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/quan-tay-ho/{z}/{x}/{y}.png
+  #### Quận Thanh Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-thanh-xuan--25/{z}/{x}/{y}.png
+  #### Quận Đống Đa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-noi/quan-dong-da/{z}/{x}/{y}.png
+  #### Thị xã Sơn Tây
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-noi/thi-xa-son-tay/{z}/{x}/{y}.png
+
+### Hà Tĩnh (13 districts)
+  #### Huyện Cẩm Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-cam-xuyen/{z}/{x}/{y}.png
+  #### Huyện Can Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-can-loc/{z}/{x}/{y}.png
+  #### Huyện Hương Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-son/{z}/{x}/{y}.png
+  #### Huyện Hương Khê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-khe/{z}/{x}/{y}.png
+  #### Huyện Kỳ Anh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thi-xa-ky-anh/{z}/{x}/{y}.png
+  #### Huyện Lộc Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-loc-ha/{z}/{x}/{y}.png
+  #### Huyện Nghi Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-nghi-xuan/{z}/{x}/{y}.png
+  #### Huyện Thạch Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-thach-ha--cmd/{z}/{x}/{y}.png
+  #### Huyện Vũ Quang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-tinh/huyen-vu-quang/{z}/{x}/{y}.png
+  #### Huyện Đức Thọ
+  #### Thành phố Hà Tĩnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png
+  #### Thị xã Hồng Lĩnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/thi-xa-hong-linh--bs/{z}/{x}/{y}.png
+  #### Thị xã Kỳ Anh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thi-xa-ky-anh/{z}/{x}/{y}.png
+
+### Hải Dương (15 districts)
+  #### Huyện An Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện An Lão
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Bạch Long Vĩ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Cát Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Kiến Thuỵ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Thuỷ Nguyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Tiên Lãng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Bảo
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Dương Kinh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Hải An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Hồng Bàng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Kiến An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Lê Chân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Ngô Quyền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+  #### Quận Đồ Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-duong/thanh-pho-hai-duong/{z}/{x}/{y}.png
+
+### Hải Phòng (15 districts)
+  #### Huyện An Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-duong--25/{z}/{x}/{y}.png
+  #### Huyện An Lão
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-an-lao/{z}/{x}/{y}.png
+  #### Huyện Bạch Long Vĩ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-bach-long-vi/{z}/{x}/{y}.png
+  #### Huyện Cát Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-cat-hai/{z}/{x}/{y}.png
+  #### Huyện Kiến Thuỵ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-kien-thuy/{z}/{x}/{y}.png
+  #### Huyện Thuỷ Nguyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-thuy-nguyen/{z}/{x}/{y}.png
+  #### Huyện Tiên Lãng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-tien-lang--25/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Bảo
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/huyen-vinh-bao/{z}/{x}/{y}.png
+  #### Quận Dương Kinh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-duong-kinh/{z}/{x}/{y}.png
+  #### Quận Hải An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hai-an--dclyk/{z}/{x}/{y}.png
+  #### Quận Hồng Bàng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-hong-bang/{z}/{x}/{y}.png
+  #### Quận Kiến An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-kien-an/{z}/{x}/{y}.png
+  #### Quận Lê Chân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-le-chan--25/{z}/{x}/{y}.png
+  #### Quận Ngô Quyền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-ngo-quyen/{z}/{x}/{y}.png
+  #### Quận Đồ Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hai-phong/quan-do-son--25/{z}/{x}/{y}.png
+
+### Hậu Giang (8 districts)
+  #### Huyện Châu Thành A
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh-a/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Long Mỹ
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-long-my/{z}/{x}/{y}.png
+  #### Huyện Phụng Hiệp
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-phung-hiep/{z}/{x}/{y}.png
+  #### Huyện Vị Thuỷ
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/huyen-vi-thuy/{z}/{x}/{y}.png
+  #### Thành phố Vị Thanh
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-vi-thanh/{z}/{x}/{y}.png
+  #### Thành phố Ngã Bảy
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thanh-pho-nga-bay/{z}/{x}/{y}.png
+  #### Thị xã Long Mỹ
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/hau-giang/thi-xa-long-my/{z}/{x}/{y}.png
+
+### Hòa Bình (10 districts)
+  #### Huyện Cao Phong
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-cao-phong/{z}/{x}/{y}.png
+  #### Huyện Kim Bôi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-kim-boi/{z}/{x}/{y}.png
+  #### Huyện Lạc Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-son/{z}/{x}/{y}.png
+  #### Huyện Lạc Thủy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/hoa-binh/huyen-lac-thuy/{z}/{x}/{y}.png
+  #### Huyện Lương Sơn
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/huyen-luong-son/{z}/{x}/{y}.png
+  #### Huyện Mai Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hoa-binh/huyen-mai-chau/{z}/{x}/{y}.png
+  #### Huyện Tân Lạc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-tan-lac/{z}/{x}/{y}.png
+  #### Huyện Yên Thủy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-yen-thuy/{z}/{x}/{y}.png
+  #### Huyện Đà Bắc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hoa-binh/huyen-da-bac/{z}/{x}/{y}.png
+  #### Thành phố Hòa Bình
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hoa-binh/thanh-pho-hoa-binh/{z}/{x}/{y}.png
+
+### Hưng Yên (10 districts)
+  #### Huyện Ân Thi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-an-thi/{z}/{x}/{y}.png
+  #### Huyện Khoái Châu
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png
+  #### Huyện Kim Động
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-kim-dong/{z}/{x}/{y}.png
+  #### Huyện Mỹ Hào
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hung-yen/thi-xa-my-hao/{z}/{x}/{y}.png
+  #### Huyện Phù Cừ
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-phu-cu--25/{z}/{x}/{y}.png
+  #### Huyện Tiên Lữ
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-tien-lu--25/{z}/{x}/{y}.png
+  #### Huyện Văn Lâm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-van-lam/{z}/{x}/{y}.png
+  #### Huyện Văn Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-van-giang/{z}/{x}/{y}.png
+  #### Huyện Yên Mỹ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-yen-my/{z}/{x}/{y}.png
+  #### Thành phố Hưng Yên
+
+### Khánh Hòa (7 districts)
+  #### Huyện Bác Ái
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Huyện Ninh Sơn
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Huyện Ninh Hải
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Huyện Ninh Phước
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Huyện Thuận Bắc
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Huyện Thuận Nam
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+  #### Thành phố Phan Rang-Tháp Chàm
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/khanh-hoa/huyen-dien-khanh/{z}/{x}/{y}.png
+
+### Kiên Giang (15 districts)
+  #### Huyện An Biên
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-bien/{z}/{x}/{y}.png
+  #### Huyện An Minh
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-an-minh/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Giang Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kien-giang/huyen-giang-thanh/{z}/{x}/{y}.png
+  #### Huyện Giồng Riềng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-giong-rieng/{z}/{x}/{y}.png
+  #### Huyện Gò Quao
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-go-quao/{z}/{x}/{y}.png
+  #### Huyện Hòn Đất
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-hon-dat/{z}/{x}/{y}.png
+  #### Huyện Kiên Lương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-luong/{z}/{x}/{y}.png
+  #### Huyện Kiên Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/huyen-kien-hai/{z}/{x}/{y}.png
+  #### Huyện Tân Hiệp
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-tan-hiep--25/{z}/{x}/{y}.png
+  #### Huyện U Minh Thượng
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-u-minh-thuong--25/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Thuận
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/huyen-vinh-thuan/{z}/{x}/{y}.png
+  #### Thành phố Rạch Giá
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/kien-giang/thanh-pho-rach-gia/{z}/{x}/{y}.png
+  #### Thành phố Phú Quốc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-phu-quoc--25/{z}/{x}/{y}.png
+  #### Thị xã Hà Tiên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/kien-giang/thanh-pho-ha-tien/{z}/{x}/{y}.png
+
+### Kon Tum (10 districts)
+  #### Huyện Ia H' Drai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ia-hdrai/{z}/{x}/{y}.png
+  #### Huyện Kon Plông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-kon-plong/{z}/{x}/{y}.png
+  #### Huyện Kon Rẫy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-kon-ray/{z}/{x}/{y}.png
+  #### Huyện Ngọc Hồi
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-ngoc-hoi/{z}/{x}/{y}.png
+  #### Huyện Sa Thầy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/kon-tum/huyen-sa-thay/{z}/{x}/{y}.png
+  #### Huyện Tu Mơ Rông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-tu-mo-rong/{z}/{x}/{y}.png
+  #### Huyện Đắk Glei
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/kon-tum/huyen-dak-glei/{z}/{x}/{y}.png
+  #### Huyện Đắk Tô
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/kon-tum/huyen-dak-to/{z}/{x}/{y}.png
+  #### Huyện Đắk Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/kon-tum/huyen-dak-ha/{z}/{x}/{y}.png
+  #### Thành phố Kon Tum
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/kon-tum/thanh-pho-kon-tum--25/{z}/{x}/{y}.png
+
+### Lai Châu (8 districts)
+  #### Huyện Mường Tè
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-muong-te/{z}/{x}/{y}.png
+  #### Huyện Nậm Nhùn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/thanh-pho-lai-chau/{z}/{x}/{y}.png
+  #### Huyện Phong Thổ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-phong-tho/{z}/{x}/{y}.png
+  #### Huyện Sìn Hồ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/lai-chau/huyen-sin-ho/{z}/{x}/{y}.png
+  #### Huyện Tam Đường
+  #### Huyện Tân Uyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-tan-uyen/{z}/{x}/{y}.png
+  #### Huyện Than Uyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/huyen-than-uyen/{z}/{x}/{y}.png
+  #### Thành phố Lai Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lai-chau/thanh-pho-lai-chau/{z}/{x}/{y}.png
+
+### Lâm Đồng (12 districts)
+  #### Huyện Bảo Lâm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-bao-lam/{z}/{x}/{y}.png
+  #### Huyện Cát Tiên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-cat-tien/{z}/{x}/{y}.png
+  #### Huyện Di Linh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lam-dong/huyen-di-linh/{z}/{x}/{y}.png
+  #### Huyện Lạc Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lac-duong--25/{z}/{x}/{y}.png
+  #### Huyện Lâm Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-lam-ha/{z}/{x}/{y}.png
+  #### Huyện Đạ Huoai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-huoai/{z}/{x}/{y}.png
+  #### Huyện Đạ Tẻh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-da-teh/{z}/{x}/{y}.png
+  #### Huyện Đam Rông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-dam-rong/{z}/{x}/{y}.png
+  #### Huyện Đơn Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-don-duong/{z}/{x}/{y}.png
+  #### Huyện Đức Trọng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/huyen-duc-trong/{z}/{x}/{y}.png
+  #### Thành phố Đà Lạt
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-da-lat--25/{z}/{x}/{y}.png
+  #### Thành phố Bảo Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lam-dong/thanh-pho-bao-loc--25/{z}/{x}/{y}.png
+
+### Lạng Sơn (11 districts)
+  #### Huyện Bắc Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-bac-son/{z}/{x}/{y}.png
+  #### Huyện Bình Gia
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-binh-gia/{z}/{x}/{y}.png
+  #### Huyện Cao Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-cao-loc/{z}/{x}/{y}.png
+  #### Huyện Chi Lăng
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-chi-lang--25/{z}/{x}/{y}.png
+  #### Huyện Hữu Lũng
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-huu-lung/{z}/{x}/{y}.png
+  #### Huyện Lộc Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-loc-binh/{z}/{x}/{y}.png
+  #### Huyện Tràng Định
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-trang-dinh/{z}/{x}/{y}.png
+  #### Huyện Văn Lãng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-van-lang/{z}/{x}/{y}.png
+  #### Huyện Văn Quan
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+  #### Huyện Đình Lập
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-dinh-lap/{z}/{x}/{y}.png
+  #### Thành phố Lạng Sơn
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png
+
+### Lào Cai (9 districts)
+  #### Huyện Bắc Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bac-ha/{z}/{x}/{y}.png
+  #### Huyện Bảo Thắng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-bao-thang/{z}/{x}/{y}.png
+  #### Huyện Bảo Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/lao-cai/huyen-bao-yen/{z}/{x}/{y}.png
+  #### Huyện Bát Xát
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/huyen-bat-xat/{z}/{x}/{y}.png
+  #### Huyện Mường Khương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-muong-khuong/{z}/{x}/{y}.png
+  #### Huyện Si Ma Cai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-si-ma-cai/{z}/{x}/{y}.png
+  #### Huyện Văn Bàn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/huyen-van-ban/{z}/{x}/{y}.png
+  #### Thành phố Lào Cai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/lao-cai/thanh-pho-lao-cai/{z}/{x}/{y}.png
+  #### Thị xã Sa Pa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/lao-cai/thi-xa-sa-pa/{z}/{x}/{y}.png
+
+### Long An (15 districts)
+  #### Huyện Bến Lức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-ben-luc/{z}/{x}/{y}.png
+  #### Huyện Cần Đước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-can-duoc/{z}/{x}/{y}.png
+  #### Huyện Cần Giuộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-can-giuoc/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-chau-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Mộc Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-moc-hoa/{z}/{x}/{y}.png
+  #### Huyện Tân Hưng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-hung--25/{z}/{x}/{y}.png
+  #### Huyện Tân Thạnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-tan-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Tân Trụ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-tan-tru/{z}/{x}/{y}.png
+  #### Huyện Thạnh Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/huyen-thanh-hoa/{z}/{x}/{y}.png
+  #### Huyện Thủ Thừa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-thu-thua--25/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Hưng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-vinh-hung--25/{z}/{x}/{y}.png
+  #### Huyện Đức Huệ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hue--25/{z}/{x}/{y}.png
+  #### Huyện Đức Hòa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/huyen-duc-hoa--25/{z}/{x}/{y}.png
+  #### Thành phố Tân An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/long-an/thanh-pho-tan-an/{z}/{x}/{y}.png
+  #### Thị xã Kiến Tường
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/long-an/thi-xa-kien-tuong/{z}/{x}/{y}.png
+
+### Nam Định (10 districts)
+  #### Huyện Giao Thủy
+  #### Huyện Hải Hậu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-hai-hau/{z}/{x}/{y}.png
+  #### Huyện Mỹ Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nam-dinh/huyen-my-loc/{z}/{x}/{y}.png
+  #### Huyện Nam Trực
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nam-dinh/huyen-nam-truc/{z}/{x}/{y}.png
+  #### Huyện Nghĩa Hưng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-nghia-hung/{z}/{x}/{y}.png
+  #### Huyện Trực Ninh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-truc-ninh/{z}/{x}/{y}.png
+  #### Huyện Vụ Bản
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-vu-ban/{z}/{x}/{y}.png
+  #### Huyện Xuân Trường
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-xuan-truong/{z}/{x}/{y}.png
+  #### Huyện Ý Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/huyen-y-yen/{z}/{x}/{y}.png
+  #### Thành phố Nam Định
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nam-dinh/thanh-pho-nam-dinh/{z}/{x}/{y}.png
+
+### Nghệ An (21 districts)
+  #### Huyện Anh Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-anh-son/{z}/{x}/{y}.png
+  #### Huyện Con Cuông
+  #### Huyện Diễn Châu
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-dien-chau--25/{z}/{x}/{y}.png
+  #### Huyện Hưng Nguyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-hung-nguyen/{z}/{x}/{y}.png
+  #### Huyện Kỳ Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-ky-son/{z}/{x}/{y}.png
+  #### Huyện Nam Đàn
+  #### Huyện Nghĩa Đàn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-nghia-dan/{z}/{x}/{y}.png
+  #### Huyện Nghi Lộc
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-nghi-loc--25/{z}/{x}/{y}.png
+  #### Huyện Quế Phong
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-que-phong/{z}/{x}/{y}.png
+  #### Huyện Quỳ Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-quy-chau/{z}/{x}/{y}.png
+  #### Huyện Quỳ Hợp
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/huyen-quy-hop/{z}/{x}/{y}.png
+  #### Huyện Quỳnh Lưu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/nghe-an/huyen-quynh-luu/{z}/{x}/{y}.png
+  #### Huyện Tân Kỳ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/nghe-an/huyen-tan-ky/{z}/{x}/{y}.png
+  #### Huyện Thanh Chương
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-thanh-chuong--25/{z}/{x}/{y}.png
+  #### Huyện Tương Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/huyen-tuong-duong/{z}/{x}/{y}.png
+  #### Huyện Yên Thành
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/nghe-an/huyen-yen-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Đô Lương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/nghe-an/huyen-do-luong/{z}/{x}/{y}.png
+  #### Thành phố Vinh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thanh-pho-vinh/{z}/{x}/{y}.png
+  #### Thị xã Cửa Lò
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-cua-lo/{z}/{x}/{y}.png
+  #### Thị xã Thái Hoà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/nghe-an/thi-xa-thai-hoa/{z}/{x}/{y}.png
+  #### Thị xã Hoàng Mai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/nghe-an/thi-xa-hoang-mai/{z}/{x}/{y}.png
+
+### Ninh Bình (8 districts)
+  #### Huyện Gia Viễn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-gia-vien/{z}/{x}/{y}.png
+  #### Huyện Hoa Lư
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+  #### Huyện Kim Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-kim-son--25/{z}/{x}/{y}.png
+  #### Huyện Nho Quan
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ninh-binh/huyen-nho-quan/{z}/{x}/{y}.png
+  #### Huyện Yên Khánh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ninh-binh/huyen-yen-khanh/{z}/{x}/{y}.png
+  #### Huyện Yên Mô
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/huyen-yen-mo--25/{z}/{x}/{y}.png
+  #### Thành phố Ninh Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ninh-binh/thanh-pho-hoa-lu/{z}/{x}/{y}.png
+  #### Thành phố Tam Điệp
+
+### Ninh Thuận (7 districts)
+  #### Huyện Bác Ái
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-bac-ai--25/{z}/{x}/{y}.png
+  #### Huyện Ninh Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-son--25/{z}/{x}/{y}.png
+  #### Huyện Ninh Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-ninh-hai/{z}/{x}/{y}.png
+  #### Huyện Ninh Phước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png
+  #### Huyện Thuận Bắc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-bac/{z}/{x}/{y}.png
+  #### Huyện Thuận Nam
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/huyen-thuan-nam/{z}/{x}/{y}.png
+  #### Thành phố Phan Rang-Tháp Chàm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ninh-thuan/thanh-pho-phan-rang-thap-cham--25/{z}/{x}/{y}.png
+
+### Phú Thọ (13 districts)
+  #### Huyện Cẩm Khê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-cam-khe/{z}/{x}/{y}.png
+  #### Huyện Hạ Hoà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-ha-hoa/{z}/{x}/{y}.png
+  #### Huyện Lâm Thao
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-lam-thao/{z}/{x}/{y}.png
+  #### Huyện Phù Ninh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-phu-ninh/{z}/{x}/{y}.png
+  #### Huyện Tam Nông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tam-nong/{z}/{x}/{y}.png
+  #### Huyện Tân Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-tan-son/{z}/{x}/{y}.png
+  #### Huyện Thanh Ba
+  #### Huyện Thanh Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-tho/huyen-thanh-son--dc/{z}/{x}/{y}.png
+  #### Huyện Thanh Thuỷ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-thanh-thuy/{z}/{x}/{y}.png
+  #### Huyện Yên Lập
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/huyen-yen-lap/{z}/{x}/{y}.png
+  #### Huyện Đoan Hùng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/huyen-doan-hung/{z}/{x}/{y}.png
+  #### Thành phố Việt Trì
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/phu-tho/thanh-pho-viet-tri/{z}/{x}/{y}.png
+  #### Thị xã Phú Thọ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/phu-tho/thi-xa-phu-tho/{z}/{x}/{y}.png
+
+### Phú Yên (9 districts)
+  #### Huyện Phú Hoà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-phu-hoa--25/{z}/{x}/{y}.png
+  #### Huyện Sơn Hòa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-son-hoa/{z}/{x}/{y}.png
+  #### Huyện Sông Hinh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-song-hinh/{z}/{x}/{y}.png
+  #### Huyện Tây Hoà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/huyen-tay-hoa/{z}/{x}/{y}.png
+  #### Huyện Tuy An
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/phu-yen/huyen-tuy-an--25/{z}/{x}/{y}.png
+  #### Huyện Đồng Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/huyen-dong-xuan--25/{z}/{x}/{y}.png
+  #### Huyện Đông Hòa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/phu-yen/thi-xa-dong-hoa/{z}/{x}/{y}.png
+  #### Thành phố Tuy Hoà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thanh-pho-tuy-hoa/{z}/{x}/{y}.png
+  #### Thị xã Sông Cầu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/phu-yen/thi-xa-song-cau/{z}/{x}/{y}.png
+
+### Quảng Bình (8 districts)
+  #### Huyện Bố Trạch
+  #### Huyện Lệ Thủy
+  #### Huyện Minh Hóa
+  #### Huyện Quảng Ninh
+  #### Thị xã Ba Đồn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/thi-xa-ba-don/{z}/{x}/{y}.png
+  #### Huyện Tuyên Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-tuyen-hoa/{z}/{x}/{y}.png
+  #### Thành phố Thành Phố Đồng Hới
+  #### Thị xã Quảng Trạch
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-binh/huyen-quang-trach--25/{z}/{x}/{y}.png
+
+### Quảng Nam (18 districts)
+  #### Huyện Bắc Trà My
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-bac-tra-my/{z}/{x}/{y}.png
+  #### Huyện Duy Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-duy-xuyen/{z}/{x}/{y}.png
+  #### Huyện Hiệp Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-hiep-duc/{z}/{x}/{y}.png
+  #### Huyện Nam Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nam-giang/{z}/{x}/{y}.png
+  #### Huyện Nam Trà My
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nam-tra-my/{z}/{x}/{y}.png
+  #### Huyện Nông Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-nam/huyen-nong-son/{z}/{x}/{y}.png
+  #### Huyện Núi Thành
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-nui-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Phú Ninh
+  #### Huyện Phước Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-phuoc-son/{z}/{x}/{y}.png
+  #### Huyện Quế Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/quang-nam/huyen-que-son/{z}/{x}/{y}.png
+  #### Huyện Tây Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-tay-giang/{z}/{x}/{y}.png
+  #### Huyện Thăng Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-thang-binh/{z}/{x}/{y}.png
+  #### Huyện Tiên Phước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/huyen-tien-phuoc/{z}/{x}/{y}.png
+  #### Huyện Đại Lộc
+  #### Huyện Đông Giang
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/huyen-dong-giang--25/{z}/{x}/{y}.png
+  #### Thành phố Tam Kỳ
+  #### Thành phố Hội An
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-nam/thanh-pho-hoi-an/{z}/{x}/{y}.png
+  #### Thị xã Điện Bàn
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-nam/thi-xa-dien-ban--25/{z}/{x}/{y}.png
+
+### Quảng Ngãi (14 districts)
+  #### Huyện Ba Tơ
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ba-to/{z}/{x}/{y}.png
+  #### Huyện Bình Sơn
+  #### Huyện Lý Sơn
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/huyen-ly-son/{z}/{x}/{y}.png
+  #### Huyện Minh Long
+  #### Huyện Mộ Đức
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-mo-duc/{z}/{x}/{y}.png
+  #### Huyện Nghĩa Hành
+  #### Huyện Sơn Tịnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-tinh--bs/{z}/{x}/{y}.png
+  #### Huyện Sơn Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-son-ha/{z}/{x}/{y}.png
+  #### Huyện Sơn Tây
+  #### Huyện Tây Trà
+  #### Huyện Trà Bồng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/huyen-tra-bong/{z}/{x}/{y}.png
+  #### Huyện Tư Nghĩa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/quang-ngai/huyen-tu-nghia/{z}/{x}/{y}.png
+  #### Thành phố Quảng Ngãi
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/quang-ngai/thanh-pho-quang-ngai--25/{z}/{x}/{y}.png
+  #### Thị xã Đức Phổ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-ngai/thi-xa-duc-pho/{z}/{x}/{y}.png
+
+### Quảng Ninh (13 districts)
+  #### Huyện Ba Chẽ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-ba-che/{z}/{x}/{y}.png
+  #### Huyện Bình Liêu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-binh-lieu/{z}/{x}/{y}.png
+  #### Huyện Hải Hà
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-ninh/huyen-hai-ha/{z}/{x}/{y}.png
+  #### Huyện Hoành Bồ
+  #### Huyện Tiên Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/quang-ninh/huyen-tien-yen/{z}/{x}/{y}.png
+  #### Huyện Vân Đồn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/huyen-van-don--25/{z}/{x}/{y}.png
+  #### Huyện Đầm Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/quang-ninh/huyen-dam-ha/{z}/{x}/{y}.png
+  #### Thành phố Hạ Long
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-ha-long/{z}/{x}/{y}.png
+  #### Thành phố Móng Cái
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-mong-cai/{z}/{x}/{y}.png
+  #### Thành phố Cẩm Phả
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/quang-ninh/thanh-pho-cam-pha--25/{z}/{x}/{y}.png
+  #### Thành phố Uông Bí
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-uong-bi--25/{z}/{x}/{y}.png
+  #### Thị xã Đông Triều
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thanh-pho-dong-trieu/{z}/{x}/{y}.png
+  #### Thị xã Quảng Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/quang-ninh/thi-xa-quang-yen/{z}/{x}/{y}.png
+
+### Quảng Trị (10 districts)
+  #### Huyện Cam Lộ
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-cam-lo/{z}/{x}/{y}.png
+  #### Huyện Cồn Cỏ
+  #### Huyện Gio Linh
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-gio-linh/{z}/{x}/{y}.png
+  #### Huyện Hải Lăng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/quang-tri/huyen-hai-lang/{z}/{x}/{y}.png
+  #### Huyện Hướng Hóa
+  #### Huyện Triệu Phong
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-trieu-phong/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Linh
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-vinh-linh/{z}/{x}/{y}.png
+  #### Huyện Đa Krông
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/quang-tri/huyen-da-krong/{z}/{x}/{y}.png
+  #### Thành phố Đông Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thanh-pho-dong-ha/{z}/{x}/{y}.png
+  #### Thị xã Quảng Trị
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/quang-tri/thi-xa-quang-tri/{z}/{x}/{y}.png
+
+### Sóc Trăng (11 districts)
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Cù Lao Dung
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-cu-lao-dung/{z}/{x}/{y}.png
+  #### Huyện Kế Sách
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-ke-sach/{z}/{x}/{y}.png
+  #### Huyện Long Phú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-long-phu/{z}/{x}/{y}.png
+  #### Huyện Mỹ Tú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-tu/{z}/{x}/{y}.png
+  #### Huyện Mỹ Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-my-xuyen/{z}/{x}/{y}.png
+  #### Huyện Thạnh Trị
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-thanh-tri/{z}/{x}/{y}.png
+  #### Huyện Trần Đề
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/huyen-tran-de/{z}/{x}/{y}.png
+  #### Thành phố Sóc Trăng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thanh-pho-soc-trang/{z}/{x}/{y}.png
+  #### Thị xã Ngã Năm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-nga-nam/{z}/{x}/{y}.png
+  #### Thị xã Vĩnh Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/soc-trang/thi-xa-vinh-chau/{z}/{x}/{y}.png
+
+### Sơn La (12 districts)
+  #### Huyện Bắc Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-bac-yen/{z}/{x}/{y}.png
+  #### Huyện Mai Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-mai-son/{z}/{x}/{y}.png
+  #### Huyện Mộc Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-moc-chau/{z}/{x}/{y}.png
+  #### Huyện Mường La
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-muong-la/{z}/{x}/{y}.png
+  #### Huyện Phù Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-phu-yen--25/{z}/{x}/{y}.png
+  #### Huyện Quỳnh Nhai
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/huyen-quynh-nhai/{z}/{x}/{y}.png
+  #### Huyện Sông Mã
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-song-ma/{z}/{x}/{y}.png
+  #### Huyện Sốp Cộp
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-sop-cop/{z}/{x}/{y}.png
+  #### Huyện Thuận Châu
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-thuan-chau/{z}/{x}/{y}.png
+  #### Huyện Vân Hồ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-van-ho/{z}/{x}/{y}.png
+  #### Huyện Yên Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-yen-chau/{z}/{x}/{y}.png
+  #### Thành phố Sơn La
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png
+
+### Tây Ninh (9 districts)
+  #### Huyện Bến Cầu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-ben-cau--25/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Dương Minh Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-duong-minh-chau--25/{z}/{x}/{y}.png
+  #### Huyện Gò Dầu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-go-dau--25/{z}/{x}/{y}.png
+  #### Huyện Hòa Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-hoa-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Tân Biên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-bien--25/{z}/{x}/{y}.png
+  #### Huyện Tân Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/huyen-tan-chau--25/{z}/{x}/{y}.png
+  #### Huyện Trảng Bàng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thi-xa-trang-bang--25/{z}/{x}/{y}.png
+  #### Thành phố Tây Ninh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tay-ninh/thanh-pho-tay-ninh--25/{z}/{x}/{y}.png
+
+### Thái Bình (8 districts)
+  #### Huyện Hưng Hà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-hung-ha/{z}/{x}/{y}.png
+  #### Huyện Kiến Xương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-kien-xuong/{z}/{x}/{y}.png
+  #### Huyện Quỳnh Phụ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-quynh-phu--25/{z}/{x}/{y}.png
+  #### Huyện Thái Thụy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/thai-binh/huyen-thai-thuy/{z}/{x}/{y}.png
+  #### Huyện Tiền Hải
+  #### Huyện Vũ Thư
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-vu-thu/{z}/{x}/{y}.png
+  #### Huyện Đông Hưng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/huyen-dong-hung/{z}/{x}/{y}.png
+  #### Thành phố Thái Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-binh/thanh-pho-thai-binh/{z}/{x}/{y}.png
+
+### Thái Nguyên (9 districts)
+  #### Huyện Phú Lương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+  #### Huyện Phú Bình
+  #### Huyện Võ Nhai
+  #### Huyện Đại Từ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+  #### Huyện Định Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/huyen-dinh-hoa/{z}/{x}/{y}.png
+  #### Huyện Đồng Hỷ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
+  #### Thành phố Thái Nguyên
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thai-nguyen/thanh-pho-thai-nguyen--bs/{z}/{x}/{y}.png
+  #### Thành phố Sông Công
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-song-cong/{z}/{x}/{y}.png
+  #### Thị xã Phổ Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thai-nguyen/thanh-pho-pho-yen/{z}/{x}/{y}.png
+
+### Thanh Hóa (27 districts)
+  #### Huyện Bá Thước
+  #### Huyện Cẩm Thủy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-cam-thuy/{z}/{x}/{y}.png
+  #### Huyện Hà Trung
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-ha-trung/{z}/{x}/{y}.png
+  #### Huyện Hậu Lộc
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-hau-loc/{z}/{x}/{y}.png
+  #### Huyện Hoằng Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-hoang-hoa/{z}/{x}/{y}.png
+  #### Huyện Lang Chánh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-lang-chanh/{z}/{x}/{y}.png
+  #### Huyện Mường Lát
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-muong-lat/{z}/{x}/{y}.png
+  #### Huyện Nga Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nga-son/{z}/{x}/{y}.png
+  #### Huyện Ngọc Lặc
+  #### Huyện Như Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-xuan/{z}/{x}/{y}.png
+  #### Huyện Như Thanh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-nhu-thanh/{z}/{x}/{y}.png
+  #### Huyện Nông Cống
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-nong-cong/{z}/{x}/{y}.png
+  #### Huyện Quan Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/huyen-quan-hoa/{z}/{x}/{y}.png
+  #### Huyện Quan Sơn
+  #### Huyện Quảng Xương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-quang-xuong/{z}/{x}/{y}.png
+  #### Huyện Thạch Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/huyen-thach-thanh/{z}/{x}/{y}.png
+  #### Huyện Thiệu Hóa
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-thieu-hoa--25/{z}/{x}/{y}.png
+  #### Huyện Thọ Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-tho-xuan/{z}/{x}/{y}.png
+  #### Huyện Thường Xuân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thanh-hoa/huyen-thuong-xuan/{z}/{x}/{y}.png
+  #### Huyện Tĩnh Gia
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/thanh-hoa/thi-xa-nghi-son/{z}/{x}/{y}.png
+  #### Huyện Triệu Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/huyen-trieu-son--dc/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Lộc
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-vinh-loc--bs/{z}/{x}/{y}.png
+  #### Huyện Yên Định
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/thanh-hoa/huyen-yen-dinh/{z}/{x}/{y}.png
+  #### Huyện Đông Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/thanh-hoa/huyen-dong-son/{z}/{x}/{y}.png
+  #### Thành phố Thanh Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-thanh-hoa/{z}/{x}/{y}.png
+  #### Thành phố Sầm Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/thanh-hoa/thanh-pho-sam-son/{z}/{x}/{y}.png
+  #### Thị xã Bỉm Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/thanh-hoa/thi-xa-bim-son/{z}/{x}/{y}.png
+
+### Thừa Thiên Huế (9 districts)
+  #### Huyện A Lưới
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-a-luoi--25/{z}/{x}/{y}.png
+  #### Huyện Nam Đông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/thua-thien-hue/huyen-nam-dong/{z}/{x}/{y}.png
+  #### Huyện Phong Điền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/huyen-phong-dien/{z}/{x}/{y}.png
+  #### Huyện Phú Vang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-vang--25/{z}/{x}/{y}.png
+  #### Huyện Phú Lộc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-phu-loc/{z}/{x}/{y}.png
+  #### Huyện Quảng Điền
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/huyen-quang-dien--25/{z}/{x}/{y}.png
+  #### Thành phố Huế
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/thua-thien-hue/thanh-pho-hue/{z}/{x}/{y}.png
+  #### Thị xã Hương Thủy
+    • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/thua-thien-hue/thi-xa-huong-thuy/{z}/{x}/{y}.png
+  #### Thị xã Hương Trà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/thua-thien-hue/thi-xa-huong-tra--25/{z}/{x}/{y}.png
+
+### Tiền Giang (11 districts)
+  #### Huyện Cái Bè
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cai-be/{z}/{x}/{y}.png
+  #### Huyện Cai Lậy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-cai-lay/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-chau-thanh/{z}/{x}/{y}.png
+  #### Huyện Chợ Gạo
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-cho-gao--25/{z}/{x}/{y}.png
+  #### Huyện Gò Công Tây
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/huyen-go-cong-tay--25/{z}/{x}/{y}.png
+  #### Huyện Gò Công Đông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-go-cong-dong/{z}/{x}/{y}.png
+  #### Huyện Tân Phước
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phuoc/{z}/{x}/{y}.png
+  #### Huyện Tân Phú Đông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/huyen-tan-phu-dong/{z}/{x}/{y}.png
+  #### Thành phố Mỹ Tho
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thanh-pho-my-tho--25/{z}/{x}/{y}.png
+  #### Thị xã Gò Công
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/tien-giang/thi-xa-go-cong/{z}/{x}/{y}.png
+  #### Thị xã Cai Lậy
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/tien-giang/thi-xa-cai-lay--25/{z}/{x}/{y}.png
+
+### Trà Vinh (9 districts)
+  #### Huyện Càng Long
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cang-long/{z}/{x}/{y}.png
+  #### Huyện Cầu Kè
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ke--25/{z}/{x}/{y}.png
+  #### Huyện Cầu Ngang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-cau-ngang--25/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-chau-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Duyên Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-duyen-hai--25/{z}/{x}/{y}.png
+  #### Huyện Tiểu Cần
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tieu-can--25/{z}/{x}/{y}.png
+  #### Huyện Trà Cú
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/huyen-tra-cu/{z}/{x}/{y}.png
+  #### Thành phố Trà Vinh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thanh-pho-tra-vinh--25/{z}/{x}/{y}.png
+  #### Thị xã Duyên Hải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/tra-vinh/thi-xa-duyen-hai--25/{z}/{x}/{y}.png
+
+### Tuyên Quang (7 districts)
+  #### Huyện Chiêm Hóa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-chiem-hoa/{z}/{x}/{y}.png
+  #### Huyện Hàm Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/tuyen-quang/huyen-ham-yen/{z}/{x}/{y}.png
+  #### Huyện Lâm Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2022/tuyen-quang/huyen-lam-binh/{z}/{x}/{y}.png
+  #### Huyện Nà Hang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-na-hang/{z}/{x}/{y}.png
+  #### Huyện Sơn Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/tuyen-quang/huyen-son-duong/{z}/{x}/{y}.png
+  #### Huyện Yên Sơn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/tuyen-quang/huyen-yen-son/{z}/{x}/{y}.png
+  #### Thành phố Tuyên Quang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/tuyen-quang/thanh-pho-tuyen-quang/{z}/{x}/{y}.png
+
+### Vĩnh Long (8 districts)
+  #### Huyện  Vũng Liêm
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-vung-liem/{z}/{x}/{y}.png
+  #### Huyện Bình Tân
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-binh-tan--bs/{z}/{x}/{y}.png
+  #### Huyện Long Hồ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-long-ho/{z}/{x}/{y}.png
+  #### Huyện Mang Thít
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-mang-thit--25/{z}/{x}/{y}.png
+  #### Huyện Tam Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/huyen-tam-binh/{z}/{x}/{y}.png
+  #### Huyện Trà Ôn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-long/huyen-tra-on/{z}/{x}/{y}.png
+  #### Thành phố Vĩnh Long
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thanh-pho-vinh-long/{z}/{x}/{y}.png
+  #### Thị xã Bình Minh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-long/thi-xa-binh-minh--dc/{z}/{x}/{y}.png
+
+### Vĩnh Phúc (9 districts)
+  #### Huyện Bình Xuyên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-binh-xuyen--bs-lyk/{z}/{x}/{y}.png
+  #### Huyện Lập Thạch
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-lap-thach--25/{z}/{x}/{y}.png
+  #### Huyện Sông Lô
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/vinh-phuc/huyen-song-lo/{z}/{x}/{y}.png
+  #### Huyện Tam Dương
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/vinh-phuc/huyen-tam-duong/{z}/{x}/{y}.png
+  #### Huyện Tam Đảo
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/vinh-phuc/huyen-tam-dao/{z}/{x}/{y}.png
+  #### Huyện Vĩnh Tường
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-vinh-tuong--25/{z}/{x}/{y}.png
+  #### Huyện Yên Lạc
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/huyen-yen-lac--25/{z}/{x}/{y}.png
+  #### Thành phố Vĩnh Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-vinh-yen/{z}/{x}/{y}.png
+  #### Thị xã Phúc Yên
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/vinh-phuc/thanh-pho-phuc-yen--25/{z}/{x}/{y}.png
+
+### Yên Bái (9 districts)
+  #### Huyện Lục Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-luc-yen/{z}/{x}/{y}.png
+  #### Huyện Mù Căng Chải
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/yen-bai/huyen-mu-cang-chai/{z}/{x}/{y}.png
+  #### Huyện Trạm Tấu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-tram-tau/{z}/{x}/{y}.png
+  #### Huyện Trấn Yên
+  #### Huyện Văn Yên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-van-yen/{z}/{x}/{y}.png
+  #### Huyện Văn Chấn
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/huyen-van-chan/{z}/{x}/{y}.png
+  #### Huyện Yên Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/huyen-yen-binh/{z}/{x}/{y}.png
+  #### Thành phố Yên Bái
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+  #### Thị xã Nghĩa Lộ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/yen-bai/thi-xa-nghia-lo/{z}/{x}/{y}.png
+
+### Đà Nẵng (8 districts)
+  #### Huyện Hòa Vang
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/huyen-hoa-vang/{z}/{x}/{y}.png
+  #### Huyện Hoàng Sa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png
+  #### Quận Cẩm Lệ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-cam-le/{z}/{x}/{y}.png
+  #### Quận Hải Châu
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-hai-chau/{z}/{x}/{y}.png
+  #### Quận Liên Chiểu
+    • KH 2025: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png
+  #### Quận Ngũ Hành Sơn
+    • KH 2025: https://guland2.sgp1.cdn.digitaloceanspaces.com/qh-2020/da-nang/{z}/{x}/{y}.png
+  #### Quận Sơn Trà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/da-nang/quan-son-tra/{z}/{x}/{y}.png
+  #### Quận Thanh Khê
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland6/qh-2024/da-nang/quan-thanh-khe/{z}/{x}/{y}.png
+
+### Đắk Lắk (15 districts)
+  #### Huyện Lắk
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-lak/{z}/{x}/{y}.png
+  #### Huyện Buôn Đôn
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-buon-don--25/{z}/{x}/{y}.png
+  #### Huyện Cư Kuin
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-cu-kuin/{z}/{x}/{y}.png
+  #### Huyện Cư M'gar
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-cu-mgar--25/{z}/{x}/{y}.png
+  #### Huyện Ea H'leo
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-hleo--25/{z}/{x}/{y}.png
+  #### Huyện Ea Kar
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-ea-kar/{z}/{x}/{y}.png
+  #### Huyện Ea Súp
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-ea-sup--25/{z}/{x}/{y}.png
+  #### Huyện Krông Búk
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-buk--25/{z}/{x}/{y}.png
+  #### Huyện Krông Năng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-nang/{z}/{x}/{y}.png
+  #### Huyện Krông Bông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-krong-bong/{z}/{x}/{y}.png
+  #### Huyện Krông Pắc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png
+  #### Huyện Krông A Na
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-lak/huyen-krong-ana--25/{z}/{x}/{y}.png
+  #### Huyện M'Đrắk
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-lak/huyen-mdrak/{z}/{x}/{y}.png
+  #### Thành phố Buôn Ma Thuột
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/thanh-pho-buon-ma-thuot/{z}/{x}/{y}.png
+  #### Thị xã Thị Xã Buôn Hồ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dak-lak/huyen-krong-pac--dc/{z}/{x}/{y}.png
+
+### Đắk Nông (8 districts)
+  #### Huyện Cư Jút
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-cu-jut/{z}/{x}/{y}.png
+  #### Huyện Krông Nô
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-krong-no/{z}/{x}/{y}.png
+  #### Huyện Tuy Đức
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-tuy-duc--25/{z}/{x}/{y}.png
+  #### Huyện Đăk Glong
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-glong/{z}/{x}/{y}.png
+  #### Huyện Đắk Mil
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-mil--25/{z}/{x}/{y}.png
+  #### Huyện Đắk Song
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png
+  #### Huyện Đắk R'Lấp
+    • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-rlap--25/{z}/{x}/{y}.png
+  #### Thị xã Gia Nghĩa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png
+
+### Điện Biên (10 districts)
+  #### Huyện Mường Nhé
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-muong-nhe/{z}/{x}/{y}.png
+  #### Huyện Mường Chà
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-cha/{z}/{x}/{y}.png
+  #### Huyện Mường Ảng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-ang/{z}/{x}/{y}.png
+  #### Huyện Nậm Pồ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+  #### Huyện Tủa Chùa
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/dien-bien/huyen-tua-chua/{z}/{x}/{y}.png
+  #### Huyện Tuần Giáo
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-tuan-giao/{z}/{x}/{y}.png
+  #### Huyện Điện Biên
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien/{z}/{x}/{y}.png
+  #### Huyện Điện Biên Đông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien-dong/{z}/{x}/{y}.png
+  #### Thành phố Điện Biên Phủ
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+  #### Thị xã Thị Xã Mường Lay
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thi-xa-muong-lay/{z}/{x}/{y}.png
+
+### Đồng Tháp (12 districts)
+  #### Huyện Cao Lãnh
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png
+  #### Huyện Châu Thành
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-chau-thanh--25/{z}/{x}/{y}.png
+  #### Huyện Hồng Ngự
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-hong-ngu/{z}/{x}/{y}.png
+  #### Huyện Lai Vung
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lai-vung/{z}/{x}/{y}.png
+  #### Huyện Lấp Vò
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-lap-vo/{z}/{x}/{y}.png
+  #### Huyện Tam Nông
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-tam-nong/{z}/{x}/{y}.png
+  #### Huyện Tân Hồng
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/dong-thap/huyen-tan-hong/{z}/{x}/{y}.png
+  #### Huyện Thanh Bình
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-thanh-binh--25/{z}/{x}/{y}.png
+  #### Huyện Tháp Mười
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/huyen-thap-muoi--25/{z}/{x}/{y}.png
+  #### Thành phố Cao Lãnh
+    • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/dong-thap/thanh-pho-cao-lanh--25/{z}/{x}/{y}.png
+  #### Thành phố Sa Đéc
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/thanh-pho-sa-dec/{z}/{x}/{y}.png
+  #### Thành phố Hồng Ngự
+    • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/dong-thap/huyen-cao-lanh--25/{z}/{x}/{y}.png

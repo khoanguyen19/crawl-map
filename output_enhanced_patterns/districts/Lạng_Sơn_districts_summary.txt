@@ -1,0 +1,88 @@
+# DISTRICT PATTERNS: Lạng Sơn
+Generated: 2025-06-24T00:19:38.029572
+Admin Code: 20
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Sơn
+• District ID: 185
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-bac-son
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-bac-son/{z}/{x}/{y}.png
+
+### Huyện Bình Gia
+• District ID: 181
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-binh-gia
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-binh-gia/{z}/{x}/{y}.png
+
+### Huyện Cao Lộc
+• District ID: 183
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-cao-loc
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/lang-son/huyen-cao-loc/{z}/{x}/{y}.png
+
+### Huyện Chi Lăng
+• District ID: 187
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-chi-lang
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-chi-lang--25/{z}/{x}/{y}.png
+
+### Huyện Hữu Lũng
+• District ID: 186
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-huu-lung
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-huu-lung/{z}/{x}/{y}.png
+
+### Huyện Lộc Bình
+• District ID: 188
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-loc-binh
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-loc-binh/{z}/{x}/{y}.png
+
+### Huyện Tràng Định
+• District ID: 180
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-trang-dinh
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/huyen-trang-dinh/{z}/{x}/{y}.png
+
+### Huyện Văn Lãng
+• District ID: 182
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-van-lang
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/lang-son/huyen-van-lang/{z}/{x}/{y}.png
+
+### Huyện Văn Quan
+• District ID: 184
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-van-quan
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/yen-bai/thanh-pho-yen-bai/{z}/{x}/{y}.png
+
+### Huyện Đình Lập
+• District ID: 189
+• URL: https://guland.vn/soi-quy-hoach/lang-son/huyen-dinh-lap
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2023/lang-son/huyen-dinh-lap/{z}/{x}/{y}.png
+
+### Thành phố Lạng Sơn
+• District ID: 178
+• URL: https://guland.vn/soi-quy-hoach/lang-son/thanh-pho-lang-son
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland8/qh-2025/lang-son/thanh-pho-lang-son--25/{z}/{x}/{y}.png

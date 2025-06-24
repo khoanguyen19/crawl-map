@@ -1,0 +1,99 @@
+# DISTRICT PATTERNS: Cao Bằng
+Generated: 2025-06-23T23:35:56.557044
+Admin Code: 04
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 13
+• Successful: 13
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bảo Lâm
+• District ID: 042
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-bao-lam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lam/{z}/{x}/{y}.png
+
+### Huyện Bảo Lạc
+• District ID: 043
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-bao-lac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-bao-lac/{z}/{x}/{y}.png
+
+### Huyện Hạ Lang
+• District ID: 048
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-ha-lang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-ha-lang/{z}/{x}/{y}.png
+
+### Huyện Hà Quảng
+• District ID: 045
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-ha-quang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-ha-quang/{z}/{x}/{y}.png
+
+### Huyện Hoà An
+• District ID: 051
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-hoa-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/huyen-hoa-an/{z}/{x}/{y}.png
+
+### Huyện Nguyên Bình
+• District ID: 052
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-nguyen-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-nguyen-binh--25/{z}/{x}/{y}.png
+
+### Huyện Phục Hoà
+• District ID: 050
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-phuc-hoa
+• Patterns found: 2
+
+
+### Huyện Quảng Uyên
+• District ID: 049
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-quang-uyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-quang-hoa/{z}/{x}/{y}.png
+
+### Huyện Thạch An
+• District ID: 053
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-thach-an
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-thach-an--25/{z}/{x}/{y}.png
+
+### Huyện Thông Nông
+• District ID: 044
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-thong-nong
+• Patterns found: 2
+
+
+### Huyện Trà Lĩnh
+• District ID: 046
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-tra-linh
+• Patterns found: 2
+
+
+### Huyện Trùng Khánh
+• District ID: 047
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/huyen-trung-khanh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/cao-bang/huyen-trung-khanh/{z}/{x}/{y}.png
+
+### Thành phố Cao Bằng
+• District ID: 040
+• URL: https://guland.vn/soi-quy-hoach/cao-bang/thanh-pho-cao-bang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland7/qh-2024/cao-bang/thanh-pho-cao-bang/{z}/{x}/{y}.png

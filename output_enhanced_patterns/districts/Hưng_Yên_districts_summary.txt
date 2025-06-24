@@ -1,0 +1,80 @@
+# DISTRICT PATTERNS: Hưng Yên
+Generated: 2025-06-24T00:05:58.288844
+Admin Code: 33
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Ân Thi
+• District ID: 329
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-an-thi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-an-thi/{z}/{x}/{y}.png
+
+### Huyện Khoái Châu
+• District ID: 330
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-khoai-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-khoai-chau/{z}/{x}/{y}.png
+
+### Huyện Kim Động
+• District ID: 331
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-kim-dong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/hung-yen/huyen-kim-dong/{z}/{x}/{y}.png
+
+### Huyện Mỹ Hào
+• District ID: 328
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-my-hao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/hung-yen/thi-xa-my-hao/{z}/{x}/{y}.png
+
+### Huyện Phù Cừ
+• District ID: 333
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-phu-cu
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-phu-cu--25/{z}/{x}/{y}.png
+
+### Huyện Tiên Lữ
+• District ID: 332
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-tien-lu
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-tien-lu--25/{z}/{x}/{y}.png
+
+### Huyện Văn Lâm
+• District ID: 325
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-van-lam
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-van-lam/{z}/{x}/{y}.png
+
+### Huyện Văn Giang
+• District ID: 326
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-van-giang
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/hung-yen/huyen-van-giang/{z}/{x}/{y}.png
+
+### Huyện Yên Mỹ
+• District ID: 327
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/huyen-yen-my
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/hung-yen/huyen-yen-my/{z}/{x}/{y}.png
+
+### Thành phố Hưng Yên
+• District ID: 323
+• URL: https://guland.vn/soi-quy-hoach/hung-yen/thanh-pho-hung-yen
+• Patterns found: 2
+

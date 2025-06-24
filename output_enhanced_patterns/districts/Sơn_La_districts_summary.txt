@@ -1,0 +1,95 @@
+# DISTRICT PATTERNS: Sơn La
+Generated: 2025-06-24T00:58:27.418932
+Admin Code: 14
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 12
+• Successful: 12
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Yên
+• District ID: 121
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-bac-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-bac-yen/{z}/{x}/{y}.png
+
+### Huyện Mai Sơn
+• District ID: 125
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-mai-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-mai-son/{z}/{x}/{y}.png
+
+### Huyện Mộc Châu
+• District ID: 123
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-moc-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-moc-chau/{z}/{x}/{y}.png
+
+### Huyện Mường La
+• District ID: 120
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-muong-la
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-muong-la/{z}/{x}/{y}.png
+
+### Huyện Phù Yên
+• District ID: 122
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-phu-yen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-phu-yen--25/{z}/{x}/{y}.png
+
+### Huyện Quỳnh Nhai
+• District ID: 118
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-quynh-nhai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/huyen-quynh-nhai/{z}/{x}/{y}.png
+
+### Huyện Sông Mã
+• District ID: 126
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-song-ma
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-song-ma/{z}/{x}/{y}.png
+
+### Huyện Sốp Cộp
+• District ID: 127
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-sop-cop
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-sop-cop/{z}/{x}/{y}.png
+
+### Huyện Thuận Châu
+• District ID: 119
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-thuan-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/son-la/huyen-thuan-chau/{z}/{x}/{y}.png
+
+### Huyện Vân Hồ
+• District ID: 128
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-van-ho
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/son-la/huyen-van-ho/{z}/{x}/{y}.png
+
+### Huyện Yên Châu
+• District ID: 124
+• URL: https://guland.vn/soi-quy-hoach/son-la/huyen-yen-chau
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/son-la/huyen-yen-chau/{z}/{x}/{y}.png
+
+### Thành phố Sơn La
+• District ID: 116
+• URL: https://guland.vn/soi-quy-hoach/son-la/thanh-pho-son-la
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/son-la/thanh-pho-son-la/{z}/{x}/{y}.png

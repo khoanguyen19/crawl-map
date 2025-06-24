@@ -1,0 +1,101 @@
+# DISTRICT PATTERNS: Hà Tĩnh
+Generated: 2025-06-23T23:53:02.911637
+Admin Code: 42
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 13
+• Successful: 13
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cẩm Xuyên
+• District ID: 446
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-cam-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-cam-xuyen/{z}/{x}/{y}.png
+
+### Huyện Can Lộc
+• District ID: 443
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-can-loc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-can-loc/{z}/{x}/{y}.png
+
+### Huyện Hương Sơn
+• District ID: 439
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-huong-son
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-son/{z}/{x}/{y}.png
+
+### Huyện Hương Khê
+• District ID: 444
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-huong-khe
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-huong-khe/{z}/{x}/{y}.png
+
+### Huyện Kỳ Anh
+• District ID: 447
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-ky-anh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thi-xa-ky-anh/{z}/{x}/{y}.png
+
+### Huyện Lộc Hà
+• District ID: 448
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-loc-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-loc-ha/{z}/{x}/{y}.png
+
+### Huyện Nghi Xuân
+• District ID: 442
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-nghi-xuan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/huyen-nghi-xuan/{z}/{x}/{y}.png
+
+### Huyện Thạch Hà
+• District ID: 445
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-thach-ha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/huyen-thach-ha--cmd/{z}/{x}/{y}.png
+
+### Huyện Vũ Quang
+• District ID: 441
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-vu-quang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-tinh/huyen-vu-quang/{z}/{x}/{y}.png
+
+### Huyện Đức Thọ
+• District ID: 440
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/huyen-duc-tho
+• Patterns found: 2
+
+
+### Thành phố Hà Tĩnh
+• District ID: 436
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/thanh-pho-ha-tinh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thanh-pho-ha-tinh/{z}/{x}/{y}.png
+
+### Thị xã Hồng Lĩnh
+• District ID: 437
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/thi-xa-hong-linh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland4/qh-2024/ha-tinh/thi-xa-hong-linh--bs/{z}/{x}/{y}.png
+
+### Thị xã Kỳ Anh
+• District ID: 449
+• URL: https://guland.vn/soi-quy-hoach/ha-tinh/thi-xa-ky-anh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-tinh/thi-xa-ky-anh/{z}/{x}/{y}.png

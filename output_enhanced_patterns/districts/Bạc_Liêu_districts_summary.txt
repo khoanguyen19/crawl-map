@@ -1,0 +1,60 @@
+# DISTRICT PATTERNS: Bạc Liêu
+Generated: 2025-06-23T23:17:22.302372
+Admin Code: 95
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 7
+• Successful: 7
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Hoà Bình
+• District ID: 961
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/huyen-hoa-binh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-hoa-binh/{z}/{x}/{y}.png
+
+### Huyện Hồng Dân
+• District ID: 956
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/huyen-hong-dan
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-hong-dan/{z}/{x}/{y}.png
+
+### Huyện Phước Long
+• District ID: 957
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/huyen-phuoc-long
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-phuoc-long/{z}/{x}/{y}.png
+
+### Huyện Vĩnh Lợi
+• District ID: 958
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/huyen-vinh-loi
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/huyen-vinh-loi/{z}/{x}/{y}.png
+
+### Huyện Đông Hải
+• District ID: 960
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/huyen-dong-hai
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/bac-lieu/huyen-dong-hai/{z}/{x}/{y}.png
+
+### Thành phố Bạc Liêu
+• District ID: 954
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/thanh-pho-bac-lieu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thanh-pho-bac-lieu/{z}/{x}/{y}.png
+
+### Thị xã Giá Rai
+• District ID: 959
+• URL: https://guland.vn/soi-quy-hoach/bac-lieu/thi-xa-gia-rai
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland3/qh-2024/bac-lieu/thi-xa-gia-rai/{z}/{x}/{y}.png

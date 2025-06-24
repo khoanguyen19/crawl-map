@@ -1,0 +1,81 @@
+# DISTRICT PATTERNS: Điện Biên
+Generated: 2025-06-24T01:34:29.944620
+Admin Code: 11
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 10
+• Successful: 10
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Mường Nhé
+• District ID: 096
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-muong-nhe
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-muong-nhe/{z}/{x}/{y}.png
+
+### Huyện Mường Chà
+• District ID: 097
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-muong-cha
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-cha/{z}/{x}/{y}.png
+
+### Huyện Mường Ảng
+• District ID: 102
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-muong-ang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/dien-bien/huyen-muong-ang/{z}/{x}/{y}.png
+
+### Huyện Nậm Pồ
+• District ID: 103
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-nam-po
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+
+### Huyện Tủa Chùa
+• District ID: 098
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-tua-chua
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2021/dien-bien/huyen-tua-chua/{z}/{x}/{y}.png
+
+### Huyện Tuần Giáo
+• District ID: 099
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-tuan-giao
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-tuan-giao/{z}/{x}/{y}.png
+
+### Huyện Điện Biên
+• District ID: 100
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-dien-bien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien/{z}/{x}/{y}.png
+
+### Huyện Điện Biên Đông
+• District ID: 101
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/huyen-dien-bien-dong
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2022/dien-bien/huyen-dien-bien-dong/{z}/{x}/{y}.png
+
+### Thành phố Điện Biên Phủ
+• District ID: 094
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/thanh-pho-dien-bien-phu
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thanh-pho-dien-bien-phu/{z}/{x}/{y}.png
+
+### Thị xã Thị Xã Mường Lay
+• District ID: 095
+• URL: https://guland.vn/soi-quy-hoach/dien-bien/thi-xa-thi-xa-muong-lay
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/dien-bien/thi-xa-muong-lay/{z}/{x}/{y}.png

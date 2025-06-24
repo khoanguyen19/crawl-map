@@ -1,0 +1,53 @@
+# DISTRICT PATTERNS: Hà Nam
+Generated: 2025-06-23T23:42:42.115645
+Admin Code: 35
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 6
+• Successful: 6
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bình Lục
+• District ID: 352
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/huyen-binh-luc
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-binh-luc/{z}/{x}/{y}.png
+
+### Huyện Duy Tiên
+• District ID: 349
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/huyen-duy-tien
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-duy-tien--bs/{z}/{x}/{y}.png
+
+### Huyện Kim Bảng
+• District ID: 350
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/huyen-kim-bang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thi-xa-kim-bang--dc-lyk/{z}/{x}/{y}.png
+
+### Huyện Lý Nhân
+• District ID: 353
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/huyen-ly-nhan
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-ly-nhan/{z}/{x}/{y}.png
+
+### Huyện Thanh Liêm
+• District ID: 351
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/huyen-thanh-liem
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/huyen-thanh-liem--25/{z}/{x}/{y}.png
+
+### Thành phố Phủ Lý
+• District ID: 347
+• URL: https://guland.vn/soi-quy-hoach/ha-nam/thanh-pho-phu-ly
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland8/qh-2025/ha-nam/thanh-pho-phu-ly--25/{z}/{x}/{y}.png

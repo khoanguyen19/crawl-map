@@ -1,0 +1,67 @@
+# DISTRICT PATTERNS: Đắk Nông
+Generated: 2025-06-24T01:32:39.310048
+Admin Code: 67
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 8
+• Successful: 8
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Cư Jút
+• District ID: 662
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-cu-jut
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-cu-jut/{z}/{x}/{y}.png
+
+### Huyện Krông Nô
+• District ID: 664
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-krong-no
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-krong-no/{z}/{x}/{y}.png
+
+### Huyện Tuy Đức
+• District ID: 667
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-tuy-duc
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-tuy-duc--25/{z}/{x}/{y}.png
+
+### Huyện Đăk Glong
+• District ID: 661
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-glong
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-glong/{z}/{x}/{y}.png
+
+### Huyện Đắk Mil
+• District ID: 663
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-mil
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-mil--25/{z}/{x}/{y}.png
+
+### Huyện Đắk Song
+• District ID: 665
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-song
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png
+
+### Huyện Đắk R'Lấp
+• District ID: 666
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/huyen-dak-rlap
+• Patterns found: 4
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/dak-nong/huyen-dak-rlap--25/{z}/{x}/{y}.png
+
+### Thị xã Gia Nghĩa
+• District ID: 660
+• URL: https://guland.vn/soi-quy-hoach/dak-nong/thi-xa-gia-nghia
+• Patterns found: 4
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/dak-nong/huyen-dak-song/{z}/{x}/{y}.png

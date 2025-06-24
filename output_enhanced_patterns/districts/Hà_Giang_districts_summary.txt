@@ -1,0 +1,87 @@
+# DISTRICT PATTERNS: Hà Giang
+Generated: 2025-06-23T23:44:12.828449
+Admin Code: 02
+Method: District-level HTML extraction + API
+
+## 📊 SUMMARY
+• Total districts: 11
+• Successful: 11
+• Failed: 0
+
+## 🏘️ DISTRICT BREAKDOWN
+
+### Huyện Bắc Mê
+• District ID: 031
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-bac-me
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-me--25/{z}/{x}/{y}.png
+
+### Huyện Bắc Quang
+• District ID: 034
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-bac-quang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-bac-quang/{z}/{x}/{y}.png
+
+### Huyện Hoàng Su Phì
+• District ID: 032
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-hoang-su-phi
+• Patterns found: 2
+
+
+### Huyện Mèo Vạc
+• District ID: 027
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-meo-vac
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-meo-vac/{z}/{x}/{y}.png
+
+### Huyện Quản Bạ
+• District ID: 029
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-quan-ba
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-quan-ba/{z}/{x}/{y}.png
+
+### Huyện Quang Bình
+• District ID: 035
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-quang-binh
+• Patterns found: 3
+
+  • KH 2025: https://sgp1.digitaloceanspaces.com/guland/2022/ha-giang/huyen-quang-binh/{z}/{x}/{y}.png
+
+### Huyện Vị Xuyên
+• District ID: 030
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-vi-xuyen
+• Patterns found: 3
+
+  • KH 2025: https://s3-han02.fptcloud.com/guland9/qh-2025/ha-giang/huyen-vi-xuyen/{z}/{x}/{y}.png
+
+### Huyện Xín Mần
+• District ID: 033
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-xin-man
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland5/qh-2024/ha-giang/huyen-xin-man/{z}/{x}/{y}.png
+
+### Huyện Yên Minh
+• District ID: 028
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-yen-minh
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland2/qh-2023/ha-giang/huyen-yen-minh/{z}/{x}/{y}.png
+
+### Huyện Đồng Văn
+• District ID: 026
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/huyen-dong-van
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/huyen-dong-van/{z}/{x}/{y}.png
+
+### Thành phố Hà Giang
+• District ID: 024
+• URL: https://guland.vn/soi-quy-hoach/ha-giang/thanh-pho-ha-giang
+• Patterns found: 3
+
+  • KH 2025: https://s3-hn-2.cloud.cmctelecom.vn/guland9/qh-2025/ha-giang/thanh-pho-ha-giang/{z}/{x}/{y}.png
