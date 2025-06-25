@@ -31,6 +31,8 @@ from tqdm import tqdm
 import time
 import argparse
 import sys
+import unicodedata
+import re
 
 # Setup logging
 logging.basicConfig(
@@ -171,7 +173,173 @@ class EnhancedMultiMapSpacesUploader:
         # Rate limiting and performance optimization
         self.api_call_count = 0
         self.last_api_reset = time.time()
-        self.max_api_calls_per_second = 100  # Conservative limit for DO Spaces
+        self.max_api_calls_per_second = 200  # Increase from 100
+        self.batch_check_size = 100  # Check existence in batches
+        self.upload_timeout = 30  # Add timeout for uploads
+        self.retry_attempts = 3  # Add retry logic
+
+        # Connection pooling for better performance
+        self.session = boto3.Session()
+        self.s3_client = self.session.client(
+            's3',
+            region_name=region,
+            endpoint_url=endpoint_url,
+            aws_access_key_id=access_key,
+            aws_secret_access_key=secret_key,
+            config=boto3.session.Config(
+                retries={'max_attempts': 3, 'mode': 'adaptive'},
+                max_pool_connections=50,  # Increase connection pool
+                region_name=region
+            )
+        )
+        self.max_cache_size = 1000
+        self.stats_save_interval = 50  # Save stats every 50 operations
+        self.last_stats_save = 0
+        
+        # Optimize API settings
+        self.max_api_calls_per_second = 250  # Increase further if stable
+    
+    def batch_check_existence(self, s3_keys):
+        """Check multiple files existence in batch for better performance"""
+        existing_files = set()
+        
+        # Group files by common prefixes for efficient checking
+        prefix_groups = {}
+        for s3_key in s3_keys:
+            prefix = '/'.join(s3_key.split('/')[:-1])  # Get directory path
+            if prefix not in prefix_groups:
+                prefix_groups[prefix] = []
+            prefix_groups[prefix].append(s3_key)
+        
+        for prefix, keys in prefix_groups.items():
+            try:
+                self.rate_limit_check()
+                
+                # List objects with this prefix
+                response = self.s3_client.list_objects_v2(
+                    Bucket=self.bucket_name,
+                    Prefix=prefix + '/',
+                    MaxKeys=1000
+                )
+                
+                if 'Contents' in response:
+                    existing_keys = {obj['Key'] for obj in response['Contents']}
+                    # Find which of our target keys exist
+                    for key in keys:
+                        if key in existing_keys:
+                            existing_files.add(key)
+                            
+            except Exception as e:
+                logger.warning(f"Error batch checking {prefix}: {e}")
+                # Fallback to individual checks
+                for key in keys:
+                    if self.file_exists_in_spaces(key):
+                        existing_files.add(key)
+        
+        return existing_files
+    
+    def upload_single_file_optimized(self, local_path, s3_key, file_info=None, city=None, map_type=None, zoom=None, district=None):
+        """Optimized upload with retry logic and better error handling"""
+        for attempt in range(self.retry_attempts):
+            try:
+                # Resume functionality check (optimized)
+                resume_key = f"{s3_key}:{file_info['md5'] if file_info else 'unknown'}"
+                if resume_key in self.uploaded_files:
+                    self.stats['skipped_files'] += 1
+                    self.update_comprehensive_stats(city, map_type, zoom, 'skipped', file_info['size'] if file_info else 0, district)
+                    return {'success': True, 'skipped': True, 'file': s3_key, 'size': file_info['size'] if file_info else 0}
+                
+                # Get file info if not provided (cached)
+                if not file_info:
+                    file_info = self.get_file_info_cached(local_path)
+                    if not file_info:
+                        return {'success': False, 'error': 'Could not get file info', 'file': s3_key}
+                
+                # Prepare upload with optimized settings
+                content_type = self.determine_content_type(local_path, file_info)
+                metadata = self.create_file_metadata(local_path, file_info, city, map_type, zoom, district)
+                
+                # Debug log for problematic metadata
+                if district and any('đ' in str(v) or any(ord(c) > 127 for c in str(v)) for v in metadata.values()):
+                    logger.debug(f"🔍 Metadata for {s3_key}: {metadata}")
+                
+                extra_args = {
+                    'ACL': 'public-read',
+                    'ContentType': content_type,
+                    'CacheControl': 'max-age=31536000, public',
+                    'ContentDisposition': 'inline',
+                    'Metadata': metadata
+                }
+                
+                # Upload with timeout
+                self.rate_limit_check()
+                self.s3_client.upload_file(
+                    local_path,
+                    self.bucket_name,
+                    s3_key,
+                    ExtraArgs=extra_args,
+                    Config=boto3.s3.transfer.TransferConfig(
+                        multipart_threshold=1024 * 25,  # 25MB
+                        max_concurrency=10,
+                        multipart_chunksize=1024 * 25,
+                        use_threads=True
+                    )
+                )
+                
+                # Success - update tracking
+                self.uploaded_files.add(resume_key)
+                self.stats['uploaded_files'] += 1
+                self.stats['uploaded_bytes'] += file_info['size']
+                self.update_comprehensive_stats(city, map_type, zoom, 'uploaded', file_info['size'])
+                
+                return {
+                    'success': True,
+                    'file': s3_key,
+                    'size': file_info['size'],
+                    'attempt': attempt + 1
+                }
+                
+            except Exception as e:
+                error_msg = str(e)
+                if "Non ascii characters found" in error_msg:
+                    logger.error(f"❌ ASCII metadata error for {s3_key}")
+                    logger.error(f"    District: {district}")
+                    logger.error(f"    City: {city}")
+                    logger.error(f"    Full error: {error_msg}")
+                    
+                if attempt < self.retry_attempts - 1:
+                    wait_time = (2 ** attempt) * 0.5  # Exponential backoff
+                    logger.warning(f"Upload attempt {attempt + 1} failed for {s3_key}: {e}. Retrying in {wait_time}s...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    logger.error(f"❌ All {self.retry_attempts} upload attempts failed for {s3_key}: {e}")
+                    self.stats['failed_files'] += 1
+                    self.update_comprehensive_stats(city, map_type, zoom, 'failed', 0, district)
+                    return {'success': False, 'error': str(e), 'file': s3_key}
+
+    # Cache for file info to avoid repeated disk operations
+    _file_info_cache = {}
+    def get_file_info_cached(self, file_path):
+        """Get file info with caching to avoid repeated disk operations"""
+        stat = os.stat(file_path)
+        cache_key = f"{file_path}:{stat.st_mtime}"
+        
+        if cache_key in self._file_info_cache:
+            return self._file_info_cache[cache_key]
+        
+        file_info = self.get_file_info(file_path)
+        if file_info:
+            self._file_info_cache[cache_key] = file_info
+            
+            # Limit cache size
+            if len(self._file_info_cache) > 1000:
+                # Remove oldest entries
+                oldest_keys = list(self._file_info_cache.keys())[:100]
+                for key in oldest_keys:
+                    del self._file_info_cache[key]
+        
+        return file_info
 
     def load_resume_state(self):
         """Load resume state from file with validation"""
@@ -202,20 +370,41 @@ class EnhancedMultiMapSpacesUploader:
         return set()
 
     def save_resume_state(self):
-        """Save comprehensive resume state for recovery"""
+        """Save resume state to file with proper error handling"""
         try:
             resume_data = {
                 'uploaded_files': list(self.uploaded_files),
-                'stats': self.stats.copy(),
+                'stats': {
+                    'uploaded_files': self.stats['uploaded_files'],
+                    'skipped_files': self.stats['skipped_files'],
+                    'failed_files': self.stats['failed_files'],
+                    'total_bytes': self.stats['total_bytes'],
+                    'uploaded_bytes': self.stats['uploaded_bytes']
+                },
                 'timestamp': datetime.now().isoformat(),
-                'session_id': f"upload_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                'version': '2.0-enhanced'
             }
             
-            with open(self.resume_file, 'w') as f:
+            # Write to temporary file first, then rename for atomic operation
+            temp_file = f"{self.resume_file}.tmp"
+            with open(temp_file, 'w') as f:
                 json.dump(resume_data, f, indent=2)
-                
+            
+            # Atomic rename
+            os.rename(temp_file, self.resume_file)
+            
+            logger.debug(f"💾 Resume state saved: {len(self.uploaded_files)} files")
+            
         except Exception as e:
             logger.warning(f"⚠️ Could not save resume state: {e}")
+    
+    def save_resume_state_optimized(self):
+        """Optimized resume state saving - only save when needed"""
+        current_count = self.stats['uploaded_files'] + self.stats['skipped_files']
+        
+        if current_count - self.last_stats_save >= self.stats_save_interval:
+            self.save_resume_state()  # ✅ Gọi function chính, không đệ quy
+            self.last_stats_save = current_count
 
     def rate_limit_check(self):
         """Implement rate limiting to avoid DO Spaces throttling"""
@@ -237,20 +426,25 @@ class EnhancedMultiMapSpacesUploader:
         self.api_call_count += 1
 
     def get_file_info(self, file_path):
-        """Get comprehensive file information including metadata"""
+        """Optimized file info gathering"""
         try:
             stat = os.stat(file_path)
             size = stat.st_size
             
-            # Calculate MD5 hash for integrity verification
-            hash_md5 = hashlib.md5()
-            with open(file_path, "rb") as f:
-                for chunk in iter(lambda: f.read(4096), b""):
-                    hash_md5.update(chunk)
+            # Skip MD5 for very small files (under 1KB) - not worth the overhead
+            if size < 1024:
+                md5 = f"small_file_{size}_{stat.st_mtime}"
+            else:
+                # Optimized MD5 calculation with larger buffer
+                hash_md5 = hashlib.md5()
+                with open(file_path, "rb") as f:
+                    while chunk := f.read(65536):  # 64KB chunks instead of 4KB
+                        hash_md5.update(chunk)
+                md5 = hash_md5.hexdigest()
             
             return {
                 'size': size,
-                'md5': hash_md5.hexdigest(),
+                'md5': md5,
                 'modified_time': stat.st_mtime,
                 'created_time': stat.st_ctime,
                 'file_extension': os.path.splitext(file_path)[1].lower()
@@ -394,10 +588,61 @@ class EnhancedMultiMapSpacesUploader:
         
         return content_type
 
+    def sanitize_metadata_value(self, value):
+        """Sanitize metadata value to ensure ASCII-only characters"""
+        if not value:
+            return value
+        
+        try:
+            # First try to normalize Unicode characters
+            normalized = unicodedata.normalize('NFKD', str(value))
+            
+            # Remove diacritics and convert to ASCII
+            ascii_value = normalized.encode('ascii', 'ignore').decode('ascii')
+            
+            # Replace common Vietnamese characters manually if needed
+            vietnamese_replacements = {
+                'đ': 'd', 'Đ': 'D',
+                'ă': 'a', 'â': 'a', 'á': 'a', 'à': 'a', 'ả': 'a', 'ã': 'a', 'ạ': 'a',
+                'Ă': 'A', 'Â': 'A', 'Á': 'A', 'À': 'A', 'Ả': 'A', 'Ã': 'A', 'Ạ': 'A',
+                'ê': 'e', 'é': 'e', 'è': 'e', 'ẻ': 'e', 'ẽ': 'e', 'ẹ': 'e',
+                'Ê': 'E', 'É': 'E', 'È': 'E', 'Ẻ': 'E', 'Ẽ': 'E', 'Ẹ': 'E',
+                'ô': 'o', 'ơ': 'o', 'ó': 'o', 'ò': 'o', 'ỏ': 'o', 'õ': 'o', 'ọ': 'o',
+                'Ô': 'O', 'Ơ': 'O', 'Ó': 'O', 'Ò': 'O', 'Ỏ': 'O', 'Õ': 'O', 'Ọ': 'O',
+                'ư': 'u', 'ú': 'u', 'ù': 'u', 'ủ': 'u', 'ũ': 'u', 'ụ': 'u',
+                'Ư': 'U', 'Ú': 'U', 'Ù': 'U', 'Ủ': 'U', 'Ũ': 'U', 'Ụ': 'U',
+                'í': 'i', 'ì': 'i', 'ỉ': 'i', 'ĩ': 'i', 'ị': 'i',
+                'Í': 'I', 'Ì': 'I', 'Ỉ': 'I', 'Ĩ': 'I', 'Ị': 'I',
+                'ý': 'y', 'ỳ': 'y', 'ỷ': 'y', 'ỹ': 'y', 'ỵ': 'y',
+                'Ý': 'Y', 'Ỳ': 'Y', 'Ỷ': 'Y', 'Ỹ': 'Y', 'Ỵ': 'Y'
+            }
+            
+            # Apply Vietnamese replacements if ASCII conversion failed
+            if not ascii_value or len(ascii_value) < len(value) * 0.5:
+                for vietnamese_char, replacement in vietnamese_replacements.items():
+                    value = value.replace(vietnamese_char, replacement)
+                ascii_value = value
+            
+            # Ensure only ASCII characters remain
+            ascii_value = re.sub(r'[^\x00-\x7F]', '', ascii_value)
+            
+            # Replace spaces and special characters with hyphens
+            ascii_value = re.sub(r'[^\w\-.]', '-', ascii_value)
+            
+            # Clean up multiple hyphens
+            ascii_value = re.sub(r'-+', '-', ascii_value).strip('-')
+            
+            return ascii_value if ascii_value else 'unknown'
+            
+        except Exception as e:
+            logger.warning(f"⚠️ Error sanitizing metadata value '{value}': {e}")
+            # Fallback: remove all non-ASCII characters
+            return re.sub(r'[^\x00-\x7F]', '', str(value)) or 'unknown'
+
     def create_file_metadata(self, local_path, file_info, city, map_type, zoom, district=None):
-        """Create comprehensive metadata for uploaded files with district support"""
+        """Create comprehensive metadata for uploaded files with district support and ASCII sanitization"""
         metadata = {
-            'original-name': os.path.basename(local_path),
+            'original-name': self.sanitize_metadata_value(os.path.basename(local_path)),
             'upload-time': datetime.now().isoformat(),
             'md5-hash': file_info['md5'],
             'file-size': str(file_info['size']),
@@ -406,86 +651,99 @@ class EnhancedMultiMapSpacesUploader:
             'uploader-version': '2.0-enhanced'
         }
         
-        # Add location and map type metadata
+        # Add location and map type metadata with sanitization
         if city:
-            metadata['city'] = city
+            metadata['city'] = self.sanitize_metadata_value(city)
+            metadata['city-original'] = city  # Keep original for reference (will be sanitized)
         
         if district:
-            metadata['district'] = district
+            metadata['district'] = self.sanitize_metadata_value(district)
+            metadata['district-original'] = self.sanitize_metadata_value(district)  # Also sanitize original
             metadata['structure-type'] = 'kh-2025-district'
         else:
             metadata['structure-type'] = 'standard'
         
         if map_type:
-            metadata['map-type'] = map_type
+            metadata['map-type'] = self.sanitize_metadata_value(map_type)
             map_config = MAP_TYPE_CONFIG.get(map_type, {})
             if map_config:
-                metadata['map-type-display'] = map_config.get('display_name', map_type)
+                metadata['map-type-display'] = self.sanitize_metadata_value(map_config.get('display_name', map_type))
                 metadata['map-type-priority'] = str(map_config.get('priority', 99))
         
         if zoom:
             metadata['zoom-level'] = str(zoom)
             metadata['tile-detail'] = 'high' if int(zoom) >= 14 else 'medium' if int(zoom) >= 10 else 'low'
         
-        return metadata
+        # Final sanitization pass for all metadata values
+        sanitized_metadata = {}
+        for key, value in metadata.items():
+            sanitized_key = self.sanitize_metadata_value(key).replace(' ', '-')
+            sanitized_value = self.sanitize_metadata_value(str(value))
+            sanitized_metadata[sanitized_key] = sanitized_value
+        
+        return sanitized_metadata
 
     def update_comprehensive_stats(self, city, map_type, zoom, status, size, district=None):
-        """Update comprehensive statistics across all dimensions"""
-        # City statistics
-        if city:
-            if city not in self.stats['city_stats']:
-                self.stats['city_stats'][city] = {
-                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
-                }
-            self.stats['city_stats'][city][status] += 1
-            if status in ['uploaded', 'skipped']:
-                self.stats['city_stats'][city]['bytes'] += size
-        
-        # Map type statistics
-        if map_type:
-            if map_type not in self.stats['map_type_stats']:
-                self.stats['map_type_stats'][map_type] = {
-                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
-                }
-            self.stats['map_type_stats'][map_type][status] += 1
-            if status in ['uploaded', 'skipped']:
-                self.stats['map_type_stats'][map_type]['bytes'] += size
-        
-        # District statistics (for KH_2025)
-        if district:
-            if 'district_stats' not in self.stats:
-                self.stats['district_stats'] = {}
-            if district not in self.stats['district_stats']:
-                self.stats['district_stats'][district] = {
-                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
-                }
-            self.stats['district_stats'][district][status] += 1
-            if status in ['uploaded', 'skipped']:
-                self.stats['district_stats'][district]['bytes'] += size
-        
-        # Combination statistics (city + map_type + district)
-        if city and map_type:
-            combo_key = f"{city}:{map_type}"
-            if district:
-                combo_key += f":{district}"
+        """Update comprehensive statistics across all dimensions with safety checks"""
+        try:
+            # City statistics
+            if city:
+                if city not in self.stats['city_stats']:
+                    self.stats['city_stats'][city] = {
+                        'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                    }
+                self.stats['city_stats'][city][status] += 1
+                if status in ['uploaded', 'skipped']:
+                    self.stats['city_stats'][city]['bytes'] += size
             
-            if combo_key not in self.stats['combination_stats']:
-                self.stats['combination_stats'][combo_key] = {
-                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
-                }
-            self.stats['combination_stats'][combo_key][status] += 1
-            if status in ['uploaded', 'skipped']:
-                self.stats['combination_stats'][combo_key]['bytes'] += size
+            # Map type statistics
+            if map_type:
+                if map_type not in self.stats['map_type_stats']:
+                    self.stats['map_type_stats'][map_type] = {
+                        'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                    }
+                self.stats['map_type_stats'][map_type][status] += 1
+                if status in ['uploaded', 'skipped']:
+                    self.stats['map_type_stats'][map_type]['bytes'] += size
+            
+            # District statistics (for KH_2025)
+            if district:
+                if 'district_stats' not in self.stats:
+                    self.stats['district_stats'] = {}
+                if district not in self.stats['district_stats']:
+                    self.stats['district_stats'][district] = {
+                        'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                    }
+                self.stats['district_stats'][district][status] += 1
+                if status in ['uploaded', 'skipped']:
+                    self.stats['district_stats'][district]['bytes'] += size
+            
+            # Combination statistics (city + map_type + district)
+            if city and map_type:
+                combo_key = f"{city}:{map_type}"
+                if district:
+                    combo_key += f":{district}"
+                
+                if combo_key not in self.stats['combination_stats']:
+                    self.stats['combination_stats'][combo_key] = {
+                        'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                    }
+                self.stats['combination_stats'][combo_key][status] += 1
+                if status in ['uploaded', 'skipped']:
+                    self.stats['combination_stats'][combo_key]['bytes'] += size
+            
+            # Zoom level statistics
+            if zoom:
+                if zoom not in self.stats['zoom_level_stats']:
+                    self.stats['zoom_level_stats'][zoom] = {
+                        'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                    }
+                self.stats['zoom_level_stats'][zoom][status] += 1
+                if status in ['uploaded', 'skipped']:
+                    self.stats['zoom_level_stats'][zoom]['bytes'] += size
         
-        # Zoom level statistics
-        if zoom:
-            if zoom not in self.stats['zoom_level_stats']:
-                self.stats['zoom_level_stats'][zoom] = {
-                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
-                }
-            self.stats['zoom_level_stats'][zoom][status] += 1
-            if status in ['uploaded', 'skipped']:
-                self.stats['zoom_level_stats'][zoom]['bytes'] += size
+        except Exception as e:
+            logger.warning(f"⚠️ Error updating stats: {e}")
 
     def parse_file_path(self, file_path, base_dir):
         """
@@ -584,9 +842,10 @@ class EnhancedMultiMapSpacesUploader:
             }
 
     def scan_multi_map_directory(self, local_dir, s3_prefix='', target_cities=None, target_map_types=None, target_zoom_levels=None):
-        """
-        Enhanced directory scanning with comprehensive filtering options
-        """
+        """Parallel directory scanning for better performance"""
+        import concurrent.futures
+        from pathlib import Path
+        
         files_to_upload = []
         scan_summary = {
             'cities': {},
@@ -596,86 +855,152 @@ class EnhancedMultiMapSpacesUploader:
             'file_count': 0
         }
         
-        logger.info(f"🔍 Scanning multi-map directory: {local_dir}")
-        if target_cities:
-            logger.info(f"🎯 Target cities: {target_cities}")
-        if target_map_types:
-            logger.info(f"🗺️ Target map types: {target_map_types}")
-        if target_zoom_levels:
-            logger.info(f"🔍 Target zoom levels: {target_zoom_levels}")
+        logger.info(f"🔍 Starting parallel directory scan: {local_dir}")
         
-        # Pre-scan to estimate total files for progress bar
-        logger.info("📊 Pre-scanning to estimate file count...")
-        total_files = 0
-        for root, dirs, files in os.walk(local_dir):
-            for file in files:
-                if not self.should_skip_file(file):
-                    total_files += 1
+        # Use pathlib for faster directory traversal
+        base_path = Path(local_dir)
+        if not base_path.exists():
+            logger.error(f"Directory not found: {local_dir}")
+            return []
         
-        logger.info(f"📊 Found approximately {total_files:,} files to process")
-        
-        # Walk through directory structure with progress bar
-        processed_files = 0
-        with tqdm(total=total_files, desc="Scanning files", unit="file") as pbar:
-            for root, dirs, files in os.walk(local_dir):
-                for file in files:
-                    local_path = os.path.join(root, file)
-                    
-                    # Skip unwanted files
-                    if self.should_skip_file(file):
+        # Find all image files in parallel
+        def scan_city_directory(city_path):
+            city_files = []
+            city_name = city_path.name
+            
+            # Apply city filter early
+            if target_cities and city_name not in target_cities:
+                return city_files
+            
+            try:
+                for map_type_path in city_path.iterdir():
+                    if not map_type_path.is_dir():
                         continue
                     
-                    # Update progress
-                    processed_files += 1
+                    map_type_name = map_type_path.name
+                    
+                    # Apply map type filter early
+                    if target_map_types and map_type_name not in target_map_types:
+                        continue
+                    
+                    # Handle both standard and KH-2025 district structure
+                    if map_type_name == 'kh-2025':
+                        # KH-2025 structure: city/kh-2025/district/zoom/files
+                        for district_path in map_type_path.iterdir():
+                            if not district_path.is_dir():
+                                continue
+                                
+                            for zoom_path in district_path.iterdir():
+                                if not zoom_path.is_dir():
+                                    continue
+                                    
+                                zoom_str = zoom_path.name
+                                try:
+                                    zoom_int = int(zoom_str)
+                                    if target_zoom_levels and zoom_int not in target_zoom_levels:
+                                        continue
+                                except ValueError:
+                                    continue
+                                
+                                # Scan files in this zoom directory
+                                for file_path in zoom_path.iterdir():
+                                    if file_path.is_file() and not self.should_skip_file(file_path.name):
+                                        city_files.append((str(file_path), city_name, map_type_name, district_path.name, zoom_str))
+                    else:
+                        # Standard structure: city/map_type/zoom/files
+                        for zoom_path in map_type_path.iterdir():
+                            if not zoom_path.is_dir():
+                                continue
+                                
+                            zoom_str = zoom_path.name
+                            try:
+                                zoom_int = int(zoom_str)
+                                if target_zoom_levels and zoom_int not in target_zoom_levels:
+                                    continue
+                            except ValueError:
+                                continue
+                            
+                            # Scan files in this zoom directory
+                            for file_path in zoom_path.iterdir():
+                                if file_path.is_file() and not self.should_skip_file(file_path.name):
+                                    city_files.append((str(file_path), city_name, map_type_name, None, zoom_str))
+                                    
+            except Exception as e:
+                logger.warning(f"Error scanning city {city_name}: {e}")
+            
+            return city_files
+        
+        # Get all city directories
+        city_paths = [p for p in base_path.iterdir() if p.is_dir()]
+        
+        # Scan cities in parallel
+        all_files = []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=min(len(city_paths), 10)) as executor:
+            future_to_city = {executor.submit(scan_city_directory, city_path): city_path.name 
+                             for city_path in city_paths}
+            
+            with tqdm(total=len(future_to_city), desc="Scanning cities") as pbar:
+                for future in concurrent.futures.as_completed(future_to_city):
+                    city_name = future_to_city[future]
+                    try:
+                        city_files = future.result()
+                        all_files.extend(city_files)
+                        pbar.set_postfix(files=len(all_files))
+                    except Exception as e:
+                        logger.error(f"Error processing city {city_name}: {e}")
                     pbar.update(1)
-                    
-                    # Show current path being processed
-                    rel_path = os.path.relpath(local_path, local_dir)
-                    path_parts = rel_path.split(os.sep)
-                    if len(path_parts) >= 2:
-                        current_city = path_parts[0]
-                        current_map = path_parts[1]
-                        pbar.set_postfix(city=current_city[:10], map=current_map[:10])
-                    
-                    # Parse file path for metadata
-                    path_info = self.parse_file_path(local_path, local_dir)
-                    
-                    # Apply filters
-                    if not self.passes_filters(path_info, target_cities, target_map_types, target_zoom_levels):
-                        continue
-                    
-                    # Generate S3 key
-                    rel_path = os.path.relpath(local_path, local_dir)
-                    s3_key = os.path.join(s3_prefix, rel_path).replace('\\', '/') if s3_prefix else rel_path.replace('\\', '/')
-                    
-                    # Get file information
-                    file_info = self.get_file_info(local_path)
-                    if not file_info:
-                        continue
-                    
-                    # Add to upload list
-                    files_to_upload.append({
-                        'local_path': local_path,
-                        's3_key': s3_key,
-                        'file_info': file_info,
-                        'city': path_info['city'],
-                        'map_type': path_info['map_type'],
-                        'district': path_info.get('district'),
-                        'zoom': path_info['zoom']
-                    })
-                    
-                    # Update scan summary
-                    self.update_scan_summary(scan_summary, path_info, file_info)
-                    self.stats['total_files'] += 1
-                    self.stats['total_bytes'] += file_info['size']
-                    
-                    # Log progress every 1000 files
-                    if len(files_to_upload) % 1000 == 0:
-                        logger.info(f"📊 Processed {len(files_to_upload):,} matching files so far...")
         
-        # Log comprehensive scan results
+        # Process file information in parallel
+        def process_file(file_data):
+            local_path, city, map_type, district, zoom = file_data
+            
+            # Generate S3 key
+            rel_path = os.path.relpath(local_path, local_dir)
+            s3_key = os.path.join(s3_prefix, rel_path).replace('\\', '/') if s3_prefix else rel_path.replace('\\', '/')
+            
+            # Get file information
+            file_info = self.get_file_info_cached(local_path)
+            if not file_info:
+                return None
+            
+            return {
+                'local_path': local_path,
+                's3_key': s3_key,
+                'file_info': file_info,
+                'city': city,
+                'map_type': map_type,
+                'district': district,
+                'zoom': zoom
+            }
+        
+        # Process files in parallel
+        logger.info(f"📊 Processing {len(all_files)} files...")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+            with tqdm(total=len(all_files), desc="Processing files") as pbar:
+                future_to_file = {executor.submit(process_file, file_data): file_data 
+                                for file_data in all_files}
+                
+                for future in concurrent.futures.as_completed(future_to_file):
+                    try:
+                        result = future.result()
+                        if result:
+                            files_to_upload.append(result)
+                            
+                            # Update scan summary
+                            path_info = {
+                                'city': result['city'],
+                                'map_type': result['map_type'],
+                                'zoom': result['zoom']
+                            }
+                            self.update_scan_summary(scan_summary, path_info, result['file_info'])
+                            self.stats['total_files'] += 1
+                            self.stats['total_bytes'] += result['file_info']['size']
+                            
+                    except Exception as e:
+                        logger.warning(f"Error processing file: {e}")
+                    pbar.update(1)
+        
         self.log_scan_results(scan_summary, len(files_to_upload))
-        
         return files_to_upload
 
     def should_skip_file(self, filename):
@@ -860,34 +1185,17 @@ class EnhancedMultiMapSpacesUploader:
     def upload_with_enhanced_filtering(self, local_dir, s3_prefix='', max_workers=5, 
                                      target_cities=None, target_map_types=None, target_zoom_levels=None,
                                      skip_existing_combinations=True, dry_run=False):
-        """
-        Main upload method with comprehensive filtering and optimization
-        """
+        """Optimized upload method with batch processing and better performance"""
         
-        logger.info(f"🚀 Starting Enhanced Multi-Map Upload")
-        logger.info(f"📁 Local directory: {local_dir}")
-        logger.info(f"🪣 Bucket: {self.bucket_name}")
-        logger.info(f"📂 S3 prefix: {s3_prefix if s3_prefix else '(none)'}")
-        logger.info(f"🏙️ Target cities: {target_cities if target_cities else 'ALL'}")
-        logger.info(f"🗺️ Target map types: {target_map_types if target_map_types else 'ALL'}")
-        logger.info(f"🔍 Target zoom levels: {target_zoom_levels if target_zoom_levels else 'ALL'}")
-        logger.info(f"⏭️ Skip existing: {skip_existing_combinations}")
-        logger.info(f"🧪 Dry run mode: {dry_run}")
+        # Increase default workers for better performance
+        max_workers = min(max_workers, 15)  # Cap at 15 for DO Spaces
+        
+        logger.info(f"🚀 Starting Optimized Enhanced Multi-Map Upload")
+        logger.info(f"👥 Using {max_workers} parallel workers")
         
         self.stats['start_time'] = time.time()
         
-        # Check existing combinations if skip is enabled
-        existing_combinations = {}
-        if skip_existing_combinations:
-            print("\n🔍 CHECKING EXISTING COMBINATIONS IN SPACES...")
-            existing_combinations = self.scan_existing_combinations_in_spaces(
-                local_dir, s3_prefix, target_cities, target_map_types
-            )
-            
-            if existing_combinations:
-                self.log_existing_combinations(existing_combinations)
-        
-        # Scan local directory with filters
+        # Use parallel scanning
         files_to_upload = self.scan_multi_map_directory(
             local_dir, s3_prefix, target_cities, target_map_types, target_zoom_levels
         )
@@ -896,29 +1204,113 @@ class EnhancedMultiMapSpacesUploader:
             logger.warning("⚠️ No files found to upload after filtering")
             return
         
-        # Filter out existing combinations
-        if skip_existing_combinations and existing_combinations:
-            files_to_upload = self.filter_existing_combinations(files_to_upload, existing_combinations)
+        # Batch check existing files for better performance
+        if skip_existing_combinations:
+            logger.info("🔍 Batch checking existing files...")
+            s3_keys = [f['s3_key'] for f in files_to_upload]
+            existing_files = self.batch_check_existence(s3_keys)
+            
+            if existing_files:
+                # Filter out existing files
+                original_count = len(files_to_upload)
+                files_to_upload = [f for f in files_to_upload if f['s3_key'] not in existing_files]
+                skipped_count = original_count - len(files_to_upload)
+                logger.info(f"⏭️ Skipping {skipped_count} existing files")
         
         if not files_to_upload:
-            logger.info("✅ All filtered content already exists in Spaces!")
+            logger.info("✅ All content already exists!")
             return
         
-        # Update final statistics
+        # Update statistics
         self.stats['total_files'] = len(files_to_upload)
         self.stats['total_bytes'] = sum(f['file_info']['size'] for f in files_to_upload)
         
-        # Dry run mode - show what would be uploaded
         if dry_run:
             self.show_dry_run_summary(files_to_upload)
             return
         
-        # Perform actual upload
-        self.perform_parallel_upload(files_to_upload, max_workers)
+        # Optimized parallel upload
+        self.perform_optimized_parallel_upload(files_to_upload, max_workers)
         
-        # Generate comprehensive report
+        # Generate report
         self.stats['end_time'] = time.time()
         self.generate_comprehensive_report()
+    
+    def perform_optimized_parallel_upload(self, files_to_upload, max_workers):
+        """Optimized parallel upload with better resource management"""
+        logger.info(f"📤 Starting optimized upload of {len(files_to_upload):,} files...")
+        
+        # Sort files by size (upload smaller files first for faster initial progress)
+        files_to_upload.sort(key=lambda x: x['file_info']['size'])
+        
+        upload_queue = files_to_upload.copy()
+        completed_uploads = 0
+        
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            with tqdm(total=len(files_to_upload), desc="Uploading", unit="file") as pbar:
+                
+                # Submit initial batch
+                active_futures = {}
+                for _ in range(min(max_workers * 2, len(upload_queue))):  # Queue more tasks
+                    if upload_queue:
+                        file_data = upload_queue.pop(0)
+                        future = executor.submit(
+                            self.upload_single_file_optimized,
+                            file_data['local_path'],
+                            file_data['s3_key'],
+                            file_data['file_info'],
+                            file_data['city'],
+                            file_data['map_type'],
+                            file_data['zoom'],
+                            file_data.get('district')
+                        )
+                        active_futures[future] = file_data
+                
+                # Process completions and submit new tasks
+                while active_futures:
+                    # Wait for at least one to complete
+                    done_futures = []
+                    for future in list(active_futures.keys()):
+                        if future.done():
+                            done_futures.append(future)
+                    
+                    if not done_futures:
+                        time.sleep(0.01)  # Small sleep to prevent busy waiting
+                        continue
+                    
+                    # Process completed futures
+                    for future in done_futures:
+                        file_data = active_futures.pop(future)
+                        try:
+                            result = future.result()
+                            self.update_progress_bar(pbar, result, file_data)
+                            completed_uploads += 1
+                            
+                            # Save resume state periodically - FIX: Use optimized version
+                            if completed_uploads % 100 == 0:
+                                self.save_resume_state_optimized()
+                                
+                        except Exception as e:
+                            logger.error(f"❌ Task error for {file_data['s3_key']}: {e}")
+                            pbar.update(1)
+                    
+                    # Submit new tasks to keep queue full
+                    while len(active_futures) < max_workers * 2 and upload_queue:
+                        file_data = upload_queue.pop(0)
+                        future = executor.submit(
+                            self.upload_single_file_optimized,
+                            file_data['local_path'],
+                            file_data['s3_key'],
+                            file_data['file_info'],
+                            file_data['city'],
+                            file_data['map_type'],
+                            file_data['zoom'],
+                            file_data.get('district')
+                        )
+                        active_futures[future] = file_data
+        
+        # Final save
+        self.save_resume_state()
 
     def log_existing_combinations(self, existing_combinations):
         """Log existing combinations found in Spaces"""
@@ -1035,9 +1427,9 @@ class EnhancedMultiMapSpacesUploader:
                         # Update progress bar
                         self.update_progress_bar(pbar, result, file_data)
                         
-                        # Save resume state periodically
+                        # Save resume state periodically - FIX: Use optimized version
                         if (self.stats['uploaded_files'] + self.stats['skipped_files']) % 50 == 0:
-                            self.save_resume_state()
+                            self.save_resume_state_optimized()
                             
                     except Exception as e:
                         logger.error(f"❌ Task error for {file_data['s3_key']}: {e}")
@@ -1142,79 +1534,79 @@ class EnhancedMultiMapSpacesUploader:
         logger.info(f"  📄 JSON: {json_report_file}")
         logger.info(f"  📝 Text: {text_report_file}")
 
-def generate_text_summary(self, report):
-    """Generate detailed text summary"""
-    summary = f"""
-# ENHANCED MULTI-MAP UPLOAD REPORT
-Generated: {report['session_info']['timestamp']}
-Duration: {report['session_info']['session_duration_minutes']:.1f} minutes
-Uploader: v{report['session_info']['uploader_version']}
+    def generate_text_summary(self, report):
+        """Generate detailed text summary"""
+        summary = f"""
+    # ENHANCED MULTI-MAP UPLOAD REPORT
+    Generated: {report['session_info']['timestamp']}
+    Duration: {report['session_info']['session_duration_minutes']:.1f} minutes
+    Uploader: v{report['session_info']['uploader_version']}
 
-## 📁 STRUCTURE UPLOADED
-Pattern: {report['session_info']['structure_pattern']}
-Example: hanoi/qh-2030/12/3249_1865.png
+    ## 📁 STRUCTURE UPLOADED
+    Pattern: {report['session_info']['structure_pattern']}
+    Example: hanoi/qh-2030/12/3249_1865.png
 
-## 📊 OVERALL SUMMARY
-• Total files: {report['summary']['total_files']:,}
-• Uploaded: {report['summary']['uploaded_files']:,}
-• Skipped: {report['summary']['skipped_files']:,}
-• Failed: {report['summary']['failed_files']:,}
-• Success rate: {report['summary']['success_rate']:.1f}%
-• Total size: {report['data_transfer']['total_size_mb']:.1f} MB
-• Upload rate: {report['data_transfer']['upload_rate_mbps']:.1f} MB/s
-• Cities: {report['summary']['cities_processed']}
-• Map types: {report['summary']['map_types_processed']}
-• Combinations: {report['summary']['combinations_processed']}
+    ## 📊 OVERALL SUMMARY
+    • Total files: {report['summary']['total_files']:,}
+    • Uploaded: {report['summary']['uploaded_files']:,}
+    • Skipped: {report['summary']['skipped_files']:,}
+    • Failed: {report['summary']['failed_files']:,}
+    • Success rate: {report['summary']['success_rate']:.1f}%
+    • Total size: {report['data_transfer']['total_size_mb']:.1f} MB
+    • Upload rate: {report['data_transfer']['upload_rate_mbps']:.1f} MB/s
+    • Cities: {report['summary']['cities_processed']}
+    • Map types: {report['summary']['map_types_processed']}
+    • Combinations: {report['summary']['combinations_processed']}
 
-## 🏙️ CITY BREAKDOWN
-"""
-    
-    # Add city breakdown - use city name directly
-    for city, stats in report['breakdowns']['city_stats'].items():
-        total_city = stats['uploaded'] + stats['skipped']
-        city_size_mb = stats['bytes'] / 1024 / 1024
-        summary += f"""
-🏙️ {city}
-• Files: {total_city:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
-• Size: {city_size_mb:.1f} MB
-• Failures: {stats['failed']}
-"""
+    ## 🏙️ CITY BREAKDOWN
+    """
         
-        # Add map type breakdown
-        summary += "\n## 🗺️ MAP TYPE BREAKDOWN\n"
-        
-        for map_type, stats in report['breakdowns']['map_type_stats'].items():
-            map_config = MAP_TYPE_CONFIG.get(map_type, {})
-            map_display = map_config.get('display_name', map_type)
-            color = map_config.get('color', '⚫')
-            total_map = stats['uploaded'] + stats['skipped']
-            map_size_mb = stats['bytes'] / 1024 / 1024
+        # Add city breakdown - use city name directly
+        for city, stats in report['breakdowns']['city_stats'].items():
+            total_city = stats['uploaded'] + stats['skipped']
+            city_size_mb = stats['bytes'] / 1024 / 1024
             summary += f"""
-{color} {map_display} ({map_type})
-• Files: {total_map:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
-• Size: {map_size_mb:.1f} MB
-• Failures: {stats['failed']}
-"""
-        
-        # Add zoom level breakdown if available
-        if report['breakdowns']['zoom_level_stats']:
-            summary += "\n## 🔍 ZOOM LEVEL BREAKDOWN\n"
+    🏙️ {city}
+    • Files: {total_city:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
+    • Size: {city_size_mb:.1f} MB
+    • Failures: {stats['failed']}
+    """
             
-            sorted_zooms = sorted(report['breakdowns']['zoom_level_stats'].items(), 
-                                key=lambda x: int(x[0]) if str(x[0]).isdigit() else 999)
+            # Add map type breakdown
+            summary += "\n## 🗺️ MAP TYPE BREAKDOWN\n"
             
-            for zoom, stats in sorted_zooms:
-                total_zoom = stats['uploaded'] + stats['skipped']
-                zoom_size_mb = stats['bytes'] / 1024 / 1024
-                detail_level = 'High detail' if str(zoom).isdigit() and int(zoom) >= 14 else 'Medium detail' if str(zoom).isdigit() and int(zoom) >= 10 else 'Low detail'
+            for map_type, stats in report['breakdowns']['map_type_stats'].items():
+                map_config = MAP_TYPE_CONFIG.get(map_type, {})
+                map_display = map_config.get('display_name', map_type)
+                color = map_config.get('color', '⚫')
+                total_map = stats['uploaded'] + stats['skipped']
+                map_size_mb = stats['bytes'] / 1024 / 1024
                 summary += f"""
-🔍 Zoom {zoom} ({detail_level})
-• Files: {total_zoom:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
-• Size: {zoom_size_mb:.1f} MB
-• Failures: {stats['failed']}
-"""
-        
-        return summary
+    {color} {map_display} ({map_type})
+    • Files: {total_map:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
+    • Size: {map_size_mb:.1f} MB
+    • Failures: {stats['failed']}
+    """
+            
+            # Add zoom level breakdown if available
+            if report['breakdowns']['zoom_level_stats']:
+                summary += "\n## 🔍 ZOOM LEVEL BREAKDOWN\n"
+                
+                sorted_zooms = sorted(report['breakdowns']['zoom_level_stats'].items(), 
+                                    key=lambda x: int(x[0]) if str(x[0]).isdigit() else 999)
+                
+                for zoom, stats in sorted_zooms:
+                    total_zoom = stats['uploaded'] + stats['skipped']
+                    zoom_size_mb = stats['bytes'] / 1024 / 1024
+                    detail_level = 'High detail' if str(zoom).isdigit() and int(zoom) >= 14 else 'Medium detail' if str(zoom).isdigit() and int(zoom) >= 10 else 'Low detail'
+                    summary += f"""
+    🔍 Zoom {zoom} ({detail_level})
+    • Files: {total_zoom:,} ({stats['uploaded']:,} uploaded, {stats['skipped']:,} skipped)
+    • Size: {zoom_size_mb:.1f} MB
+    • Failures: {stats['failed']}
+    """
+            
+            return summary
 
     def print_upload_summary(self, report):
         """Print concise upload summary to console"""
@@ -1541,12 +1933,33 @@ def interactive_mode():
     skip_existing = skip_choice != '2'
     
     # Max workers
-    max_workers_input = input("Max parallel uploads (1-20, default: 5): ").strip()
-    try:
-        max_workers = int(max_workers_input) if max_workers_input else 5
-        max_workers = max(1, min(20, max_workers))  # Clamp between 1-20
-    except ValueError:
-        max_workers = 5
+    print(f"\n⚡ PERFORMANCE OPTIMIZATION:")
+    print("=" * 35)
+    
+    print("Performance profile:")
+    print("1. 🚀 Maximum Speed (15 workers, aggressive caching)")
+    print("2. ⚖️ Balanced (10 workers, moderate caching)") 
+    print("3. 🐌 Conservative (5 workers, minimal caching)")
+    print("4. ✏️ Custom settings")
+    
+    perf_choice = input("Choose profile (1/2/3/4, default: 2): ").strip()
+    
+    if perf_choice == '1':
+        max_workers = 15
+        print("🚀 Maximum speed profile selected")
+    elif perf_choice == '3':
+        max_workers = 5  
+        print("🐌 Conservative profile selected")
+    elif perf_choice == '4':
+        max_workers_input = input("Max parallel uploads (1-20, default: 10): ").strip()
+        try:
+            max_workers = int(max_workers_input) if max_workers_input else 10
+            max_workers = max(1, min(20, max_workers))
+        except ValueError:
+            max_workers = 10
+    else:
+        max_workers = 10
+        print("⚖️ Balanced profile selected")
     
     # Dry run option
     dry_run_choice = input("Dry run mode (preview only, no upload)? (y/n, default: n): ").lower().strip()

@@ -201,3 +201,5 @@ output_browser_crawl
 spaces_config.json
 
 multi_map_verification
+enhanced_upload_resume_state.json
+enhanced_upload_report_*.json
