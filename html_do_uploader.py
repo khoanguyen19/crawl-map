@@ -272,7 +272,7 @@ class EnhancedMultiMapSpacesUploader:
                 logger.warning(f"⚠️ Error checking file existence: {e}")
                 return False
 
-    def upload_single_file(self, local_path, s3_key, file_info=None, city=None, map_type=None, zoom=None):
+    def upload_single_file(self, local_path, s3_key, file_info=None, city=None, map_type=None, zoom=None, district=None):
         """Upload single file with comprehensive metadata and tracking"""
         try:
             # Resume functionality check
@@ -280,7 +280,7 @@ class EnhancedMultiMapSpacesUploader:
             if resume_key in self.uploaded_files:
                 logger.debug(f"⏭️ Skipping already uploaded: {s3_key}")
                 self.stats['skipped_files'] += 1
-                self.update_comprehensive_stats(city, map_type, zoom, 'skipped', file_info['size'] if file_info else 0)
+                self.update_comprehensive_stats(city, map_type, zoom, 'skipped', file_info['size'] if file_info else 0, district)
                 return {
                     'success': True,
                     'skipped': True,
@@ -315,7 +315,7 @@ class EnhancedMultiMapSpacesUploader:
             content_type = self.determine_content_type(local_path, file_info)
             
             # Create comprehensive metadata
-            metadata = self.create_file_metadata(local_path, file_info, city, map_type, zoom)
+            metadata = self.create_file_metadata(local_path, file_info, city, map_type, zoom, district)
             
             # Configure upload parameters for optimal performance
             extra_args = {
@@ -360,6 +360,7 @@ class EnhancedMultiMapSpacesUploader:
                 'cdn_url': cdn_url,
                 'city': city,
                 'map_type': map_type,
+                'district': district,
                 'zoom': zoom,
                 'md5': file_info['md5']
             }
@@ -367,7 +368,7 @@ class EnhancedMultiMapSpacesUploader:
         except Exception as e:
             logger.error(f"❌ Error uploading {local_path}: {e}")
             self.stats['failed_files'] += 1
-            self.update_comprehensive_stats(city, map_type, zoom, 'failed', 0)
+            self.update_comprehensive_stats(city, map_type, zoom, 'failed', 0, district)
             return {
                 'success': False,
                 'error': str(e),
@@ -393,8 +394,8 @@ class EnhancedMultiMapSpacesUploader:
         
         return content_type
 
-    def create_file_metadata(self, local_path, file_info, city, map_type, zoom):
-        """Create comprehensive metadata for uploaded files"""
+    def create_file_metadata(self, local_path, file_info, city, map_type, zoom, district=None):
+        """Create comprehensive metadata for uploaded files with district support"""
         metadata = {
             'original-name': os.path.basename(local_path),
             'upload-time': datetime.now().isoformat(),
@@ -408,7 +409,12 @@ class EnhancedMultiMapSpacesUploader:
         # Add location and map type metadata
         if city:
             metadata['city'] = city
-            # Remove city config lookup
+        
+        if district:
+            metadata['district'] = district
+            metadata['structure-type'] = 'kh-2025-district'
+        else:
+            metadata['structure-type'] = 'standard'
         
         if map_type:
             metadata['map-type'] = map_type
@@ -423,7 +429,7 @@ class EnhancedMultiMapSpacesUploader:
         
         return metadata
 
-    def update_comprehensive_stats(self, city, map_type, zoom, status, size):
+    def update_comprehensive_stats(self, city, map_type, zoom, status, size, district=None):
         """Update comprehensive statistics across all dimensions"""
         # City statistics
         if city:
@@ -445,9 +451,24 @@ class EnhancedMultiMapSpacesUploader:
             if status in ['uploaded', 'skipped']:
                 self.stats['map_type_stats'][map_type]['bytes'] += size
         
-        # Combination statistics (city + map_type)
+        # District statistics (for KH_2025)
+        if district:
+            if 'district_stats' not in self.stats:
+                self.stats['district_stats'] = {}
+            if district not in self.stats['district_stats']:
+                self.stats['district_stats'][district] = {
+                    'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
+                }
+            self.stats['district_stats'][district][status] += 1
+            if status in ['uploaded', 'skipped']:
+                self.stats['district_stats'][district]['bytes'] += size
+        
+        # Combination statistics (city + map_type + district)
         if city and map_type:
             combo_key = f"{city}:{map_type}"
+            if district:
+                combo_key += f":{district}"
+            
             if combo_key not in self.stats['combination_stats']:
                 self.stats['combination_stats'][combo_key] = {
                     'uploaded': 0, 'skipped': 0, 'failed': 0, 'bytes': 0
@@ -468,61 +489,98 @@ class EnhancedMultiMapSpacesUploader:
 
     def parse_file_path(self, file_path, base_dir):
         """
-        Enhanced file path parsing with better error handling
-        Expected structure: downloaded_tiles/cities/<city>/<map_type>/<zoom>/<file>
+        Enhanced file path parsing with support for KH_2025 district structure
+        Expected structures:
+        - Standard: downloaded_tiles/cities/<city>/<map_type>/<zoom>/<file>
+        - KH_2025: downloaded_tiles/cities/<city>/kh-2025/<district>/<zoom>/<file>
         """
         try:
             # Get relative path from base directory
             rel_path = os.path.relpath(file_path, base_dir)
             path_parts = rel_path.split(os.sep)
             
-            # Expected structure validation
+            # Handle different structures based on path length and map type
             if len(path_parts) >= 4:
                 city = path_parts[0]
                 map_type = path_parts[1]
-                zoom_str = path_parts[2]
-                filename = path_parts[-1]
                 
-                # Validate zoom level
-                try:
-                    zoom = int(zoom_str)
-                    if zoom < 1 or zoom > 20:
-                        logger.warning(f"⚠️ Unusual zoom level {zoom} for {file_path}")
-                except ValueError:
-                    logger.warning(f"⚠️ Invalid zoom level '{zoom_str}' for {file_path}")
-                    zoom = zoom_str  # Keep as string for tracking
-                
-                # Validate map type
-                if map_type not in MAP_TYPE_CONFIG:
-                    logger.debug(f"🔍 Unknown map type '{map_type}' for {file_path}")
-                
-                return {
-                    'city': city,
-                    'map_type': map_type,
-                    'zoom': zoom,
-                    'filename': filename,
-                    'valid': True,
-                    'path_depth': len(path_parts)
-                }
+                # Special handling for KH_2025 with district structure
+                if map_type == 'kh-2025' and len(path_parts) >= 5:
+                    # Structure: cities/<city>/kh-2025/<district>/<zoom>/<file>
+                    district = path_parts[2]
+                    zoom_str = path_parts[3]
+                    filename = path_parts[-1]
+                    
+                    # Validate zoom level
+                    try:
+                        zoom = int(zoom_str)
+                        if zoom < 1 or zoom > 20:
+                            logger.warning(f"⚠️ Unusual zoom level {zoom} for {file_path}")
+                    except ValueError:
+                        logger.warning(f"⚠️ Invalid zoom level '{zoom_str}' for {file_path}")
+                        zoom = zoom_str  # Keep as string for tracking
+                    
+                    return {
+                        'city': city,
+                        'map_type': map_type,
+                        'district': district,
+                        'zoom': zoom,
+                        'filename': filename,
+                        'valid': True,
+                        'path_depth': len(path_parts),
+                        'structure_type': 'kh_2025_district'
+                    }
+                else:
+                    # Standard structure: cities/<city>/<map_type>/<zoom>/<file>
+                    zoom_str = path_parts[2]
+                    filename = path_parts[-1]
+                    
+                    # Validate zoom level
+                    try:
+                        zoom = int(zoom_str)
+                        if zoom < 1 or zoom > 20:
+                            logger.warning(f"⚠️ Unusual zoom level {zoom} for {file_path}")
+                    except ValueError:
+                        logger.warning(f"⚠️ Invalid zoom level '{zoom_str}' for {file_path}")
+                        zoom = zoom_str  # Keep as string for tracking
+                    
+                    # Validate map type
+                    if map_type not in MAP_TYPE_CONFIG:
+                        logger.debug(f"🔍 Unknown map type '{map_type}' for {file_path}")
+                    
+                    return {
+                        'city': city,
+                        'map_type': map_type,
+                        'district': None,
+                        'zoom': zoom,
+                        'filename': filename,
+                        'valid': True,
+                        'path_depth': len(path_parts),
+                        'structure_type': 'standard'
+                    }
             else:
                 # Handle alternative structures gracefully
                 return {
                     'city': path_parts[0] if len(path_parts) > 0 else None,
                     'map_type': path_parts[1] if len(path_parts) > 1 else 'unknown',
+                    'district': None,
                     'zoom': path_parts[2] if len(path_parts) > 2 else 'unknown',
                     'filename': os.path.basename(file_path),
                     'valid': False,
-                    'path_depth': len(path_parts)
+                    'path_depth': len(path_parts),
+                    'structure_type': 'unknown'
                 }
         except Exception as e:
             logger.warning(f"⚠️ Could not parse file path {file_path}: {e}")
             return {
                 'city': None,
                 'map_type': 'unknown',
+                'district': None,
                 'zoom': 'unknown',
                 'filename': os.path.basename(file_path),
                 'valid': False,
-                'path_depth': 0
+                'path_depth': 0,
+                'structure_type': 'error'
             }
 
     def scan_multi_map_directory(self, local_dir, s3_prefix='', target_cities=None, target_map_types=None, target_zoom_levels=None):
@@ -546,45 +604,74 @@ class EnhancedMultiMapSpacesUploader:
         if target_zoom_levels:
             logger.info(f"🔍 Target zoom levels: {target_zoom_levels}")
         
-        # Walk through directory structure
+        # Pre-scan to estimate total files for progress bar
+        logger.info("📊 Pre-scanning to estimate file count...")
+        total_files = 0
         for root, dirs, files in os.walk(local_dir):
             for file in files:
-                local_path = os.path.join(root, file)
-                
-                # Skip unwanted files
-                if self.should_skip_file(file):
-                    continue
-                
-                # Parse file path for metadata
-                path_info = self.parse_file_path(local_path, local_dir)
-                
-                # Apply filters
-                if not self.passes_filters(path_info, target_cities, target_map_types, target_zoom_levels):
-                    continue
-                
-                # Generate S3 key
-                rel_path = os.path.relpath(local_path, local_dir)
-                s3_key = os.path.join(s3_prefix, rel_path).replace('\\', '/') if s3_prefix else rel_path.replace('\\', '/')
-                
-                # Get file information
-                file_info = self.get_file_info(local_path)
-                if not file_info:
-                    continue
-                
-                # Add to upload list
-                files_to_upload.append({
-                    'local_path': local_path,
-                    's3_key': s3_key,
-                    'file_info': file_info,
-                    'city': path_info['city'],
-                    'map_type': path_info['map_type'],
-                    'zoom': path_info['zoom']
-                })
-                
-                # Update scan summary
-                self.update_scan_summary(scan_summary, path_info, file_info)
-                self.stats['total_files'] += 1
-                self.stats['total_bytes'] += file_info['size']
+                if not self.should_skip_file(file):
+                    total_files += 1
+        
+        logger.info(f"📊 Found approximately {total_files:,} files to process")
+        
+        # Walk through directory structure with progress bar
+        processed_files = 0
+        with tqdm(total=total_files, desc="Scanning files", unit="file") as pbar:
+            for root, dirs, files in os.walk(local_dir):
+                for file in files:
+                    local_path = os.path.join(root, file)
+                    
+                    # Skip unwanted files
+                    if self.should_skip_file(file):
+                        continue
+                    
+                    # Update progress
+                    processed_files += 1
+                    pbar.update(1)
+                    
+                    # Show current path being processed
+                    rel_path = os.path.relpath(local_path, local_dir)
+                    path_parts = rel_path.split(os.sep)
+                    if len(path_parts) >= 2:
+                        current_city = path_parts[0]
+                        current_map = path_parts[1]
+                        pbar.set_postfix(city=current_city[:10], map=current_map[:10])
+                    
+                    # Parse file path for metadata
+                    path_info = self.parse_file_path(local_path, local_dir)
+                    
+                    # Apply filters
+                    if not self.passes_filters(path_info, target_cities, target_map_types, target_zoom_levels):
+                        continue
+                    
+                    # Generate S3 key
+                    rel_path = os.path.relpath(local_path, local_dir)
+                    s3_key = os.path.join(s3_prefix, rel_path).replace('\\', '/') if s3_prefix else rel_path.replace('\\', '/')
+                    
+                    # Get file information
+                    file_info = self.get_file_info(local_path)
+                    if not file_info:
+                        continue
+                    
+                    # Add to upload list
+                    files_to_upload.append({
+                        'local_path': local_path,
+                        's3_key': s3_key,
+                        'file_info': file_info,
+                        'city': path_info['city'],
+                        'map_type': path_info['map_type'],
+                        'district': path_info.get('district'),
+                        'zoom': path_info['zoom']
+                    })
+                    
+                    # Update scan summary
+                    self.update_scan_summary(scan_summary, path_info, file_info)
+                    self.stats['total_files'] += 1
+                    self.stats['total_bytes'] += file_info['size']
+                    
+                    # Log progress every 1000 files
+                    if len(files_to_upload) % 1000 == 0:
+                        logger.info(f"📊 Processed {len(files_to_upload):,} matching files so far...")
         
         # Log comprehensive scan results
         self.log_scan_results(scan_summary, len(files_to_upload))
@@ -934,7 +1021,8 @@ class EnhancedMultiMapSpacesUploader:
                         file_data['file_info'],
                         file_data['city'],
                         file_data['map_type'],
-                        file_data['zoom']
+                        file_data['zoom'],
+                        file_data.get('district')
                     ): file_data for file_data in files_to_upload
                 }
                 

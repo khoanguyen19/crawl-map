@@ -1,0 +1,22 @@
+{
+  "uploaded_files": [],
+  "stats": {
+    "total_files": 0,
+    "uploaded_files": 0,
+    "skipped_files": 0,
+    "failed_files": 0,
+    "total_bytes": 0,
+    "uploaded_bytes": 0,
+    "start_time": 1750790309.2214816,
+    "end_time": null,
+    "watch_mode_stats": {
+      "files_detected": 0,
+      "files_processed": 0,
+      "queue_size": 0,
+      "average_processing_time": 0
+    },
+    "city_stats": {},
+    "map_type_stats": {}
+  },
+  "timestamp": "2025-06-25T01:39:42.850079"
+}

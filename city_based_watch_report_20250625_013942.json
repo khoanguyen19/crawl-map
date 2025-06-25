@@ -1,0 +1,37 @@
+{
+  "session_info": {
+    "mode": "watch",
+    "structure": "city-based",
+    "uploader_version": "3.2-city-based-structure",
+    "timestamp": "2025-06-25T01:39:42.850703",
+    "duration_seconds": 73.62921977043152,
+    "duration_minutes": 1.2271536628405253
+  },
+  "watch_mode_stats": {
+    "files_detected": 0,
+    "files_processed": 0,
+    "queue_size": 0,
+    "average_processing_time": 0
+  },
+  "summary": {
+    "uploaded_files": 0,
+    "skipped_files": 0,
+    "failed_files": 0,
+    "uploaded_size_mb": 0.0,
+    "upload_rate_per_minute": 0.0
+  },
+  "structure_info": {
+    "type": "city-based",
+    "pattern": "<city>/<map-type>/<zoom>/ or <city>/<map-type>/<district>/<zoom>/",
+    "prefix": null,
+    "example_s3_keys": [
+      "hanoi/qh-2030/12/1234_5678.png",
+      "hcm/kh-2025/quan-1/14/9876_5432.png",
+      "danang/qh-phan-khu/11/1111_2222.png"
+    ]
+  },
+  "breakdowns": {
+    "city_stats": {},
+    "map_type_stats": {}
+  }
+}
